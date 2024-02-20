@@ -2,7 +2,6 @@
   <div class="all-site">
       <Navbar/>
       <slot/>
-      <Footer/>
   </div>
 </template>
 

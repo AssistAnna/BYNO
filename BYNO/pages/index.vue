@@ -1,5 +1,8 @@
 <template>
-  <div class="page-index">pade de l'index</div>
+  <div class="page-index">
+    <h1>Site en construction</h1>
+    <div class="logo-byno"></div>
+  </div>
 </template>
 
 <script>
@@ -45,7 +48,22 @@ export default {
 }
 
 .page-index {
-  padding-top: 6rem;
-  height: 3000px;
+  padding-top: 8rem;
+  height: 100rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+h1 {
+  width: 100%;
+  text-align: center;
+}
+.logo-byno {
+  background-image: url('assets/img/logo-byno.png');
+  width: 40rem;
+  height: 40rem;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 </style>
