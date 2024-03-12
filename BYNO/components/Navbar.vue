@@ -5,7 +5,8 @@
   <div class="liste-onglets">
     <nuxt-link to="/"><h2 class="onglet">Accueil</h2></nuxt-link>
     <nuxt-link to="/Services"><h2 class="onglet">Services</h2></nuxt-link>
-    <nuxt-link to="/Projets"><h2 class="onglet">Projets</h2></nuxt-link>
+    <nuxt-link to="/Projets"><h2 class="onglet">Production</h2></nuxt-link>
+    <nuxt-link to="/Apropos"><h2 class="onglet">A propos</h2></nuxt-link>
     <nuxt-link to="/Contact"><h2 class="onglet">Contact</h2></nuxt-link>
     
     
@@ -24,6 +25,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'Navbar',
   data() {
