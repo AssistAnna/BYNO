@@ -47,7 +47,7 @@ export default {
     align-items: center;
 }
 .bloc {
-    width: 75%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -6,6 +6,7 @@
     <nuxt-link to="/"><h2 class="onglet">Accueil</h2></nuxt-link>
     <nuxt-link to="/Services"><h2 class="onglet">Services</h2></nuxt-link>
     <nuxt-link to="/Projets"><h2 class="onglet">Production</h2></nuxt-link>
+    <nuxt-link to="/Retouches"><h2 class="onglet">Retouches</h2></nuxt-link>
     <nuxt-link to="/Apropos"><h2 class="onglet">A propos</h2></nuxt-link>
     <nuxt-link to="/Contact"><h2 class="onglet">Contact</h2></nuxt-link>
     

@@ -63,32 +63,36 @@ data() {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 8rem;
+        width: 80%;
+        
     }
 
     .card {
-        margin: 3.5rem;
-        height: 85%;
+        width:90%;
+        height: 90%;
         background-color: rgba(71, 70, 70, 0.404);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width:90%;
         border-radius: 2px;
         border: 0.1px solid rgba(0, 159, 227, 0.349);
 
         -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); 
 box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);
-transition:  0.6s ease-in-out;
+      transition: 0.4s ease-in-out;
+
         
 
     }
     .card:hover {
-        transition:  0.6s ease-in-out;
-        width: 93%;
-        height: 88%; 
+      transition: all 0.4s ease-in-out;
+      transform: scale(1.04);
+      border: 0.1px solid rgba(0, 159, 227, 0.973);
+
+        
     }
     .card-icon {
-        height: 5rem;
+        height: 10rem;
         width: 5rem;
         background-repeat: no-repeat;
         margin-top: 2.5rem;

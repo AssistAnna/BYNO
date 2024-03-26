@@ -59,38 +59,43 @@ export default {
 
 <style scoped>
 .all-projects {
-    width: 85%;
+  width: 85%;
 }
 
 .list-projects {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
 }
 
 .projet{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
     
 }
 .projet-img {
-    border: 1px solid grey;
-    background-repeat: no-repeat;
-    height: 16rem;
-    width: 65%;
-    background-size: cover;
-    border-radius: 8px;
+  border: 1px solid grey;
+  background-repeat: no-repeat;
+  height: 16rem;
+  width: 65%;
+  background-size: cover;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+
+}
+
+.projet-img:hover {
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.07);
 }
 
 h3 {
-    text-align: center;
-    font-family: mplusmedium;
-    font-size: 1.7rem;
-    margin-bottom: 4rem;
+  text-align: center;
+  font-family: mplusmedium;
+  font-size: 1.7rem;
+  margin-bottom: 4rem;
 }
-
-
 </style>
