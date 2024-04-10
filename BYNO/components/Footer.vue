@@ -1,23 +1,23 @@
 <template>
   <div class="footer">
-      <h2>BYNO</h2>
-      <div class="bloc">
-        <p class="text">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements. </p>
-        <div class="liste-pages">
-          <nuxt-link to="/">Acceuil</nuxt-link>
-          <nuxt-link to="/">Services</nuxt-link>
-          <nuxt-link to="/">Production</nuxt-link>
-          <nuxt-link to="/">A propos</nuxt-link>
-        </div>
-        <div class="bloc-contact">
-          <nuxt-link to="/">Me contacter</nuxt-link>
-          <div class="liste-socials">
-            <nuxt-link to="/"><img src="~assets/icon/icon-instagram.png" alt="logo instagram"></nuxt-link>
-            <nuxt-link to="/"><img src="~assets/icon/icon-linkedin.png" alt="logo linkedin"></nuxt-link>
-            <nuxt-link to="/"><img src="~assets/icon/icon-youtube.png" alt="logo youtube"></nuxt-link>
-          </div>
+    <nuxt-link class="logo" to="/"><div class="logo-img"></div></nuxt-link>
+    <div class="bloc">
+      <p class="text">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements. </p>
+      <div class="liste-pages">
+        <nuxt-link to="/">Acceuil</nuxt-link>
+        <nuxt-link to="/">Services</nuxt-link>
+        <nuxt-link to="/">Production</nuxt-link>
+        <nuxt-link to="/">A propos</nuxt-link>
+      </div>
+      <div class="bloc-contact">
+        <nuxt-link to="/">Me contacter</nuxt-link>
+        <div class="liste-socials">
+          <nuxt-link to="/"><img src="~assets/icon/icon-instagram.png" alt="logo instagram"></nuxt-link>
+          <nuxt-link to="/"><img src="~assets/icon/icon-linkedin.png" alt="logo linkedin"></nuxt-link>
+          <nuxt-link to="/"><img src="~assets/icon/icon-youtube.png" alt="logo youtube"></nuxt-link>
         </div>
       </div>
+    </div>
   </div>
 </template>
 
@@ -35,36 +35,39 @@ export default {
 
 }
 
-h2 {
-  font-family: "mplusmedium";
-  font-size: 2.6rem;
+.logo-img {
+  background-image: url('assets/img/logo-byno.png');
+  height: 6rem;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 .bloc {
   display: flex;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   
 
 }
 
 .text {
-  width: 36%;
+  width: 40%;
   font-family: "mpluslight";
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   padding-right: 6rem;
 }
 
 .liste-pages {
-  width: 33%;
+  width: 18%;
   display: flex;
   flex-direction: column;
   font-family: "mplusmedium";
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .bloc-contact a {
   font-family: "mplusmedium";
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   
 
   
@@ -75,11 +78,11 @@ h2 {
 }
 
 .liste-socials a {
-  padding-right: 2rem;
+  padding-right: 1rem;
   
 }
 
 img {
-  height: 3.5rem;
+  height: 2rem;
 }
 </style>

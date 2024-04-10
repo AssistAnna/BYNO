@@ -1,10 +1,7 @@
 <template>
   <div class="apropos">
-    <div class="bloc-title">
-      <h2>A propos</h2>
-      <div class="soulignement"></div>
-    </div>
-   <div class="img1"></div>
+    <h2 class="title-h2">A propos</h2>
+    <div class="img1"></div>
     <div class="bloc-text">
         <h3>Noé Chardon</h3>
         <h4>entrepreneur passionné</h4>
@@ -39,9 +36,7 @@ export default {
   }
 
   h2 {
-    font-size: 5rem;
-    font-family: mplusmedium;
-    margin-bottom: 0;
+    margin-bottom: 7rem;
   }
   .soulignement {
     margin: 3rem 0 0 0;

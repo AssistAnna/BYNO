@@ -1,1 +1,1 @@
-export { default } from "file:///home/anna/Documents/BYNO/BYNO/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

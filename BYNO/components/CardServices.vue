@@ -1,14 +1,16 @@
 <template>
-  <div class="cards-bloc">
-      <div class="card" v-for="(card,key) in cards" :key="key">
-        <div class="card-icon" :style="' background-image: url(' + card.iconUrl + ')'"></div>
-        <div class="liste-text">
-            <p>{{card.text1}}</p>
-            <p>{{card.text2}}</p>
-            <p>{{card.text3}}</p>
-            <p>{{card.text4}}</p>
+  <div class="all">
+    <div class="cards-bloc">
+        <div class="card box-shadow" v-for="(card,key) in cards" :key="key">
+          <div class="card-icon" :style="' background-image: url(' + card.iconUrl + ')'"></div>
+          <div class="liste-text">
+              <p>{{card.text1}}</p>
+              <p>{{card.text2}}</p>
+              <p>{{card.text3}}</p>
+              <p>{{card.text4}}</p>
+          </div>
         </div>
-      </div>
+    </div>
   </div>
 </template>
 
@@ -59,53 +61,47 @@ data() {
 </script>
 
 <style scoped>
-    .cards-bloc {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 8rem;
-        width: 80%;
-        
-    }
+  .cards-bloc {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 5rem;
+      width: 100%;
+      
+  }
 
-    .card {
-        width:90%;
-        height: 90%;
-        background-color: rgba(71, 70, 70, 0.404);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 2px;
-        border: 0.1px solid rgba(0, 159, 227, 0.349);
-
-        -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); 
-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);
-      transition: 0.4s ease-in-out;
-
-        
-
-    }
-    .card:hover {
-      transition: all 0.4s ease-in-out;
-      transform: scale(1.04);
-      border: 0.1px solid rgba(0, 159, 227, 0.973);
-
-        
-    }
-    .card-icon {
-        height: 10rem;
-        width: 5rem;
-        background-repeat: no-repeat;
-        margin-top: 2.5rem;
-    }
-    .liste-text {
-        width: 90%;
-        margin-left: 2rem;
-        padding-bottom: 3rem;
-    }
-    p {
-        font-size: 1.4rem;
-        font-family: mpluslight;
-        font-weight: bold;
-    }
+  .card {
+    height: 13rem;
+    width: 13rem;
+    margin: 0.6rem; 
+    padding: 1.4rem;
+    background-color: rgba(71, 70, 70, 0.404);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    border: 0.1px solid rgba(0, 159, 227, 0.349);
+    transition: 0.4s ease-in-out;
+  }
+  .card:hover {
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.04);
+    border: 0.1px solid rgba(0, 159, 227, 0.973); 
+  }
+  .card-icon {
+      height: 6rem;
+      width: 3rem;
+      background-repeat: no-repeat;
+      background-size: 100%;
+  }
+  .liste-text {
+    width: 100%;
+  }
+  p {
+      font-size: 0.7rem;
+      font-family: mpluslight;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1rem;
+  }
 
 </style>

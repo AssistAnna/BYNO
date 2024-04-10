@@ -82,7 +82,7 @@ mounted() {
 
 .logo-img {
   background-image: url('assets/img/logo-byno.png');
-  height: 7rem;
+  height: 5rem;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -97,7 +97,7 @@ mounted() {
 
 h2 {
   font-family: 'mplusbold';
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .liste-onglets .router-link-exact-active {
   text-decoration: underline !important;
@@ -111,8 +111,8 @@ h2 {
 }
 
 .liste-socials img {
-  margin-right: 1rem;
-  height: 2.5rem;
+  margin-right: 1.2rem;
+  height: 2rem;
 }
 
 

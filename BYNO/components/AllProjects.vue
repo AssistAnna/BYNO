@@ -79,8 +79,8 @@ export default {
 .projet-img {
   border: 1px solid grey;
   background-repeat: no-repeat;
-  height: 16rem;
-  width: 65%;
+  height: 10rem;
+  width: 70%;
   background-size: cover;
   border-radius: 8px;
   transition: all 0.4s ease-in-out;
@@ -89,13 +89,13 @@ export default {
 
 .projet-img:hover {
   transition: all 0.4s ease-in-out;
-  transform: scale(1.07);
+  transform: scale(1.04);
 }
 
 h3 {
   text-align: center;
   font-family: mplusmedium;
-  font-size: 1.7rem;
-  margin-bottom: 4rem;
+  font-size: 1rem;
+  margin-bottom: 3.5rem;
 }
 </style>

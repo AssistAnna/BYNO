@@ -1,9 +1,6 @@
 <template>
   <div class="services">
-    <div class="bloc-title">
-      <img src="~assets/img/logo-byno-avececrit.png" alt="">
-      <div class="soulignement"></div>
-    </div>
+    <h2 class="title-h2">Services</h2>
     <CardServices/>
     <AllServices/>
   </div>
@@ -18,28 +15,15 @@ export default {
 
 <style scoped>
 .services {
-    padding-top: 7rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
   }
 img {
-    height: 28rem;
-    width: 28rem;
+    height: 15rem;
+    width: 15rem;
   }
-  .bloc-title {
-    padding-top: 2rem;
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5rem;
-  }
-  .soulignement {
-    margin: 3rem 0;
-    border: 3px solid #009FE3;
-    width: 100%;
-    border-radius: 20%;
-  }
+  
 </style>

@@ -53,24 +53,29 @@ export default {
   src: url('~/assets/fonts/MPLUS1p-Thin.ttf') format('opentype'),
 }
 
+.box-shadow {
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); 
+box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);
+}
+
 .page-index {
-  padding-top: 7rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center; 
 }
 .img-accueil {
-  height: 55rem;
+  height: 30rem;
   width: 100%;
   background-image: url('assets/img/8000x5500-ANNA.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 
 }
 .text-presentation {
-  margin: 0rem 17rem;
-  font-size: 3rem;
+  margin: 0rem 10rem;
+  font-size: 1.8rem;
   font-family: mplusbold;
   text-align: center;
   padding-bottom: 4rem;
@@ -78,13 +83,13 @@ export default {
 }
 
 .title-h2 {
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: mplusmedium;
     text-align: center;
     border-bottom: 1px solid #009FE3;
     padding-bottom: 2rem;
-    margin-bottom: 8rem;
-    width: 50rem;
+    margin-bottom: 5rem;
+    width: 35rem;
 
 }
 

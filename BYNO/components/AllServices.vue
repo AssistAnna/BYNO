@@ -53,7 +53,7 @@ export default {
     justify-content: space-between;
     background-color: rgba(71, 70, 70, 0.404);
     margin-bottom: 7rem;
-    border-radius: 2px;
+    border-radius: 6px;
 
     
 
@@ -63,7 +63,7 @@ export default {
     background-image: url('assets/img/exemples/img-bloc1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 35rem;
+    min-height: 20rem;
     width: 100%;
 
 }
@@ -72,28 +72,27 @@ export default {
     background-image: url('assets/img/exemples/img-bloc2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 35rem;
+    min-height: 20rem;
     width: 100%;
 
 }
 
 .title-text {
-    padding-left: 3rem;
+    padding-left: 2.7rem;
     width: 100%;
 
 }
 h3 {
   font-family: 'mpluslight';
-  font-size: 3.2rem;
+  font-size: 2.1rem;
 
 }
 p {
   font-family: 'mplusthin';
-  font-size: 1.7rem;
+  font-size: 0.9rem;
   text-align: justify;
   padding-right: 4rem;
   font-weight: bold;
-  padding-bottom: 1rem;
 
 }
 .button-area{
