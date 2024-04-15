@@ -9,7 +9,11 @@
         <div class="img2 box-shadow"></div>
         <h4>Une simple image ou un simple regard peut communiquer une multitude de significations.</h4>
     </div>
-    <Carousel/>
+    <div class="bloc3">
+      <div class="img3 box-shadow"></div>
+      <div class="liste-photos">
+      </div>
+    </div>
 
   </div>
 </template>
@@ -43,11 +47,11 @@ h3 {
 }
 .img1 {
     border-radius: 4px;
-    height: 28rem;
+    height: 26rem;
     width: 100%;
     background-repeat: no-repeat;
     background-image: url('assets/img/retouches-img1.JPG');
-    background-size: 100% 130%;
+    background-size: 100% 120%;
   }
 
   .bloc-img-text {
@@ -60,8 +64,8 @@ h3 {
   }
   .img2 {
     border-radius: 4px;
-    height: 35rem;
-    width: 80%;
+    height: 27rem;
+    width: 60%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url('assets/img/retouches-img2.jpeg');
@@ -73,7 +77,7 @@ h3 {
     width: 80%;
     text-align: center;
     font-family: mpluslight;
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     margin-bottom: 4rem;
   }
 

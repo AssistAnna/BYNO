@@ -22,7 +22,7 @@
               type="text"
               placeholder="Téléphone"
             />
-            <textarea rows="6">Votre message</textarea>
+            <textarea rows="6">Votre message ...</textarea>
          
          
           <div class="button">
@@ -46,18 +46,17 @@ export default {
 
 <style scoped>
   .page-contact {
-    padding-top: 7rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
   }
   img {
-    height: 28rem;
-    width: 28rem;
+    height: 15rem;
+    width: 15rem;
   }
   .bloc-title {
-    padding-top: 2rem;
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -65,9 +64,8 @@ export default {
   }
   .soulignement {
     margin: 3rem 0;
-    border: 3px solid #009FE3;
+    border: 1px solid #009FE3;
     width: 100%;
-    border-radius: 20%;
   }
 
   .formulaire{
@@ -78,13 +76,12 @@ export default {
   } 
 
   input {
-    height: 4.2rem;
-    margin-bottom: 4rem;
+    height: 2.5rem;
+    margin-bottom: 1.2rem;
     border-radius: 6px;
     font-family: mplusthin;
     font-weight: bold;
-    font-size: 1.7rem;
-    padding-left: 1rem;
+    padding-left: 0.7rem;
     
   }
 
@@ -93,31 +90,33 @@ export default {
     font-family: mplusthin;
     font-family: 4rem;
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
   textarea {
     font-family: mplusthin;
     font-weight: bold;
     padding-left: 1rem;
-    font-size: 1.7rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
     padding-top: 1rem;
   }
 
   .button {
     display: flex;
     justify-content: center;
-    padding-top: 3rem;
-    margin-bottom: 4rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
 
   }
 
   button {
     font-family: mplusregular;
     font-weight: bold;
-    font-size: 1.6rem;
-    padding: 1.4rem 4rem;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
     border-radius: 6px;
+    background-color: #009FE3;
+    color: white;
   }
 </style>

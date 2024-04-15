@@ -14,7 +14,7 @@ export default {
 
 <style scoped>
  .productions {
-    padding-top: 7rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
