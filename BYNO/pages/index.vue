@@ -18,6 +18,23 @@ export default {
 </script>
 
 <style>
+/*
+$screen-ipad-paysage: 1024px; // 1024 -> Ipad paysage
+$screen-xs: 480px; // 480 à 767 -> XS
+$screen-sm: 576px; // <= 576 à 767 -> SM
+$screen-md: 768px; // <= 1199 -> MD -> Ipad portrait
+$screen-lg: 992px; // <= 1199 -> lg
+$screen-xl: 1200px; // <= -> xl
+$screen-xxl: 1440px; // <= -> xxl
+
+ @media screen and (max-width: 1024px) {
+  ipad paysage
+    }
+
+    @media screen and (max-width: 576px) {
+      screen sm
+    }
+*/
 @font-face {
   font-family: 'mplusblack';
   src: url('~/assets/fonts/MPLUS1p-Black.ttf') format('opentype'),

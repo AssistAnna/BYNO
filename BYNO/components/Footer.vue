@@ -82,7 +82,13 @@ export default {
   
 }
 
+.liste-socials a:hover {
+  color: blue;
+}
+
 img {
   height: 2rem;
 }
+
 </style>
+

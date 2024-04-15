@@ -53,8 +53,8 @@ export default {
 }
 
 .img1 {
-    height: 30rem;
-    width: 65%;
+    height: 33rem;
+    width: 60%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url('assets/img/retouches-img1.png');

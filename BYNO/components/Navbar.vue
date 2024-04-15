@@ -1,28 +1,28 @@
 <template>
-<div class="Navbar">
-  <nuxt-link class="logo" to="/"><div class="logo-img"></div></nuxt-link>
+  <header>
+    <div class="Navbar">
+      <div v-show="displayNavbarDesktop" class=" navbar-desktop">
+        <!-- navbar desktop and tablet paysage -->
+      <nuxt-link class="logo" to="/"><div class="logo-img"></div></nuxt-link>
   
   <div class="liste-onglets">
-    <nuxt-link to="/"><h2 class="onglet">Accueil</h2></nuxt-link>
-    <nuxt-link to="/Services"><h2 class="onglet">Services</h2></nuxt-link>
-    <nuxt-link to="/Projets"><h2 class="onglet">Production</h2></nuxt-link>
-    <nuxt-link to="/Retouches"><h2 class="onglet">Retouches</h2></nuxt-link>
-    <nuxt-link to="/Apropos"><h2 class="onglet">A propos</h2></nuxt-link>
-    <nuxt-link to="/Contact"><h2 class="onglet">Contact</h2></nuxt-link>
-    
-    
-    
+    <nuxt-link  v-for="(item,key) in menu" :key="key" :to="{name: item.url}"><h2 class="onglet">{{item.name}}</h2></nuxt-link>
   </div>
   <div class="liste-socials">
     <nuxt-link to="/"><img src="~assets/icon/icon-instagram.png" alt="logo instagram"></nuxt-link>
     <nuxt-link to="/"><img src="~assets/icon/icon-linkedin.png" alt="logo linkedin"></nuxt-link>
     <nuxt-link to="/"><img src="~assets/icon/icon-youtube.png" alt="logo youtube"></nuxt-link>
-    
-    
-   
   </div>
- 
+      </div>
+    
+
+    <!-- navbar mobile -->
+    <div class="navbar-mobile" v-show="!displayNavbarDesktop">
+      <nuxt-link class="logo" to="/"><div class="logo-img-mobile"></div></nuxt-link>
+    </div>
 </div>
+  </header>
+
 </template>
 
 <script>
@@ -32,22 +32,42 @@ export default {
   data() {
     return{
        previousPosition: 0,
+       displayNavbarDesktop: true,
+       menu: [
+        {
+          url: "Services",
+          name: "Services"
+        },
+        {
+          url: "Productions",
+          name: "Productions"
+        },
+        {
+          url: "Retouches",
+          name: "Retouches"
+        },
+        {
+          url: "Apropos",
+          name: "A propos"
+        },
+        {
+          url: "Contact",
+          name: "Contact"
+        }
+      ]
     }
   },
 methods: {
+  hideDesktopNavbar() {
+    let currentWidth = window.screen.width;
+    if (currentWidth < 880){
+      this.displayNavbarDesktop = !this.displayNavbarDesktop
+    }
+    // console.log('current width : ' + currentWidth)
+    },
 },
 mounted() {
-  let self = this;
-    window.addEventListener("scroll", function(event) {
-      let top = this.scrollY;
-
-      if ( top > self.previousPosition) {
-          self.$el.classList.add('scrolled')
-      }else {
-          self.$el.classList.remove('scrolled')
-      }
-      self.previousPosition = top;
-    });
+  this.hideDesktopNavbar();
 }
 
 }
@@ -56,24 +76,20 @@ mounted() {
 
 <style scoped>
 
-
 .Navbar {
   z-index: 100;
+  position: fixed;
+  width: 100%;
+
+}
+.navbar-desktop {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
   background-color: rgb(39, 38, 38);
-  transition: opacity 0.6s ease-in-out;
-  
 }
 
-.scrolled {
-  opacity: 0.6;
-  transition: opacity 0.6s ease-in-out;
-
-}
 
 .logo {
   flex: 2;
@@ -113,6 +129,20 @@ h2 {
 .liste-socials img {
   margin-right: 1.2rem;
   height: 2rem;
+}
+
+/*version mobile*/
+.logo-img-mobile {
+  background-image: url('assets/img/logo-byno.png');
+  height: 6rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  width: 100%;
+  background-color: rgb(39, 38, 38);
 }
 
 
