@@ -70,7 +70,8 @@ data() {
 
 .navBar {
    font-family: mplusbold;
-   position: absolute;
+   position: fixed;
+   z-index: 100;
    top: 0;
    display: flex;
    align-items: center;
@@ -107,16 +108,20 @@ data() {
 
 .liste-onglets a {
    margin: 0 1rem;
-   font-size: 0.7rem;
+   font-size: 0.6rem;
 }
 
 .liste-onglets a.active {
    color: #009FE3;
    font-size: 0.8rem;
+} 
+
+.liste-socials {
+    padding-right: 1.5rem;
 }
 
 .liste-socials img {
- margin-right: 1.2rem;
+ margin-right: 0.5rem;
  height: 2rem;
 }
 

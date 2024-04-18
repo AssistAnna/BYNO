@@ -104,4 +104,26 @@ data() {
       line-height: 1rem;
   }
 
+  /* version mobile */
+@media screen and (max-width: 900px) {
+    
+    .card {
+      border: 0.1px solid rgba(0, 159, 227, 0.973); 
+    }
+    .card-icon {
+      height: 3rem;
+    }
+    .liste-text {
+      padding-top: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+  .cards-bloc {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+
 </style>

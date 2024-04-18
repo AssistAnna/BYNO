@@ -1,14 +1,10 @@
 <template>
   <div class="all-projects">
-      <div class="list-projects">
-        
-          <div class="projet"  v-for="(projet,key) in projets" :key="key">
-            <div class="projet-img" :style="' background-image: url(' + projet.imgUrl + ')'">
-
-          </div>
-             <h3>{{projet.name}}</h3>
-          </div>
-      </div>
+    <div class="projet"  v-for="(projet,key) in projets" :key="key">
+      <div class="projet-img" :style="' background-image: url(' + projet.imgUrl + ')'"></div>
+      <h3>{{projet.name}}</h3>
+    </div>
+      
   </div>
 </template>
 
@@ -58,32 +54,26 @@ export default {
 </script>
 
 <style scoped>
-.all-projects {
-  width: 85%;
-}
 
-.list-projects {
-  width: 100%;
+.all-projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
 }
 
 .projet{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .projet-img {
   border: 1px solid grey;
   background-repeat: no-repeat;
   height: 10rem;
-  width: 70%;
+  width: 20vw;
   background-size: cover;
   border-radius: 8px;
   transition: all 0.4s ease-in-out;
+  margin: 0 1rem;
 
 }
 
@@ -101,11 +91,20 @@ h3 {
 
 
 /* version mobile */
-@media screen and (max-width: 900px) {
-  .list-projects {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 800px) {
+  .all-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-}
+  .projet-img {
+    width: 55vw;
+    height: 20vh;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+
+} 
 </style>
