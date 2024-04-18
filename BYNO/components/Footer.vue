@@ -54,8 +54,6 @@ export default {
 .footer {
   padding-left: 2rem;
   background-color: rgb(39, 38, 38);
-  margin-top: 7rem;
-  border-top: 2px solid purple;
 
 }
 

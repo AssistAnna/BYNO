@@ -12,7 +12,7 @@
             </div>
           </div>
       </div>
-      <div class="bloc">
+      <div class="bloc bloc2">
           <div class="title-text">
             <h3>Qualité sound design</h3>
             <p>Byno vous propose une qualité de sound design inégalée, surpassant toute possibilité offerte par les robots ou les algorithmes. Il répond à vos exigences avec une précision minutieuse, prenant en compte les moindes détails de votre demande.</p>
@@ -114,9 +114,25 @@ img {
     margin-left: 0.5rem;
 }
 
- /*
- display: grid;
-    grid-template-columns: repeat(2, 1fr);
- 
-  */
+/* version mobile */
+@media screen and (max-width: 900px) {
+  .bloc {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .bloc2 {
+    flex-direction: column-reverse;
+  }
+  .title-text {
+    padding-top: 1rem;
+    padding-left: 0;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+  }
+  
+}
 </style>

@@ -98,4 +98,14 @@ h3 {
   font-size: 1rem;
   margin-bottom: 3.5rem;
 }
+
+
+/* version mobile */
+@media screen and (max-width: 900px) {
+  .list-projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 </style>

@@ -6,6 +6,7 @@
     <AllProjects/>
     <h2 class="title-h2">Services</h2>
     <AllServices />
+  
   </div>
 </template>
 
@@ -82,7 +83,7 @@ box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31p
   align-items: center; 
 }
 .img-accueil {
-  height: 30rem;
+  height: 80vh;
   width: 100%;
   background-image: url('assets/img/8000x5500-ANNA.png');
   background-size: 100% 100%;
@@ -108,6 +109,24 @@ box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31p
     margin-bottom: 5rem;
     width: 35rem;
 
+}
+
+/* version mobile */
+@media screen and (max-width: 900px) {
+  .img-accueil {
+    height: 40vh;
+    margin-bottom: 0;
+  }
+  .text-presentation {
+    margin: 0 2rem;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+  }
+  .title-h2 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    width: 40vw;
+  }
 }
 
 </style>
