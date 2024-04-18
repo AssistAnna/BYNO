@@ -2,18 +2,16 @@
   <div class="retouches">
     <h2 class="title-h2">Retouches</h2>
     <h3>Donner un autre sens à la photographie</h3>
-    <div class="bloc-img1">
-      <div class="img1 box-shadow"></div>
-    </div>
+    <div class="img1 box-shadow"></div>
     <div class="bloc-img-text">
-        <div class="img2 box-shadow"></div>
-        <h4>Une simple image ou un simple regard peut communiquer une multitude de significations.</h4>
+      <div class="img2 box-shadow"></div>
+      <h4>Une simple image ou un simple regard peut communiquer une multitude de significations.</h4>
     </div>
     <div class="bloc3">
       <div class="img3 box-shadow"></div>
-      <div class="liste-photos">
-      </div>
+      <div class="liste-photos"></div>
     </div>
+    
 
   </div>
 </template>
@@ -39,19 +37,15 @@ h3 {
     font-size: 2rem;
     margin-bottom: 7rem;
 }
-.bloc-img1 {
-  display: flex;
-  width: 80%;
-  justify-content: center;
-  margin-bottom: 7rem;
-}
+
 .img1 {
     border-radius: 4px;
-    height: 26rem;
-    width: 100%;
+    height: 85vh;
+    width: 75%;
     background-repeat: no-repeat;
     background-image: url('assets/img/retouches-img1.JPG');
-    background-size: 100% 120%;
+    background-size: 100% 100%;
+    margin-bottom: 3rem;
   }
 
   .bloc-img-text {
@@ -64,8 +58,8 @@ h3 {
   }
   .img2 {
     border-radius: 4px;
-    height: 27rem;
-    width: 60%;
+    height: 85vh;
+    width: 60vw;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url('assets/img/retouches-img2.jpeg');
@@ -79,6 +73,34 @@ h3 {
     font-family: mpluslight;
     font-size: 1.3rem;
     margin-bottom: 4rem;
+  }
+
+  @media (min-width: 901px) and (max-width: 1350px) {
+    .img2 {
+      height: 55vh;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    h3 {
+      font-size: 1.5rem;
+      margin: 4rem;
+    }
+    .img1 {
+      width: 100%;
+      height: 40vh;
+    }
+    .bloc-img-text {
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+    h4 {
+      font-size: 1.5rem;
+    }
+    .img2 {
+      width: 100%;
+      height: 65vh;
+    }
   }
 
 </style>
