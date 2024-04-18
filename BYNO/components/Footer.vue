@@ -4,10 +4,7 @@
     <div class="bloc">
       <p class="text">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements. </p>
       <div class="liste-pages">
-        <nuxt-link to="/">Acceuil</nuxt-link>
-        <nuxt-link to="/">Services</nuxt-link>
-        <nuxt-link to="/">Production</nuxt-link>
-        <nuxt-link to="/">A propos</nuxt-link>
+        <nuxt-link  class="" v-for="(item,key) in menu" :key="key" :to="{name: item.url}"><h2>{{item.name}}</h2></nuxt-link>
       </div>
       <div class="bloc-contact">
         <nuxt-link to="/">Me contacter</nuxt-link>
@@ -23,6 +20,32 @@
 
 <script>
 export default {
+  data() {
+    return {
+      menu: [
+       {
+         url: "Services",
+         name: "Services"
+       },
+       {
+         url: "Productions",
+         name: "Productions"
+       },
+       {
+         url: "Retouches",
+         name: "Retouches"
+       },
+       {
+         url: "Apropos",
+         name: "A propos"
+       },
+       {
+         url: "Contact",
+         name: "Contact"
+       }
+     ]
+    }
+  }
 
 }
 </script>
@@ -31,7 +54,8 @@ export default {
 .footer {
   padding-left: 2rem;
   background-color: rgb(39, 38, 38);
-  padding-top: 2rem;
+  margin-top: 7rem;
+  border-top: 2px solid purple;
 
 }
 
@@ -61,16 +85,18 @@ export default {
   width: 18%;
   display: flex;
   flex-direction: column;
-  font-family: "mplusmedium";
-  font-size: 1rem;
+  
+}
+
+.liste-pages h2 {
+  font-family: "mplusthin";
+  font-size: 0.7rem;
+  margin: 0.3rem 0;
 }
 
 .bloc-contact a {
   font-family: "mplusmedium";
   font-size: 1.2rem;
-  
-
-  
 }
 
 .liste-socials {
@@ -88,6 +114,38 @@ export default {
 
 img {
   height: 2rem;
+}
+
+/* version mobile */
+@media screen and (max-width: 900px) {
+  .footer {
+    padding: 0 1rem;
+  }
+  .bloc {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-img {
+    background-position: center;
+  }
+  .liste-pages {
+    width: 100%;
+    align-items: center;
+    padding-bottom: 1rem;
+
+  }
+  
+  .text {
+    padding-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .bloc-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 }
 
 </style>

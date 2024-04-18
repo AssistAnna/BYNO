@@ -27,8 +27,8 @@ $screen-lg: 992px; // <= 1199 -> lg
 $screen-xl: 1200px; // <= -> xl
 $screen-xxl: 1440px; // <= -> xxl
 
- @media screen and (max-width: 1024px) {
-  ipad paysage
+ @media screen and (max-width: 880px) {
+  
     }
 
     @media screen and (max-width: 576px) {

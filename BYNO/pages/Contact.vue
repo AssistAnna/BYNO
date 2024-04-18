@@ -1,7 +1,7 @@
 <template>
   <div class="page-contact">
     <div class="bloc-title">
-      <img src="~assets/img/logo-byno-avececrit.png" alt="">
+      <img src="~assets/img/logo-byno-avececrit.png" alt="logo byno">
       <div class="soulignement"></div>
     </div>
     
