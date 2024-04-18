@@ -5,11 +5,15 @@
       <div class="img1"></div>
     </div>
     <div class="bloc-text">
-        <h3>Noé Chardon</h3>
-        <h4>entrepreneur passionné</h4>
-        <p>Passionné par la musique et la vidéo, mon objectif est de vous guider dans la conception de votre identité visuelle et dans le déploiement de votre communication sur les réseaux sociaux. Chaque projet que je réalise est conçu pour vous satisfaire et vous accompagner dans votre  développement.</p>
+      <h3>Noé Chardon</h3>
+      <h4>entrepreneur passionné</h4>
+      <p>Passionné par la musique et la vidéo, mon objectif est de vous guider dans la conception de votre identité visuelle et dans le déploiement de votre communication sur les réseaux sociaux. Chaque projet que je réalise est conçu pour vous satisfaire et vous accompagner dans votre  développement.</p>
     </div>
+    <!--
+ 
    <div class="img2"></div>
+    -->
+   
 
   </div>
 </template>
@@ -27,23 +31,6 @@ export default {
     flex-direction: column;
     align-items: center;
 
-  }
-  .bloc-title {
-    padding-top: 2rem;
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5rem;
-  }
-
-  h2 {
-    margin-bottom: 7rem;
-  }
-  .soulignement {
-    margin: 3rem 0 0 0;
-    width: 100%;
-    border-radius: 20%;
   }
 
 .bloc-img1 {
@@ -82,16 +69,37 @@ export default {
 
   }
   h4 {
-      text-align: center;
-      font-size: 1.7rem;
+    text-align: center;
+    font-size: 1.7rem;
   }
 
   p {
-      text-align: center;
-      font-family: mpluslight;
-      font-weight: bold;
+    text-align: center;
+    font-family: mpluslight;
+    font-weight: bold;
     font-size: 1.5rem;
-      width: 70%;
+    width: 70%;
+  }
+  @media (min-width: 901px) and (max-width: 1350px) {
+    
+  }
+
+  @media screen and (max-width: 900px) {
+    .img1 {
+      width: 100%;
+      height: 50vh;
+    }
+    .bloc-text h3 {
+      font-size: 2.5rem;
+    }
+    .bloc-text h4 {
+      font-size: 1.5rem;
+    }
+    .bloc-text p {
+      width: 85%;
+      font-size: 1.4rem;
+      margin-bottom: 4rem;
+    }
   }
   
 </style>

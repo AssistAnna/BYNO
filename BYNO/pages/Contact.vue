@@ -53,8 +53,8 @@ export default {
 
   }
   img {
-    height: 15rem;
-    width: 15rem;
+    height: 12rem;
+    width: 12rem;
   }
   .bloc-title {
     width: 55%;
@@ -72,7 +72,7 @@ export default {
     display: flex;
     flex-direction: column;
     margin: 4rem 0;
-    width: 35%;
+    width: 40vw;
   } 
 
   input {
@@ -118,5 +118,18 @@ export default {
     border-radius: 6px;
     background-color: #009FE3;
     color: white;
+  }
+  @media screen and (max-width: 900px) {
+    .formulaire {
+      width: 85vw;
+      margin: 0;
+    }
+    img {
+      height: 10rem;
+      width: 10rem;
+    }
+    .soulignement {
+      margin: 1.5rem 0;
+    }
   }
 </style>
