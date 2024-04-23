@@ -11,7 +11,7 @@
       <div class="img3 box-shadow"></div>
       <div class="liste-photos"></div>
     </div>
-    
+    <Carousel/>
 
   </div>
 </template>
@@ -53,7 +53,7 @@ h3 {
       align-items: center;
       justify-content: center;
       width: 80%;
-      margin-bottom: 7rem;
+      margin-bottom: 3rem;
 
   }
   .img2 {
@@ -61,7 +61,8 @@ h3 {
     height: 85vh;
     width: 60vw;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: contain;
+    background-position: center;
     background-image: url('assets/img/retouches-img2.jpeg');
     margin: 2rem;
    
@@ -75,13 +76,19 @@ h3 {
     margin-bottom: 4rem;
   }
 
-  @media (min-width: 901px) and (max-width: 1350px) {
+  @media (min-width: 821px) and (max-width: 1050px) {
+    .img1 {
+      height: 50vh
+    }
     .img2 {
       height: 55vh;
     }
+    .bloc-img-text {
+      margin-bottom: 0;
+    }
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 820px) {
     h3 {
       font-size: 1.5rem;
       margin: 4rem;
@@ -93,13 +100,14 @@ h3 {
     .bloc-img-text {
       flex-direction: column-reverse;
       width: 100%;
+      margin-bottom: 0;
     }
     h4 {
       font-size: 1.5rem;
     }
     .img2 {
       width: 100%;
-      height: 65vh;
+      height: 50vh;
     }
   }
 
