@@ -156,7 +156,7 @@ data() {
 
 
 /* version mobile */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
    .navBar {
        padding: 0;
    }
