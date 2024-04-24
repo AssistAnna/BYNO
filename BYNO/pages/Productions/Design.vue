@@ -4,16 +4,16 @@
         <p>Les pochettes de single ont été soigneusement conçues pour refléter le style adapté à l’artiste et au genre musical correspondant.</p>
 
         <div class="bloc-img">
-            <img src="~assets/img/design-img1.png" alt="">
-            <img src="~assets/img/design-img2.png" alt="">
+            <img src="~assets/img/design-img1.png" alt="image pochette album rose">
+            <img src="~assets/img/design-img2.png" alt="image pochette album design beige">
         </div>
         <div class="bloc-img wesh">
-            <img src="~assets/img/design-img3.png" alt="">
-            <img src="~assets/img/design-img4.png" alt="">
+            <img src="~assets/img/design-img3.png" alt="image pochette album otherside">
+            <img src="~assets/img/design-img4.png" alt="image pochette album loadjak">
         </div>
         <div class="bloc-img">
-            <img src="~assets/img/design-img5.png" alt="">
-            <img src="~assets/img/design-img6.png" alt="">
+            <img src="~assets/img/design-img5.png" alt="image pochette album superfly">
+            <img src="~assets/img/design-img6.png" alt="image pochette album I gotta love">
         </div>
     </div>
     </template>

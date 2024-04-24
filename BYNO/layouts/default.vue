@@ -1,7 +1,7 @@
 <template>
   <div class="all-site">
       <Navbar/>
-      <slot/>
+      <NuxtPage/>
       
       <Footer/>
      

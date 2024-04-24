@@ -1,6 +1,6 @@
 <template>
   <div class="page-index">
-    <div class="img-accueil"></div>
+    <GroupeImgAccueil/>
     <p class="text-presentation">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements.</p>
     <h2 class="title-h2">Projets</h2>
     <AllProjects/>
@@ -19,23 +19,6 @@ export default {
 </script>
 
 <style>
-/*
-$screen-ipad-paysage: 1024px; // 1024 -> Ipad paysage
-$screen-xs: 480px; // 480 à 767 -> XS
-$screen-sm: 576px; // <= 576 à 767 -> SM
-$screen-md: 768px; // <= 1199 -> MD -> Ipad portrait
-$screen-lg: 992px; // <= 1199 -> lg
-$screen-xl: 1200px; // <= -> xl
-$screen-xxl: 1440px; // <= -> xxl
-
- @media screen and (max-width: 880px) {
-  
-    }
-
-    @media screen and (max-width: 576px) {
-      screen sm
-    }
-*/
 @font-face {
   font-family: 'mplusblack';
   src: url('~/assets/fonts/MPLUS1p-Black.ttf') format('opentype'),
@@ -82,15 +65,7 @@ box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31p
   flex-direction: column;
   align-items: center; 
 }
-.img-accueil {
-  height: 80vh;
-  width: 100%;
-  background-image: url('assets/img/8000x5500-ANNA.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  margin-bottom: 3rem;
 
-}
 .text-presentation {
   margin: 0rem 10rem;
   font-size: 1.8rem;
@@ -114,8 +89,7 @@ box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31p
 /* version mobile */
 @media screen and (max-width: 900px) {
   .img-accueil {
-    height: 40vh;
-    margin-bottom: 0;
+    
   }
   .text-presentation {
     margin: 0 2rem;
