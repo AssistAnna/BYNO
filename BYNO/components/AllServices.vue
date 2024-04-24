@@ -21,16 +21,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  data () {
-   return {
-     isShown: false
-   }
- }
-}
-</script>
-
 <style scoped>
 .all-services {
     display: flex;
