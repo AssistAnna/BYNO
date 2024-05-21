@@ -1,19 +1,19 @@
 <template>
   <div class="all-services">
-      <div class="bloc">
-          <img src="~assets/img/service-img-bloc1.jpg" alt="image vaisseau spatial" class="img-bloc">
+      <div class="bloc" data-aos="fade-right">
+          <img src="/static/img/service-img-bloc1.jpg" alt="image vaisseau spatial" class="img-bloc">
           <div class="title-text">
             <h3>Notre approche</h3>
             <p>Byno est un studio spécialisé dans la production audiovisuelle et sonore, offrant une approche collaborative pour la réalisation de vidéos. Chaque projet est traité avec une attention particulière, car il porte en lui son message néessitant ainsi une approche personnalisée.</p>
           </div>
       </div>
-      <div class="bloc bloc2">
-        <img src="~assets/img/service-img-bloc2.jpg" alt="image vaisseau spatial" class="img-bloc img-special">
+      <div class="bloc bloc2" data-aos="fade-left">
+        <img src="/static/img/service-img-bloc2.jpg" alt="image vaisseau spatial" class="img-bloc img-special">
           <div class="title-text">
             <h3>Qualité sound design</h3>
             <p>Byno vous propose une qualité de sound design inégalée, surpassant toute possibilité offerte par les robots ou les algorithmes. Il répond à vos exigences avec une précision minutieuse, prenant en compte les moindes détails de votre demande.</p>
           </div>
-          <img src="~assets/img/service-img-bloc2.jpg" alt="image vaisseau spatial" class="img-bloc img2">
+          <img src="/static/img/service-img-bloc2.jpg" alt="image vaisseau spatial" class="img-bloc img2">
 
       </div>
       
@@ -26,6 +26,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+
 }
 .bloc {
     width: 70%;
@@ -111,7 +113,8 @@ p {
   p {
     text-align: center;
     font-size: 1.3rem;
-    padding: 1rem;
+    padding: 0;
+    margin: 1.5rem;
   }
   .img-bloc {
     width: 100vw;

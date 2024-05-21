@@ -1,0 +1,214 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/CardServices.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <div class=\"all\">\r\n    <div class=\"cards-bloc\">\r\n        <div class=\"card box-shadow\" v-for=\"(card,key) in cards\" :key=\"key\" >\r\n          <div class=\"card-icon\" :style=\"' background-image: url(' + card.iconUrl + ')'\"></div>\r\n          <div class=\"liste-text\">\r\n              <p>{{card.text1}}</p>\r\n              <p>{{card.text2}}</p>\r\n              <p>{{card.text3}}</p>\r\n              <p>{{card.text4}}</p>\r\n          </div>\r\n        </div>\r\n    </div>\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\ndata() {\r\n    return{\r\n       cards: [\r\n         {\r\n           id: 0,  \r\n           iconUrl: \"_nuxt/assets/icon/services1.png\",\r\n           text1: \"Relation client\",\r\n           text2: \"Devis\",\r\n           text3: \"Organisation du planning\",\r\n           text4: \"Accompagnement jusqu'à la diffusion\",\r\n         },\r\n         {\r\n           id: 1,  \r\n           iconUrl: \"_nuxt/assets/icon/services3.png\",\r\n           text1: \"Brainstorming\",\r\n           text2: \"Script / Scénario\",\r\n           text3: \"Note d'intention\",\r\n           text4: \"Repérages\",\r\n         },\r\n         {\r\n           id: 2,  \r\n           iconUrl: \"_nuxt/assets/icon/services2.png\",\r\n           text1: \"Tournage / Montage\",\r\n           text2: \"Animation / Motion design\",\r\n           text3: \"Voix off / Enregistrement\",\r\n           text4: \"Mixage / Mastering\",\r\n         },\r\n         {\r\n           id: 3,  \r\n           iconUrl: \"_nuxt/assets/icon/services4.png\",\r\n           text1: \"Encodage tous supports\",\r\n           text2: \"Envoi des fichiers dématerialisés\",\r\n           text3: \"\",\r\n           text4: \"\",\r\n         },\r\n\r\n         \r\n         \r\n       ]\r\n    }\r\n  },\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n  .cards-bloc {\r\n      display: grid;\r\n      grid-template-columns: repeat(2, 1fr);\r\n      margin-bottom: 5rem;\r\n      width: 100%;\r\n      \r\n  }\r\n\r\n  .card {\r\n    height: 13rem;\r\n    width: 13rem;\r\n    margin: 0.6rem; \r\n    padding: 1.4rem;\r\n    background-color: rgba(71, 70, 70, 0.404);\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    border-radius: 6px;\r\n    border: 0.1px solid rgba(0, 159, 227, 0.349);\r\n    transition: 0.4s ease-in-out;\r\n  }\r\n  .card:hover {\r\n    transition: all 0.4s ease-in-out;\r\n    transform: scale(1.04);\r\n    border: 0.1px solid rgba(0, 159, 227, 0.973); \r\n  }\r\n  .card-icon {\r\n      height: 6rem;\r\n      width: 3rem;\r\n      background-repeat: no-repeat;\r\n      background-size: 100%;\r\n  }\r\n  .liste-text {\r\n    width: 100%;\r\n  }\r\n  p {\r\n      font-size: 0.7rem;\r\n      font-family: mpluslight;\r\n      font-weight: bold;\r\n      text-align: center;\r\n      line-height: 1rem;\r\n  }\r\n\r\n  /* version mobile */\r\n@media screen and (max-width: 900px) {\r\n    \r\n    .card {\r\n      border: 0.1px solid rgba(0, 159, 227, 0.973); \r\n    }\r\n    .card-icon {\r\n      height: 3rem;\r\n    }\r\n    .liste-text {\r\n      padding-top: 1.2rem;\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 700px) {\r\n  .cards-bloc {\r\n      display: flex;\r\n      flex-direction: column;\r\n    }\r\n}\r\n\r\n\r\n</style>",
+      "start": 1716302281380,
+      "end": 1716302281524,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302281524,
+      "end": 1716302281524,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302281524,
+      "end": 1716302281524,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1716302281524,
+      "end": 1716302281524,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1716302281524,
+      "end": 1716302281524,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1716302281524,
+      "end": 1716302281524,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1716302281524,
+      "end": 1716302281524,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1716302281525,
+      "end": 1716302281525,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\nconst _sfc_main = {\r\ndata() {\r\n    return{\r\n       cards: [\r\n         {\r\n           id: 0,  \r\n           iconUrl: \"_nuxt/assets/icon/services1.png\",\r\n           text1: \"Relation client\",\r\n           text2: \"Devis\",\r\n           text3: \"Organisation du planning\",\r\n           text4: \"Accompagnement jusqu'à la diffusion\",\r\n         },\r\n         {\r\n           id: 1,  \r\n           iconUrl: \"_nuxt/assets/icon/services3.png\",\r\n           text1: \"Brainstorming\",\r\n           text2: \"Script / Scénario\",\r\n           text3: \"Note d'intention\",\r\n           text4: \"Repérages\",\r\n         },\r\n         {\r\n           id: 2,  \r\n           iconUrl: \"_nuxt/assets/icon/services2.png\",\r\n           text1: \"Tournage / Montage\",\r\n           text2: \"Animation / Motion design\",\r\n           text3: \"Voix off / Enregistrement\",\r\n           text4: \"Mixage / Mastering\",\r\n         },\r\n         {\r\n           id: 3,  \r\n           iconUrl: \"_nuxt/assets/icon/services4.png\",\r\n           text1: \"Encodage tous supports\",\r\n           text2: \"Envoi des fichiers dématerialisés\",\r\n           text3: \"\",\r\n           text4: \"\",\r\n         },\r\n\r\n         \r\n         \r\n       ]\r\n    }\r\n  },\r\n}\r\n\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, normalizeStyle as _normalizeStyle, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-750117d9\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"all\" }\nconst _hoisted_2 = { class: \"cards-bloc\" }\nconst _hoisted_3 = { class: \"liste-text\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($data.cards, (card, key) => {\n        return (_openBlock(), _createElementBlock(\"div\", {\n          class: \"card box-shadow\",\n          key: key\n        }, [\n          _createElementVNode(\"div\", {\n            class: \"card-icon\",\n            style: _normalizeStyle(' background-image: url(' + card.iconUrl + ')')\n          }, null, 4),\n          _createElementVNode(\"div\", _hoisted_3, [\n            _createElementVNode(\"p\", null, _toDisplayString(card.text1), 1),\n            _createElementVNode(\"p\", null, _toDisplayString(card.text2), 1),\n            _createElementVNode(\"p\", null, _toDisplayString(card.text3), 1),\n            _createElementVNode(\"p\", null, _toDisplayString(card.text4), 1)\n          ])\n        ]))\n      }), 128))\n    ])\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/CardServices.vue?vue&type=style&index=0&scoped=750117d9&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-750117d9\"]])",
+      "start": 1716302281525,
+      "end": 1716302281528,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302281528,
+      "end": 1716302281528,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302281528,
+      "end": 1716302281529,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302281529,
+      "end": 1716302281529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302281529,
+      "end": 1716302281529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1716302281529,
+      "end": 1716302281529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1716302281529,
+      "end": 1716302281529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1716302281529,
+      "end": 1716302281529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1716302281529,
+      "end": 1716302281529,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1716302281529,
+      "end": 1716302281529,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716302281529,
+      "end": 1716302281529,
+      "order": "normal"
+    }
+  ]
+}

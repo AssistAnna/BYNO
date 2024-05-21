@@ -18,12 +18,12 @@ export default {
        projets: [
          {
            name: "Musique",
-           imgUrl: '_nuxt/assets/img/exemples/projet-1.jpg',
+           imgUrl: '_nuxt/static/img/exemples/projet-1.jpg',
            projetUrl: "Productions/musique"
          },
          {
            name: "Design",
-           imgUrl: '_nuxt/assets/img/exemples/projet-3.jpg',
+           imgUrl: '_nuxt/static/img/exemples/projet-3.jpg',
            projetUrl: "Productions/Design"
          }
         

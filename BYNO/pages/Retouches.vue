@@ -1,11 +1,11 @@
 <template>
   <div class="retouches">
-    <h2 class="title-h2">Retouches</h2>
-    <h3>Donner un autre sens à la photographie</h3>
-    <div class="img1 box-shadow"></div>
+    <h2 class="title-h2"  data-aos="fade-up">Retouches</h2>
+    <h3  data-aos="fade-up">Donner un autre sens à la photographie</h3>
+    <div class="img1 box-shadow" data-aos="fade-up"></div>
     <div class="bloc-img-text">
-      <div class="img2 box-shadow"></div>
-      <h4>Une simple image ou un simple regard peut communiquer une multitude de significations.</h4>
+      <div class="img2 box-shadow" data-aos="fade-right"></div>
+      <h4 data-aos="fade-left">Une simple image ou un simple regard peut communiquer une multitude de significations.</h4>
     </div>
     <div class="bloc3">
       <div class="img3 box-shadow"></div>
@@ -43,7 +43,7 @@ h3 {
     height: 85vh;
     width: 75%;
     background-repeat: no-repeat;
-    background-image: url('assets/img/retouches-img1.JPG');
+    background-image: url('/static/img/retouches-img1.JPG');
     background-size: 100% 100%;
     margin-bottom: 3rem;
   }
@@ -63,7 +63,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url('assets/img/retouches-img2.jpeg');
+    background-image: url('/static/img/retouches-img2.jpeg');
     margin: 2rem;
    
 

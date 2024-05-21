@@ -22,6 +22,7 @@ body {
   height: 30rem;
   background-color: black;
 
+
 }
 .all-site {
   background-color: black;

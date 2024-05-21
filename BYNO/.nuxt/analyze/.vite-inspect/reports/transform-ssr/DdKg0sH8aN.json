@@ -1,0 +1,288 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Navbar.vue?vue&type=style&index=0&scoped=ea01ea4f&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\n* {\r\n   margin: 0;\r\n   padding: 0;\r\n   text-decoration: none;\r\n   list-style: none;\r\n   \r\n}\r\n\r\n.navBar {\r\n   font-family: mplusbold;\r\n   position: fixed;\r\n   z-index: 100;\r\n   top: 0;\r\n   display: flex;\r\n   align-items: center;\r\n   justify-content: space-between;\r\n   width: 100vw;\r\n   box-sizing: border-box;\r\n   background-color: rgb(39, 38, 38);\r\n\r\n}\r\n.navBar a {\r\n   color: white;\r\n}\r\n\r\n.logo-img {\r\n   background-image: url('assets/img/logo-byno.png');\r\n   height: 5rem;\r\n   width: 5rem;\r\n   background-size: contain;\r\n   background-repeat: no-repeat;\r\n}\r\n\r\n.liste-onglets {\r\n   display: flex;\r\n}\r\n\r\n.liste-onglets .router-link-exact-active {\r\n color: #009FE3;\r\n border-bottom: 1px solid #009FE3;\r\n}\r\n\r\n.liste-onglets img {\r\n   display: none;\r\n}\r\n\r\n.liste-onglets a {\r\n   margin: 0 1rem;\r\n   font-size: 0.6rem;\r\n}\r\n\r\n.liste-onglets a.active {\r\n   color: #009FE3;\r\n   font-size: 0.8rem;\r\n} \r\n\r\n.liste-socials {\r\n    padding-right: 1.5rem;\r\n}\r\n\r\n.liste-socials img {\r\n margin-right: 0.5rem;\r\n height: 2rem;\r\n}\r\n\r\n.menu-burger {\r\n   display: none;\r\n   height: 2.5rem;\r\n   width: 2.5rem;\r\n   position: absolute;\r\n   right: 12vw;\r\n   animation: fadeInAnimation ease 0.4s;\r\n   animation-iteration-count: 1;\r\n   animation-fill-mode: forwards;\r\n}\r\n\r\n.cross {\r\n   height: 3rem;\r\n   width: 3rem;\r\n   animation: fadeInAnimation ease 0.4s;\r\n   animation-iteration-count: 1;\r\n   animation-fill-mode: forwards;\r\n}\r\n\r\n@keyframes fadeInAnimation {\r\n   0% {\r\n       opacity: 0;\r\n   }\r\n\r\n   100% {\r\n       opacity: 1;\r\n   }\r\n}\r\n\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 800px) {\r\n   .navBar {\r\n       padding: 0;\r\n   }\r\n   .menu-burger{\r\n       display: block;\r\n   }\r\n   \r\n   .liste-socials {\r\n       display: none;\r\n   }\r\n   .liste-onglets img {\r\n       width: 45vw;\r\n       margin-bottom: 3rem;\r\n       display: block;\r\n   }\r\n   .liste-onglets {\r\n       top: 0;\r\n       left: 0;\r\n       position: absolute;\r\n       display: flex;\r\n       justify-content: center;\r\n       align-items: center;\r\n       flex-direction: column;\r\n       background-color: rgba(255, 255, 255, 0.281);\r\n       backdrop-filter: blur(7px);\r\n       width: 100%;\r\n       height: 100vh;\r\n       margin-left: -100% ;\r\n       transition: all 0.4s ease;\r\n\r\n   }\r\n   .active2 {\r\n       margin-left: 0;\r\n   }\r\n   .liste-onglets a {\r\n       margin: 0.6rem 1rem;\r\n       font-size: 1.1rem;\r\n   }\r\n}\r\n\r\n",
+      "start": 1716302284219,
+      "end": 1716302284219,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Navbar.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Navbar.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\r\n  <nav class=\"navBar\">\r\n   <nuxt-link class=\"logo\" to=\"/\"><div class=\"logo-img\"></div></nuxt-link>\r\n   <div class=\"liste-onglets\" :class=\"{ 'active2': showMobileMenu }\">\r\n       <img src=\"~assets/img/logo-byno-avececrit.png\" alt=\"logo design byno\">\r\n       <nuxt-link v-for=\"(item,key) in menu\" :key=\"key\" :to=\"{name: item.url}\"><h2>{{item.name}}</h2></nuxt-link></div>\r\n   <div class=\"liste-socials\">\r\n       \r\n       <nuxt-link to=\"/\"><img src=\"~assets/icon/icon-instagram.png\" alt=\"logo instagram\"></nuxt-link>\r\n       <nuxt-link to=\"/\"><img src=\"~assets/icon/icon-linkedin.png\" alt=\"logo linkedin\"></nuxt-link>\r\n       <nuxt-link to=\"/\"><img src=\"~assets/icon/icon-youtube.png\" alt=\"logo youtube\"></nuxt-link>\r\n   </div>\r\n   <img v-show=\"!showMobileMenu\" @click=\"toggleMenu\" class=\"menu-burger\" src=\"~assets/icon/menu-burger.png\" alt=\"open menu\">\r\n   <img v-show=\"showMobileMenu\" @click=\"toggleMenu\" class=\"cross menu-burger\" src=\"~assets/icon/cross-menu-burger.png\" alt=\"close menu\">\r\n  </nav>\r\n</template>\r\n \r\n<script>\r\nexport default {\r\nwatch: {\r\n   '$route' () {\r\n       this.showMobileMenu = false;\r\n   }\r\n},\r\ndata() {\r\n   return {\r\n       showMobileMenu: false,\r\n       menu: [\r\n       {\r\n         url: \"Services\",\r\n         name: \"Services\"\r\n       },\r\n       {\r\n         url: \"Productions\",\r\n         name: \"Productions\"\r\n       },\r\n       {\r\n         url: \"Retouches\",\r\n         name: \"Retouches\"\r\n       },\r\n       {\r\n         url: \"Apropos\",\r\n         name: \"A propos\"\r\n       },\r\n       {\r\n         url: \"Contact\",\r\n         name: \"Contact\"\r\n       }\r\n     ]\r\n   }\r\n   },\r\n   methods: {\r\n       toggleMenu() {\r\n           this.showMobileMenu = !this.showMobileMenu;\r\n           console.log('isToggled : ' + this.showMobileMenu)\r\n       }\r\n       \r\n   }\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n* {\r\n   margin: 0;\r\n   padding: 0;\r\n   text-decoration: none;\r\n   list-style: none;\r\n   \r\n}\r\n\r\n.navBar {\r\n   font-family: mplusbold;\r\n   position: fixed;\r\n   z-index: 100;\r\n   top: 0;\r\n   display: flex;\r\n   align-items: center;\r\n   justify-content: space-between;\r\n   width: 100vw;\r\n   box-sizing: border-box;\r\n   background-color: rgb(39, 38, 38);\r\n\r\n}\r\n.navBar a {\r\n   color: white;\r\n}\r\n\r\n.logo-img {\r\n   background-image: url('assets/img/logo-byno.png');\r\n   height: 5rem;\r\n   width: 5rem;\r\n   background-size: contain;\r\n   background-repeat: no-repeat;\r\n}\r\n\r\n.liste-onglets {\r\n   display: flex;\r\n}\r\n\r\n.liste-onglets .router-link-exact-active {\r\n color: #009FE3;\r\n border-bottom: 1px solid #009FE3;\r\n}\r\n\r\n.liste-onglets img {\r\n   display: none;\r\n}\r\n\r\n.liste-onglets a {\r\n   margin: 0 1rem;\r\n   font-size: 0.6rem;\r\n}\r\n\r\n.liste-onglets a.active {\r\n   color: #009FE3;\r\n   font-size: 0.8rem;\r\n} \r\n\r\n.liste-socials {\r\n    padding-right: 1.5rem;\r\n}\r\n\r\n.liste-socials img {\r\n margin-right: 0.5rem;\r\n height: 2rem;\r\n}\r\n\r\n.menu-burger {\r\n   display: none;\r\n   height: 2.5rem;\r\n   width: 2.5rem;\r\n   position: absolute;\r\n   right: 12vw;\r\n   animation: fadeInAnimation ease 0.4s;\r\n   animation-iteration-count: 1;\r\n   animation-fill-mode: forwards;\r\n}\r\n\r\n.cross {\r\n   height: 3rem;\r\n   width: 3rem;\r\n   animation: fadeInAnimation ease 0.4s;\r\n   animation-iteration-count: 1;\r\n   animation-fill-mode: forwards;\r\n}\r\n\r\n@keyframes fadeInAnimation {\r\n   0% {\r\n       opacity: 0;\r\n   }\r\n\r\n   100% {\r\n       opacity: 1;\r\n   }\r\n}\r\n\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 800px) {\r\n   .navBar {\r\n       padding: 0;\r\n   }\r\n   .menu-burger{\r\n       display: block;\r\n   }\r\n   \r\n   .liste-socials {\r\n       display: none;\r\n   }\r\n   .liste-onglets img {\r\n       width: 45vw;\r\n       margin-bottom: 3rem;\r\n       display: block;\r\n   }\r\n   .liste-onglets {\r\n       top: 0;\r\n       left: 0;\r\n       position: absolute;\r\n       display: flex;\r\n       justify-content: center;\r\n       align-items: center;\r\n       flex-direction: column;\r\n       background-color: rgba(255, 255, 255, 0.281);\r\n       backdrop-filter: blur(7px);\r\n       width: 100%;\r\n       height: 100vh;\r\n       margin-left: -100% ;\r\n       transition: all 0.4s ease;\r\n\r\n   }\r\n   .active2 {\r\n       margin-left: 0;\r\n   }\r\n   .liste-onglets a {\r\n       margin: 0.6rem 1rem;\r\n       font-size: 1.1rem;\r\n   }\r\n}\r\n\r\n</style>\r\n \r\n "
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302284220,
+      "end": 1716302284220,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302284220,
+      "end": 1716302284220,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302284220,
+      "end": 1716302284220,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302284220,
+      "end": 1716302284220,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1716302284220,
+      "end": 1716302284220,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "*{list-style:none;margin:0;padding:0;text-decoration:none}.navBar{align-items:center;background-color:#272626;box-sizing:border-box;display:flex;font-family:mplusbold;justify-content:space-between;position:fixed;top:0;width:100vw;z-index:100}.navBar a{color:#fff}.logo-img{background-image:url(__VITE_ASSET__bnNK3AWl__);background-repeat:no-repeat;background-size:contain;height:5rem;width:5rem}.liste-onglets{display:flex}.liste-onglets .router-link-exact-active{border-bottom:1px solid #009fe3;color:#009fe3}.liste-onglets img{display:none}.liste-onglets a{font-size:.6rem;margin:0 1rem}.liste-onglets a.active{color:#009fe3;font-size:.8rem}.liste-socials{padding-right:1.5rem}.liste-socials img{height:2rem;margin-right:.5rem}.menu-burger{display:none;height:2.5rem;position:absolute;right:12vw;width:2.5rem}.cross,.menu-burger{animation:fadeInAnimation .4s ease;animation-fill-mode:forwards;animation-iteration-count:1}.cross{height:3rem;width:3rem}@keyframes fadeInAnimation{0%{opacity:0}to{opacity:1}}@media screen and (max-width:800px){.navBar{padding:0}.menu-burger{display:block}.liste-socials{display:none}.liste-onglets img{display:block;margin-bottom:3rem;width:45vw}.liste-onglets{align-items:center;-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);background-color:hsla(0,0%,100%,.281);display:flex;flex-direction:column;height:100vh;justify-content:center;left:0;margin-left:-100%;position:absolute;top:0;transition:all .4s ease;width:100%}.active2{margin-left:0}.liste-onglets a{font-size:1.1rem;margin:.6rem 1rem}}",
+      "start": 1716302284220,
+      "end": 1716302284263,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Navbar.vue",
+        "mappings": "AACA,EAIG,eAAgB,CAHhB,QAAS,CACT,SAAU,CACV,oBAGH,CAEA,QAMG,kBAAmB,CAInB,wBAAiC,CADjC,qBAAsB,CAJtB,YAAa,CAJb,qBAAsB,CAMtB,6BAA8B,CAL9B,cAAe,CAEf,KAAM,CAIN,WAAY,CALZ,WASH,CACA,UACG,UACH,CAEA,UACG,8CAAiD,CAIjD,2BAA4B,CAD5B,uBAAwB,CAFxB,WAAY,CACZ,UAGH,CAEA,eACG,YACH,CAEA,yCAEC,+BAAgC,CADhC,aAED,CAEA,mBACG,YACH,CAEA,iBAEG,eAAiB,CADjB,aAEH,CAEA,wBACG,aAAc,CACd,eACH,CAEA,eACI,oBACJ,CAEA,mBAEC,WAAY,CADZ,kBAED,CAEA,aACG,YAAa,CACb,aAAc,CAEd,iBAAkB,CAClB,UAAW,CAFX,YAMH,CAEA,oBALG,kCAAoC,CAEpC,4BAA6B,CAD7B,2BAUH,CANA,OACG,WAAY,CACZ,UAIH,CAEA,2BACG,GACI,SACJ,CAEA,GACI,SACJ,CACH,CAIA,oCACG,QACI,SACJ,CACA,aACI,aACJ,CAEA,eACI,YACJ,CACA,mBAGI,aAAc,CADd,kBAAmB,CADnB,UAGJ,CACA,eAMI,kBAAmB,CAGnB,iCAA0B,CAA1B,yBAA0B,CAD1B,qCAA4C,CAJ5C,YAAa,CAGb,qBAAsB,CAItB,YAAa,CANb,sBAAuB,CAHvB,MAAO,CAUP,iBAAmB,CATnB,iBAAkB,CAFlB,KAAM,CAYN,uBAAyB,CAHzB,UAKJ,CACA,SACI,aACJ,CACA,iBAEI,gBAAiB,CADjB,iBAEJ,CACH",
+        "names": [],
+        "sources": [
+          "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Navbar.vue"
+        ],
+        "sourcesContent": [
+          "\r\n* {\r\n   margin: 0;\r\n   padding: 0;\r\n   text-decoration: none;\r\n   list-style: none;\r\n   \r\n}\r\n\r\n.navBar {\r\n   font-family: mplusbold;\r\n   position: fixed;\r\n   z-index: 100;\r\n   top: 0;\r\n   display: flex;\r\n   align-items: center;\r\n   justify-content: space-between;\r\n   width: 100vw;\r\n   box-sizing: border-box;\r\n   background-color: rgb(39, 38, 38);\r\n\r\n}\r\n.navBar a {\r\n   color: white;\r\n}\r\n\r\n.logo-img {\r\n   background-image: url('assets/img/logo-byno.png');\r\n   height: 5rem;\r\n   width: 5rem;\r\n   background-size: contain;\r\n   background-repeat: no-repeat;\r\n}\r\n\r\n.liste-onglets {\r\n   display: flex;\r\n}\r\n\r\n.liste-onglets .router-link-exact-active {\r\n color: #009FE3;\r\n border-bottom: 1px solid #009FE3;\r\n}\r\n\r\n.liste-onglets img {\r\n   display: none;\r\n}\r\n\r\n.liste-onglets a {\r\n   margin: 0 1rem;\r\n   font-size: 0.6rem;\r\n}\r\n\r\n.liste-onglets a.active {\r\n   color: #009FE3;\r\n   font-size: 0.8rem;\r\n} \r\n\r\n.liste-socials {\r\n    padding-right: 1.5rem;\r\n}\r\n\r\n.liste-socials img {\r\n margin-right: 0.5rem;\r\n height: 2rem;\r\n}\r\n\r\n.menu-burger {\r\n   display: none;\r\n   height: 2.5rem;\r\n   width: 2.5rem;\r\n   position: absolute;\r\n   right: 12vw;\r\n   animation: fadeInAnimation ease 0.4s;\r\n   animation-iteration-count: 1;\r\n   animation-fill-mode: forwards;\r\n}\r\n\r\n.cross {\r\n   height: 3rem;\r\n   width: 3rem;\r\n   animation: fadeInAnimation ease 0.4s;\r\n   animation-iteration-count: 1;\r\n   animation-fill-mode: forwards;\r\n}\r\n\r\n@keyframes fadeInAnimation {\r\n   0% {\r\n       opacity: 0;\r\n   }\r\n\r\n   100% {\r\n       opacity: 1;\r\n   }\r\n}\r\n\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 800px) {\r\n   .navBar {\r\n       padding: 0;\r\n   }\r\n   .menu-burger{\r\n       display: block;\r\n   }\r\n   \r\n   .liste-socials {\r\n       display: none;\r\n   }\r\n   .liste-onglets img {\r\n       width: 45vw;\r\n       margin-bottom: 3rem;\r\n       display: block;\r\n   }\r\n   .liste-onglets {\r\n       top: 0;\r\n       left: 0;\r\n       position: absolute;\r\n       display: flex;\r\n       justify-content: center;\r\n       align-items: center;\r\n       flex-direction: column;\r\n       background-color: rgba(255, 255, 255, 0.281);\r\n       backdrop-filter: blur(7px);\r\n       width: 100%;\r\n       height: 100vh;\r\n       margin-left: -100% ;\r\n       transition: all 0.4s ease;\r\n\r\n   }\r\n   .active2 {\r\n       margin-left: 0;\r\n   }\r\n   .liste-onglets a {\r\n       margin: 0.6rem 1rem;\r\n       font-size: 1.1rem;\r\n   }\r\n}\r\n\r\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1716302284263,
+      "end": 1716302284263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1716302284263,
+      "end": 1716302284263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1716302284263,
+      "end": 1716302284263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "*[data-v-ea01ea4f]{list-style:none;margin:0;padding:0;text-decoration:none}.navBar[data-v-ea01ea4f]{align-items:center;background-color:#272626;box-sizing:border-box;display:flex;font-family:mplusbold;justify-content:space-between;position:fixed;top:0;width:100vw;z-index:100}.navBar a[data-v-ea01ea4f]{color:#fff}.logo-img[data-v-ea01ea4f]{background-image:url(__VITE_ASSET__bnNK3AWl__);background-repeat:no-repeat;background-size:contain;height:5rem;width:5rem}.liste-onglets[data-v-ea01ea4f]{display:flex}.liste-onglets .router-link-exact-active[data-v-ea01ea4f]{border-bottom:1px solid #009fe3;color:#009fe3}.liste-onglets img[data-v-ea01ea4f]{display:none}.liste-onglets a[data-v-ea01ea4f]{font-size:.6rem;margin:0 1rem}.liste-onglets a.active[data-v-ea01ea4f]{color:#009fe3;font-size:.8rem}.liste-socials[data-v-ea01ea4f]{padding-right:1.5rem}.liste-socials img[data-v-ea01ea4f]{height:2rem;margin-right:.5rem}.menu-burger[data-v-ea01ea4f]{display:none;height:2.5rem;position:absolute;right:12vw;width:2.5rem}.cross[data-v-ea01ea4f],.menu-burger[data-v-ea01ea4f]{animation:fadeInAnimation-ea01ea4f .4s ease;animation-fill-mode:forwards;animation-iteration-count:1}.cross[data-v-ea01ea4f]{height:3rem;width:3rem}@keyframes fadeInAnimation-ea01ea4f{0%{opacity:0}to{opacity:1}}@media screen and (max-width:800px){.navBar[data-v-ea01ea4f]{padding:0}.menu-burger[data-v-ea01ea4f]{display:block}.liste-socials[data-v-ea01ea4f]{display:none}.liste-onglets img[data-v-ea01ea4f]{display:block;margin-bottom:3rem;width:45vw}.liste-onglets[data-v-ea01ea4f]{align-items:center;-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);background-color:hsla(0,0%,100%,.281);display:flex;flex-direction:column;height:100vh;justify-content:center;left:0;margin-left:-100%;position:absolute;top:0;transition:all .4s ease;width:100%}.active2[data-v-ea01ea4f]{margin-left:0}.liste-onglets a[data-v-ea01ea4f]{font-size:1.1rem;margin:.6rem 1rem}}",
+      "start": 1716302284263,
+      "end": 1716302284265,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Navbar.vue",
+        "mappings": "AAAA,mBAAE,eAAe,CAAC,QAAQ,CAAC,SAAS,CAAC,oBAAoB,CAAC,yBAAQ,kBAAkB,CAAC,wBAAwB,CAAC,qBAAqB,CAAC,YAAY,CAAC,qBAAqB,CAAC,6BAA6B,CAAC,cAAc,CAAC,KAAK,CAAC,WAAW,CAAC,WAAW,CAAC,2BAAU,UAAU,CAAC,2BAAU,8CAA8C,CAAC,2BAA2B,CAAC,uBAAuB,CAAC,WAAW,CAAC,UAAU,CAAC,gCAAe,YAAY,CAAC,0DAAyC,+BAA+B,CAAC,aAAa,CAAC,oCAAmB,YAAY,CAAC,kCAAiB,eAAe,CAAC,aAAa,CAAC,yCAAwB,aAAa,CAAC,eAAe,CAAC,gCAAe,oBAAoB,CAAC,oCAAmB,WAAW,CAAC,kBAAkB,CAAC,8BAAa,YAAY,CAAC,aAAa,CAAC,iBAAiB,CAAC,UAAU,CAAC,YAAY,CAAC,sDAAoB,2CAAkC,CAAC,4BAA4B,CAAC,2BAA2B,CAAC,wBAAO,WAAW,CAAC,UAAU,CAAC,oCAA2B,GAAG,SAAS,CAAC,GAAG,SAAS,CAAC,CAAC,oCAAoC,yBAAQ,SAAS,CAAC,8BAAa,aAAa,CAAC,gCAAe,YAAY,CAAC,oCAAmB,aAAa,CAAC,kBAAkB,CAAC,UAAU,CAAC,gCAAe,kBAAkB,CAAC,iCAAiC,CAAC,yBAAyB,CAAC,qCAAqC,CAAC,YAAY,CAAC,qBAAqB,CAAC,YAAY,CAAC,sBAAsB,CAAC,MAAM,CAAC,iBAAiB,CAAC,iBAAiB,CAAC,KAAK,CAAC,uBAAuB,CAAC,UAAU,CAAC,0BAAS,aAAa,CAAC,kCAAiB,gBAAgB,CAAC,iBAAiB,CAAC",
+        "names": [],
+        "sources": [
+          "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Navbar.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1716302284265,
+      "end": 1716302284265,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302284265,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302284265,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \"*[data-v-ea01ea4f]{list-style:none;margin:0;padding:0;text-decoration:none}.navBar[data-v-ea01ea4f]{align-items:center;background-color:#272626;box-sizing:border-box;display:flex;font-family:mplusbold;justify-content:space-between;position:fixed;top:0;width:100vw;z-index:100}.navBar a[data-v-ea01ea4f]{color:#fff}.logo-img[data-v-ea01ea4f]{background-image:url(__VITE_ASSET__bnNK3AWl__);background-repeat:no-repeat;background-size:contain;height:5rem;width:5rem}.liste-onglets[data-v-ea01ea4f]{display:flex}.liste-onglets .router-link-exact-active[data-v-ea01ea4f]{border-bottom:1px solid #009fe3;color:#009fe3}.liste-onglets img[data-v-ea01ea4f]{display:none}.liste-onglets a[data-v-ea01ea4f]{font-size:.6rem;margin:0 1rem}.liste-onglets a.active[data-v-ea01ea4f]{color:#009fe3;font-size:.8rem}.liste-socials[data-v-ea01ea4f]{padding-right:1.5rem}.liste-socials img[data-v-ea01ea4f]{height:2rem;margin-right:.5rem}.menu-burger[data-v-ea01ea4f]{display:none;height:2.5rem;position:absolute;right:12vw;width:2.5rem}.cross[data-v-ea01ea4f],.menu-burger[data-v-ea01ea4f]{animation:fadeInAnimation-ea01ea4f .4s ease;animation-fill-mode:forwards;animation-iteration-count:1}.cross[data-v-ea01ea4f]{height:3rem;width:3rem}@keyframes fadeInAnimation-ea01ea4f{0%{opacity:0}to{opacity:1}}@media screen and (max-width:800px){.navBar[data-v-ea01ea4f]{padding:0}.menu-burger[data-v-ea01ea4f]{display:block}.liste-socials[data-v-ea01ea4f]{display:none}.liste-onglets img[data-v-ea01ea4f]{display:block;margin-bottom:3rem;width:45vw}.liste-onglets[data-v-ea01ea4f]{align-items:center;-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);background-color:hsla(0,0%,100%,.281);display:flex;flex-direction:column;height:100vh;justify-content:center;left:0;margin-left:-100%;position:absolute;top:0;transition:all .4s ease;width:100%}.active2[data-v-ea01ea4f]{margin-left:0}.liste-onglets a[data-v-ea01ea4f]{font-size:1.1rem;margin:.6rem 1rem}}\"",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716302284266,
+      "end": 1716302284266,
+      "order": "normal"
+    }
+  ]
+}

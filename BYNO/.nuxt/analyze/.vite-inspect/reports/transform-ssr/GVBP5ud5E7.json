@@ -1,0 +1,288 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/GroupeImgAccueil.vue?vue&type=style&index=0&scoped=45193003&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\n.groupe-img-accueil {\r\n    height: 80vh;\r\n    width: 100%;\r\n    position: relative;\r\n    background-image: url('assets/img/groupe-img-accueil/background.jpg');\r\n    background-repeat: no-repeat;\r\n    background-size: 100%;\r\n    background-position: center;\r\n}\r\n.frame {\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\n.logo {\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.logo-ecriture {\r\n    height: 45vh;\r\n    width: 20vw;\r\n}\r\nimg {\r\n}\r\n\r\n@media (min-width: 820px) and (max-width: 1050px) {\r\n    .groupe-img-accueil {\r\n        height: 35vh;\r\n    }\r\n    .logo-ecriture {\r\n        height: 18vh;\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 819px) {\r\n    .groupe-img-accueil {\r\n        height: 29vh;\r\n    }\r\n    .logo-ecriture {\r\n        height: 12vh;\r\n    }\r\n}\r\n",
+      "start": 1716302283928,
+      "end": 1716302283928,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/GroupeImgAccueil.vue"
+        ],
+        "names": [],
+        "mappings": ";AAkBA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACZ,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACrE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IAC5B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/B;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACZ,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACf;;AAEA,CAAC,CAAC,CAAC,CAAC,EAAE;IACF,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IAClB,CAAC,CAAC,CAAC,EAAE,CAAC;IACN,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACvB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvB;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACZ,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACf;AACA,CAAC,CAAC,EAAE;AACJ;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IAC9C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IAChB;IACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IAChB;AACJ;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACjC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IAChB;IACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IAChB;AACJ",
+        "file": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/GroupeImgAccueil.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\r\n     <div class=\"groupe-img-accueil\">\r\n        <img src=\"~assets/img/groupe-img-accueil/frame.png\" alt=\"\" class=\"frame\">\r\n        <div class=\"logo\">\r\n            <img src=\"~assets/img/groupe-img-accueil/logo.png\" alt=\"\" class=\"logo-ecriture\">\r\n        </div>\r\n        <!--\r\n        <img src=\"~assets/img/groupe-img-accueil/background.jpg\" alt=\"\" class=\"bckg\">\r\n\r\n       \r\n        \r\n        -->\r\n        \r\n    </div>\r\n</template>\r\n\r\n\r\n<style scoped>\r\n.groupe-img-accueil {\r\n    height: 80vh;\r\n    width: 100%;\r\n    position: relative;\r\n    background-image: url('assets/img/groupe-img-accueil/background.jpg');\r\n    background-repeat: no-repeat;\r\n    background-size: 100%;\r\n    background-position: center;\r\n}\r\n.frame {\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\n.logo {\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.logo-ecriture {\r\n    height: 45vh;\r\n    width: 20vw;\r\n}\r\nimg {\r\n}\r\n\r\n@media (min-width: 820px) and (max-width: 1050px) {\r\n    .groupe-img-accueil {\r\n        height: 35vh;\r\n    }\r\n    .logo-ecriture {\r\n        height: 18vh;\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 819px) {\r\n    .groupe-img-accueil {\r\n        height: 29vh;\r\n    }\r\n    .logo-ecriture {\r\n        height: 12vh;\r\n    }\r\n}\r\n</style>"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302283928,
+      "end": 1716302283928,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302283928,
+      "end": 1716302283928,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302283928,
+      "end": 1716302283928,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302283928,
+      "end": 1716302283928,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1716302283928,
+      "end": 1716302283928,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".groupe-img-accueil{background-image:url(__VITE_ASSET__BnRdryOX__);background-position:50%;background-repeat:no-repeat;background-size:100%;height:80vh;position:relative;width:100%}.frame,.logo{height:100%;width:100%}.logo{align-items:center;display:flex;justify-content:center;position:absolute;top:0}.logo-ecriture{height:45vh;width:20vw}@media (min-width:820px) and (max-width:1050px){.groupe-img-accueil{height:35vh}.logo-ecriture{height:18vh}}@media screen and (max-width:819px){.groupe-img-accueil{height:29vh}.logo-ecriture{height:12vh}}",
+      "start": 1716302283928,
+      "end": 1716302284141,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/GroupeImgAccueil.vue",
+        "mappings": "AACA,oBAII,8CAAqE,CAGrE,uBAA2B,CAF3B,2BAA4B,CAC5B,oBAAqB,CALrB,WAAY,CAEZ,iBAAkB,CADlB,UAMJ,CAMA,aAJI,WAAY,CACZ,UAWJ,CARA,MAOI,kBAAmB,CAFnB,YAAa,CACb,sBAAuB,CAHvB,iBAAkB,CAClB,KAIJ,CACA,eACI,WAAY,CACZ,UACJ,CAIA,gDACI,oBACI,WACJ,CACA,eACI,WACJ,CACJ,CAEA,oCACI,oBACI,WACJ,CACA,eACI,WACJ,CACJ",
+        "names": [],
+        "sources": [
+          "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/GroupeImgAccueil.vue"
+        ],
+        "sourcesContent": [
+          "\r\n.groupe-img-accueil {\r\n    height: 80vh;\r\n    width: 100%;\r\n    position: relative;\r\n    background-image: url('assets/img/groupe-img-accueil/background.jpg');\r\n    background-repeat: no-repeat;\r\n    background-size: 100%;\r\n    background-position: center;\r\n}\r\n.frame {\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\n.logo {\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.logo-ecriture {\r\n    height: 45vh;\r\n    width: 20vw;\r\n}\r\nimg {\r\n}\r\n\r\n@media (min-width: 820px) and (max-width: 1050px) {\r\n    .groupe-img-accueil {\r\n        height: 35vh;\r\n    }\r\n    .logo-ecriture {\r\n        height: 18vh;\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 819px) {\r\n    .groupe-img-accueil {\r\n        height: 29vh;\r\n    }\r\n    .logo-ecriture {\r\n        height: 12vh;\r\n    }\r\n}\r\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1716302284141,
+      "end": 1716302284141,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1716302284141,
+      "end": 1716302284141,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1716302284141,
+      "end": 1716302284141,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".groupe-img-accueil[data-v-45193003]{background-image:url(__VITE_ASSET__BnRdryOX__);background-position:50%;background-repeat:no-repeat;background-size:100%;height:80vh;position:relative;width:100%}.frame[data-v-45193003],.logo[data-v-45193003]{height:100%;width:100%}.logo[data-v-45193003]{align-items:center;display:flex;justify-content:center;position:absolute;top:0}.logo-ecriture[data-v-45193003]{height:45vh;width:20vw}@media (min-width:820px) and (max-width:1050px){.groupe-img-accueil[data-v-45193003]{height:35vh}.logo-ecriture[data-v-45193003]{height:18vh}}@media screen and (max-width:819px){.groupe-img-accueil[data-v-45193003]{height:29vh}.logo-ecriture[data-v-45193003]{height:12vh}}",
+      "start": 1716302284141,
+      "end": 1716302284142,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/GroupeImgAccueil.vue",
+        "mappings": "AAAA,qCAAoB,8CAA8C,CAAC,uBAAuB,CAAC,2BAA2B,CAAC,oBAAoB,CAAC,WAAW,CAAC,iBAAiB,CAAC,UAAU,CAAC,+CAAa,WAAW,CAAC,UAAU,CAAC,uBAAM,kBAAkB,CAAC,YAAY,CAAC,sBAAsB,CAAC,iBAAiB,CAAC,KAAK,CAAC,gCAAe,WAAW,CAAC,UAAU,CAAC,gDAAgD,qCAAoB,WAAW,CAAC,gCAAe,WAAW,CAAC,CAAC,oCAAoC,qCAAoB,WAAW,CAAC,gCAAe,WAAW,CAAC",
+        "names": [],
+        "sources": [
+          "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/GroupeImgAccueil.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1716302284142,
+      "end": 1716302284142,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302284142,
+      "end": 1716302284142,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302284142,
+      "end": 1716302284142,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302284142,
+      "end": 1716302284142,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302284142,
+      "end": 1716302284142,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1716302284142,
+      "end": 1716302284143,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".groupe-img-accueil[data-v-45193003]{background-image:url(__VITE_ASSET__BnRdryOX__);background-position:50%;background-repeat:no-repeat;background-size:100%;height:80vh;position:relative;width:100%}.frame[data-v-45193003],.logo[data-v-45193003]{height:100%;width:100%}.logo[data-v-45193003]{align-items:center;display:flex;justify-content:center;position:absolute;top:0}.logo-ecriture[data-v-45193003]{height:45vh;width:20vw}@media (min-width:820px) and (max-width:1050px){.groupe-img-accueil[data-v-45193003]{height:35vh}.logo-ecriture[data-v-45193003]{height:18vh}}@media screen and (max-width:819px){.groupe-img-accueil[data-v-45193003]{height:29vh}.logo-ecriture[data-v-45193003]{height:12vh}}\"",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716302284143,
+      "end": 1716302284143,
+      "order": "normal"
+    }
+  ]
+}

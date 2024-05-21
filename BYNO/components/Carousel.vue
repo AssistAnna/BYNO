@@ -1,8 +1,8 @@
 <template>
     <div class="carousel">
         <p>Décomposition d'un travail de retouches</p>
-        <div class="grande-photo"></div>
-        <div class="bloc-photos box-shadow">
+        <div class="grande-photo" data-aos="fade-up"></div>
+        <div class="bloc-photos box-shadow" data-aos="fade-down" >
             <div class="photo"  v-for="(photo,key) in photos" :key="key">
                 <div class="img" :style="' background-image: url(' + photo.imgUrl + ')'"></div>
             </div>
@@ -16,19 +16,19 @@
             return {
                 photos: [
                     {
-                        imgUrl: "_nuxt/assets/img/carousel/carousel-img1.jpg"
+                        imgUrl: "_nuxt/static/img/carousel/carousel-img1.jpg"
                     },
                     {
-                        imgUrl: "_nuxt/assets/img/carousel/carousel-img3.jpg"
+                        imgUrl: "_nuxt/static/img/carousel/carousel-img3.jpg"
                     },
                     {
-                        imgUrl: "_nuxt/assets/img/carousel/carousel-img2.jpg"
+                        imgUrl: "_nuxt/static/img/carousel/carousel-img2.jpg"
                     },
                     {
-                        imgUrl: "_nuxt/assets/img/carousel/carousel-img5.jpg"
+                        imgUrl: "_nuxt/static/img/carousel/carousel-img5.jpg"
                     },
                     {
-                        imgUrl: "_nuxt/assets/img/carousel/carousel-img4.jpg"
+                        imgUrl: "_nuxt/static/img/carousel/carousel-img4.jpg"
                     }
                 ]
             }
@@ -52,7 +52,7 @@ p {
 }
 .grande-photo {
     height: 70vh;
-    background-image: url('assets/img/carousel/grande-image.jpg');
+    background-image: url('/static/img/carousel/grande-image.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

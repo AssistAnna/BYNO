@@ -1,0 +1,215 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Footer.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <div class=\"footer\">\r\n    <nuxt-link class=\"logo\" to=\"/\"><div class=\"logo-img\"></div></nuxt-link>\r\n    <div class=\"bloc\">\r\n      <p class=\"text\">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements. </p>\r\n      <div class=\"liste-pages\">\r\n        <nuxt-link  class=\"\" v-for=\"(item,key) in menu\" :key=\"key\" :to=\"{name: item.url}\"><h2>{{item.name}}</h2></nuxt-link>\r\n      </div>\r\n      <div class=\"bloc-contact\">\r\n        <nuxt-link to=\"/\">Me contacter</nuxt-link>\r\n        <div class=\"liste-socials\">\r\n          <nuxt-link to=\"/\"><img src=\"~assets/icon/icon-instagram.png\" alt=\"logo instagram\"></nuxt-link>\r\n          <nuxt-link to=\"/\"><img src=\"~assets/icon/icon-linkedin.png\" alt=\"logo linkedin\"></nuxt-link>\r\n          <nuxt-link to=\"/\"><img src=\"~assets/icon/icon-youtube.png\" alt=\"logo youtube\"></nuxt-link>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n  data() {\r\n    return {\r\n      menu: [\r\n       {\r\n         url: \"Services\",\r\n         name: \"Services\"\r\n       },\r\n       {\r\n         url: \"Productions\",\r\n         name: \"Productions\"\r\n       },\r\n       {\r\n         url: \"Retouches\",\r\n         name: \"Retouches\"\r\n       },\r\n       {\r\n         url: \"Apropos\",\r\n         name: \"A propos\"\r\n       },\r\n       {\r\n         url: \"Contact\",\r\n         name: \"Contact\"\r\n       }\r\n     ]\r\n    }\r\n  }\r\n\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n.footer {\r\n  padding-left: 2rem;\r\n  background-color: rgb(39, 38, 38);\r\n\r\n}\r\n\r\n.logo-img {\r\n  background-image: url('assets/img/logo-byno.png');\r\n  height: 6rem;\r\n  background-size: contain;\r\n  background-repeat: no-repeat;\r\n}\r\n\r\n.bloc {\r\n  display: flex;\r\n  padding-bottom: 3rem;\r\n  \r\n\r\n}\r\n\r\n.text {\r\n  width: 40%;\r\n  font-family: \"mpluslight\";\r\n  font-weight: bold;\r\n  font-size: 0.8rem;\r\n  padding-right: 6rem;\r\n}\r\n\r\n.liste-pages {\r\n  width: 18%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  \r\n}\r\n\r\n.liste-pages h2 {\r\n  font-family: \"mplusthin\";\r\n  font-size: 0.7rem;\r\n  margin: 0.3rem 0;\r\n}\r\n\r\n.bloc-contact a {\r\n  font-family: \"mplusmedium\";\r\n  font-size: 1.2rem;\r\n}\r\n\r\n.liste-socials {\r\n  margin-top: 1.5rem;\r\n}\r\n\r\n.liste-socials a {\r\n  padding-right: 1rem;\r\n  \r\n}\r\n\r\n.liste-socials a:hover {\r\n  color: blue;\r\n}\r\n\r\nimg {\r\n  height: 2rem;\r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 900px) {\r\n  .footer {\r\n    padding: 0 1rem;\r\n  }\r\n  .bloc {\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  .logo-img {\r\n    background-position: center;\r\n  }\r\n  .liste-pages {\r\n    width: 100%;\r\n    align-items: center;\r\n    padding-bottom: 1rem;\r\n\r\n  }\r\n  \r\n  .text {\r\n    padding-right: 0;\r\n    width: 100%;\r\n    text-align: center;\r\n  }\r\n\r\n  .bloc-contact {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n}\r\n\r\n</style>\r\n\r\n",
+      "start": 1716302281388,
+      "end": 1716302281537,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302281537,
+      "end": 1716302281537,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302281537,
+      "end": 1716302281537,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1716302281537,
+      "end": 1716302281537,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1716302281537,
+      "end": 1716302281537,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1716302281537,
+      "end": 1716302281537,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1716302281537,
+      "end": 1716302281537,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1716302281537,
+      "end": 1716302281537,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\nconst _sfc_main = {\r\n  data() {\r\n    return {\r\n      menu: [\r\n       {\r\n         url: \"Services\",\r\n         name: \"Services\"\r\n       },\r\n       {\r\n         url: \"Productions\",\r\n         name: \"Productions\"\r\n       },\r\n       {\r\n         url: \"Retouches\",\r\n         name: \"Retouches\"\r\n       },\r\n       {\r\n         url: \"Apropos\",\r\n         name: \"A propos\"\r\n       },\r\n       {\r\n         url: \"Contact\",\r\n         name: \"Contact\"\r\n       }\r\n     ]\r\n    }\r\n  }\r\n\r\n}\r\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, createBlock as _createBlock, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from 'assets/icon/icon-instagram.png'\nimport _imports_1 from 'assets/icon/icon-linkedin.png'\nimport _imports_2 from 'assets/icon/icon-youtube.png'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-20d8a321\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"footer\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"logo-img\" }, null, -1))\nconst _hoisted_3 = { class: \"bloc\" }\nconst _hoisted_4 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"p\", { class: \"text\" }, \"Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements. \", -1))\nconst _hoisted_5 = { class: \"liste-pages\" }\nconst _hoisted_6 = { class: \"bloc-contact\" }\nconst _hoisted_7 = { class: \"liste-socials\" }\nconst _hoisted_8 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_0,\n  alt: \"logo instagram\"\n}, null, -1))\nconst _hoisted_9 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_1,\n  alt: \"logo linkedin\"\n}, null, -1))\nconst _hoisted_10 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_2,\n  alt: \"logo youtube\"\n}, null, -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_nuxt_link = _resolveComponent(\"nuxt-link\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_nuxt_link, {\n      class: \"logo\",\n      to: \"/\"\n    }, {\n      default: _withCtx(() => [\n        _hoisted_2\n      ]),\n      _: 1\n    }),\n    _createElementVNode(\"div\", _hoisted_3, [\n      _hoisted_4,\n      _createElementVNode(\"div\", _hoisted_5, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($data.menu, (item, key) => {\n          return (_openBlock(), _createBlock(_component_nuxt_link, {\n            class: \"\",\n            key: key,\n            to: {name: item.url}\n          }, {\n            default: _withCtx(() => [\n              _createElementVNode(\"h2\", null, _toDisplayString(item.name), 1)\n            ]),\n            _: 2\n          }, 1032, [\"to\"]))\n        }), 128))\n      ]),\n      _createElementVNode(\"div\", _hoisted_6, [\n        _createVNode(_component_nuxt_link, { to: \"/\" }, {\n          default: _withCtx(() => [\n            _createTextVNode(\"Me contacter\")\n          ]),\n          _: 1\n        }),\n        _createElementVNode(\"div\", _hoisted_7, [\n          _createVNode(_component_nuxt_link, { to: \"/\" }, {\n            default: _withCtx(() => [\n              _hoisted_8\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_nuxt_link, { to: \"/\" }, {\n            default: _withCtx(() => [\n              _hoisted_9\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_nuxt_link, { to: \"/\" }, {\n            default: _withCtx(() => [\n              _hoisted_10\n            ]),\n            _: 1\n          })\n        ])\n      ])\n    ])\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Footer.vue?vue&type=style&index=0&scoped=20d8a321&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-20d8a321\"]])",
+      "start": 1716302281537,
+      "end": 1716302281539,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1716302281539,
+      "end": 1716302281539,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302281539,
+      "end": 1716302281539,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302281539,
+      "end": 1716302281539,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1716302281539,
+      "end": 1716302281539,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1716302281539,
+      "end": 1716302281539,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302281539,
+      "end": 1716302281540,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1716302281540,
+      "end": 1716302281540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1716302281540,
+      "end": 1716302281540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1716302281540,
+      "end": 1716302281540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1716302281540,
+      "end": 1716302281540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1716302281540,
+      "end": 1716302281540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1716302281540,
+      "end": 1716302281540,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1716302281540,
+      "end": 1716302281540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1716302281540,
+      "end": 1716302281540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1716302281540,
+      "end": 1716302281540,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302281540,
+      "end": 1716302281540,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302281540,
+      "end": 1716302281541,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302281541,
+      "end": 1716302281541,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302281541,
+      "end": 1716302281541,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1716302281541,
+      "end": 1716302281541,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1716302281541,
+      "end": 1716302281541,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/node_modules/nuxt/dist/app/components/nuxt-link\";\n\r\nconst _sfc_main = {\r\n  data() {\r\n    return {\r\n      menu: [\r\n       {\r\n         url: \"Services\",\r\n         name: \"Services\"\r\n       },\r\n       {\r\n         url: \"Productions\",\r\n         name: \"Productions\"\r\n       },\r\n       {\r\n         url: \"Retouches\",\r\n         name: \"Retouches\"\r\n       },\r\n       {\r\n         url: \"Apropos\",\r\n         name: \"A propos\"\r\n       },\r\n       {\r\n         url: \"Contact\",\r\n         name: \"Contact\"\r\n       }\r\n     ]\r\n    }\r\n  }\r\n\r\n}\r\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, createBlock as _createBlock, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from 'assets/icon/icon-instagram.png'\nimport _imports_1 from 'assets/icon/icon-linkedin.png'\nimport _imports_2 from 'assets/icon/icon-youtube.png'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-20d8a321\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"footer\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"logo-img\" }, null, -1))\nconst _hoisted_3 = { class: \"bloc\" }\nconst _hoisted_4 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"p\", { class: \"text\" }, \"Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements. \", -1))\nconst _hoisted_5 = { class: \"liste-pages\" }\nconst _hoisted_6 = { class: \"bloc-contact\" }\nconst _hoisted_7 = { class: \"liste-socials\" }\nconst _hoisted_8 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_0,\n  alt: \"logo instagram\"\n}, null, -1))\nconst _hoisted_9 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_1,\n  alt: \"logo linkedin\"\n}, null, -1))\nconst _hoisted_10 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_2,\n  alt: \"logo youtube\"\n}, null, -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_nuxt_link = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_nuxt_link, {\n      class: \"logo\",\n      to: \"/\"\n    }, {\n      default: _withCtx(() => [\n        _hoisted_2\n      ]),\n      _: 1\n    }),\n    _createElementVNode(\"div\", _hoisted_3, [\n      _hoisted_4,\n      _createElementVNode(\"div\", _hoisted_5, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($data.menu, (item, key) => {\n          return (_openBlock(), _createBlock(_component_nuxt_link, {\n            class: \"\",\n            key: key,\n            to: {name: item.url}\n          }, {\n            default: _withCtx(() => [\n              _createElementVNode(\"h2\", null, _toDisplayString(item.name), 1)\n            ]),\n            _: 2\n          }, 1032, [\"to\"]))\n        }), 128))\n      ]),\n      _createElementVNode(\"div\", _hoisted_6, [\n        _createVNode(_component_nuxt_link, { to: \"/\" }, {\n          default: _withCtx(() => [\n            _createTextVNode(\"Me contacter\")\n          ]),\n          _: 1\n        }),\n        _createElementVNode(\"div\", _hoisted_7, [\n          _createVNode(_component_nuxt_link, { to: \"/\" }, {\n            default: _withCtx(() => [\n              _hoisted_8\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_nuxt_link, { to: \"/\" }, {\n            default: _withCtx(() => [\n              _hoisted_9\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_nuxt_link, { to: \"/\" }, {\n            default: _withCtx(() => [\n              _hoisted_10\n            ]),\n            _: 1\n          })\n        ])\n      ])\n    ])\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Footer.vue?vue&type=style&index=0&scoped=20d8a321&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-20d8a321\"]])",
+      "start": 1716302281541,
+      "end": 1716302281541,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1716302281541,
+      "end": 1716302281541,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1716302281541,
+      "end": 1716302281542,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716302281542,
+      "end": 1716302281542,
+      "order": "normal"
+    }
+  ]
+}

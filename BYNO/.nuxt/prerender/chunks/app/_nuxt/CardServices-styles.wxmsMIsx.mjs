@@ -1,0 +1,6 @@
+const CardServices_vue_vue_type_style_index_0_scoped_750117d9_lang = ".cards-bloc[data-v-750117d9]{display:grid;grid-template-columns:repeat(2,1fr);margin-bottom:5rem;width:100%}.card[data-v-750117d9]{align-items:center;background-color:rgba(71,70,70,.404);border:.1px solid rgba(0,159,227,.349);border-radius:6px;display:flex;flex-direction:column;height:13rem;margin:.6rem;padding:1.4rem;transition:.4s ease-in-out;width:13rem}.card[data-v-750117d9]:hover{border:.1px solid rgba(0,159,227,.973);transform:scale(1.04);transition:all .4s ease-in-out}.card-icon[data-v-750117d9]{background-repeat:no-repeat;background-size:100%;height:6rem;width:3rem}.liste-text[data-v-750117d9]{width:100%}p[data-v-750117d9]{font-family:mpluslight;font-size:.7rem;font-weight:700;line-height:1rem;text-align:center}@media screen and (max-width:900px){.card[data-v-750117d9]{border:.1px solid rgba(0,159,227,.973)}.card-icon[data-v-750117d9]{height:3rem}.liste-text[data-v-750117d9]{padding-top:1.2rem}}@media screen and (max-width:700px){.cards-bloc[data-v-750117d9]{display:flex;flex-direction:column}}";
+
+const CardServicesStyles_wxmsMIsx = [CardServices_vue_vue_type_style_index_0_scoped_750117d9_lang];
+
+export { CardServicesStyles_wxmsMIsx as default };
+//# sourceMappingURL=CardServices-styles.wxmsMIsx.mjs.map

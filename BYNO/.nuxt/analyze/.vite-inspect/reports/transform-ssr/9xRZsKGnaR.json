@@ -1,0 +1,288 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/index.vue?vue&type=style&index=0&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\n@font-face {\r\n  font-family: 'mplusblack';\r\n  src: url('~/assets/fonts/MPLUS1p-Black.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusbold';\r\n  src: url('~/assets/fonts/MPLUS1p-Bold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusextra';\r\n  src: url('~/assets/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mpluslight';\r\n  src: url('~/assets/fonts/MPLUS1p-Light.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusmedium';\r\n  src: url('~/assets/fonts/MPLUS1p-Medium.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusregular';\r\n  src: url('~/assets/fonts/MPLUS1p-Regular.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusthin';\r\n  src: url('~/assets/fonts/MPLUS1p-Thin.ttf') format('opentype'),\r\n}\r\n\r\n.box-shadow {\r\n  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); \r\nbox-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);\r\n}\r\n\r\n.page-index {\r\n  padding-top: 5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center; \r\n}\r\n\r\n.text-presentation {\r\n  margin: 0rem 10rem;\r\n  font-size: 1.8rem;\r\n  font-family: mplusbold;\r\n  text-align: center;\r\n  padding-bottom: 4rem;\r\n  padding-top: 4rem;\r\n}\r\n\r\n.title-h2 {\r\n    font-size: 3rem;\r\n    font-family: mplusmedium;\r\n    text-align: center;\r\n    border-bottom: 1px solid #009FE3;\r\n    padding-bottom: 2rem;\r\n    margin-bottom: 5rem;\r\n    width: 35rem;\r\n\r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 900px) {\r\n  .img-accueil {\r\n    \r\n  }\r\n  .text-presentation {\r\n    margin: 0 2rem;\r\n    font-size: 1.1rem;\r\n    padding-bottom: 1rem;\r\n  }\r\n  .title-h2 {\r\n    padding-bottom: 1rem;\r\n    font-size: 2rem;\r\n    width: 40vw;\r\n    margin-bottom: 2rem;\r\n  }\r\n}\r\n\r\n",
+      "start": 1716302283510,
+      "end": 1716302283510,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/index.vue"
+        ],
+        "names": [],
+        "mappings": ";AAqBA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACzB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjE;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACxB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChE;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACzB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrE;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACzB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjE;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC1B,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClE;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC3B,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnE;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACxB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChE;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7G;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACjB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACb,CAAC,CAA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",
+        "file": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/index.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\r\n  <div class=\"page-index\">\r\n    <GroupeImgAccueil  data-aos=\"fade-up\"/>\r\n    <p class=\"text-presentation\" data-aos=\"fade-up\">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements.</p>\r\n    <h2 class=\"title-h2\" data-aos=\"fade-up\">Projets</h2>\r\n    <AllProjects data-aos=\"fade-up\"/>\r\n    <h2 class=\"title-h2\" data-aos=\"fade-up\">Services</h2>\r\n    <AllServices />\r\n  \r\n  </div>\r\n</template>\r\n\r\n<script>\r\n\r\nexport default {\r\n  \r\n\r\n}\r\n</script>\r\n\r\n<style>\r\n@font-face {\r\n  font-family: 'mplusblack';\r\n  src: url('~/assets/fonts/MPLUS1p-Black.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusbold';\r\n  src: url('~/assets/fonts/MPLUS1p-Bold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusextra';\r\n  src: url('~/assets/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mpluslight';\r\n  src: url('~/assets/fonts/MPLUS1p-Light.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusmedium';\r\n  src: url('~/assets/fonts/MPLUS1p-Medium.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusregular';\r\n  src: url('~/assets/fonts/MPLUS1p-Regular.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusthin';\r\n  src: url('~/assets/fonts/MPLUS1p-Thin.ttf') format('opentype'),\r\n}\r\n\r\n.box-shadow {\r\n  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); \r\nbox-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);\r\n}\r\n\r\n.page-index {\r\n  padding-top: 5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center; \r\n}\r\n\r\n.text-presentation {\r\n  margin: 0rem 10rem;\r\n  font-size: 1.8rem;\r\n  font-family: mplusbold;\r\n  text-align: center;\r\n  padding-bottom: 4rem;\r\n  padding-top: 4rem;\r\n}\r\n\r\n.title-h2 {\r\n    font-size: 3rem;\r\n    font-family: mplusmedium;\r\n    text-align: center;\r\n    border-bottom: 1px solid #009FE3;\r\n    padding-bottom: 2rem;\r\n    margin-bottom: 5rem;\r\n    width: 35rem;\r\n\r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 900px) {\r\n  .img-accueil {\r\n    \r\n  }\r\n  .text-presentation {\r\n    margin: 0 2rem;\r\n    font-size: 1.1rem;\r\n    padding-bottom: 1rem;\r\n  }\r\n  .title-h2 {\r\n    padding-bottom: 1rem;\r\n    font-size: 2rem;\r\n    width: 40vw;\r\n    margin-bottom: 2rem;\r\n  }\r\n}\r\n\r\n</style>"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302283510,
+      "end": 1716302283510,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302283510,
+      "end": 1716302283510,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302283510,
+      "end": 1716302283510,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302283510,
+      "end": 1716302283510,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1716302283510,
+      "end": 1716302283510,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "@font-face{font-family:mplusblack;src:url(__VITE_ASSET__BqWUx8hR__) format(\"opentype\"),}@font-face{font-family:mplusbold;src:url(__VITE_ASSET__DPnGWFtc__) format(\"opentype\"),}@font-face{font-family:mplusextra;src:url(__VITE_ASSET__CS5ttMuP__) format(\"opentype\"),}@font-face{font-family:mpluslight;src:url(__VITE_ASSET__B$J8TkRf__) format(\"opentype\"),}@font-face{font-family:mplusmedium;src:url(__VITE_ASSET__B0Suis3S__) format(\"opentype\"),}@font-face{font-family:mplusregular;src:url(__VITE_ASSET__DOh7gcJD__) format(\"opentype\"),}@font-face{font-family:mplusthin;src:url(__VITE_ASSET__D5S5w1B4__) format(\"opentype\"),}.box-shadow{box-shadow:-10px 0 13px -7px #000,10px 0 13px -7px #000,0 0 31px 11px rgba(255,255,254,.09)}.page-index{align-items:center;display:flex;flex-direction:column;padding-top:5rem}.text-presentation{font-family:mplusbold;font-size:1.8rem;margin:0 10rem;padding-bottom:4rem;padding-top:4rem;text-align:center}.title-h2{border-bottom:1px solid #009fe3;font-family:mplusmedium;font-size:3rem;margin-bottom:5rem;padding-bottom:2rem;text-align:center;width:35rem}@media screen and (max-width:900px){.text-presentation{font-size:1.1rem;margin:0 2rem;padding-bottom:1rem}.title-h2{font-size:2rem;margin-bottom:2rem;padding-bottom:1rem;width:40vw}}",
+      "start": 1716302283510,
+      "end": 1716302284093,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/index.vue",
+        "mappings": "AACA,WACE,sBAAyB,CACzB,qDACF,CAEA,WACE,qBAAwB,CACxB,qDACF,CAEA,WACE,sBAAyB,CACzB,qDACF,CAEA,WACE,sBAAyB,CACzB,qDACF,CAEA,WACE,uBAA0B,CAC1B,qDACF,CAEA,WACE,wBAA2B,CAC3B,qDACF,CAEA,WACE,qBAAwB,CACxB,qDACF,CAEA,YAEA,2FACA,CAEA,YAIE,kBAAmB,CAFnB,YAAa,CACb,qBAAsB,CAFtB,gBAIF,CAEA,mBAGE,qBAAsB,CADtB,gBAAiB,CADjB,cAAkB,CAIlB,mBAAoB,CACpB,gBAAiB,CAFjB,iBAGF,CAEA,UAII,+BAAgC,CAFhC,uBAAwB,CADxB,cAAe,CAKf,kBAAmB,CADnB,mBAAoB,CAFpB,iBAAkB,CAIlB,WAEJ,CAGA,oCAIE,mBAEE,gBAAiB,CADjB,aAAc,CAEd,mBACF,CACA,UAEE,cAAe,CAEf,kBAAmB,CAHnB,mBAAoB,CAEpB,UAEF,CACF",
+        "names": [],
+        "sources": [
+          "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/index.vue"
+        ],
+        "sourcesContent": [
+          "\r\n@font-face {\r\n  font-family: 'mplusblack';\r\n  src: url('~/assets/fonts/MPLUS1p-Black.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusbold';\r\n  src: url('~/assets/fonts/MPLUS1p-Bold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusextra';\r\n  src: url('~/assets/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mpluslight';\r\n  src: url('~/assets/fonts/MPLUS1p-Light.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusmedium';\r\n  src: url('~/assets/fonts/MPLUS1p-Medium.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusregular';\r\n  src: url('~/assets/fonts/MPLUS1p-Regular.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusthin';\r\n  src: url('~/assets/fonts/MPLUS1p-Thin.ttf') format('opentype'),\r\n}\r\n\r\n.box-shadow {\r\n  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); \r\nbox-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);\r\n}\r\n\r\n.page-index {\r\n  padding-top: 5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center; \r\n}\r\n\r\n.text-presentation {\r\n  margin: 0rem 10rem;\r\n  font-size: 1.8rem;\r\n  font-family: mplusbold;\r\n  text-align: center;\r\n  padding-bottom: 4rem;\r\n  padding-top: 4rem;\r\n}\r\n\r\n.title-h2 {\r\n    font-size: 3rem;\r\n    font-family: mplusmedium;\r\n    text-align: center;\r\n    border-bottom: 1px solid #009FE3;\r\n    padding-bottom: 2rem;\r\n    margin-bottom: 5rem;\r\n    width: 35rem;\r\n\r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 900px) {\r\n  .img-accueil {\r\n    \r\n  }\r\n  .text-presentation {\r\n    margin: 0 2rem;\r\n    font-size: 1.1rem;\r\n    padding-bottom: 1rem;\r\n  }\r\n  .title-h2 {\r\n    padding-bottom: 1rem;\r\n    font-size: 2rem;\r\n    width: 40vw;\r\n    margin-bottom: 2rem;\r\n  }\r\n}\r\n\r\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1716302284093,
+      "end": 1716302284093,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1716302284093,
+      "end": 1716302284093,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1716302284093,
+      "end": 1716302284093,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "@font-face{font-family:mplusblack;src:url(__VITE_ASSET__BqWUx8hR__) format(\"opentype\"),}@font-face{font-family:mplusbold;src:url(__VITE_ASSET__DPnGWFtc__) format(\"opentype\"),}@font-face{font-family:mplusextra;src:url(__VITE_ASSET__CS5ttMuP__) format(\"opentype\"),}@font-face{font-family:mpluslight;src:url(__VITE_ASSET__B$J8TkRf__) format(\"opentype\"),}@font-face{font-family:mplusmedium;src:url(__VITE_ASSET__B0Suis3S__) format(\"opentype\"),}@font-face{font-family:mplusregular;src:url(__VITE_ASSET__DOh7gcJD__) format(\"opentype\"),}@font-face{font-family:mplusthin;src:url(__VITE_ASSET__D5S5w1B4__) format(\"opentype\"),}.box-shadow{box-shadow:-10px 0 13px -7px #000,10px 0 13px -7px #000,0 0 31px 11px rgba(255,255,254,.09)}.page-index{align-items:center;display:flex;flex-direction:column;padding-top:5rem}.text-presentation{font-family:mplusbold;font-size:1.8rem;margin:0 10rem;padding-bottom:4rem;padding-top:4rem;text-align:center}.title-h2{border-bottom:1px solid #009fe3;font-family:mplusmedium;font-size:3rem;margin-bottom:5rem;padding-bottom:2rem;text-align:center;width:35rem}@media screen and (max-width:900px){.text-presentation{font-size:1.1rem;margin:0 2rem;padding-bottom:1rem}.title-h2{font-size:2rem;margin-bottom:2rem;padding-bottom:1rem;width:40vw}}",
+      "start": 1716302284093,
+      "end": 1716302284093,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/index.vue",
+        "mappings": "AAAA,WAAW,sBAAsB,CAAC,qDAAqD,CAAC,WAAW,qBAAqB,CAAC,qDAAqD,CAAC,WAAW,sBAAsB,CAAC,qDAAqD,CAAC,WAAW,sBAAsB,CAAC,qDAAqD,CAAC,WAAW,uBAAuB,CAAC,qDAAqD,CAAC,WAAW,wBAAwB,CAAC,qDAAqD,CAAC,WAAW,qBAAqB,CAAC,qDAAqD,CAAC,YAAY,2FAA2F,CAAC,YAAY,kBAAkB,CAAC,YAAY,CAAC,qBAAqB,CAAC,gBAAgB,CAAC,mBAAmB,qBAAqB,CAAC,gBAAgB,CAAC,cAAc,CAAC,mBAAmB,CAAC,gBAAgB,CAAC,iBAAiB,CAAC,UAAU,+BAA+B,CAAC,uBAAuB,CAAC,cAAc,CAAC,kBAAkB,CAAC,mBAAmB,CAAC,iBAAiB,CAAC,WAAW,CAAC,oCAAoC,mBAAmB,gBAAgB,CAAC,aAAa,CAAC,mBAAmB,CAAC,UAAU,cAAc,CAAC,kBAAkB,CAAC,mBAAmB,CAAC,UAAU,CAAC",
+        "names": [],
+        "sources": [
+          "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/index.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1716302284093,
+      "end": 1716302284093,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302284093,
+      "end": 1716302284093,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302284093,
+      "end": 1716302284093,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302284093,
+      "end": 1716302284093,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302284093,
+      "end": 1716302284093,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1716302284093,
+      "end": 1716302284093,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302284093,
+      "end": 1716302284093,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1716302284093,
+      "end": 1716302284094,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \"@font-face{font-family:mplusblack;src:url(__VITE_ASSET__BqWUx8hR__) format(\\\"opentype\\\"),}@font-face{font-family:mplusbold;src:url(__VITE_ASSET__DPnGWFtc__) format(\\\"opentype\\\"),}@font-face{font-family:mplusextra;src:url(__VITE_ASSET__CS5ttMuP__) format(\\\"opentype\\\"),}@font-face{font-family:mpluslight;src:url(__VITE_ASSET__B$J8TkRf__) format(\\\"opentype\\\"),}@font-face{font-family:mplusmedium;src:url(__VITE_ASSET__B0Suis3S__) format(\\\"opentype\\\"),}@font-face{font-family:mplusregular;src:url(__VITE_ASSET__DOh7gcJD__) format(\\\"opentype\\\"),}@font-face{font-family:mplusthin;src:url(__VITE_ASSET__D5S5w1B4__) format(\\\"opentype\\\"),}.box-shadow{box-shadow:-10px 0 13px -7px #000,10px 0 13px -7px #000,0 0 31px 11px rgba(255,255,254,.09)}.page-index{align-items:center;display:flex;flex-direction:column;padding-top:5rem}.text-presentation{font-family:mplusbold;font-size:1.8rem;margin:0 10rem;padding-bottom:4rem;padding-top:4rem;text-align:center}.title-h2{border-bottom:1px solid #009fe3;font-family:mplusmedium;font-size:3rem;margin-bottom:5rem;padding-bottom:2rem;text-align:center;width:35rem}@media screen and (max-width:900px){.text-presentation{font-size:1.1rem;margin:0 2rem;padding-bottom:1rem}.title-h2{font-size:2rem;margin-bottom:2rem;padding-bottom:1rem;width:40vw}}\"",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716302284094,
+      "end": 1716302284094,
+      "order": "normal"
+    }
+  ]
+}

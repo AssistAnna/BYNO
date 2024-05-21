@@ -1,7 +1,7 @@
 <template>
   <div class="all">
     <div class="cards-bloc">
-        <div class="card box-shadow" v-for="(card,key) in cards" :key="key">
+        <div class="card box-shadow" v-for="(card,key) in cards" :key="key" >
           <div class="card-icon" :style="' background-image: url(' + card.iconUrl + ')'"></div>
           <div class="liste-text">
               <p>{{card.text1}}</p>
@@ -21,7 +21,7 @@ data() {
        cards: [
          {
            id: 0,  
-           iconUrl: "_nuxt/assets/icon/services1.png",
+           iconUrl: "_nuxt/static/icon/services1.png",
            text1: "Relation client",
            text2: "Devis",
            text3: "Organisation du planning",
@@ -29,7 +29,7 @@ data() {
          },
          {
            id: 1,  
-           iconUrl: "_nuxt/assets/icon/services3.png",
+           iconUrl: "_nuxt/static/icon/services3.png",
            text1: "Brainstorming",
            text2: "Script / Scénario",
            text3: "Note d'intention",
@@ -37,7 +37,7 @@ data() {
          },
          {
            id: 2,  
-           iconUrl: "_nuxt/assets/icon/services2.png",
+           iconUrl: "_nuxt/static/icon/services2.png",
            text1: "Tournage / Montage",
            text2: "Animation / Motion design",
            text3: "Voix off / Enregistrement",
@@ -45,7 +45,7 @@ data() {
          },
          {
            id: 3,  
-           iconUrl: "_nuxt/assets/icon/services4.png",
+           iconUrl: "_nuxt/static/icon/services4.png",
            text1: "Encodage tous supports",
            text2: "Envoi des fichiers dématerialisés",
            text3: "",

@@ -1,0 +1,215 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/layouts/default.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <div class=\"all-site\">\r\n      <Navbar/>\r\n      <NuxtPage/>\r\n      \r\n      <Footer/>\r\n     \r\n  </div>\r\n</template>\r\n<script>\r\n\r\nexport default {\r\n  \r\n\r\n}\r\n</script>\r\n\r\n<style>\r\n\r\nbody {\r\n  margin: 0px;\r\n  height: 30rem;\r\n  background-color: black;\r\n\r\n}\r\n.all-site {\r\n  background-color: black;\r\n  color: white;\r\n}\r\na {\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n  color: white;\r\n}\r\n\r\n/*pages transition */\r\n.page-enter-active,\r\n.page-leave-active {\r\n  transition: all 0.2s;\r\n}\r\n.page-enter-from,\r\n.page-leave-to {\r\n  opacity: 0;\r\n}\r\n</style>",
+      "start": 1716302280771,
+      "end": 1716302281153,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302281153,
+      "end": 1716302281153,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302281153,
+      "end": 1716302281153,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1716302281153,
+      "end": 1716302281153,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1716302281153,
+      "end": 1716302281153,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1716302281154,
+      "end": 1716302281154,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1716302281154,
+      "end": 1716302281154,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1716302281154,
+      "end": 1716302281154,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\n\r\nconst _sfc_main = {\r\n  \r\n\r\n}\r\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"all-site\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_Navbar = _resolveComponent(\"Navbar\")\n  const _component_NuxtPage = _resolveComponent(\"NuxtPage\")\n  const _component_Footer = _resolveComponent(\"Footer\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_Navbar),\n    _createVNode(_component_NuxtPage),\n    _createVNode(_component_Footer)\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/layouts/default.vue?vue&type=style&index=0&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1716302281154,
+      "end": 1716302281155,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1716302281155,
+      "end": 1716302281155,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Navbar.vue\";\nimport { default as __nuxt_component_1 } from \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/node_modules/nuxt/dist/pages/runtime/page\";\nimport { default as __nuxt_component_2 } from \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Footer.vue\";\n\r\n\r\nconst _sfc_main = {\r\n  \r\n\r\n}\r\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"all-site\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_Navbar = __nuxt_component_0\n  const _component_NuxtPage = __nuxt_component_1\n  const _component_Footer = __nuxt_component_2\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_Navbar),\n    _createVNode(_component_NuxtPage),\n    _createVNode(_component_Footer)\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/layouts/default.vue?vue&type=style&index=0&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1716302281155,
+      "end": 1716302281156,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1716302281156,
+      "end": 1716302281156,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1716302281156,
+      "end": 1716302281156,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716302281156,
+      "end": 1716302281156,
+      "order": "normal"
+    }
+  ]
+}

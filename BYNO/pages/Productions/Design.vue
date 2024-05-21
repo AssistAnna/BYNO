@@ -1,19 +1,19 @@
 <template>
     <div class="design-all">
-        <h2 class="title-h2">Design</h2>
-        <p>Les pochettes de single ont été soigneusement conçues pour refléter le style adapté à l’artiste et au genre musical correspondant.</p>
+        <h2 class="title-h2" data-aos="fade-up">Design</h2>
+        <p data-aos="fade-up">Les pochettes de single ont été soigneusement conçues pour refléter le style adapté à l’artiste et au genre musical correspondant.</p>
 
         <div class="bloc-img">
-            <img src="~assets/img/design-img1.png" alt="image pochette album rose">
-            <img src="~assets/img/design-img2.png" alt="image pochette album design beige">
+            <img src="/static/img/design-img1.png" alt="image pochette album rose">
+            <img src="/static/img/design-img2.png" alt="image pochette album design beige">
         </div>
         <div class="bloc-img wesh">
-            <img src="~assets/img/design-img3.png" alt="image pochette album otherside">
-            <img src="~assets/img/design-img4.png" alt="image pochette album loadjak">
+            <img src="/static/img/design-img3.png" alt="image pochette album otherside">
+            <img src="/static/img/design-img4.png" alt="image pochette album loadjak">
         </div>
         <div class="bloc-img">
-            <img src="~assets/img/design-img5.png" alt="image pochette album superfly">
-            <img src="~assets/img/design-img6.png" alt="image pochette album I gotta love">
+            <img src="/static/img/design-img5.png" alt="image pochette album superfly">
+            <img src="/static/img/design-img6.png" alt="image pochette album I gotta love">
         </div>
     </div>
     </template>

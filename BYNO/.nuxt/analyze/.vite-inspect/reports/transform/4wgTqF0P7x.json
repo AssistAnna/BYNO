@@ -1,0 +1,215 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Navbar.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <nav class=\"navBar\">\r\n   <nuxt-link class=\"logo\" to=\"/\"><div class=\"logo-img\"></div></nuxt-link>\r\n   <div class=\"liste-onglets\" :class=\"{ 'active2': showMobileMenu }\">\r\n       <img src=\"~assets/img/logo-byno-avececrit.png\" alt=\"logo design byno\">\r\n       <nuxt-link v-for=\"(item,key) in menu\" :key=\"key\" :to=\"{name: item.url}\"><h2>{{item.name}}</h2></nuxt-link></div>\r\n   <div class=\"liste-socials\">\r\n       \r\n       <nuxt-link to=\"/\"><img src=\"~assets/icon/icon-instagram.png\" alt=\"logo instagram\"></nuxt-link>\r\n       <nuxt-link to=\"/\"><img src=\"~assets/icon/icon-linkedin.png\" alt=\"logo linkedin\"></nuxt-link>\r\n       <nuxt-link to=\"/\"><img src=\"~assets/icon/icon-youtube.png\" alt=\"logo youtube\"></nuxt-link>\r\n   </div>\r\n   <img v-show=\"!showMobileMenu\" @click=\"toggleMenu\" class=\"menu-burger\" src=\"~assets/icon/menu-burger.png\" alt=\"open menu\">\r\n   <img v-show=\"showMobileMenu\" @click=\"toggleMenu\" class=\"cross menu-burger\" src=\"~assets/icon/cross-menu-burger.png\" alt=\"close menu\">\r\n  </nav>\r\n</template>\r\n \r\n<script>\r\nexport default {\r\nwatch: {\r\n   '$route' () {\r\n       this.showMobileMenu = false;\r\n   }\r\n},\r\ndata() {\r\n   return {\r\n       showMobileMenu: false,\r\n       menu: [\r\n       {\r\n         url: \"Services\",\r\n         name: \"Services\"\r\n       },\r\n       {\r\n         url: \"Productions\",\r\n         name: \"Productions\"\r\n       },\r\n       {\r\n         url: \"Retouches\",\r\n         name: \"Retouches\"\r\n       },\r\n       {\r\n         url: \"Apropos\",\r\n         name: \"A propos\"\r\n       },\r\n       {\r\n         url: \"Contact\",\r\n         name: \"Contact\"\r\n       }\r\n     ]\r\n   }\r\n   },\r\n   methods: {\r\n       toggleMenu() {\r\n           this.showMobileMenu = !this.showMobileMenu;\r\n           console.log('isToggled : ' + this.showMobileMenu)\r\n       }\r\n       \r\n   }\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n* {\r\n   margin: 0;\r\n   padding: 0;\r\n   text-decoration: none;\r\n   list-style: none;\r\n   \r\n}\r\n\r\n.navBar {\r\n   font-family: mplusbold;\r\n   position: fixed;\r\n   z-index: 100;\r\n   top: 0;\r\n   display: flex;\r\n   align-items: center;\r\n   justify-content: space-between;\r\n   width: 100vw;\r\n   box-sizing: border-box;\r\n   background-color: rgb(39, 38, 38);\r\n\r\n}\r\n.navBar a {\r\n   color: white;\r\n}\r\n\r\n.logo-img {\r\n   background-image: url('assets/img/logo-byno.png');\r\n   height: 5rem;\r\n   width: 5rem;\r\n   background-size: contain;\r\n   background-repeat: no-repeat;\r\n}\r\n\r\n.liste-onglets {\r\n   display: flex;\r\n}\r\n\r\n.liste-onglets .router-link-exact-active {\r\n color: #009FE3;\r\n border-bottom: 1px solid #009FE3;\r\n}\r\n\r\n.liste-onglets img {\r\n   display: none;\r\n}\r\n\r\n.liste-onglets a {\r\n   margin: 0 1rem;\r\n   font-size: 0.6rem;\r\n}\r\n\r\n.liste-onglets a.active {\r\n   color: #009FE3;\r\n   font-size: 0.8rem;\r\n} \r\n\r\n.liste-socials {\r\n    padding-right: 1.5rem;\r\n}\r\n\r\n.liste-socials img {\r\n margin-right: 0.5rem;\r\n height: 2rem;\r\n}\r\n\r\n.menu-burger {\r\n   display: none;\r\n   height: 2.5rem;\r\n   width: 2.5rem;\r\n   position: absolute;\r\n   right: 12vw;\r\n   animation: fadeInAnimation ease 0.4s;\r\n   animation-iteration-count: 1;\r\n   animation-fill-mode: forwards;\r\n}\r\n\r\n.cross {\r\n   height: 3rem;\r\n   width: 3rem;\r\n   animation: fadeInAnimation ease 0.4s;\r\n   animation-iteration-count: 1;\r\n   animation-fill-mode: forwards;\r\n}\r\n\r\n@keyframes fadeInAnimation {\r\n   0% {\r\n       opacity: 0;\r\n   }\r\n\r\n   100% {\r\n       opacity: 1;\r\n   }\r\n}\r\n\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 800px) {\r\n   .navBar {\r\n       padding: 0;\r\n   }\r\n   .menu-burger{\r\n       display: block;\r\n   }\r\n   \r\n   .liste-socials {\r\n       display: none;\r\n   }\r\n   .liste-onglets img {\r\n       width: 45vw;\r\n       margin-bottom: 3rem;\r\n       display: block;\r\n   }\r\n   .liste-onglets {\r\n       top: 0;\r\n       left: 0;\r\n       position: absolute;\r\n       display: flex;\r\n       justify-content: center;\r\n       align-items: center;\r\n       flex-direction: column;\r\n       background-color: rgba(255, 255, 255, 0.281);\r\n       backdrop-filter: blur(7px);\r\n       width: 100%;\r\n       height: 100vh;\r\n       margin-left: -100% ;\r\n       transition: all 0.4s ease;\r\n\r\n   }\r\n   .active2 {\r\n       margin-left: 0;\r\n   }\r\n   .liste-onglets a {\r\n       margin: 0.6rem 1rem;\r\n       font-size: 1.1rem;\r\n   }\r\n}\r\n\r\n</style>\r\n \r\n ",
+      "start": 1716302281387,
+      "end": 1716302281531,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302281531,
+      "end": 1716302281531,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302281531,
+      "end": 1716302281531,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1716302281531,
+      "end": 1716302281531,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1716302281531,
+      "end": 1716302281531,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1716302281531,
+      "end": 1716302281531,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1716302281531,
+      "end": 1716302281531,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1716302281531,
+      "end": 1716302281531,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\nconst _sfc_main = {\r\nwatch: {\r\n   '$route' () {\r\n       this.showMobileMenu = false;\r\n   }\r\n},\r\ndata() {\r\n   return {\r\n       showMobileMenu: false,\r\n       menu: [\r\n       {\r\n         url: \"Services\",\r\n         name: \"Services\"\r\n       },\r\n       {\r\n         url: \"Productions\",\r\n         name: \"Productions\"\r\n       },\r\n       {\r\n         url: \"Retouches\",\r\n         name: \"Retouches\"\r\n       },\r\n       {\r\n         url: \"Apropos\",\r\n         name: \"A propos\"\r\n       },\r\n       {\r\n         url: \"Contact\",\r\n         name: \"Contact\"\r\n       }\r\n     ]\r\n   }\r\n   },\r\n   methods: {\r\n       toggleMenu() {\r\n           this.showMobileMenu = !this.showMobileMenu;\r\n           console.log('isToggled : ' + this.showMobileMenu)\r\n       }\r\n       \r\n   }\r\n}\r\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, createBlock as _createBlock, normalizeClass as _normalizeClass, vShow as _vShow, withDirectives as _withDirectives, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from 'assets/img/logo-byno-avececrit.png'\nimport _imports_1 from 'assets/icon/icon-instagram.png'\nimport _imports_2 from 'assets/icon/icon-linkedin.png'\nimport _imports_3 from 'assets/icon/icon-youtube.png'\nimport _imports_4 from 'assets/icon/menu-burger.png'\nimport _imports_5 from 'assets/icon/cross-menu-burger.png'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-ea01ea4f\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"navBar\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"logo-img\" }, null, -1))\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_0,\n  alt: \"logo design byno\"\n}, null, -1))\nconst _hoisted_4 = { class: \"liste-socials\" }\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_1,\n  alt: \"logo instagram\"\n}, null, -1))\nconst _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_2,\n  alt: \"logo linkedin\"\n}, null, -1))\nconst _hoisted_7 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_3,\n  alt: \"logo youtube\"\n}, null, -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_nuxt_link = _resolveComponent(\"nuxt-link\")\n\n  return (_openBlock(), _createElementBlock(\"nav\", _hoisted_1, [\n    _createVNode(_component_nuxt_link, {\n      class: \"logo\",\n      to: \"/\"\n    }, {\n      default: _withCtx(() => [\n        _hoisted_2\n      ]),\n      _: 1\n    }),\n    _createElementVNode(\"div\", {\n      class: _normalizeClass([\"liste-onglets\", { 'active2': $data.showMobileMenu }])\n    }, [\n      _hoisted_3,\n      (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($data.menu, (item, key) => {\n        return (_openBlock(), _createBlock(_component_nuxt_link, {\n          key: key,\n          to: {name: item.url}\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"h2\", null, _toDisplayString(item.name), 1)\n          ]),\n          _: 2\n        }, 1032, [\"to\"]))\n      }), 128))\n    ], 2),\n    _createElementVNode(\"div\", _hoisted_4, [\n      _createVNode(_component_nuxt_link, { to: \"/\" }, {\n        default: _withCtx(() => [\n          _hoisted_5\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_nuxt_link, { to: \"/\" }, {\n        default: _withCtx(() => [\n          _hoisted_6\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_nuxt_link, { to: \"/\" }, {\n        default: _withCtx(() => [\n          _hoisted_7\n        ]),\n        _: 1\n      })\n    ]),\n    _withDirectives(_createElementVNode(\"img\", {\n      onClick: _cache[0] || (_cache[0] = (...args) => ($options.toggleMenu && $options.toggleMenu(...args))),\n      class: \"menu-burger\",\n      src: _imports_4,\n      alt: \"open menu\"\n    }, null, 512), [\n      [_vShow, !$data.showMobileMenu]\n    ]),\n    _withDirectives(_createElementVNode(\"img\", {\n      onClick: _cache[1] || (_cache[1] = (...args) => ($options.toggleMenu && $options.toggleMenu(...args))),\n      class: \"cross menu-burger\",\n      src: _imports_5,\n      alt: \"close menu\"\n    }, null, 512), [\n      [_vShow, $data.showMobileMenu]\n    ])\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Navbar.vue?vue&type=style&index=0&scoped=ea01ea4f&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-ea01ea4f\"]])",
+      "start": 1716302281531,
+      "end": 1716302281534,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1716302281534,
+      "end": 1716302281534,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302281534,
+      "end": 1716302281534,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302281535,
+      "end": 1716302281535,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302281535,
+      "end": 1716302281536,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302281536,
+      "end": 1716302281536,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302281536,
+      "end": 1716302281536,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1716302281536,
+      "end": 1716302281536,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1716302281536,
+      "end": 1716302281536,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/node_modules/nuxt/dist/app/components/nuxt-link\";\n\r\nconst _sfc_main = {\r\nwatch: {\r\n   '$route' () {\r\n       this.showMobileMenu = false;\r\n   }\r\n},\r\ndata() {\r\n   return {\r\n       showMobileMenu: false,\r\n       menu: [\r\n       {\r\n         url: \"Services\",\r\n         name: \"Services\"\r\n       },\r\n       {\r\n         url: \"Productions\",\r\n         name: \"Productions\"\r\n       },\r\n       {\r\n         url: \"Retouches\",\r\n         name: \"Retouches\"\r\n       },\r\n       {\r\n         url: \"Apropos\",\r\n         name: \"A propos\"\r\n       },\r\n       {\r\n         url: \"Contact\",\r\n         name: \"Contact\"\r\n       }\r\n     ]\r\n   }\r\n   },\r\n   methods: {\r\n       toggleMenu() {\r\n           this.showMobileMenu = !this.showMobileMenu;\r\n           console.log('isToggled : ' + this.showMobileMenu)\r\n       }\r\n       \r\n   }\r\n}\r\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, createBlock as _createBlock, normalizeClass as _normalizeClass, vShow as _vShow, withDirectives as _withDirectives, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from 'assets/img/logo-byno-avececrit.png'\nimport _imports_1 from 'assets/icon/icon-instagram.png'\nimport _imports_2 from 'assets/icon/icon-linkedin.png'\nimport _imports_3 from 'assets/icon/icon-youtube.png'\nimport _imports_4 from 'assets/icon/menu-burger.png'\nimport _imports_5 from 'assets/icon/cross-menu-burger.png'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-ea01ea4f\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"navBar\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"logo-img\" }, null, -1))\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_0,\n  alt: \"logo design byno\"\n}, null, -1))\nconst _hoisted_4 = { class: \"liste-socials\" }\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_1,\n  alt: \"logo instagram\"\n}, null, -1))\nconst _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_2,\n  alt: \"logo linkedin\"\n}, null, -1))\nconst _hoisted_7 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_3,\n  alt: \"logo youtube\"\n}, null, -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_nuxt_link = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"nav\", _hoisted_1, [\n    _createVNode(_component_nuxt_link, {\n      class: \"logo\",\n      to: \"/\"\n    }, {\n      default: _withCtx(() => [\n        _hoisted_2\n      ]),\n      _: 1\n    }),\n    _createElementVNode(\"div\", {\n      class: _normalizeClass([\"liste-onglets\", { 'active2': $data.showMobileMenu }])\n    }, [\n      _hoisted_3,\n      (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($data.menu, (item, key) => {\n        return (_openBlock(), _createBlock(_component_nuxt_link, {\n          key: key,\n          to: {name: item.url}\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"h2\", null, _toDisplayString(item.name), 1)\n          ]),\n          _: 2\n        }, 1032, [\"to\"]))\n      }), 128))\n    ], 2),\n    _createElementVNode(\"div\", _hoisted_4, [\n      _createVNode(_component_nuxt_link, { to: \"/\" }, {\n        default: _withCtx(() => [\n          _hoisted_5\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_nuxt_link, { to: \"/\" }, {\n        default: _withCtx(() => [\n          _hoisted_6\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_nuxt_link, { to: \"/\" }, {\n        default: _withCtx(() => [\n          _hoisted_7\n        ]),\n        _: 1\n      })\n    ]),\n    _withDirectives(_createElementVNode(\"img\", {\n      onClick: _cache[0] || (_cache[0] = (...args) => ($options.toggleMenu && $options.toggleMenu(...args))),\n      class: \"menu-burger\",\n      src: _imports_4,\n      alt: \"open menu\"\n    }, null, 512), [\n      [_vShow, !$data.showMobileMenu]\n    ]),\n    _withDirectives(_createElementVNode(\"img\", {\n      onClick: _cache[1] || (_cache[1] = (...args) => ($options.toggleMenu && $options.toggleMenu(...args))),\n      class: \"cross menu-burger\",\n      src: _imports_5,\n      alt: \"close menu\"\n    }, null, 512), [\n      [_vShow, $data.showMobileMenu]\n    ])\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/components/Navbar.vue?vue&type=style&index=0&scoped=ea01ea4f&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-ea01ea4f\"]])",
+      "start": 1716302281536,
+      "end": 1716302281536,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1716302281536,
+      "end": 1716302281536,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1716302281536,
+      "end": 1716302281537,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716302281537,
+      "end": 1716302281537,
+      "order": "normal"
+    }
+  ]
+}

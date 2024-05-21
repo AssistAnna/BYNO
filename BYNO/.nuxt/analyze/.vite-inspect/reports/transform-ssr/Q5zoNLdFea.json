@@ -1,0 +1,288 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/Retouches.vue?vue&type=style&index=0&scoped=9c960113&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\n.retouches {\r\n    padding-top: 5rem;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;;\r\n}\r\n\r\nh3 {\r\n    text-align: center;\r\n    font-family: mpluslight;\r\n    font-size: 2rem;\r\n    margin-bottom: 7rem;\r\n}\r\n\r\n.img1 {\r\n    border-radius: 4px;\r\n    height: 85vh;\r\n    width: 75%;\r\n    background-repeat: no-repeat;\r\n    background-image: url('static/img/retouches-img1.JPG');\r\n    background-size: 100% 100%;\r\n    margin-bottom: 3rem;\r\n  }\r\n\r\n  .bloc-img-text {\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: center;\r\n      width: 80%;\r\n      margin-bottom: 3rem;\r\n\r\n  }\r\n  .img2 {\r\n    border-radius: 4px;\r\n    height: 85vh;\r\n    width: 60vw;\r\n    background-repeat: no-repeat;\r\n    background-size: contain;\r\n    background-position: center;\r\n    background-image: url('assets/img/retouches-img2.jpeg');\r\n    margin: 2rem;\r\n   \r\n\r\n  }\r\n  h4 {\r\n    width: 80%;\r\n    text-align: center;\r\n    font-family: mpluslight;\r\n    font-size: 1.3rem;\r\n    margin-bottom: 4rem;\r\n  }\r\n\r\n  @media (min-width: 821px) and (max-width: 1050px) {\r\n    .img1 {\r\n      height: 50vh\r\n    }\r\n    .img2 {\r\n      height: 55vh;\r\n    }\r\n    .bloc-img-text {\r\n      margin-bottom: 0;\r\n    }\r\n  }\r\n\r\n  @media screen and (max-width: 820px) {\r\n    h3 {\r\n      font-size: 1.5rem;\r\n      margin: 4rem;\r\n    }\r\n    .img1 {\r\n      width: 100%;\r\n      height: 40vh;\r\n    }\r\n    .bloc-img-text {\r\n      flex-direction: column-reverse;\r\n      width: 100%;\r\n      margin-bottom: 0;\r\n    }\r\n    h4 {\r\n      font-size: 1.5rem;\r\n    }\r\n    .img2 {\r\n      width: 100%;\r\n      height: 50vh;\r\n    }\r\n  }\r\n\r\n",
+      "start": 1716302283616,
+      "end": 1716302283616,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/Retouches.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/Retouches.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\r\n  <div class=\"retouches\">\r\n    <h2 class=\"title-h2\"  data-aos=\"fade-up\">Retouches</h2>\r\n    <h3  data-aos=\"fade-up\">Donner un autre sens à la photographie</h3>\r\n    <div class=\"img1 box-shadow\" data-aos=\"fade-up\"></div>\r\n    <div class=\"bloc-img-text\">\r\n      <div class=\"img2 box-shadow\" data-aos=\"fade-right\"></div>\r\n      <h4 data-aos=\"fade-left\">Une simple image ou un simple regard peut communiquer une multitude de significations.</h4>\r\n    </div>\r\n    <div class=\"bloc3\">\r\n      <div class=\"img3 box-shadow\"></div>\r\n      <div class=\"liste-photos\"></div>\r\n    </div>\r\n    <Carousel/>\r\n\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n.retouches {\r\n    padding-top: 5rem;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;;\r\n}\r\n\r\nh3 {\r\n    text-align: center;\r\n    font-family: mpluslight;\r\n    font-size: 2rem;\r\n    margin-bottom: 7rem;\r\n}\r\n\r\n.img1 {\r\n    border-radius: 4px;\r\n    height: 85vh;\r\n    width: 75%;\r\n    background-repeat: no-repeat;\r\n    background-image: url('static/img/retouches-img1.JPG');\r\n    background-size: 100% 100%;\r\n    margin-bottom: 3rem;\r\n  }\r\n\r\n  .bloc-img-text {\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: center;\r\n      width: 80%;\r\n      margin-bottom: 3rem;\r\n\r\n  }\r\n  .img2 {\r\n    border-radius: 4px;\r\n    height: 85vh;\r\n    width: 60vw;\r\n    background-repeat: no-repeat;\r\n    background-size: contain;\r\n    background-position: center;\r\n    background-image: url('assets/img/retouches-img2.jpeg');\r\n    margin: 2rem;\r\n   \r\n\r\n  }\r\n  h4 {\r\n    width: 80%;\r\n    text-align: center;\r\n    font-family: mpluslight;\r\n    font-size: 1.3rem;\r\n    margin-bottom: 4rem;\r\n  }\r\n\r\n  @media (min-width: 821px) and (max-width: 1050px) {\r\n    .img1 {\r\n      height: 50vh\r\n    }\r\n    .img2 {\r\n      height: 55vh;\r\n    }\r\n    .bloc-img-text {\r\n      margin-bottom: 0;\r\n    }\r\n  }\r\n\r\n  @media screen and (max-width: 820px) {\r\n    h3 {\r\n      font-size: 1.5rem;\r\n      margin: 4rem;\r\n    }\r\n    .img1 {\r\n      width: 100%;\r\n      height: 40vh;\r\n    }\r\n    .bloc-img-text {\r\n      flex-direction: column-reverse;\r\n      width: 100%;\r\n      margin-bottom: 0;\r\n    }\r\n    h4 {\r\n      font-size: 1.5rem;\r\n    }\r\n    .img2 {\r\n      width: 100%;\r\n      height: 50vh;\r\n    }\r\n  }\r\n\r\n</style>"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302283616,
+      "end": 1716302283616,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302283616,
+      "end": 1716302283616,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302283616,
+      "end": 1716302283616,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302283616,
+      "end": 1716302283616,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1716302283617,
+      "end": 1716302283617,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".retouches{align-items:center;display:flex;flex-direction:column;justify-content:center;padding-top:5rem}h3{font-family:mpluslight;font-size:2rem;margin-bottom:7rem;text-align:center}.img1{background-image:url(static/img/retouches-img1.JPG);background-repeat:no-repeat;background-size:100% 100%;border-radius:4px;height:85vh;margin-bottom:3rem;width:75%}.bloc-img-text{align-items:center;display:flex;justify-content:center;margin-bottom:3rem;width:80%}.img2{background-image:url(__VITE_ASSET__C68vZZlm__);background-position:50%;background-repeat:no-repeat;background-size:contain;border-radius:4px;height:85vh;margin:2rem;width:60vw}h4{font-family:mpluslight;font-size:1.3rem;margin-bottom:4rem;text-align:center;width:80%}@media (min-width:821px) and (max-width:1050px){.img1{height:50vh}.img2{height:55vh}.bloc-img-text{margin-bottom:0}}@media screen and (max-width:820px){h3{font-size:1.5rem;margin:4rem}.img1{height:40vh;width:100%}.bloc-img-text{flex-direction:column-reverse;margin-bottom:0;width:100%}h4{font-size:1.5rem}.img2{height:50vh;width:100%}}",
+      "start": 1716302283617,
+      "end": 1716302284048,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/Retouches.vue",
+        "mappings": "AACA,WAII,kBAAmB,CAFnB,YAAa,CACb,qBAAsB,CAEtB,sBAAuB,CAJvB,gBAKJ,CAEA,GAEI,sBAAuB,CACvB,cAAe,CACf,kBAAmB,CAHnB,iBAIJ,CAEA,MAKI,mDAAsD,CADtD,2BAA4B,CAE5B,yBAA0B,CAL1B,iBAAkB,CAClB,WAAY,CAKZ,kBAAmB,CAJnB,SAKF,CAEA,eAEI,kBAAmB,CADnB,YAAa,CAEb,sBAAuB,CAEvB,kBAAmB,CADnB,SAGJ,CACA,MAOE,8CAAuD,CADvD,uBAA2B,CAF3B,2BAA4B,CAC5B,uBAAwB,CAJxB,iBAAkB,CAClB,WAAY,CAMZ,WAAY,CALZ,UAQF,CACA,GAGE,sBAAuB,CACvB,gBAAiB,CACjB,kBAAmB,CAHnB,iBAAkB,CADlB,SAKF,CAEA,gDACE,MACE,WACF,CACA,MACE,WACF,CACA,eACE,eACF,CACF,CAEA,oCACE,GACE,gBAAiB,CACjB,WACF,CACA,MAEE,WAAY,CADZ,UAEF,CACA,eACE,6BAA8B,CAE9B,eAAgB,CADhB,UAEF,CACA,GACE,gBACF,CACA,MAEE,WAAY,CADZ,UAEF,CACF",
+        "names": [],
+        "sources": [
+          "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/Retouches.vue"
+        ],
+        "sourcesContent": [
+          "\r\n.retouches {\r\n    padding-top: 5rem;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;;\r\n}\r\n\r\nh3 {\r\n    text-align: center;\r\n    font-family: mpluslight;\r\n    font-size: 2rem;\r\n    margin-bottom: 7rem;\r\n}\r\n\r\n.img1 {\r\n    border-radius: 4px;\r\n    height: 85vh;\r\n    width: 75%;\r\n    background-repeat: no-repeat;\r\n    background-image: url('static/img/retouches-img1.JPG');\r\n    background-size: 100% 100%;\r\n    margin-bottom: 3rem;\r\n  }\r\n\r\n  .bloc-img-text {\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: center;\r\n      width: 80%;\r\n      margin-bottom: 3rem;\r\n\r\n  }\r\n  .img2 {\r\n    border-radius: 4px;\r\n    height: 85vh;\r\n    width: 60vw;\r\n    background-repeat: no-repeat;\r\n    background-size: contain;\r\n    background-position: center;\r\n    background-image: url('assets/img/retouches-img2.jpeg');\r\n    margin: 2rem;\r\n   \r\n\r\n  }\r\n  h4 {\r\n    width: 80%;\r\n    text-align: center;\r\n    font-family: mpluslight;\r\n    font-size: 1.3rem;\r\n    margin-bottom: 4rem;\r\n  }\r\n\r\n  @media (min-width: 821px) and (max-width: 1050px) {\r\n    .img1 {\r\n      height: 50vh\r\n    }\r\n    .img2 {\r\n      height: 55vh;\r\n    }\r\n    .bloc-img-text {\r\n      margin-bottom: 0;\r\n    }\r\n  }\r\n\r\n  @media screen and (max-width: 820px) {\r\n    h3 {\r\n      font-size: 1.5rem;\r\n      margin: 4rem;\r\n    }\r\n    .img1 {\r\n      width: 100%;\r\n      height: 40vh;\r\n    }\r\n    .bloc-img-text {\r\n      flex-direction: column-reverse;\r\n      width: 100%;\r\n      margin-bottom: 0;\r\n    }\r\n    h4 {\r\n      font-size: 1.5rem;\r\n    }\r\n    .img2 {\r\n      width: 100%;\r\n      height: 50vh;\r\n    }\r\n  }\r\n\r\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1716302284048,
+      "end": 1716302284048,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1716302284048,
+      "end": 1716302284048,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1716302284048,
+      "end": 1716302284048,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".retouches[data-v-9c960113]{align-items:center;display:flex;flex-direction:column;justify-content:center;padding-top:5rem}h3[data-v-9c960113]{font-family:mpluslight;font-size:2rem;margin-bottom:7rem;text-align:center}.img1[data-v-9c960113]{background-image:url(static/img/retouches-img1.JPG);background-repeat:no-repeat;background-size:100% 100%;border-radius:4px;height:85vh;margin-bottom:3rem;width:75%}.bloc-img-text[data-v-9c960113]{align-items:center;display:flex;justify-content:center;margin-bottom:3rem;width:80%}.img2[data-v-9c960113]{background-image:url(__VITE_ASSET__C68vZZlm__);background-position:50%;background-repeat:no-repeat;background-size:contain;border-radius:4px;height:85vh;margin:2rem;width:60vw}h4[data-v-9c960113]{font-family:mpluslight;font-size:1.3rem;margin-bottom:4rem;text-align:center;width:80%}@media (min-width:821px) and (max-width:1050px){.img1[data-v-9c960113]{height:50vh}.img2[data-v-9c960113]{height:55vh}.bloc-img-text[data-v-9c960113]{margin-bottom:0}}@media screen and (max-width:820px){h3[data-v-9c960113]{font-size:1.5rem;margin:4rem}.img1[data-v-9c960113]{height:40vh;width:100%}.bloc-img-text[data-v-9c960113]{flex-direction:column-reverse;margin-bottom:0;width:100%}h4[data-v-9c960113]{font-size:1.5rem}.img2[data-v-9c960113]{height:50vh;width:100%}}",
+      "start": 1716302284048,
+      "end": 1716302284051,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/Retouches.vue",
+        "mappings": "AAAA,4BAAW,kBAAkB,CAAC,YAAY,CAAC,qBAAqB,CAAC,sBAAsB,CAAC,gBAAgB,CAAC,oBAAG,sBAAsB,CAAC,cAAc,CAAC,kBAAkB,CAAC,iBAAiB,CAAC,uBAAM,mDAAmD,CAAC,2BAA2B,CAAC,yBAAyB,CAAC,iBAAiB,CAAC,WAAW,CAAC,kBAAkB,CAAC,SAAS,CAAC,gCAAe,kBAAkB,CAAC,YAAY,CAAC,sBAAsB,CAAC,kBAAkB,CAAC,SAAS,CAAC,uBAAM,8CAA8C,CAAC,uBAAuB,CAAC,2BAA2B,CAAC,uBAAuB,CAAC,iBAAiB,CAAC,WAAW,CAAC,WAAW,CAAC,UAAU,CAAC,oBAAG,sBAAsB,CAAC,gBAAgB,CAAC,kBAAkB,CAAC,iBAAiB,CAAC,SAAS,CAAC,gDAAgD,uBAAM,WAAW,CAAC,uBAAM,WAAW,CAAC,gCAAe,eAAe,CAAC,CAAC,oCAAoC,oBAAG,gBAAgB,CAAC,WAAW,CAAC,uBAAM,WAAW,CAAC,UAAU,CAAC,gCAAe,6BAA6B,CAAC,eAAe,CAAC,UAAU,CAAC,oBAAG,gBAAgB,CAAC,uBAAM,WAAW,CAAC,UAAU,CAAC",
+        "names": [],
+        "sources": [
+          "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/Retouches.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1716302284051,
+      "end": 1716302284051,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302284051,
+      "end": 1716302284051,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302284051,
+      "end": 1716302284051,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302284051,
+      "end": 1716302284051,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302284051,
+      "end": 1716302284051,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1716302284051,
+      "end": 1716302284051,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302284051,
+      "end": 1716302284052,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".retouches[data-v-9c960113]{align-items:center;display:flex;flex-direction:column;justify-content:center;padding-top:5rem}h3[data-v-9c960113]{font-family:mpluslight;font-size:2rem;margin-bottom:7rem;text-align:center}.img1[data-v-9c960113]{background-image:url(static/img/retouches-img1.JPG);background-repeat:no-repeat;background-size:100% 100%;border-radius:4px;height:85vh;margin-bottom:3rem;width:75%}.bloc-img-text[data-v-9c960113]{align-items:center;display:flex;justify-content:center;margin-bottom:3rem;width:80%}.img2[data-v-9c960113]{background-image:url(__VITE_ASSET__C68vZZlm__);background-position:50%;background-repeat:no-repeat;background-size:contain;border-radius:4px;height:85vh;margin:2rem;width:60vw}h4[data-v-9c960113]{font-family:mpluslight;font-size:1.3rem;margin-bottom:4rem;text-align:center;width:80%}@media (min-width:821px) and (max-width:1050px){.img1[data-v-9c960113]{height:50vh}.img2[data-v-9c960113]{height:55vh}.bloc-img-text[data-v-9c960113]{margin-bottom:0}}@media screen and (max-width:820px){h3[data-v-9c960113]{font-size:1.5rem;margin:4rem}.img1[data-v-9c960113]{height:40vh;width:100%}.bloc-img-text[data-v-9c960113]{flex-direction:column-reverse;margin-bottom:0;width:100%}h4[data-v-9c960113]{font-size:1.5rem}.img2[data-v-9c960113]{height:50vh;width:100%}}\"",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1716302284052,
+      "end": 1716302284052,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1716302284052,
+      "end": 1716302284053,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1716302284053,
+      "end": 1716302284053,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1716302284053,
+      "end": 1716302284053,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716302284053,
+      "end": 1716302284053,
+      "order": "normal"
+    }
+  ]
+}

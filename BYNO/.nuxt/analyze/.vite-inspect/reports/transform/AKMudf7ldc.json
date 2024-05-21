@@ -1,0 +1,17 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/node_modules/nuxt/dist/app/types.js",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "",
+      "start": 1716302281388,
+      "end": 1716302281388
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716302281388,
+      "end": 1716302281388,
+      "order": "normal"
+    }
+  ]
+}

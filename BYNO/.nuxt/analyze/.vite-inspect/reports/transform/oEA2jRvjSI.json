@@ -1,0 +1,223 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/Productions/index.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <div class=\"productions\">\r\n      <h2 class=\"title-h2\"  data-aos=\"fade-up\">Productions</h2>\r\n      <AllProjects  data-aos=\"fade-up\"/>\r\n    </div>\r\n  </template>\r\n  \r\n  <script>\r\n  \r\n  export default {\r\n  \r\n  }\r\n  </script>\r\n  \r\n  <style scoped>\r\n   .productions {\r\n      padding-top: 5rem;\r\n      display: flex;\r\n      flex-direction: column;\r\n      align-items: center;\r\n  \r\n    }\r\n  </style>",
+      "start": 1716302280654,
+      "end": 1716302280812,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302280812,
+      "end": 1716302280812,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302280812,
+      "end": 1716302280812,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1716302280812,
+      "end": 1716302280812,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1716302280812,
+      "end": 1716302280812,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1716302280812,
+      "end": 1716302280812,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1716302280812,
+      "end": 1716302280812,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1716302280812,
+      "end": 1716302280812,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\n  \r\n  const _sfc_main = {\r\n  \r\n  }\r\n  \nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-abf03acb\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"productions\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", {\n  class: \"title-h2\",\n  \"data-aos\": \"fade-up\"\n}, \"Productions\", -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_AllProjects = _resolveComponent(\"AllProjects\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _hoisted_2,\n    _createVNode(_component_AllProjects, { \"data-aos\": \"fade-up\" })\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/Productions/index.vue?vue&type=style&index=0&scoped=abf03acb&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-abf03acb\"]])",
+      "start": 1716302280812,
+      "end": 1716302280813,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1716302280813,
+      "end": 1716302280813,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302280813,
+      "end": 1716302280813,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302280813,
+      "end": 1716302280813,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1716302280813,
+      "end": 1716302280813,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1716302280813,
+      "end": 1716302280814,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302280814,
+      "end": 1716302280814,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1716302280814,
+      "end": 1716302280815,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;AAAA"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1716302280815,
+      "end": 1716302280815,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1716302280815,
+      "end": 1716302280815,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1716302280815,
+      "end": 1716302280815,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1716302280815,
+      "end": 1716302280815,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1716302280815,
+      "end": 1716302280815,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716302280815,
+      "end": 1716302280815,
+      "order": "normal"
+    }
+  ]
+}

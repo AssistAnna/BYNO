@@ -1,10 +1,10 @@
 <template>
   <div class="page-index">
-    <GroupeImgAccueil/>
-    <p class="text-presentation">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements.</p>
-    <h2 class="title-h2">Projets</h2>
-    <AllProjects/>
-    <h2 class="title-h2">Services</h2>
+    <GroupeImgAccueil  data-aos="fade-up"/>
+    <p class="text-presentation" data-aos="fade-up">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements.</p>
+    <h2 class="title-h2" data-aos="fade-up">Projets</h2>
+    <AllProjects data-aos="fade-up"/>
+    <h2 class="title-h2" data-aos="fade-up">Services</h2>
     <AllServices />
   
   </div>
@@ -21,37 +21,37 @@ export default {
 <style>
 @font-face {
   font-family: 'mplusblack';
-  src: url('~/assets/fonts/MPLUS1p-Black.ttf') format('opentype'),
+  src: url('~/static/fonts/MPLUS1p-Black.ttf') format('opentype'),
 }
 
 @font-face {
   font-family: 'mplusbold';
-  src: url('~/assets/fonts/MPLUS1p-Bold.ttf') format('opentype'),
+  src: url('~/static/fonts/MPLUS1p-Bold.ttf') format('opentype'),
 }
 
 @font-face {
   font-family: 'mplusextra';
-  src: url('~/assets/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),
+  src: url('~/static/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),
 }
 
 @font-face {
   font-family: 'mpluslight';
-  src: url('~/assets/fonts/MPLUS1p-Light.ttf') format('opentype'),
+  src: url('~/static/fonts/MPLUS1p-Light.ttf') format('opentype'),
 }
 
 @font-face {
   font-family: 'mplusmedium';
-  src: url('~/assets/fonts/MPLUS1p-Medium.ttf') format('opentype'),
+  src: url('~/static/fonts/MPLUS1p-Medium.ttf') format('opentype'),
 }
 
 @font-face {
   font-family: 'mplusregular';
-  src: url('~/assets/fonts/MPLUS1p-Regular.ttf') format('opentype'),
+  src: url('~/static/fonts/MPLUS1p-Regular.ttf') format('opentype'),
 }
 
 @font-face {
   font-family: 'mplusthin';
-  src: url('~/assets/fonts/MPLUS1p-Thin.ttf') format('opentype'),
+  src: url('~/static/fonts/MPLUS1p-Thin.ttf') format('opentype'),
 }
 
 .box-shadow {
@@ -72,7 +72,7 @@ box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31p
   font-family: mplusbold;
   text-align: center;
   padding-bottom: 4rem;
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .title-h2 {

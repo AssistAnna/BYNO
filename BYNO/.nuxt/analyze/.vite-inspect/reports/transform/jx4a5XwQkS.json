@@ -1,0 +1,214 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/Contact.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <div class=\"page-contact\">\r\n    <div class=\"bloc-title\">\r\n      <img src=\"~assets/img/logo-byno-avececrit.png\" alt=\"logo byno\">\r\n      <div class=\"soulignement\"></div>\r\n    </div>\r\n    \r\n   \r\n       <form @submit.prevent=\"submitEmail\" class=\"formulaire\">\r\n            <input\r\n              v-model=\"name\"\r\n              type=\"text\"\r\n              placeholder=\"Nom, Prénom\"\r\n            />\r\n            <input\r\n              v-model=\"email\"\r\n              type=\"text\"\r\n              placeholder=\"Email\"\r\n            />\r\n            <input\r\n              v-model=\"telephone\"\r\n              type=\"text\"\r\n              placeholder=\"Téléphone\"\r\n            />\r\n            <textarea rows=\"6\">Votre message ...</textarea>\r\n         \r\n         \r\n          <div class=\"button\">\r\n            <button\r\n            type=\"submit\"\r\n            @click.prevent=\"submitForm\"\r\n          >\r\n            {{ isLoading ? 'Loading...' : 'Envoyer' }}\r\n          </button>\r\n          </div>\r\n          \r\n        </form>\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n  .page-contact {\r\n    padding-top: 5rem;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n\r\n  }\r\n  img {\r\n    height: 12rem;\r\n    width: 12rem;\r\n  }\r\n  .bloc-title {\r\n    width: 55%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  .soulignement {\r\n    margin: 3rem 0;\r\n    border: 1px solid #009FE3;\r\n    width: 100%;\r\n  }\r\n\r\n  .formulaire{\r\n    display: flex;\r\n    flex-direction: column;\r\n    margin: 4rem 0;\r\n    width: 40vw;\r\n  } \r\n\r\n  input {\r\n    height: 2.5rem;\r\n    margin-bottom: 1.2rem;\r\n    border-radius: 6px;\r\n    font-family: mplusthin;\r\n    font-weight: bold;\r\n    padding-left: 0.7rem;\r\n    \r\n  }\r\n\r\n  ::placeholder {\r\n    color: black;\r\n    font-family: mplusthin;\r\n    font-family: 4rem;\r\n    font-weight: bold;\r\n    font-size: 1rem;\r\n    margin-bottom: 1rem;\r\n  }\r\n\r\n  textarea {\r\n    font-family: mplusthin;\r\n    font-weight: bold;\r\n    padding-left: 1rem;\r\n    font-size: 1rem;\r\n    padding-top: 1rem;\r\n  }\r\n\r\n  .button {\r\n    display: flex;\r\n    justify-content: center;\r\n    padding-top: 2rem;\r\n    margin-bottom: 2rem;\r\n\r\n  }\r\n\r\n  button {\r\n    font-family: mplusregular;\r\n    font-weight: bold;\r\n    font-size: 1.2rem;\r\n    padding: 0.8rem 2rem;\r\n    border-radius: 6px;\r\n    background-color: #009FE3;\r\n    color: white;\r\n  }\r\n  @media screen and (max-width: 900px) {\r\n    .formulaire {\r\n      width: 85vw;\r\n      margin: 0;\r\n    }\r\n    img {\r\n      height: 10rem;\r\n      width: 10rem;\r\n    }\r\n    .soulignement {\r\n      margin: 1.5rem 0;\r\n    }\r\n  }\r\n</style>",
+      "start": 1716302280662,
+      "end": 1716302280836,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716302280836,
+      "end": 1716302280836,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716302280836,
+      "end": 1716302280836,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1716302280836,
+      "end": 1716302280836,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1716302280836,
+      "end": 1716302280836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1716302280836,
+      "end": 1716302280836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1716302280836,
+      "end": 1716302280836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1716302280836,
+      "end": 1716302280836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\nconst _sfc_main = {\r\n\r\n}\r\n\nimport { createElementVNode as _createElementVNode, vModelText as _vModelText, withDirectives as _withDirectives, toDisplayString as _toDisplayString, withModifiers as _withModifiers, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from 'assets/img/logo-byno-avececrit.png'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-cb1fafed\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"page-contact\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"bloc-title\" }, [\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"logo byno\"\n  }),\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"soulignement\" })\n], -1))\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"textarea\", { rows: \"6\" }, \"Votre message ...\", -1))\nconst _hoisted_4 = { class: \"button\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _hoisted_2,\n    _createElementVNode(\"form\", {\n      onSubmit: _cache[4] || (_cache[4] = _withModifiers((...args) => (_ctx.submitEmail && _ctx.submitEmail(...args)), [\"prevent\"])),\n      class: \"formulaire\"\n    }, [\n      _withDirectives(_createElementVNode(\"input\", {\n        \"onUpdate:modelValue\": _cache[0] || (_cache[0] = $event => ((_ctx.name) = $event)),\n        type: \"text\",\n        placeholder: \"Nom, Prénom\"\n      }, null, 512), [\n        [_vModelText, _ctx.name]\n      ]),\n      _withDirectives(_createElementVNode(\"input\", {\n        \"onUpdate:modelValue\": _cache[1] || (_cache[1] = $event => ((_ctx.email) = $event)),\n        type: \"text\",\n        placeholder: \"Email\"\n      }, null, 512), [\n        [_vModelText, _ctx.email]\n      ]),\n      _withDirectives(_createElementVNode(\"input\", {\n        \"onUpdate:modelValue\": _cache[2] || (_cache[2] = $event => ((_ctx.telephone) = $event)),\n        type: \"text\",\n        placeholder: \"Téléphone\"\n      }, null, 512), [\n        [_vModelText, _ctx.telephone]\n      ]),\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        _createElementVNode(\"button\", {\n          type: \"submit\",\n          onClick: _cache[3] || (_cache[3] = _withModifiers((...args) => (_ctx.submitForm && _ctx.submitForm(...args)), [\"prevent\"]))\n        }, _toDisplayString(_ctx.isLoading ? 'Loading...' : 'Envoyer'), 1)\n      ])\n    ], 32)\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/pages/Contact.vue?vue&type=style&index=0&scoped=cb1fafed&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-cb1fafed\"]])",
+      "start": 1716302280836,
+      "end": 1716302280838,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716302280838,
+      "end": 1716302280838,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716302280838,
+      "end": 1716302280839,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716302280839,
+      "end": 1716302280839,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716302280839,
+      "end": 1716302280839,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1716302280839,
+      "end": 1716302280839,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1716302280839,
+      "end": 1716302280839,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1716302280839,
+      "end": 1716302280840,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1716302280840,
+      "end": 1716302280840,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1716302280840,
+      "end": 1716302280840,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716302280840,
+      "end": 1716302280840,
+      "order": "normal"
+    }
+  ]
+}

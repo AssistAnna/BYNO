@@ -2,16 +2,17 @@
   <nav class="navBar">
    <nuxt-link class="logo" to="/"><div class="logo-img"></div></nuxt-link>
    <div class="liste-onglets" :class="{ 'active2': showMobileMenu }">
-       <img src="~assets/img/logo-byno-avececrit.png" alt="logo design byno">
-       <nuxt-link v-for="(item,key) in menu" :key="key" :to="{name: item.url}"><h2>{{item.name}}</h2></nuxt-link></div>
+       <img src="assets/img/logo-byno-avececrit.png" alt="logo design byno">
+       <nuxt-link v-for="(item,key) in menu" :key="key" :to="{name: item.url}"><h2>{{item.name}}</h2></nuxt-link>
+    </div>
    <div class="liste-socials">
        
-       <nuxt-link to="/"><img src="~assets/icon/icon-instagram.png" alt="logo instagram"></nuxt-link>
-       <nuxt-link to="/"><img src="~assets/icon/icon-linkedin.png" alt="logo linkedin"></nuxt-link>
-       <nuxt-link to="/"><img src="~assets/icon/icon-youtube.png" alt="logo youtube"></nuxt-link>
+       <nuxt-link to="/"><img src="/static/icon/icon-instagram.png" alt="logo instagram"></nuxt-link>
+       <nuxt-link to="/"><img src="/static/icon/icon-linkedin.png" alt="logo linkedin"></nuxt-link>
+       <nuxt-link to="/"><img src="/static/icon/icon-youtube.png" alt="logo youtube"></nuxt-link>
    </div>
-   <img v-show="!showMobileMenu" @click="toggleMenu" class="menu-burger" src="~assets/icon/menu-burger.png" alt="open menu">
-   <img v-show="showMobileMenu" @click="toggleMenu" class="cross menu-burger" src="~assets/icon/cross-menu-burger.png" alt="close menu">
+   <img v-show="!showMobileMenu" @click="toggleMenu" class="menu-burger" src="/static/icon/menu-burger.png" alt="open menu">
+   <img v-show="showMobileMenu" @click="toggleMenu" class="cross menu-burger" src="/static/icon/cross-menu-burger.png" alt="close menu">
   </nav>
 </template>
  
@@ -86,11 +87,12 @@ data() {
 }
 
 .logo-img {
-   background-image: url('assets/img/logo-byno.png');
+   background-image: url('/static/img/logo-byno.png');
    height: 5rem;
    width: 5rem;
    background-size: contain;
    background-repeat: no-repeat;
+   margin-left: 1.5rem;
 }
 
 .liste-onglets {
@@ -109,6 +111,11 @@ data() {
 .liste-onglets a {
    margin: 0 1rem;
    font-size: 0.6rem;
+   transition: all 0.2s ease-in-out;
+}
+
+.liste-onglets a:hover {
+    color: #009FE3;
 }
 
 .liste-onglets a.active {

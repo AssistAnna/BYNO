@@ -16,5 +16,8 @@
     "usebootstrap": "^0.2.15",
     "vue": "^3.4.19",
     "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "nuxt-aos": "^1.2.4"
   }
 }

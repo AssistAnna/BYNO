@@ -1,20 +1,29 @@
 <template>
   <div class="apropos">
-    <h2 class="title-h2">A propos</h2>
-    <div class="bloc-img1">
-      <div class="img1"></div>
-    </div>
-    <div class="bloc-text">
+    <h2 class="title-h2" data-aos="fade-up">A propos</h2>
+    
+    <div class="bloc-text" data-aos="fade-up">
       <h3>Noé Chardon</h3>
       <h4>entrepreneur passionné</h4>
       <p>Passionné par la musique et la vidéo, mon objectif est de vous guider dans la conception de votre identité visuelle et dans le déploiement de votre communication sur les réseaux sociaux. Chaque projet que je réalise est conçu pour vous satisfaire et vous accompagner dans votre  développement.</p>
     </div>
+
+    <!--
     <p>Ils me font confiance : </p>
     <div class="bloc-logos">
       <div class="logo"  v-for="(logo,key) in logos" :key="key">
           <div class="logo-img" :style="' background-image: url(' + logo.imgUrl + ')'"></div>
         </div>
     </div>
+
+
+
+
+    <div class="bloc-img1" data-aos="zoom-in">
+      <div class="img1"></div>
+    </div>
+    -->
+    
     </div>
 </template>
 
@@ -24,16 +33,16 @@ export default {
     return {
       logos: [
         {
-          imgUrl:"_nuxt/assets/img/partenaires/logo-mazda.png"
+          imgUrl:"_nuxt/static/img/partenaires/logo-mazda.png"
         },
         {
-          imgUrl:"_nuxt/assets/img/partenaires/logo-menton.png"
+          imgUrl:"_nuxt/static/img/partenaires/logo-menton.png"
         },
         {
-          imgUrl:"_nuxt/assets/img/partenaires/logo-R.png"
+          imgUrl:"_nuxt/static/img/partenaires/logo-R.png"
         },
         {
-          imgUrl: "_nuxt/assets/img/partenaires/logo-chateau.png"
+          imgUrl: "_nuxt/static/img/partenaires/logo-chateau.png"
         }
       ]
     }
@@ -47,6 +56,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5rem;
 
   }
 
@@ -61,15 +71,7 @@ export default {
     width: 55%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('assets/img/apropos-img1.jpg');
-  }
-.img2 {
-    height: 24rem;
-    width: 50%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('assets/img/exemples/sponsors.png');
-    margin-bottom: 5rem;
+    background-image: url('static/img/apropos-img1.jpg');
   }
   
 

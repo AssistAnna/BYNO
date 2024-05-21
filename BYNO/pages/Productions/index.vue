@@ -1,7 +1,7 @@
 <template>
     <div class="productions">
-      <h2 class="title-h2">Productions</h2>
-      <AllProjects/>
+      <h2 class="title-h2"  data-aos="fade-up">Productions</h2>
+      <AllProjects  data-aos="fade-up"/>
     </div>
   </template>
   

@@ -1,16 +1,9 @@
 <template>
      <div class="groupe-img-accueil">
-        <img src="~assets/img/groupe-img-accueil/frame.png" alt="" class="frame">
+        <img src="/static/img/groupe-img-accueil/frame.png" alt="" class="frame">
         <div class="logo">
-            <img src="~assets/img/groupe-img-accueil/logo.png" alt="" class="logo-ecriture">
-        </div>
-        <!--
-        <img src="~assets/img/groupe-img-accueil/background.jpg" alt="" class="bckg">
-
-       
-        
-        -->
-        
+            <img src="/static/img/groupe-img-accueil/logo.png" alt="" class="logo-ecriture">
+        </div>        
     </div>
 </template>
 
@@ -20,7 +13,7 @@
     height: 80vh;
     width: 100%;
     position: relative;
-    background-image: url('assets/img/groupe-img-accueil/background.jpg');
+    background-image: url('/static/img/groupe-img-accueil/background.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
