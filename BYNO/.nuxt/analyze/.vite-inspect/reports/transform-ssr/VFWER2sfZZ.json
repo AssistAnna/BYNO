@@ -1,0 +1,277 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Apropos.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <div class=\"apropos\">\r\n    <h2 class=\"title-h2\" data-aos=\"fade-up\">A propos</h2>\r\n    <div class=\"bloc-img1\" data-aos=\"zoom-in\">\r\n      <div class=\"img1\"></div>\r\n    </div>\r\n    <div class=\"bloc-text\" data-aos=\"fade-up\">\r\n      <h3>Noé Chardon</h3>\r\n      <h4>entrepreneur passionné</h4>\r\n      <p>Passionné par la musique et la vidéo, mon objectif est de vous guider dans la conception de votre identité visuelle et dans le déploiement de votre communication sur les réseaux sociaux. Chaque projet que je réalise est conçu pour vous satisfaire et vous accompagner dans votre  développement.</p>\r\n    </div>\r\n\r\n    <!--\r\n    <p>Ils me font confiance : </p>\r\n    <div class=\"bloc-logos\">\r\n      <div class=\"logo\"  v-for=\"(logo,key) in logos\" :key=\"key\">\r\n          <div class=\"logo-img\" :style=\"' background-image: url(' + logo.imgUrl + ')'\"></div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n\r\n\r\n    <div class=\"bloc-img1\" data-aos=\"zoom-in\">\r\n      <div class=\"img1\"></div>\r\n    </div>\r\n    -->\r\n    \r\n    </div>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n  data() {\r\n    return {\r\n      logos: [\r\n        {\r\n          imgUrl:\"/img/partenaires/logo-mazda.png\"\r\n        },\r\n        {\r\n          imgUrl:\"/img/partenaires/logo-menton.png\"\r\n        },\r\n        {\r\n          imgUrl:\"/img/partenaires/logo-R.png\"\r\n        },\r\n        {\r\n          imgUrl: \"/img/partenaires/logo-chateau.png\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n.apropos {\r\n    padding-top: 5rem;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    margin-bottom: 5rem;\r\n\r\n  }\r\n\r\n.bloc-img1 {\r\n  width: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.img1 {\r\n    min-height: 80vh;\r\n    width: 55%;\r\n    background-repeat: no-repeat;\r\n    background-size: 100% 100%;\r\n    background-image: url('/img/apropos-img1.jpg');\r\n  }\r\n  \r\n\r\n  .bloc-text {\r\n    font-family: mplusmedium;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  h3 {\r\n      font-size: 3rem;\r\n      text-align: center;\r\n      margin-bottom: 0;\r\n\r\n  }\r\n  h4 {\r\n    text-align: center;\r\n    font-size: 1.7rem;\r\n  }\r\n\r\n  p {\r\n    text-align: center;\r\n    font-family: mpluslight;\r\n    font-weight: bold;\r\n    font-size: 1.5rem;\r\n    width: 70%;\r\n  }\r\n\r\n  .bloc-logos {\r\n    display: grid;\r\n    grid-template-columns: repeat(4, 1fr);\r\n    padding: 5rem 3rem;\r\n    box-sizing: border-box;\r\n  }\r\n\r\n  .logo{\r\n    height: 30vh;\r\n    width: 12vw;\r\n    padding: 0.5rem;\r\n  }\r\n\r\n  .logo:nth-child(1) {\r\n    width: 10vw;\r\n  }\r\n  .logo-img {\r\n    background-repeat: no-repeat;\r\n    height: 100%;\r\n    width: 100%;\r\n    background-size: 100%;\r\n  }\r\n  @media (min-width: 801px) and (max-width: 1050px) {\r\n    .img1 {\r\n      width: 100%;\r\n      height: 50vh;\r\n    }\r\n    .logo {\r\n      height: 10vh;\r\n    }\r\n  }\r\n\r\n  @media screen and (max-width: 800px) {\r\n    .img1 {\r\n      width: 100%;\r\n      min-height: 55vh;\r\n    }\r\n    .bloc-text h3 {\r\n      font-size: 2.5rem;\r\n    }\r\n    .bloc-text h4 {\r\n      font-size: 1.5rem;\r\n    }\r\n    .bloc-text p {\r\n      width: 85%;\r\n      font-size: 1.4rem;\r\n      margin-bottom: 4rem;\r\n    }\r\n    .bloc-logos {\r\n      display: flex;\r\n      flex-direction: column;\r\n      align-items: center;\r\n      padding: 2rem 0 0 0;\r\n    }\r\n    .logo {\r\n      height: 22vh;\r\n      width: 50vw;\r\n      padding-bottom: 2rem;\r\n    }\r\n    .logo:nth-child(1) {\r\n      width: 45vw;\r\n      height: 25vh;\r\n    }\r\n    .logo:nth-child(4) {\r\n      width: 45vw;\r\n      height: 20vh;\r\n    }\r\n  }\r\n  \r\n</style>",
+      "start": 1716369332394,
+      "end": 1716369332464,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716369332464,
+      "end": 1716369332464,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716369332464,
+      "end": 1716369332464,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716369332464,
+      "end": 1716369332464,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716369332464,
+      "end": 1716369332464,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1716369332464,
+      "end": 1716369332464,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1716369332464,
+      "end": 1716369332464,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1716369332464,
+      "end": 1716369332464,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1716369332464,
+      "end": 1716369332464,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1716369332464,
+      "end": 1716369332464,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\nconst _sfc_main = {\r\n  data() {\r\n    return {\r\n      logos: [\r\n        {\r\n          imgUrl:\"/img/partenaires/logo-mazda.png\"\r\n        },\r\n        {\r\n          imgUrl:\"/img/partenaires/logo-menton.png\"\r\n        },\r\n        {\r\n          imgUrl:\"/img/partenaires/logo-R.png\"\r\n        },\r\n        {\r\n          imgUrl: \"/img/partenaires/logo-chateau.png\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}\r\n\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"apropos\" }, _attrs))} data-v-7d3500f5><h2 class=\"title-h2\" data-aos=\"fade-up\" data-v-7d3500f5>A propos</h2><div class=\"bloc-img1\" data-aos=\"zoom-in\" data-v-7d3500f5><div class=\"img1\" data-v-7d3500f5></div></div><div class=\"bloc-text\" data-aos=\"fade-up\" data-v-7d3500f5><h3 data-v-7d3500f5>Noé Chardon</h3><h4 data-v-7d3500f5>entrepreneur passionné</h4><p data-v-7d3500f5>Passionné par la musique et la vidéo, mon objectif est de vous guider dans la conception de votre identité visuelle et dans le déploiement de votre communication sur les réseaux sociaux. Chaque projet que je réalise est conçu pour vous satisfaire et vous accompagner dans votre développement.</p></div></div>`)\n}\n\nimport \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Apropos.vue?vue&type=style&index=0&scoped=7d3500f5&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"pages/Apropos.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-7d3500f5\"]])",
+      "start": 1716369332464,
+      "end": 1716369332484,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Apropos.vue",
+        "names": [],
+        "sources": [
+          "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Apropos.vue"
+        ],
+        "sourcesContent": [
+          "<template>\r\n  <div class=\"apropos\">\r\n    <h2 class=\"title-h2\" data-aos=\"fade-up\">A propos</h2>\r\n    <div class=\"bloc-img1\" data-aos=\"zoom-in\">\r\n      <div class=\"img1\"></div>\r\n    </div>\r\n    <div class=\"bloc-text\" data-aos=\"fade-up\">\r\n      <h3>Noé Chardon</h3>\r\n      <h4>entrepreneur passionné</h4>\r\n      <p>Passionné par la musique et la vidéo, mon objectif est de vous guider dans la conception de votre identité visuelle et dans le déploiement de votre communication sur les réseaux sociaux. Chaque projet que je réalise est conçu pour vous satisfaire et vous accompagner dans votre  développement.</p>\r\n    </div>\r\n\r\n    <!--\r\n    <p>Ils me font confiance : </p>\r\n    <div class=\"bloc-logos\">\r\n      <div class=\"logo\"  v-for=\"(logo,key) in logos\" :key=\"key\">\r\n          <div class=\"logo-img\" :style=\"' background-image: url(' + logo.imgUrl + ')'\"></div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n\r\n\r\n    <div class=\"bloc-img1\" data-aos=\"zoom-in\">\r\n      <div class=\"img1\"></div>\r\n    </div>\r\n    -->\r\n    \r\n    </div>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n  data() {\r\n    return {\r\n      logos: [\r\n        {\r\n          imgUrl:\"/img/partenaires/logo-mazda.png\"\r\n        },\r\n        {\r\n          imgUrl:\"/img/partenaires/logo-menton.png\"\r\n        },\r\n        {\r\n          imgUrl:\"/img/partenaires/logo-R.png\"\r\n        },\r\n        {\r\n          imgUrl: \"/img/partenaires/logo-chateau.png\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n.apropos {\r\n    padding-top: 5rem;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    margin-bottom: 5rem;\r\n\r\n  }\r\n\r\n.bloc-img1 {\r\n  width: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.img1 {\r\n    min-height: 80vh;\r\n    width: 55%;\r\n    background-repeat: no-repeat;\r\n    background-size: 100% 100%;\r\n    background-image: url('/img/apropos-img1.jpg');\r\n  }\r\n  \r\n\r\n  .bloc-text {\r\n    font-family: mplusmedium;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  h3 {\r\n      font-size: 3rem;\r\n      text-align: center;\r\n      margin-bottom: 0;\r\n\r\n  }\r\n  h4 {\r\n    text-align: center;\r\n    font-size: 1.7rem;\r\n  }\r\n\r\n  p {\r\n    text-align: center;\r\n    font-family: mpluslight;\r\n    font-weight: bold;\r\n    font-size: 1.5rem;\r\n    width: 70%;\r\n  }\r\n\r\n  .bloc-logos {\r\n    display: grid;\r\n    grid-template-columns: repeat(4, 1fr);\r\n    padding: 5rem 3rem;\r\n    box-sizing: border-box;\r\n  }\r\n\r\n  .logo{\r\n    height: 30vh;\r\n    width: 12vw;\r\n    padding: 0.5rem;\r\n  }\r\n\r\n  .logo:nth-child(1) {\r\n    width: 10vw;\r\n  }\r\n  .logo-img {\r\n    background-repeat: no-repeat;\r\n    height: 100%;\r\n    width: 100%;\r\n    background-size: 100%;\r\n  }\r\n  @media (min-width: 801px) and (max-width: 1050px) {\r\n    .img1 {\r\n      width: 100%;\r\n      height: 50vh;\r\n    }\r\n    .logo {\r\n      height: 10vh;\r\n    }\r\n  }\r\n\r\n  @media screen and (max-width: 800px) {\r\n    .img1 {\r\n      width: 100%;\r\n      min-height: 55vh;\r\n    }\r\n    .bloc-text h3 {\r\n      font-size: 2.5rem;\r\n    }\r\n    .bloc-text h4 {\r\n      font-size: 1.5rem;\r\n    }\r\n    .bloc-text p {\r\n      width: 85%;\r\n      font-size: 1.4rem;\r\n      margin-bottom: 4rem;\r\n    }\r\n    .bloc-logos {\r\n      display: flex;\r\n      flex-direction: column;\r\n      align-items: center;\r\n      padding: 2rem 0 0 0;\r\n    }\r\n    .logo {\r\n      height: 22vh;\r\n      width: 50vw;\r\n      padding-bottom: 2rem;\r\n    }\r\n    .logo:nth-child(1) {\r\n      width: 45vw;\r\n      height: 25vh;\r\n    }\r\n    .logo:nth-child(4) {\r\n      width: 45vw;\r\n      height: 20vh;\r\n    }\r\n  }\r\n  \r\n</style>"
+        ],
+        "mappings": ";AAgCA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACL;UACE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACzC,CAAC;QACD;UACE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QAC1C,CAAC;QACD;UACE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACrC,CAAC;QACD;UACE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QAC5C;MACF;IACF;EACF;AACF;;;;;;EAnDA,aAAA,gBAAA,cACO,KAAK,EAAC,SAAS,IADtB"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1716369332484,
+      "end": 1716369332484,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716369332484,
+      "end": 1716369332484,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716369332484,
+      "end": 1716369332484,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716369332484,
+      "end": 1716369332484,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716369332484,
+      "end": 1716369332484,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1716369332484,
+      "end": 1716369332484,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716369332484,
+      "end": 1716369332484,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1716369332484,
+      "end": 1716369332485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1716369332485,
+      "end": 1716369332485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1716369332485,
+      "end": 1716369332485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1716369332485,
+      "end": 1716369332485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1716369332485,
+      "end": 1716369332485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1716369332485,
+      "end": 1716369332485,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1716369332485,
+      "end": 1716369332485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1716369332485,
+      "end": 1716369332485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1716369332485,
+      "end": 1716369332485,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716369332485,
+      "end": 1716369332485,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716369332485,
+      "end": 1716369332485,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716369332485,
+      "end": 1716369332487,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716369332485,
+      "end": 1716369332487,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716369332487,
+      "end": 1716369332487,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716369332487,
+      "end": 1716369332487,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1716369332487,
+      "end": 1716369332488,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;AAAA"
+      }
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1716369332487,
+      "end": 1716369332488,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;AAAA"
+      }
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1716369332488,
+      "end": 1716369332488,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1716369332488,
+      "end": 1716369332488,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1716369332488,
+      "end": 1716369332488,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1716369332488,
+      "end": 1716369332488,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716369332488,
+      "end": 1716369332488,
+      "order": "normal"
+    }
+  ]
+}

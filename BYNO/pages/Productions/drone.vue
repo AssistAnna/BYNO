@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        <en-attente/>
     </div>
 </template>
 

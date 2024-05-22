@@ -1,37 +1,61 @@
 <template>
   <div class="all-services">
+    <!--Version PC et tablettes-->
+    <div class="version-pc">
       <div class="bloc" data-aos="fade-right">
-          <img src="/static/img/service-img-bloc1.jpg" alt="image vaisseau spatial" class="img-bloc">
+          <img src="/img/service-img-bloc1.jpg" alt="image vaisseau spatial" class="img-bloc">
           <div class="title-text">
             <h3>Notre approche</h3>
             <p>Byno est un studio spécialisé dans la production audiovisuelle et sonore, offrant une approche collaborative pour la réalisation de vidéos. Chaque projet est traité avec une attention particulière, car il porte en lui son message néessitant ainsi une approche personnalisée.</p>
           </div>
       </div>
       <div class="bloc bloc2" data-aos="fade-left">
-        <img src="/static/img/service-img-bloc2.jpg" alt="image vaisseau spatial" class="img-bloc img-special">
           <div class="title-text">
             <h3>Qualité sound design</h3>
             <p>Byno vous propose une qualité de sound design inégalée, surpassant toute possibilité offerte par les robots ou les algorithmes. Il répond à vos exigences avec une précision minutieuse, prenant en compte les moindes détails de votre demande.</p>
           </div>
-          <img src="/static/img/service-img-bloc2.jpg" alt="image vaisseau spatial" class="img-bloc img2">
-
+          <img src="/img/service-img-bloc2.jpg" alt="image vaisseau spatial" class="img-bloc img2">
       </div>
-      
-      
+    </div>
+     <!--Version mobile-->
+     <div class="version-mobile">
+      <div class="bloc-mobile">
+          <img src="/img/service-img-bloc1.jpg" alt="image vaisseau spatial" class="img-bloc">
+          <div class="title-text">
+            <h3>Notre approche</h3>
+            <p>Byno est un studio spécialisé dans la production audiovisuelle et sonore, offrant une approche collaborative pour la réalisation de vidéos. Chaque projet est traité avec une attention particulière, car il porte en lui son message néessitant ainsi une approche personnalisée.</p>
+          </div>
+      </div>
+      <div class="bloc-mobile">
+          <div class="title-text">
+          <img src="/img/service-img-bloc2.jpg" alt="image vaisseau spatial" class="img-bloc img2">
+            <h3>Qualité sound design</h3>
+            <p>Byno vous propose une qualité de sound design inégalée, surpassant toute possibilité offerte par les robots ou les algorithmes. Il répond à vos exigences avec une précision minutieuse, prenant en compte les moindes détails de votre demande.</p>
+          </div>
+      </div>
+     </div>
   </div>
 </template>
 
 <style scoped>
 .all-services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
 
+}
+.version-pc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.version-mobile {
+  display: none;
 }
 .bloc {
     width: 70%;
-    height: 55vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,27 +104,20 @@ p {
   .img-bloc {
     height: 80%;
   }
-  
-  .img2 {
-    display: none;
-  }
-  .img-special {
-    display: block;
-  }
   h3 {
     font-size: 1.3rem;
   }
   
 }
 @media screen and (max-width: 819px) {
-  .bloc {
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 1rem;
-    height: 80vh;
+  .version-pc {
+    display: none;
   }
-  .bloc2 {
-    margin-top: 3rem;
+  .version-mobile {
+    display: block;
+  }
+  .bloc-mobile {
+    margin: 5rem 0;
   }
   .title-text {
     padding: 0;
@@ -108,25 +125,18 @@ p {
   }
   h3 {
     margin: 2rem 0;
-
+    font-size: 1.6rem;
   }
   p {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding: 0;
     margin: 1.5rem;
   }
   .img-bloc {
     width: 100vw;
-    height: 40%;
+    
     
   }
-  .img2 {
-    display: none;
-  }
-  .img-special {
-    display: block;
-  }
-  
 }
 </style>

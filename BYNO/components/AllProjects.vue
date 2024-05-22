@@ -18,14 +18,29 @@ export default {
        projets: [
          {
            name: "Musique",
-           imgUrl: '_nuxt/static/img/exemples/projet-1.jpg',
+           imgUrl: '/img/musique-onde.svg',
            projetUrl: "Productions/musique"
          },
          {
            name: "Design",
-           imgUrl: '_nuxt/static/img/exemples/projet-3.jpg',
-           projetUrl: "Productions/Design"
-         }
+           imgUrl: '/img/design-img3.png',
+           projetUrl: "Productions/design"
+         },
+         {
+           name: "Drone",
+           imgUrl: '/img/productions/drone.jpg',
+           projetUrl: "Productions/drone"
+         },
+         {
+           name: "Vidéo",
+           imgUrl: '/img/productions/video.jpg',
+           projetUrl: "Productions/video"
+         },
+         {
+           name: "Sound design",
+           imgUrl: '/img/productions/sound-design.jpg',
+           projetUrl: "Productions/sound-design"
+         },
         
          
        ]

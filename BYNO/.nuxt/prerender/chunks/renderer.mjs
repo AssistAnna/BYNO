@@ -1,13 +1,13 @@
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/h3/dist/index.mjs';
-import { stringify, uneval } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/devalue/index.js';
-import { joinURL, withoutTrailingSlash } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/vue/server-renderer/index.mjs';
-import { renderSSRHead } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/@unhead/ssr/dist/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/h3/dist/index.mjs';
+import { stringify, uneval } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/devalue/index.js';
+import { joinURL, withoutTrailingSlash } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/vue/server-renderer/index.mjs';
+import { renderSSRHead } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/@unhead/ssr/dist/index.mjs';
 import { u as useNitroApp, a as useRuntimeConfig, b as useStorage, g as getRouteRules } from './nitro/nitro-prerenderer.mjs';
-import { version, unref } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/vue/index.mjs';
-import { createServerHead as createServerHead$1 } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/@unhead/shared/dist/index.mjs';
+import { version, unref } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/vue/index.mjs';
+import { createServerHead as createServerHead$1 } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/@unhead/shared/dist/index.mjs';
 
 function defineRenderHandler(handler) {
   return eventHandler(async (event) => {
@@ -418,5 +418,5 @@ const renderer$1 = /*#__PURE__*/Object.freeze({
   default: renderer
 });
 
-export { buildAssetsURL as b, renderer$1 as r };
+export { publicAssetsURL as p, renderer$1 as r };
 //# sourceMappingURL=renderer.mjs.map

@@ -9,6 +9,6 @@ export default defineNuxtConfig({
   },
   aos : {
     duration: 900,
-    offset: 80,
+    offset: 60,
   }
 })

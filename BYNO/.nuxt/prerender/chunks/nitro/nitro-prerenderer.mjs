@@ -1,26 +1,26 @@
-globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/ofetch/dist/node.mjs';
-import destr from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/hookable/dist/index.mjs';
-import { snakeCase } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/scule/dist/index.mjs';
-import { klona } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, decodePath, withLeadingSlash, withoutTrailingSlash } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/ufo/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unstorage/drivers/fs.mjs';
-import unstorage_47drivers_47memory from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unstorage/drivers/memory.mjs';
-import unstorage_47drivers_47lru_45cache from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unstorage/drivers/lru-cache.mjs';
-import unstorage_47drivers_47fs_45lite from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unstorage/drivers/fs-lite.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/radix3/dist/index.mjs';
+globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/h3/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/ofetch/dist/node.mjs';
+import destr from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/hookable/dist/index.mjs';
+import { snakeCase } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/scule/dist/index.mjs';
+import { klona } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, decodePath, withLeadingSlash, withoutTrailingSlash } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/ufo/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unstorage/drivers/fs.mjs';
+import unstorage_47drivers_47memory from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unstorage/drivers/memory.mjs';
+import unstorage_47drivers_47lru_45cache from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unstorage/drivers/lru-cache.mjs';
+import unstorage_47drivers_47fs_45lite from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unstorage/drivers/fs-lite.mjs';
+import { toRouteMatcher, createRouter } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/radix3/dist/index.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, resolve } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/pathe/dist/index.mjs';
+import { dirname, resolve } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/pathe/dist/index.mjs';
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "40e86bbf-35c1-4acc-a440-86aea1019472"
+    "buildId": "58ab35d1-c800-4eba-b411-822ccfe09c4e"
   }
 };
 
@@ -60,7 +60,7 @@ const _inlineRuntimeConfig = {
   "public": {
     "aos": {
       "duration": 900,
-      "offset": 80
+      "offset": 50
     }
   }
 };
@@ -129,7 +129,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/Anna/Documents/Projets webs/BYNO/BYNO/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -144,11 +144,11 @@ storage.mount('/assets', assets$1);
 storage.mount('internal:nuxt:prerender', unstorage_47drivers_47memory({"driver":"memory"}));
 storage.mount('internal:nuxt:prerender:island', unstorage_47drivers_47lru_45cache({"driver":"lruCache","max":1000}));
 storage.mount('internal:nuxt:prerender:payload', unstorage_47drivers_47lru_45cache({"driver":"lruCache","max":1000}));
-storage.mount('data', unstorage_47drivers_47fs_45lite({"driver":"fsLite","base":"C:\\Users\\Anna\\Documents\\Projets webs\\BYNO\\BYNO\\.data\\kv"}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Anna\\Documents\\Projets webs\\BYNO\\BYNO","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Anna\\Documents\\Projets webs\\BYNO\\BYNO\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Anna\\Documents\\Projets webs\\BYNO\\BYNO\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Anna\\Documents\\Projets webs\\BYNO\\BYNO\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs_45lite({"driver":"fsLite","base":"C:\\Users\\Anna\\Documents\\projets-web\\BYNO\\BYNO\\.data\\kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Anna\\Documents\\projets-web\\BYNO\\BYNO","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Anna\\Documents\\projets-web\\BYNO\\BYNO\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Anna\\Documents\\projets-web\\BYNO\\BYNO\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Anna\\Documents\\projets-web\\BYNO\\BYNO\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -717,11 +717,11 @@ const _f4b49z = eventHandler((event) => {
   return readAsset(id);
 });
 
-const _lazy_AKWQn3 = () => import('../renderer.mjs').then(function (n) { return n.r; });
+const _lazy_EzEq7V = () => import('../renderer.mjs').then(function (n) { return n.r; });
 
 const handlers = [
   { route: '', handler: _f4b49z, lazy: false, middleware: true, method: undefined },
-  { route: '/**', handler: _lazy_AKWQn3, lazy: true, middleware: false, method: undefined }
+  { route: '/**', handler: _lazy_EzEq7V, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

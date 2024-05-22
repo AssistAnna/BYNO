@@ -16,19 +16,19 @@
             return {
                 photos: [
                     {
-                        imgUrl: "_nuxt/static/img/carousel/carousel-img1.jpg"
+                        imgUrl: "/img/carousel/carousel-img1.jpg"
                     },
                     {
-                        imgUrl: "_nuxt/static/img/carousel/carousel-img3.jpg"
+                        imgUrl: "/img/carousel/carousel-img3.jpg"
                     },
                     {
-                        imgUrl: "_nuxt/static/img/carousel/carousel-img2.jpg"
+                        imgUrl: "/img/carousel/carousel-img2.jpg"
                     },
                     {
-                        imgUrl: "_nuxt/static/img/carousel/carousel-img5.jpg"
+                        imgUrl: "/img/carousel/carousel-img5.jpg"
                     },
                     {
-                        imgUrl: "_nuxt/static/img/carousel/carousel-img4.jpg"
+                        imgUrl: "/img/carousel/carousel-img4.jpg"
                     }
                 ]
             }
@@ -52,7 +52,7 @@ p {
 }
 .grande-photo {
     height: 70vh;
-    background-image: url('/static/img/carousel/grande-image.jpg');
+    background-image: url('/img/carousel/grande-image.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

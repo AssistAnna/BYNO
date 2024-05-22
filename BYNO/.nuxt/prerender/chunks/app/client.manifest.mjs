@@ -1,313 +1,146 @@
 const client_manifest = {
-  "_AllProjects.!~{00g}~.js": {
+  "_AllProjects.!~{00j}~.js": {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "AllProjects.DwfbcdOo.css",
-    "src": "_AllProjects.!~{00g}~.js"
+    "file": "AllProjects.D5poS4jo.css",
+    "src": "_AllProjects.!~{00j}~.js"
   },
-  "_AllProjects.BW_9Kzxg.js": {
+  "_AllProjects.BOjzf7K5.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "AllProjects.BW_9Kzxg.js",
+    "file": "AllProjects.BOjzf7K5.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
-      "AllProjects.DwfbcdOo.css"
+      "AllProjects.D5poS4jo.css"
     ]
   },
-  "AllProjects.DwfbcdOo.css": {
-    "file": "AllProjects.DwfbcdOo.css",
+  "AllProjects.D5poS4jo.css": {
+    "file": "AllProjects.D5poS4jo.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
   },
-  "_AllServices.!~{00h}~.js": {
+  "_AllServices.!~{00k}~.js": {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "AllServices.DXT4NnP2.css",
-    "src": "_AllServices.!~{00h}~.js"
+    "file": "AllServices.DINYAiuc.css",
+    "src": "_AllServices.!~{00k}~.js"
   },
-  "_AllServices.DoSngH7M.js": {
+  "_AllServices.PjoTk1rD.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "AllServices.DoSngH7M.js",
+    "file": "AllServices.PjoTk1rD.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
-      "AllServices.DXT4NnP2.css"
-    ],
-    "assets": [
-      "service-img-bloc1.Dp77iHRq.jpg",
-      "service-img-bloc2.DQ84uiRl.jpg"
+      "AllServices.DINYAiuc.css"
     ]
   },
-  "AllServices.DXT4NnP2.css": {
-    "file": "AllServices.DXT4NnP2.css",
+  "AllServices.DINYAiuc.css": {
+    "file": "AllServices.DINYAiuc.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
   },
-  "service-img-bloc1.Dp77iHRq.jpg": {
-    "file": "service-img-bloc1.Dp77iHRq.jpg",
-    "resourceType": "image",
+  "_en-attente.!~{00l}~.js": {
+    "resourceType": "style",
     "prefetch": true,
-    "mimeType": "image/jpeg"
+    "preload": true,
+    "file": "en-attente.C4qMyCDF.css",
+    "src": "_en-attente.!~{00l}~.js"
   },
-  "service-img-bloc2.DQ84uiRl.jpg": {
-    "file": "service-img-bloc2.DQ84uiRl.jpg",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg"
-  },
-  "_logo-byno-avececrit.B6m1RpdS.js": {
+  "_en-attente.CrSYkQG4.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "logo-byno-avececrit.B6m1RpdS.js",
+    "file": "en-attente.CrSYkQG4.js",
     "imports": [
+      "_logo-byno-avececrit.BnnM4eaq.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
-    "assets": [
-      "logo-byno-avececrit.Q5BB5pxG.png"
+    "css": [
+      "en-attente.C4qMyCDF.css"
     ]
   },
-  "logo-byno-avececrit.Q5BB5pxG.png": {
-    "file": "logo-byno-avececrit.Q5BB5pxG.png",
-    "resourceType": "image",
+  "en-attente.C4qMyCDF.css": {
+    "file": "en-attente.C4qMyCDF.css",
+    "resourceType": "style",
     "prefetch": true,
-    "mimeType": "image/png"
+    "preload": true
   },
-  "_nuxt-link.bq2GTYcQ.js": {
+  "_logo-byno-avececrit.BnnM4eaq.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "nuxt-link.bq2GTYcQ.js",
+    "file": "logo-byno-avececrit.BnnM4eaq.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_vue.f36acd1f.CbRE2ZFV.js": {
+  "_nuxt-link.DzHw5meK.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "vue.f36acd1f.CbRE2ZFV.js",
+    "file": "nuxt-link.DzHw5meK.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "assets/fonts/MPLUS1p-Black.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "MPLUS1p-Black.kcB0iMoI.ttf",
-    "src": "assets/fonts/MPLUS1p-Black.ttf"
-  },
-  "assets/fonts/MPLUS1p-Bold.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "MPLUS1p-Bold.CQVyPxdC.ttf",
-    "src": "assets/fonts/MPLUS1p-Bold.ttf"
-  },
-  "assets/fonts/MPLUS1p-ExtraBold.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "MPLUS1p-ExtraBold.D8lRJ61f.ttf",
-    "src": "assets/fonts/MPLUS1p-ExtraBold.ttf"
-  },
-  "assets/fonts/MPLUS1p-Light.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "MPLUS1p-Light.Ddo4J14v.ttf",
-    "src": "assets/fonts/MPLUS1p-Light.ttf"
-  },
-  "assets/fonts/MPLUS1p-Medium.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "MPLUS1p-Medium.ReLDxeZ2.ttf",
-    "src": "assets/fonts/MPLUS1p-Medium.ttf"
-  },
-  "assets/fonts/MPLUS1p-Regular.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "MPLUS1p-Regular.CHlQbdSy.ttf",
-    "src": "assets/fonts/MPLUS1p-Regular.ttf"
-  },
-  "assets/fonts/MPLUS1p-Thin.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "MPLUS1p-Thin.BLbRoEX5.ttf",
-    "src": "assets/fonts/MPLUS1p-Thin.ttf"
-  },
-  "assets/img/apropos-img1.jpg": {
-    "resourceType": "image",
+  "_vue.f36acd1f.BuO9fOif.js": {
+    "resourceType": "script",
+    "module": true,
     "prefetch": true,
-    "mimeType": "image/jpeg",
-    "file": "apropos-img1.BbeHmmgv.jpg",
-    "src": "assets/img/apropos-img1.jpg"
-  },
-  "assets/img/carousel/grande-image.jpg": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg",
-    "file": "grande-image.DLvtPolk.jpg",
-    "src": "assets/img/carousel/grande-image.jpg"
-  },
-  "assets/img/design-img1.png": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png",
-    "file": "design-img1.DRaHo0YY.png",
-    "src": "assets/img/design-img1.png"
-  },
-  "assets/img/design-img2.png": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png",
-    "file": "design-img2.CRlTNejD.png",
-    "src": "assets/img/design-img2.png"
-  },
-  "assets/img/design-img3.png": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png",
-    "file": "design-img3.By7YwC-_.png",
-    "src": "assets/img/design-img3.png"
-  },
-  "assets/img/design-img4.png": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png",
-    "file": "design-img4.CxscSM0L.png",
-    "src": "assets/img/design-img4.png"
-  },
-  "assets/img/design-img5.png": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png",
-    "file": "design-img5.DN5wcn85.png",
-    "src": "assets/img/design-img5.png"
-  },
-  "assets/img/design-img6.png": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png",
-    "file": "design-img6.DKPFiZ4v.png",
-    "src": "assets/img/design-img6.png"
-  },
-  "assets/img/groupe-img-accueil/background.jpg": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg",
-    "file": "background.DNdY0zhZ.jpg",
-    "src": "assets/img/groupe-img-accueil/background.jpg"
-  },
-  "assets/img/groupe-img-accueil/frame.png": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png",
-    "file": "frame.BcrFfrBG.png",
-    "src": "assets/img/groupe-img-accueil/frame.png"
-  },
-  "assets/img/groupe-img-accueil/logo.png": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png",
-    "file": "logo.CcxpeLr8.png",
-    "src": "assets/img/groupe-img-accueil/logo.png"
-  },
-  "assets/img/logo-byno-avececrit.png": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png",
-    "file": "logo-byno-avececrit.Q5BB5pxG.png",
-    "src": "assets/img/logo-byno-avececrit.png"
-  },
-  "assets/img/logo-byno.png": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png",
-    "file": "logo-byno.C6RBt6bq.png",
-    "src": "assets/img/logo-byno.png"
-  },
-  "assets/img/musique-onde.svg": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/svg+xml",
-    "file": "musique-onde.a_rXGVJH.svg",
-    "src": "assets/img/musique-onde.svg"
-  },
-  "assets/img/retouches-img2.jpeg": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg",
-    "file": "retouches-img2.DlhV5IOH.jpeg",
-    "src": "assets/img/retouches-img2.jpeg"
-  },
-  "assets/img/service-img-bloc1.jpg": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg",
-    "file": "service-img-bloc1.Dp77iHRq.jpg",
-    "src": "assets/img/service-img-bloc1.jpg"
-  },
-  "assets/img/service-img-bloc2.jpg": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg",
-    "file": "service-img-bloc2.DQ84uiRl.jpg",
-    "src": "assets/img/service-img-bloc2.jpg"
+    "preload": true,
+    "file": "vue.f36acd1f.BuO9fOif.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
   },
   "layouts/default.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "default.Fqer-DTh.js",
+    "file": "default.CMO6_mTr.js",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_nuxt-link.bq2GTYcQ.js",
+      "_nuxt-link.DzHw5meK.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_logo-byno-avececrit.B6m1RpdS.js"
+      "_logo-byno-avececrit.BnnM4eaq.js",
+      "_vue.f36acd1f.BuO9fOif.js"
     ],
-    "css": [],
-    "assets": [
-      "logo-byno.C6RBt6bq.png"
-    ]
+    "css": []
   },
-  "default.CQip4Jmi.css": {
-    "file": "default.CQip4Jmi.css",
+  "default.BXOkbm-f.css": {
+    "file": "default.BXOkbm-f.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
-  },
-  "logo-byno.C6RBt6bq.png": {
-    "file": "logo-byno.C6RBt6bq.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "error-404.DXrtBVLs.js",
+    "file": "error-404.DUCVKAGm.js",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_nuxt-link.bq2GTYcQ.js",
-      "_vue.f36acd1f.CbRE2ZFV.js",
+      "_nuxt-link.DzHw5meK.js",
+      "_vue.f36acd1f.BuO9fOif.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": []
@@ -323,11 +156,11 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "error-500.CiIQtQVR.js",
+    "file": "error-500.wEAB4JH3.js",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_vue.f36acd1f.CbRE2ZFV.js",
+      "_vue.f36acd1f.BuO9fOif.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": []
@@ -343,7 +176,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "entry.DrHlj2ln.js",
+    "file": "entry.qMRpFmCG.js",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
     "dynamicImports": [
@@ -367,128 +200,89 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Apropos.Cc9BzsbA.js",
+    "file": "Apropos.Cv4W5tih.js",
     "src": "pages/Apropos.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
-    "css": [],
-    "assets": [
-      "apropos-img1.BbeHmmgv.jpg"
-    ]
+    "css": []
   },
-  "Apropos.BFPml806.css": {
-    "file": "Apropos.BFPml806.css",
+  "Apropos.BfOPrHkQ.css": {
+    "file": "Apropos.BfOPrHkQ.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
-  },
-  "apropos-img1.BbeHmmgv.jpg": {
-    "file": "apropos-img1.BbeHmmgv.jpg",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg"
   },
   "pages/Contact.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Contact.9Ze2H7wP.js",
+    "file": "Contact.BNyvZuaw.js",
     "src": "pages/Contact.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_logo-byno-avececrit.B6m1RpdS.js"
+      "_logo-byno-avececrit.BnnM4eaq.js"
     ],
     "css": []
   },
-  "Contact.DCIcwIdD.css": {
-    "file": "Contact.DCIcwIdD.css",
+  "Contact.RUIxe3Dg.css": {
+    "file": "Contact.RUIxe3Dg.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
   },
-  "pages/Productions/Design.vue": {
+  "pages/Productions/design.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Design.Du22VP8a.js",
-    "src": "pages/Productions/Design.vue",
+    "file": "design.BP2GpGL5.js",
+    "src": "pages/Productions/design.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
-    "css": [],
-    "assets": [
-      "design-img1.DRaHo0YY.png",
-      "design-img2.CRlTNejD.png",
-      "design-img3.By7YwC-_.png",
-      "design-img4.CxscSM0L.png",
-      "design-img5.DN5wcn85.png",
-      "design-img6.DKPFiZ4v.png"
-    ]
+    "css": []
   },
-  "Design.LKrlOth7.css": {
-    "file": "Design.LKrlOth7.css",
+  "design.CjJuudRp.css": {
+    "file": "design.CjJuudRp.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
   },
-  "design-img1.DRaHo0YY.png": {
-    "file": "design-img1.DRaHo0YY.png",
-    "resourceType": "image",
+  "pages/Productions/drone.vue": {
+    "resourceType": "script",
+    "module": true,
     "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "design-img2.CRlTNejD.png": {
-    "file": "design-img2.CRlTNejD.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "design-img3.By7YwC-_.png": {
-    "file": "design-img3.By7YwC-_.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "design-img4.CxscSM0L.png": {
-    "file": "design-img4.CxscSM0L.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "design-img5.DN5wcn85.png": {
-    "file": "design-img5.DN5wcn85.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "design-img6.DKPFiZ4v.png": {
-    "file": "design-img6.DKPFiZ4v.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
+    "preload": true,
+    "file": "drone.B8OIRb6o.js",
+    "src": "pages/Productions/drone.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_en-attente.CrSYkQG4.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_logo-byno-avececrit.BnnM4eaq.js"
+    ]
   },
   "pages/Productions/index.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "index.DVnKCQJF.js",
+    "file": "index.BrdmLiEV.js",
     "src": "pages/Productions/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_AllProjects.BW_9Kzxg.js",
+      "_AllProjects.BOjzf7K5.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": []
   },
-  "index.BMco1e30.css": {
-    "file": "index.BMco1e30.css",
+  "index.CP6EnPJQ.css": {
+    "file": "index.CP6EnPJQ.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -498,80 +292,83 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "musique.B_3wyNU6.js",
+    "file": "musique.ChgN83ek.js",
     "src": "pages/Productions/musique.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
-    "css": [],
-    "assets": [
-      "musique-onde.a_rXGVJH.svg"
-    ]
+    "css": []
   },
-  "musique.DQqy4_yU.css": {
-    "file": "musique.DQqy4_yU.css",
+  "musique.uPAMKh8i.css": {
+    "file": "musique.uPAMKh8i.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
   },
-  "musique-onde.a_rXGVJH.svg": {
-    "file": "musique-onde.a_rXGVJH.svg",
-    "resourceType": "image",
+  "pages/Productions/sound-design.vue": {
+    "resourceType": "script",
+    "module": true,
     "prefetch": true,
-    "mimeType": "image/svg+xml"
+    "preload": true,
+    "file": "sound-design.DA7RJR8m.js",
+    "src": "pages/Productions/sound-design.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_en-attente.CrSYkQG4.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_logo-byno-avececrit.BnnM4eaq.js"
+    ]
+  },
+  "pages/Productions/video.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "video.ChJKl0Rc.js",
+    "src": "pages/Productions/video.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_en-attente.CrSYkQG4.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_logo-byno-avececrit.BnnM4eaq.js"
+    ]
   },
   "pages/Retouches.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Retouches.CxeD1U0L.js",
+    "file": "Retouches.CJcynY_Q.js",
     "src": "pages/Retouches.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
-    "css": [],
-    "assets": [
-      "grande-image.DLvtPolk.jpg",
-      "retouches-img2.DlhV5IOH.jpeg"
-    ]
+    "css": []
   },
-  "Retouches.Bin_6hNz.css": {
-    "file": "Retouches.Bin_6hNz.css",
+  "Retouches.CPIt6wc3.css": {
+    "file": "Retouches.CPIt6wc3.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
-  },
-  "grande-image.DLvtPolk.jpg": {
-    "file": "grande-image.DLvtPolk.jpg",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg"
-  },
-  "retouches-img2.DlhV5IOH.jpeg": {
-    "file": "retouches-img2.DlhV5IOH.jpeg",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg"
   },
   "pages/Services.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Services.BtmAiWo4.js",
+    "file": "Services.B5xZ5hCb.js",
     "src": "pages/Services.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_AllServices.DoSngH7M.js"
+      "_AllServices.PjoTk1rD.js"
     ],
     "css": []
   },
-  "Services.DvhA2M2o.css": {
-    "file": "Services.DvhA2M2o.css",
+  "Services.DQFgqnAQ.css": {
+    "file": "Services.DQFgqnAQ.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -581,86 +378,21 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "index.DT_HC8TJ.js",
+    "file": "index.E-prxmuA.js",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_AllProjects.BW_9Kzxg.js",
-      "_AllServices.DoSngH7M.js"
+      "_AllProjects.BOjzf7K5.js",
+      "_AllServices.PjoTk1rD.js"
     ],
-    "css": [],
-    "assets": [
-      "frame.BcrFfrBG.png",
-      "logo.CcxpeLr8.png",
-      "background.DNdY0zhZ.jpg",
-      "MPLUS1p-Black.kcB0iMoI.ttf",
-      "MPLUS1p-Bold.CQVyPxdC.ttf",
-      "MPLUS1p-ExtraBold.D8lRJ61f.ttf",
-      "MPLUS1p-Light.Ddo4J14v.ttf",
-      "MPLUS1p-Medium.ReLDxeZ2.ttf",
-      "MPLUS1p-Regular.CHlQbdSy.ttf",
-      "MPLUS1p-Thin.BLbRoEX5.ttf"
-    ]
+    "css": []
   },
-  "index.C9ckQTDL.css": {
-    "file": "index.C9ckQTDL.css",
+  "index.BcBYV5kv.css": {
+    "file": "index.BcBYV5kv.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
-  },
-  "frame.BcrFfrBG.png": {
-    "file": "frame.BcrFfrBG.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "logo.CcxpeLr8.png": {
-    "file": "logo.CcxpeLr8.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "background.DNdY0zhZ.jpg": {
-    "file": "background.DNdY0zhZ.jpg",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg"
-  },
-  "MPLUS1p-Black.kcB0iMoI.ttf": {
-    "file": "MPLUS1p-Black.kcB0iMoI.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
-  },
-  "MPLUS1p-Bold.CQVyPxdC.ttf": {
-    "file": "MPLUS1p-Bold.CQVyPxdC.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
-  },
-  "MPLUS1p-ExtraBold.D8lRJ61f.ttf": {
-    "file": "MPLUS1p-ExtraBold.D8lRJ61f.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
-  },
-  "MPLUS1p-Light.Ddo4J14v.ttf": {
-    "file": "MPLUS1p-Light.Ddo4J14v.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
-  },
-  "MPLUS1p-Medium.ReLDxeZ2.ttf": {
-    "file": "MPLUS1p-Medium.ReLDxeZ2.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
-  },
-  "MPLUS1p-Regular.CHlQbdSy.ttf": {
-    "file": "MPLUS1p-Regular.CHlQbdSy.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
-  },
-  "MPLUS1p-Thin.BLbRoEX5.ttf": {
-    "file": "MPLUS1p-Thin.BLbRoEX5.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
   }
 };
 

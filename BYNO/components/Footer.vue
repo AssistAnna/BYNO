@@ -9,9 +9,9 @@
       <div class="bloc-contact">
         <nuxt-link to="/">Me contacter</nuxt-link>
         <div class="liste-socials">
-          <nuxt-link to="/"><img src="/static/icon/icon-instagram.png" alt="logo instagram"></nuxt-link>
-          <nuxt-link to="/"><img src="/static/icon/icon-linkedin.png" alt="logo linkedin"></nuxt-link>
-          <nuxt-link to="/"><img src="/static/icon/icon-youtube.png" alt="logo youtube"></nuxt-link>
+          <nuxt-link to="/"><img src="/icon/icon-instagram.png" alt="logo instagram"></nuxt-link>
+          <nuxt-link to="/"><img src="/icon/icon-linkedin.png" alt="logo linkedin"></nuxt-link>
+          <nuxt-link to="/"><img src="/icon/icon-youtube.png" alt="logo youtube"></nuxt-link>
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@ export default {
 }
 
 .logo-img {
-  background-image: url('/static/img/logo-byno.png');
+  background-image: url('/img/logo-byno.png');
   height: 6rem;
   background-size: contain;
   background-repeat: no-repeat;

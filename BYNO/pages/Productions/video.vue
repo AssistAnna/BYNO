@@ -1,5 +1,6 @@
 <template>
-    <div>projet video
+    <div>
+        <en-attente/>
     </div>
 </template>
 

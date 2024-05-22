@@ -1,0 +1,259 @@
+{
+  "resolvedId": "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/AllProjects.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <div class=\"all-projects\">\r\n    <div class=\"projet\"  v-for=\"(projet,key) in projets\" :key=\"key\">\r\n        <div @click=\"this.$router.push({path: projet.projetUrl})\">\r\n          <div class=\"projet-img\" :style=\"' background-image: url(' + projet.imgUrl + ')'\"></div>\r\n          <h3>{{projet.name}}</h3>\r\n        </div>\r\n    </div>\r\n      \r\n  </div>\r\n</template>\r\n\r\n<script>\r\n\r\nexport default {\r\n      data() {\r\n    return{\r\n       projets: [\r\n         {\r\n           name: \"Musique\",\r\n           imgUrl: '/img/musique-onde.svg',\r\n           projetUrl: \"Productions/musique\"\r\n         },\r\n         {\r\n           name: \"Design\",\r\n           imgUrl: '/img/design-img3.png',\r\n           projetUrl: \"Productions/design\"\r\n         },\r\n         {\r\n           name: \"Drone\",\r\n           imgUrl: '/img/productions/drone.jpg',\r\n           projetUrl: \"Productions/drone\"\r\n         },\r\n         {\r\n           name: \"Vidéo\",\r\n           imgUrl: '/img/productions/video.jpg',\r\n           projetUrl: \"Productions/video\"\r\n         },\r\n         {\r\n           name: \"Sound design\",\r\n           imgUrl: '/img/productions/sound-design.jpg',\r\n           projetUrl: \"Productions/sound-design\"\r\n         },\r\n        \r\n         \r\n       ]\r\n    }\r\n  },\r\n  methods: {\r\n  \r\n  }\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n\r\n.all-projects {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n}\r\n\r\n.projet{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n}\r\n.projet-img {\r\n  border: 1px solid grey;\r\n  background-repeat: no-repeat;\r\n  height: 10rem;\r\n  width: 20vw;\r\n  background-size: cover;\r\n  border-radius: 8px;\r\n  transition: all 0.4s ease-in-out;\r\n  margin: 0 1rem;\r\n\r\n}\r\n\r\n.projet-img:hover {\r\n  transition: all 0.4s ease-in-out;\r\n  transform: scale(1.04);\r\n  cursor: pointer;\r\n}\r\n\r\nh3 {\r\n  text-align: center;\r\n  font-family: mplusmedium;\r\n  font-size: 1rem;\r\n  margin-bottom: 3.5rem;\r\n}\r\n\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 800px) {\r\n  .all-projects {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n  }\r\n  .projet-img {\r\n    width: 55vw;\r\n    height: 20vh;\r\n  }\r\n  h3 {\r\n    font-size: 1.3rem;\r\n  }\r\n\r\n} \r\n</style>",
+      "start": 1716369332806,
+      "end": 1716369333069,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716369333069,
+      "end": 1716369333069,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1716369333069,
+      "end": 1716369333069,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716369333069,
+      "end": 1716369333069,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1716369333069,
+      "end": 1716369333069,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1716369333069,
+      "end": 1716369333069,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1716369333069,
+      "end": 1716369333069,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1716369333069,
+      "end": 1716369333069,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1716369333069,
+      "end": 1716369333069,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1716369333069,
+      "end": 1716369333069,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\n\r\nconst _sfc_main = {\r\n      data() {\r\n    return{\r\n       projets: [\r\n         {\r\n           name: \"Musique\",\r\n           imgUrl: '/img/musique-onde.svg',\r\n           projetUrl: \"Productions/musique\"\r\n         },\r\n         {\r\n           name: \"Design\",\r\n           imgUrl: '/img/design-img3.png',\r\n           projetUrl: \"Productions/design\"\r\n         },\r\n         {\r\n           name: \"Drone\",\r\n           imgUrl: '/img/productions/drone.jpg',\r\n           projetUrl: \"Productions/drone\"\r\n         },\r\n         {\r\n           name: \"Vidéo\",\r\n           imgUrl: '/img/productions/video.jpg',\r\n           projetUrl: \"Productions/video\"\r\n         },\r\n         {\r\n           name: \"Sound design\",\r\n           imgUrl: '/img/productions/sound-design.jpg',\r\n           projetUrl: \"Productions/sound-design\"\r\n         },\r\n        \r\n         \r\n       ]\r\n    }\r\n  },\r\n  methods: {\r\n  \r\n  }\r\n}\r\n\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderStyle as _ssrRenderStyle, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"all-projects\" }, _attrs))} data-v-74031620><!--[-->`)\n  _ssrRenderList($data.projets, (projet, key) => {\n    _push(`<div class=\"projet\" data-v-74031620><div data-v-74031620><div class=\"projet-img\" style=\"${\n      _ssrRenderStyle(' background-image: url(' + projet.imgUrl + ')')\n    }\" data-v-74031620></div><h3 data-v-74031620>${\n      _ssrInterpolate(projet.name)\n    }</h3></div></div>`)\n  })\n  _push(`<!--]--></div>`)\n}\n\nimport \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/AllProjects.vue?vue&type=style&index=0&scoped=74031620&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/AllProjects.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-74031620\"]])",
+      "start": 1716369333070,
+      "end": 1716369333075,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/AllProjects.vue",
+        "names": [],
+        "sources": [
+          "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/AllProjects.vue"
+        ],
+        "sourcesContent": [
+          "<template>\r\n  <div class=\"all-projects\">\r\n    <div class=\"projet\"  v-for=\"(projet,key) in projets\" :key=\"key\">\r\n        <div @click=\"this.$router.push({path: projet.projetUrl})\">\r\n          <div class=\"projet-img\" :style=\"' background-image: url(' + projet.imgUrl + ')'\"></div>\r\n          <h3>{{projet.name}}</h3>\r\n        </div>\r\n    </div>\r\n      \r\n  </div>\r\n</template>\r\n\r\n<script>\r\n\r\nexport default {\r\n      data() {\r\n    return{\r\n       projets: [\r\n         {\r\n           name: \"Musique\",\r\n           imgUrl: '/img/musique-onde.svg',\r\n           projetUrl: \"Productions/musique\"\r\n         },\r\n         {\r\n           name: \"Design\",\r\n           imgUrl: '/img/design-img3.png',\r\n           projetUrl: \"Productions/design\"\r\n         },\r\n         {\r\n           name: \"Drone\",\r\n           imgUrl: '/img/productions/drone.jpg',\r\n           projetUrl: \"Productions/drone\"\r\n         },\r\n         {\r\n           name: \"Vidéo\",\r\n           imgUrl: '/img/productions/video.jpg',\r\n           projetUrl: \"Productions/video\"\r\n         },\r\n         {\r\n           name: \"Sound design\",\r\n           imgUrl: '/img/productions/sound-design.jpg',\r\n           projetUrl: \"Productions/sound-design\"\r\n         },\r\n        \r\n         \r\n       ]\r\n    }\r\n  },\r\n  methods: {\r\n  \r\n  }\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n\r\n.all-projects {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n}\r\n\r\n.projet{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n}\r\n.projet-img {\r\n  border: 1px solid grey;\r\n  background-repeat: no-repeat;\r\n  height: 10rem;\r\n  width: 20vw;\r\n  background-size: cover;\r\n  border-radius: 8px;\r\n  transition: all 0.4s ease-in-out;\r\n  margin: 0 1rem;\r\n\r\n}\r\n\r\n.projet-img:hover {\r\n  transition: all 0.4s ease-in-out;\r\n  transform: scale(1.04);\r\n  cursor: pointer;\r\n}\r\n\r\nh3 {\r\n  text-align: center;\r\n  font-family: mplusmedium;\r\n  font-size: 1rem;\r\n  margin-bottom: 3.5rem;\r\n}\r\n\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 800px) {\r\n  .all-projects {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n  }\r\n  .projet-img {\r\n    width: 55vw;\r\n    height: 20vh;\r\n  }\r\n  h3 {\r\n    font-size: 1.3rem;\r\n  }\r\n\r\n} \r\n</style>"
+        ],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1716369333075,
+      "end": 1716369333075,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716369333075,
+      "end": 1716369333075,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716369333075,
+      "end": 1716369333075,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716369333075,
+      "end": 1716369333075,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1716369333075,
+      "end": 1716369333075,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1716369333075,
+      "end": 1716369333075,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1716369333075,
+      "end": 1716369333075,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1716369333075,
+      "end": 1716369333077,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1716369333077,
+      "end": 1716369333082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1716369333082,
+      "end": 1716369333082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1716369333082,
+      "end": 1716369333082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1716369333082,
+      "end": 1716369333082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1716369333082,
+      "end": 1716369333082,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1716369333082,
+      "end": 1716369333083,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1716369333083,
+      "end": 1716369333083,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1716369333083,
+      "end": 1716369333083,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716369333083,
+      "end": 1716369333083,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1716369333083,
+      "end": 1716369333083,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716369333083,
+      "end": 1716369333085,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1716369333083,
+      "end": 1716369333085,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716369333085,
+      "end": 1716369333085,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1716369333085,
+      "end": 1716369333085,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716369333085,
+      "end": 1716369333085,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1716369333085,
+      "end": 1716369333085,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1716369333085,
+      "end": 1716369333085,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1716369333085,
+      "end": 1716369333085,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1716369333085,
+      "end": 1716369333085,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1716369333085,
+      "end": 1716369333085,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1716369333085,
+      "end": 1716369333085,
+      "order": "normal"
+    }
+  ]
+}

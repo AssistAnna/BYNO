@@ -2,17 +2,12 @@
   <div class="all-site">
       <Navbar/>
       <NuxtPage/>
-      
       <Footer/>
      
   </div>
 </template>
-<script>
-
-export default {
-  
-
-}
+<script setup>
+  useHead({link: [{ rel: 'icon', type: 'image/png', href: 'favicon.ico' }]})
 </script>
 
 <style>

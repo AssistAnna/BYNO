@@ -1,5 +1,0 @@
-const Carousel_vue_vue_type_style_index_0_scoped_39b47dae_lang = ".carousel[data-v-39b47dae]{margin-bottom:10rem;position:relative;width:100%}p[data-v-39b47dae]{font-family:mpluslight;font-size:1.6rem;font-weight:700;margin-bottom:4.5rem;text-align:center}.grande-photo[data-v-39b47dae]{background-image:url(" + __buildAssetsURL("grande-image.DLvtPolk.jpg") + ");background-position:50%;background-repeat:no-repeat;background-size:contain;height:70vh}.bloc-photos[data-v-39b47dae]{align-items:center;bottom:-5rem;box-sizing:border-box;display:flex;justify-content:center;margin:0;position:absolute;width:100%}.bloc-photos .img[data-v-39b47dae]{background-position:50%;background-repeat:no-repeat;background-size:contain;height:19vh;width:14vw}@media (min-width:801px) and (max-width:1050px){.carousel[data-v-39b47dae]{margin-top:4rem}p[data-v-39b47dae]{margin-bottom:2rem}.grande-photo[data-v-39b47dae]{height:50vh}}@media screen and (max-width:800px){p[data-v-39b47dae]{margin-bottom:0}.grande-photo[data-v-39b47dae]{height:40vh}}";
-export {
-  Carousel_vue_vue_type_style_index_0_scoped_39b47dae_lang as default
-};
-//# sourceMappingURL=Carousel-styles-1.mjs-C7imak_w.js.map

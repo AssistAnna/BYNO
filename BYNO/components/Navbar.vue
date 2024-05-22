@@ -2,17 +2,17 @@
   <nav class="navBar">
    <nuxt-link class="logo" to="/"><div class="logo-img"></div></nuxt-link>
    <div class="liste-onglets" :class="{ 'active2': showMobileMenu }">
-       <img src="assets/img/logo-byno-avececrit.png" alt="logo design byno">
+       <img src="/img/logo-byno-avececrit.png" alt="logo design byno">
        <nuxt-link v-for="(item,key) in menu" :key="key" :to="{name: item.url}"><h2>{{item.name}}</h2></nuxt-link>
     </div>
    <div class="liste-socials">
        
-       <nuxt-link to="/"><img src="/static/icon/icon-instagram.png" alt="logo instagram"></nuxt-link>
-       <nuxt-link to="/"><img src="/static/icon/icon-linkedin.png" alt="logo linkedin"></nuxt-link>
-       <nuxt-link to="/"><img src="/static/icon/icon-youtube.png" alt="logo youtube"></nuxt-link>
+       <nuxt-link to="/"><img src="/icon/icon-instagram.png" alt="logo instagram"></nuxt-link>
+       <nuxt-link to="/"><img src="/icon/icon-linkedin.png" alt="logo linkedin"></nuxt-link>
+       <nuxt-link to="/"><img src="/icon/icon-youtube.png" alt="logo youtube"></nuxt-link>
    </div>
-   <img v-show="!showMobileMenu" @click="toggleMenu" class="menu-burger" src="/static/icon/menu-burger.png" alt="open menu">
-   <img v-show="showMobileMenu" @click="toggleMenu" class="cross menu-burger" src="/static/icon/cross-menu-burger.png" alt="close menu">
+   <img v-show="!showMobileMenu" @click="toggleMenu" class="menu-burger" src="/icon/menu-burger.png" alt="open menu">
+   <img v-show="showMobileMenu" @click="toggleMenu" class="cross menu-burger" src="/icon/cross-menu-burger.png" alt="close menu">
   </nav>
 </template>
  
@@ -53,7 +53,6 @@ data() {
    methods: {
        toggleMenu() {
            this.showMobileMenu = !this.showMobileMenu;
-           console.log('isToggled : ' + this.showMobileMenu)
        }
        
    }
@@ -87,7 +86,7 @@ data() {
 }
 
 .logo-img {
-   background-image: url('/static/img/logo-byno.png');
+   background-image: url('/img/logo-byno.png');
    height: 5rem;
    width: 5rem;
    background-size: contain;

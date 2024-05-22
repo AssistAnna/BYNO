@@ -1,29 +1,29 @@
-import { version, unref, inject, defineComponent, h, computed, ref, provide, shallowReactive, watch, Suspense, nextTick, Transition, hasInjectionContext, mergeProps, useSSRContext, createApp, effectScope, reactive, getCurrentInstance, defineAsyncComponent, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, withCtx } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/vue/index.mjs';
-import { $fetch } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/ofetch/dist/node.mjs';
-import { createHooks } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/hookable/dist/index.mjs';
-import { getContext } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unctx/dist/index.mjs';
-import { createError as createError$1, sanitizeStatusCode } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/h3/dist/index.mjs';
-import { getActiveHead } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/@unhead/shared/dist/index.mjs';
-import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/vue-router/dist/vue-router.node.mjs';
-import { withQuery, hasProtocol, parseURL, isScriptProtocol, joinURL } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/ufo/dist/index.mjs';
-import { defu } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/defu/dist/defu.mjs';
-import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode } from 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/vue/server-renderer/index.mjs';
+import { version, unref, inject, defineComponent, h, computed, ref, provide, shallowReactive, watch, Suspense, nextTick, Transition, hasInjectionContext, mergeProps, useSSRContext, createApp, effectScope, reactive, getCurrentInstance, defineAsyncComponent, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, withCtx } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/vue/index.mjs';
+import { $fetch } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/ofetch/dist/node.mjs';
+import { createHooks } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/hookable/dist/index.mjs';
+import { getContext } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unctx/dist/index.mjs';
+import { createError as createError$1, sanitizeStatusCode } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/h3/dist/index.mjs';
+import { getActiveHead } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/@unhead/shared/dist/index.mjs';
+import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/vue-router/dist/vue-router.node.mjs';
+import { withQuery, hasProtocol, parseURL, isScriptProtocol, joinURL } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/ufo/dist/index.mjs';
+import { defu } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/defu/dist/defu.mjs';
+import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/vue/server-renderer/index.mjs';
 import { a as useRuntimeConfig$1 } from '../nitro/nitro-prerenderer.mjs';
-import 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/destr/dist/index.mjs';
-import 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unenv/runtime/fetch/index.mjs';
-import 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/scule/dist/index.mjs';
-import 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/klona/dist/index.mjs';
-import 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/ohash/dist/index.mjs';
-import 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unstorage/dist/index.mjs';
-import 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unstorage/drivers/fs.mjs';
-import 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unstorage/drivers/memory.mjs';
-import 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unstorage/drivers/lru-cache.mjs';
-import 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/unstorage/drivers/fs-lite.mjs';
-import 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/radix3/dist/index.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/destr/dist/index.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/scule/dist/index.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/klona/dist/index.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/ohash/dist/index.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unstorage/dist/index.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unstorage/drivers/fs.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unstorage/drivers/memory.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unstorage/drivers/lru-cache.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/radix3/dist/index.mjs';
 import 'node:fs';
 import 'node:url';
-import 'file://C:/Users/Anna/Documents/Projets%20webs/BYNO/BYNO/node_modules/pathe/dist/index.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/pathe/dist/index.mjs';
 
 const appConfig = useRuntimeConfig$1().app;
 const baseURL = () => appConfig.baseURL;
@@ -546,7 +546,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/Apropos-_oH4dd-g.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/Apropos-BCvaLUW1.mjs').then((m) => m.default || m)
   },
   {
     name: "Contact",
@@ -554,7 +554,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/Contact-C1DM5YJa.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/Contact-BokVBi8l.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -562,15 +562,23 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/index-Cj7WGx4e.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-BEmQrxls.mjs').then((m) => m.default || m)
   },
   {
-    name: "Productions-Design",
-    path: "/Productions/Design",
+    name: "Productions-design",
+    path: "/Productions/design",
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/Design-BqNDR-n7.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/design-D047ChFx.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "Productions-drone",
+    path: "/Productions/drone",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./_nuxt/drone-Cmdq5y_6.mjs').then((m) => m.default || m)
   },
   {
     name: "Productions",
@@ -578,7 +586,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/index-Ddmgh7pB.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-DiqHCUsZ.mjs').then((m) => m.default || m)
   },
   {
     name: "Productions-musique",
@@ -586,7 +594,23 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/musique-C3sD8fQX.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/musique-Cg9oyvgs.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "Productions-sound-design",
+    path: "/Productions/sound-design",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./_nuxt/sound-design-C66eLvns.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "Productions-video",
+    path: "/Productions/video",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./_nuxt/video-BRyrpUhw.mjs').then((m) => m.default || m)
   },
   {
     name: "Retouches",
@@ -594,7 +618,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/Retouches-BxZ7S-Oj.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/Retouches-j4vxVjO_.mjs').then((m) => m.default || m)
   },
   {
     name: "Services",
@@ -602,7 +626,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/Services-DJ6Y2qL9.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/Services-G-6EEDua.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -914,7 +938,7 @@ const plugins = [
   components_plugin_KR1HBZs4kY
 ];
 const layouts = {
-  default: () => import('./_nuxt/default-BTxW4KI5.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default-BWWz7k5m.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -1208,7 +1232,7 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./_nuxt/error-404-DSFL0ZPI.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./_nuxt/error-404-bNpchavM.mjs').then((r) => r.default || r));
     const _Error = defineAsyncComponent(() => import('./_nuxt/error-500-BaR0t2Y8.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
@@ -1289,5 +1313,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { _export_sfc as _, __nuxt_component_1 as a, useRuntimeConfig as b, createError as c, navigateTo as d, entry$1 as default, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useRouter as u };
+export { _export_sfc as _, useRuntimeConfig as a, navigateTo as b, createError as c, __nuxt_component_1 as d, entry$1 as default, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useRouter as u };
 //# sourceMappingURL=server.mjs.map

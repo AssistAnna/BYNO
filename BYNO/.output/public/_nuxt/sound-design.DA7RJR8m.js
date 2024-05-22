@@ -1,0 +1,1 @@
+import{_ as o}from"./en-attente.CrSYkQG4.js";import{_ as t,c as n,b as c,o as s}from"./entry.qMRpFmCG.js";import"./logo-byno-avececrit.BnnM4eaq.js";const _={};function r(a,p,m,i,d,f){const e=o;return s(),n("div",null,[c(e)])}const $=t(_,[["render",r]]);export{$ as default};

@@ -43,7 +43,7 @@ h3 {
     height: 85vh;
     width: 75%;
     background-repeat: no-repeat;
-    background-image: url('/static/img/retouches-img1.JPG');
+    background-image: url('/img/retouches-img1.JPG');
     background-size: 100% 100%;
     margin-bottom: 3rem;
   }
@@ -63,7 +63,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url('/static/img/retouches-img2.jpeg');
+    background-image: url('/img/retouches-img2.jpeg');
     margin: 2rem;
    
 

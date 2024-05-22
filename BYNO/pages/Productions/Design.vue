@@ -1,20 +1,22 @@
 <template>
     <div class="design-all">
         <h2 class="title-h2" data-aos="fade-up">Design</h2>
+        <div class="btn-retour" @click="$router.push('/productions')">Retour</div>
         <p data-aos="fade-up">Les pochettes de single ont été soigneusement conçues pour refléter le style adapté à l’artiste et au genre musical correspondant.</p>
 
         <div class="bloc-img">
-            <img src="/static/img/design-img1.png" alt="image pochette album rose">
-            <img src="/static/img/design-img2.png" alt="image pochette album design beige">
+            <img src="/img/design-img1.png" alt="image pochette album rose">
+            <img src="/img/design-img2.png" alt="image pochette album design beige">
         </div>
         <div class="bloc-img wesh">
-            <img src="/static/img/design-img3.png" alt="image pochette album otherside">
-            <img src="/static/img/design-img4.png" alt="image pochette album loadjak">
+            <img src="/img/design-img3.png" alt="image pochette album otherside">
+            <img src="/img/design-img4.png" alt="image pochette album loadjak">
         </div>
         <div class="bloc-img">
-            <img src="/static/img/design-img5.png" alt="image pochette album superfly">
-            <img src="/static/img/design-img6.png" alt="image pochette album I gotta love">
+            <img src="/img/design-img5.png" alt="image pochette album superfly">
+            <img src="/img/design-img6.png" alt="image pochette album I gotta love">
         </div>
+        <div class="btn-retour" @click="$router.push('/productions')">Retour</div>
     </div>
     </template>
     <script>
@@ -29,6 +31,9 @@
         flex-direction: column;
         align-items: center;
 
+    }
+    .btn-retour {
+    margin-left: 0;
     }
     .bloc-img {
         display: flex;

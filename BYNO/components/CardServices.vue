@@ -21,7 +21,7 @@ data() {
        cards: [
          {
            id: 0,  
-           iconUrl: "_nuxt/static/icon/services1.png",
+           iconUrl: "/icon/services1.png",
            text1: "Relation client",
            text2: "Devis",
            text3: "Organisation du planning",
@@ -29,7 +29,7 @@ data() {
          },
          {
            id: 1,  
-           iconUrl: "_nuxt/static/icon/services3.png",
+           iconUrl: "/icon/services3.png",
            text1: "Brainstorming",
            text2: "Script / Scénario",
            text3: "Note d'intention",
@@ -37,7 +37,7 @@ data() {
          },
          {
            id: 2,  
-           iconUrl: "_nuxt/static/icon/services2.png",
+           iconUrl: "/icon/services2.png",
            text1: "Tournage / Montage",
            text2: "Animation / Motion design",
            text3: "Voix off / Enregistrement",
@@ -45,7 +45,7 @@ data() {
          },
          {
            id: 3,  
-           iconUrl: "_nuxt/static/icon/services4.png",
+           iconUrl: "/icon/services4.png",
            text1: "Encodage tous supports",
            text2: "Envoi des fichiers dématerialisés",
            text3: "",
@@ -62,18 +62,19 @@ data() {
 
 <style scoped>
   .cards-bloc {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
       margin-bottom: 5rem;
+      flex-wrap: wrap;
       width: 100%;
+      justify-content: space-around;
       
   }
 
   .card {
-    height: 13rem;
+    height: 11rem;
     width: 13rem;
     margin: 0.6rem; 
-    padding: 1.4rem;
+    padding: 1.2rem;
     background-color: rgba(71, 70, 70, 0.404);
     display: flex;
     flex-direction: column;
@@ -88,7 +89,7 @@ data() {
     border: 0.1px solid rgba(0, 159, 227, 0.973); 
   }
   .card-icon {
-      height: 6rem;
+      height: 4rem;
       width: 3rem;
       background-repeat: no-repeat;
       background-size: 100%;
@@ -101,7 +102,7 @@ data() {
       font-family: mpluslight;
       font-weight: bold;
       text-align: center;
-      line-height: 1rem;
+      line-height: 0.7rem;
   }
 
   /* version mobile */

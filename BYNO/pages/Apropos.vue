@@ -1,7 +1,9 @@
 <template>
   <div class="apropos">
     <h2 class="title-h2" data-aos="fade-up">A propos</h2>
-    
+    <div class="bloc-img1" data-aos="zoom-in">
+      <div class="img1"></div>
+    </div>
     <div class="bloc-text" data-aos="fade-up">
       <h3>Noé Chardon</h3>
       <h4>entrepreneur passionné</h4>
@@ -33,16 +35,16 @@ export default {
     return {
       logos: [
         {
-          imgUrl:"_nuxt/static/img/partenaires/logo-mazda.png"
+          imgUrl:"/img/partenaires/logo-mazda.png"
         },
         {
-          imgUrl:"_nuxt/static/img/partenaires/logo-menton.png"
+          imgUrl:"/img/partenaires/logo-menton.png"
         },
         {
-          imgUrl:"_nuxt/static/img/partenaires/logo-R.png"
+          imgUrl:"/img/partenaires/logo-R.png"
         },
         {
-          imgUrl: "_nuxt/static/img/partenaires/logo-chateau.png"
+          imgUrl: "/img/partenaires/logo-chateau.png"
         }
       ]
     }
@@ -67,11 +69,11 @@ export default {
 }
 
 .img1 {
-    height: 33rem;
+    min-height: 80vh;
     width: 55%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('static/img/apropos-img1.jpg');
+    background-image: url('/img/apropos-img1.jpg');
   }
   
 
@@ -135,7 +137,7 @@ export default {
   @media screen and (max-width: 800px) {
     .img1 {
       width: 100%;
-      height: 40vh;
+      min-height: 55vh;
     }
     .bloc-text h3 {
       font-size: 2.5rem;
