@@ -4,93 +4,93 @@
     {
       "name": "vite:load-fallback",
       "result": "import { customRef, getCurrentScope, nextTick, onScopeDispose, ref, watch } from \"vue\";\r\nimport { parse, serialize } from \"cookie-es\";\r\nimport { deleteCookie, getCookie, getRequestHeader, setCookie } from \"h3\";\r\nimport destr from \"destr\";\r\nimport { isEqual } from \"ohash\";\r\nimport { klona } from \"klona\";\r\nimport { useNuxtApp } from \"../nuxt.js\";\r\nimport { useRequestEvent } from \"./ssr.js\";\r\nimport { cookieStore } from \"#build/nuxt.config.mjs\";\r\nconst CookieDefaults = {\r\n  path: \"/\",\r\n  watch: true,\r\n  decode: (val) => destr(decodeURIComponent(val)),\r\n  encode: (val) => encodeURIComponent(typeof val === \"string\" ? val : JSON.stringify(val))\r\n};\r\nconst store = import.meta.client && cookieStore ? window.cookieStore : void 0;\r\nexport function useCookie(name, _opts) {\r\n  const opts = { ...CookieDefaults, ..._opts };\r\n  const cookies = readRawCookies(opts) || {};\r\n  let delay;\r\n  if (opts.maxAge !== void 0) {\r\n    delay = opts.maxAge * 1e3;\r\n  } else if (opts.expires) {\r\n    delay = opts.expires.getTime() - Date.now();\r\n  }\r\n  const hasExpired = delay !== void 0 && delay <= 0;\r\n  const cookieValue = klona(hasExpired ? void 0 : cookies[name] ?? opts.default?.());\r\n  const cookie = import.meta.client && delay && !hasExpired ? cookieRef(cookieValue, delay) : ref(cookieValue);\r\n  if (import.meta.dev && hasExpired) {\r\n    console.warn(`[nuxt] not setting cookie \\`${name}\\` as it has already expired.`);\r\n  }\r\n  if (import.meta.client) {\r\n    const channel = store || typeof BroadcastChannel === \"undefined\" ? null : new BroadcastChannel(`nuxt:cookies:${name}`);\r\n    const callback = () => {\r\n      if (opts.readonly || isEqual(cookie.value, cookies[name])) {\r\n        return;\r\n      }\r\n      writeClientCookie(name, cookie.value, opts);\r\n      cookies[name] = klona(cookie.value);\r\n      channel?.postMessage({ value: opts.encode(cookie.value) });\r\n    };\r\n    const handleChange = (data) => {\r\n      const value = data.refresh ? readRawCookies(opts)?.[name] : opts.decode(data.value);\r\n      watchPaused = true;\r\n      cookies[name] = cookie.value = value;\r\n      nextTick(() => {\r\n        watchPaused = false;\r\n      });\r\n    };\r\n    let watchPaused = false;\r\n    if (getCurrentScope()) {\r\n      onScopeDispose(() => {\r\n        watchPaused = true;\r\n        callback();\r\n        channel?.close();\r\n      });\r\n    }\r\n    if (store) {\r\n      store.onchange = (event) => {\r\n        const cookie2 = event.changed.find((c) => c.name === name);\r\n        if (cookie2)\r\n          handleChange({ value: cookie2.value });\r\n      };\r\n    } else if (channel) {\r\n      channel.onmessage = ({ data }) => handleChange(data);\r\n    }\r\n    if (opts.watch) {\r\n      watch(\r\n        cookie,\r\n        () => {\r\n          if (watchPaused) {\r\n            return;\r\n          }\r\n          callback();\r\n        },\r\n        { deep: opts.watch !== \"shallow\" }\r\n      );\r\n    } else {\r\n      callback();\r\n    }\r\n  } else if (import.meta.server) {\r\n    const nuxtApp = useNuxtApp();\r\n    const writeFinalCookieValue = () => {\r\n      if (opts.readonly || isEqual(cookie.value, cookies[name])) {\r\n        return;\r\n      }\r\n      writeServerCookie(useRequestEvent(nuxtApp), name, cookie.value, opts);\r\n    };\r\n    const unhook = nuxtApp.hooks.hookOnce(\"app:rendered\", writeFinalCookieValue);\r\n    nuxtApp.hooks.hookOnce(\"app:error\", () => {\r\n      unhook();\r\n      return writeFinalCookieValue();\r\n    });\r\n  }\r\n  return cookie;\r\n}\r\nexport function refreshCookie(name) {\r\n  if (store || typeof BroadcastChannel === \"undefined\")\r\n    return;\r\n  new BroadcastChannel(`nuxt:cookies:${name}`)?.postMessage({ refresh: true });\r\n}\r\nfunction readRawCookies(opts = {}) {\r\n  if (import.meta.server) {\r\n    return parse(getRequestHeader(useRequestEvent(), \"cookie\") || \"\", opts);\r\n  } else if (import.meta.client) {\r\n    return parse(document.cookie, opts);\r\n  }\r\n}\r\nfunction serializeCookie(name, value, opts = {}) {\r\n  if (value === null || value === void 0) {\r\n    return serialize(name, value, { ...opts, maxAge: -1 });\r\n  }\r\n  return serialize(name, value, opts);\r\n}\r\nfunction writeClientCookie(name, value, opts = {}) {\r\n  if (import.meta.client) {\r\n    document.cookie = serializeCookie(name, value, opts);\r\n  }\r\n}\r\nfunction writeServerCookie(event, name, value, opts = {}) {\r\n  if (event) {\r\n    if (value !== null && value !== void 0) {\r\n      return setCookie(event, name, value, opts);\r\n    }\r\n    if (getCookie(event, name) !== void 0) {\r\n      return deleteCookie(event, name, opts);\r\n    }\r\n  }\r\n}\r\nconst MAX_TIMEOUT_DELAY = 2147483647;\r\nfunction cookieRef(value, delay) {\r\n  let timeout;\r\n  let elapsed = 0;\r\n  if (getCurrentScope()) {\r\n    onScopeDispose(() => {\r\n      clearTimeout(timeout);\r\n    });\r\n  }\r\n  return customRef((track, trigger) => {\r\n    function createExpirationTimeout() {\r\n      clearTimeout(timeout);\r\n      const timeRemaining = delay - elapsed;\r\n      const timeoutLength = timeRemaining < MAX_TIMEOUT_DELAY ? timeRemaining : MAX_TIMEOUT_DELAY;\r\n      timeout = setTimeout(() => {\r\n        elapsed += timeoutLength;\r\n        if (elapsed < delay) {\r\n          return createExpirationTimeout();\r\n        }\r\n        value = void 0;\r\n        trigger();\r\n      }, timeoutLength);\r\n    }\r\n    return {\r\n      get() {\r\n        track();\r\n        return value;\r\n      },\r\n      set(newValue) {\r\n        createExpirationTimeout();\r\n        value = newValue;\r\n        trigger();\r\n      }\r\n    };\r\n  });\r\n}\r\n",
-      "start": 1716369329038,
-      "end": 1716369329508,
+      "start": 1718568828647,
+      "end": 1718568828790,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1716369329508,
-      "end": 1716369329508,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1716369329508,
-      "end": 1716369329508,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1716369329508,
-      "end": 1716369329508,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1716369329508,
-      "end": 1716369329508,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1716369329508,
-      "end": 1716369329508,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1716369329508,
-      "end": 1716369329509,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1716369329509,
-      "end": 1716369329509,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1716369329509,
-      "end": 1716369329509,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1716369329509,
-      "end": 1716369329509,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369329509,
-      "end": 1716369329509,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1716369329509,
-      "end": 1716369329509,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1716369329509,
-      "end": 1716369329509,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1716369329509,
-      "end": 1716369329509,
+      "start": 1718568828790,
+      "end": 1718568828790,
       "order": "normal"
     },
     {
       "name": "replace",
       "result": "import { customRef, getCurrentScope, nextTick, onScopeDispose, ref, watch } from \"vue\";\r\nimport { parse, serialize } from \"cookie-es\";\r\nimport { deleteCookie, getCookie, getRequestHeader, setCookie } from \"h3\";\r\nimport destr from \"destr\";\r\nimport { isEqual } from \"ohash\";\r\nimport { klona } from \"klona\";\r\nimport { useNuxtApp } from \"../nuxt.js\";\r\nimport { useRequestEvent } from \"./ssr.js\";\r\nimport { cookieStore } from \"#build/nuxt.config.mjs\";\r\nconst CookieDefaults = {\r\n  path: \"/\",\r\n  watch: true,\r\n  decode: (val) => destr(decodeURIComponent(val)),\r\n  encode: (val) => encodeURIComponent(typeof val === \"string\" ? val : JSON.stringify(val))\r\n};\r\nconst store = true && cookieStore ? window.cookieStore : void 0;\r\nexport function useCookie(name, _opts) {\r\n  const opts = { ...CookieDefaults, ..._opts };\r\n  const cookies = readRawCookies(opts) || {};\r\n  let delay;\r\n  if (opts.maxAge !== void 0) {\r\n    delay = opts.maxAge * 1e3;\r\n  } else if (opts.expires) {\r\n    delay = opts.expires.getTime() - Date.now();\r\n  }\r\n  const hasExpired = delay !== void 0 && delay <= 0;\r\n  const cookieValue = klona(hasExpired ? void 0 : cookies[name] ?? opts.default?.());\r\n  const cookie = true && delay && !hasExpired ? cookieRef(cookieValue, delay) : ref(cookieValue);\r\n  if (false && hasExpired) {\r\n    console.warn(`[nuxt] not setting cookie \\`${name}\\` as it has already expired.`);\r\n  }\r\n  if (true) {\r\n    const channel = store || typeof BroadcastChannel === \"undefined\" ? null : new BroadcastChannel(`nuxt:cookies:${name}`);\r\n    const callback = () => {\r\n      if (opts.readonly || isEqual(cookie.value, cookies[name])) {\r\n        return;\r\n      }\r\n      writeClientCookie(name, cookie.value, opts);\r\n      cookies[name] = klona(cookie.value);\r\n      channel?.postMessage({ value: opts.encode(cookie.value) });\r\n    };\r\n    const handleChange = (data) => {\r\n      const value = data.refresh ? readRawCookies(opts)?.[name] : opts.decode(data.value);\r\n      watchPaused = true;\r\n      cookies[name] = cookie.value = value;\r\n      nextTick(() => {\r\n        watchPaused = false;\r\n      });\r\n    };\r\n    let watchPaused = false;\r\n    if (getCurrentScope()) {\r\n      onScopeDispose(() => {\r\n        watchPaused = true;\r\n        callback();\r\n        channel?.close();\r\n      });\r\n    }\r\n    if (store) {\r\n      store.onchange = (event) => {\r\n        const cookie2 = event.changed.find((c) => c.name === name);\r\n        if (cookie2)\r\n          handleChange({ value: cookie2.value });\r\n      };\r\n    } else if (channel) {\r\n      channel.onmessage = ({ data }) => handleChange(data);\r\n    }\r\n    if (opts.watch) {\r\n      watch(\r\n        cookie,\r\n        () => {\r\n          if (watchPaused) {\r\n            return;\r\n          }\r\n          callback();\r\n        },\r\n        { deep: opts.watch !== \"shallow\" }\r\n      );\r\n    } else {\r\n      callback();\r\n    }\r\n  } else if (false) {\r\n    const nuxtApp = useNuxtApp();\r\n    const writeFinalCookieValue = () => {\r\n      if (opts.readonly || isEqual(cookie.value, cookies[name])) {\r\n        return;\r\n      }\r\n      writeServerCookie(useRequestEvent(nuxtApp), name, cookie.value, opts);\r\n    };\r\n    const unhook = nuxtApp.hooks.hookOnce(\"app:rendered\", writeFinalCookieValue);\r\n    nuxtApp.hooks.hookOnce(\"app:error\", () => {\r\n      unhook();\r\n      return writeFinalCookieValue();\r\n    });\r\n  }\r\n  return cookie;\r\n}\r\nexport function refreshCookie(name) {\r\n  if (store || typeof BroadcastChannel === \"undefined\")\r\n    return;\r\n  new BroadcastChannel(`nuxt:cookies:${name}`)?.postMessage({ refresh: true });\r\n}\r\nfunction readRawCookies(opts = {}) {\r\n  if (false) {\r\n    return parse(getRequestHeader(useRequestEvent(), \"cookie\") || \"\", opts);\r\n  } else if (true) {\r\n    return parse(document.cookie, opts);\r\n  }\r\n}\r\nfunction serializeCookie(name, value, opts = {}) {\r\n  if (value === null || value === void 0) {\r\n    return serialize(name, value, { ...opts, maxAge: -1 });\r\n  }\r\n  return serialize(name, value, opts);\r\n}\r\nfunction writeClientCookie(name, value, opts = {}) {\r\n  if (true) {\r\n    document.cookie = serializeCookie(name, value, opts);\r\n  }\r\n}\r\nfunction writeServerCookie(event, name, value, opts = {}) {\r\n  if (event) {\r\n    if (value !== null && value !== void 0) {\r\n      return setCookie(event, name, value, opts);\r\n    }\r\n    if (getCookie(event, name) !== void 0) {\r\n      return deleteCookie(event, name, opts);\r\n    }\r\n  }\r\n}\r\nconst MAX_TIMEOUT_DELAY = 2147483647;\r\nfunction cookieRef(value, delay) {\r\n  let timeout;\r\n  let elapsed = 0;\r\n  if (getCurrentScope()) {\r\n    onScopeDispose(() => {\r\n      clearTimeout(timeout);\r\n    });\r\n  }\r\n  return customRef((track, trigger) => {\r\n    function createExpirationTimeout() {\r\n      clearTimeout(timeout);\r\n      const timeRemaining = delay - elapsed;\r\n      const timeoutLength = timeRemaining < MAX_TIMEOUT_DELAY ? timeRemaining : MAX_TIMEOUT_DELAY;\r\n      timeout = setTimeout(() => {\r\n        elapsed += timeoutLength;\r\n        if (elapsed < delay) {\r\n          return createExpirationTimeout();\r\n        }\r\n        value = void 0;\r\n        trigger();\r\n      }, timeoutLength);\r\n    }\r\n    return {\r\n      get() {\r\n        track();\r\n        return value;\r\n      },\r\n      set(newValue) {\r\n        createExpirationTimeout();\r\n        value = newValue;\r\n        trigger();\r\n      }\r\n    };\r\n  });\r\n}\r\n",
-      "start": 1716369329509,
-      "end": 1716369329514,
+      "start": 1718568828790,
+      "end": 1718568828791,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -103,116 +103,116 @@
     },
     {
       "name": "ssr-styles",
-      "start": 1716369329514,
-      "end": 1716369329514,
+      "start": 1718568828791,
+      "end": 1718568828791,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1716369329514,
-      "end": 1716369329514,
+      "start": 1718568828791,
+      "end": 1718568828791,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1716369329514,
-      "end": 1716369329514,
+      "start": 1718568828791,
+      "end": 1718568828791,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1716369329514,
-      "end": 1716369329514,
+      "start": 1718568828791,
+      "end": 1718568828791,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1716369329514,
-      "end": 1716369329514,
+      "start": 1718568828791,
+      "end": 1718568828791,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1716369329514,
-      "end": 1716369329514,
+      "start": 1718568828791,
+      "end": 1718568828791,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1716369329514,
-      "end": 1716369329516,
+      "start": 1718568828791,
+      "end": 1718568828792,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1716369329516,
-      "end": 1716369329516,
+      "start": 1718568828792,
+      "end": 1718568828792,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1716369329516,
-      "end": 1716369329516,
+      "start": 1718568828792,
+      "end": 1718568828792,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1716369329516,
-      "end": 1716369329517,
+      "start": 1718568828792,
+      "end": 1718568828792,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1716369329517,
-      "end": 1716369329517,
+      "start": 1718568828792,
+      "end": 1718568828792,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1716369329517,
-      "end": 1716369329517,
+      "start": 1718568828792,
+      "end": 1718568828792,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1716369329517,
-      "end": 1716369329517,
+      "start": 1718568828792,
+      "end": 1718568828792,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1716369329517,
-      "end": 1716369329517,
+      "start": 1718568828792,
+      "end": 1718568828792,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1716369329517,
-      "end": 1716369329517,
+      "start": 1718568828792,
+      "end": 1718568828792,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1716369329517,
-      "end": 1716369329517,
+      "start": 1718568828792,
+      "end": 1718568828792,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1716369329517,
-      "end": 1716369329517,
+      "start": 1718568828792,
+      "end": 1718568828792,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1716369329518,
-      "end": 1716369329518,
+      "start": 1718568828792,
+      "end": 1718568828792,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1716369329518,
-      "end": 1716369329518,
+      "start": 1718568828792,
+      "end": 1718568828792,
       "order": "normal"
     }
   ]

@@ -3,99 +3,99 @@
   "transforms": [
     {
       "name": "vite:vue",
-      "result": "\r\n\r\nbody {\r\n  margin: 0px;\r\n  height: 30rem;\r\n  background-color: black;\r\n\r\n\r\n}\r\n.all-site {\r\n  background-color: black;\r\n  color: white;\r\n}\r\na {\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n  color: white;\r\n}\r\n\r\n/*pages transition */\r\n.page-enter-active,\r\n.page-leave-active {\r\n  transition: all 0.2s;\r\n}\r\n.page-enter-from,\r\n.page-leave-to {\r\n  opacity: 0;\r\n}\r\n",
-      "start": 1716369333681,
-      "end": 1716369333681,
+      "result": "\r\n\r\nbody {\r\n  margin: 0px;\r\n  height: 30rem;\r\n  background-color: black;\r\n  overflow-x: hidden;\r\n\r\n\r\n}\r\n.all-site {\r\n  background-color: black;\r\n  color: white;\r\n}\r\na {\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n  color: white;\r\n}\r\n\r\n/*pages transition */\r\n.page-enter-active,\r\n.page-leave-active {\r\n  transition: all 0.2s;\r\n}\r\n.page-enter-from,\r\n.page-leave-to {\r\n  opacity: 0;\r\n}\r\n",
+      "start": 1718568831573,
+      "end": 1718568831573,
       "sourcemaps": {
         "version": 3,
         "sources": [
           "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/layouts/default.vue"
         ],
         "names": [],
-        "mappings": ";;AAcA,CAAC,CAAC,CAAC,EAAE;EACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;;;AAGzB;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACR,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;EACvB,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;AACd;AACA,EAAE;EACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACf,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;AACd;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AACpB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACjB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACtB;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AACZ",
+        "mappings": ";;AAuBA,CAAC,CAAC,CAAC,EAAE;EACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;EACvB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;;AAGpB;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACR,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;EACvB,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;AACd;AACA,EAAE;EACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACf,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;AACd;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AACpB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACjB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACtB;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AACZ",
         "file": "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/layouts/default.vue",
         "sourceRoot": "",
         "sourcesContent": [
-          "<template>\r\n  <div class=\"all-site\">\r\n      <Navbar/>\r\n      <NuxtPage/>\r\n      <Footer/>\r\n     \r\n  </div>\r\n</template>\r\n<script setup>\r\n  useHead({link: [{ rel: 'icon', type: 'image/png', href: 'favicon.ico' }]})\r\n</script>\r\n\r\n<style>\r\n\r\nbody {\r\n  margin: 0px;\r\n  height: 30rem;\r\n  background-color: black;\r\n\r\n\r\n}\r\n.all-site {\r\n  background-color: black;\r\n  color: white;\r\n}\r\na {\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n  color: white;\r\n}\r\n\r\n/*pages transition */\r\n.page-enter-active,\r\n.page-leave-active {\r\n  transition: all 0.2s;\r\n}\r\n.page-enter-from,\r\n.page-leave-to {\r\n  opacity: 0;\r\n}\r\n</style>"
+          "<template>\r\n  <div class=\"all-site\">\r\n      <Navbar/>\r\n      <NuxtPage/>\r\n      <Footer/>\r\n     <!--\r\n        useSeoMeta({\r\n    title: 'studio-byno',\r\n    ogTitle: 'studio Byno',\r\n    description: 'Agence de sound design et communication audiovisuelle',\r\n    ogDescription: 'Agence de sound design et communication audiovisuelle',\r\n    ogImage: 'https://www.studio-byno.fr/img/logo-fond-noir.png',\r\n    twitterCard: 'summary_large_image',\r\n  })\r\n     -->\r\n  </div>\r\n</template>\r\n<script setup>\r\n\r\n</script>\r\n\r\n<style>\r\n\r\nbody {\r\n  margin: 0px;\r\n  height: 30rem;\r\n  background-color: black;\r\n  overflow-x: hidden;\r\n\r\n\r\n}\r\n.all-site {\r\n  background-color: black;\r\n  color: white;\r\n}\r\na {\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n  color: white;\r\n}\r\n\r\n/*pages transition */\r\n.page-enter-active,\r\n.page-leave-active {\r\n  transition: all 0.2s;\r\n}\r\n.page-enter-from,\r\n.page-leave-to {\r\n  opacity: 0;\r\n}\r\n</style>"
         ]
       }
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1716369333681,
-      "end": 1716369333681,
+      "start": 1718568831573,
+      "end": 1718568831573,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1716369333681,
-      "end": 1716369333681,
+      "start": 1718568831573,
+      "end": 1718568831573,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1716369333681,
-      "end": 1716369333681,
+      "start": 1718568831573,
+      "end": 1718568831573,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1716369333681,
-      "end": 1716369333681,
+      "start": 1718568831573,
+      "end": 1718568831573,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1716369333681,
-      "end": 1716369333681,
+      "start": 1718568831573,
+      "end": 1718568831573,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "result": "body{height:30rem;margin:0}.all-site,body{background-color:#000}.all-site,a{color:#fff}a{cursor:pointer;text-decoration:none}.page-enter-active,.page-leave-active{transition:all .2s}.page-enter-from,.page-leave-to{opacity:0}",
-      "start": 1716369333681,
-      "end": 1716369333688,
+      "result": "body{height:30rem;margin:0;overflow-x:hidden}.all-site,body{background-color:#000}.all-site,a{color:#fff}a{cursor:pointer;text-decoration:none}.page-enter-active,.page-leave-active{transition:all .2s}.page-enter-from,.page-leave-to{opacity:0}",
+      "start": 1718568831573,
+      "end": 1718568831577,
       "order": "normal",
       "sourcemaps": {
         "file": "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/layouts/default.vue",
-        "mappings": "AAEA,KAEE,YAAa,CADb,QAKF,CACA,eAJE,qBAOF,CACA,YAFE,UAMF,CAJA,EAEE,cAAe,CADf,oBAGF,CAGA,sCAEE,kBACF,CACA,gCAEE,SACF",
+        "mappings": "AAEA,KAEE,YAAa,CADb,QAAW,CAGX,iBAGF,CACA,eALE,qBAQF,CACA,YAFE,UAMF,CAJA,EAEE,cAAe,CADf,oBAGF,CAGA,sCAEE,kBACF,CACA,gCAEE,SACF",
         "names": [],
         "sources": [
           "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/layouts/default.vue"
         ],
         "sourcesContent": [
-          "\r\n\r\nbody {\r\n  margin: 0px;\r\n  height: 30rem;\r\n  background-color: black;\r\n\r\n\r\n}\r\n.all-site {\r\n  background-color: black;\r\n  color: white;\r\n}\r\na {\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n  color: white;\r\n}\r\n\r\n/*pages transition */\r\n.page-enter-active,\r\n.page-leave-active {\r\n  transition: all 0.2s;\r\n}\r\n.page-enter-from,\r\n.page-leave-to {\r\n  opacity: 0;\r\n}\r\n"
+          "\r\n\r\nbody {\r\n  margin: 0px;\r\n  height: 30rem;\r\n  background-color: black;\r\n  overflow-x: hidden;\r\n\r\n\r\n}\r\n.all-site {\r\n  background-color: black;\r\n  color: white;\r\n}\r\na {\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n  color: white;\r\n}\r\n\r\n/*pages transition */\r\n.page-enter-active,\r\n.page-leave-active {\r\n  transition: all 0.2s;\r\n}\r\n.page-enter-from,\r\n.page-leave-to {\r\n  opacity: 0;\r\n}\r\n"
         ],
         "version": 3
       }
     },
     {
       "name": "vite:esbuild",
-      "start": 1716369333688,
-      "end": 1716369333688,
+      "start": 1718568831577,
+      "end": 1718568831577,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1716369333688,
-      "end": 1716369333688,
+      "start": 1718568831577,
+      "end": 1718568831577,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1716369333688,
-      "end": 1716369333688,
+      "start": 1718568831577,
+      "end": 1718568831577,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "body{height:30rem;margin:0}.all-site,body{background-color:#000}.all-site,a{color:#fff}a{cursor:pointer;text-decoration:none}.page-enter-active,.page-leave-active{transition:all .2s}.page-enter-from,.page-leave-to{opacity:0}",
-      "start": 1716369333688,
-      "end": 1716369333689,
+      "result": "body{height:30rem;margin:0;overflow-x:hidden}.all-site,body{background-color:#000}.all-site,a{color:#fff}a{cursor:pointer;text-decoration:none}.page-enter-active,.page-leave-active{transition:all .2s}.page-enter-from,.page-leave-to{opacity:0}",
+      "start": 1718568831577,
+      "end": 1718568831577,
       "order": "normal",
       "sourcemaps": {
         "file": "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/layouts/default.vue",
-        "mappings": "AAAA,KAAK,YAAY,CAAC,QAAQ,CAAC,eAAe,qBAAqB,CAAC,YAAY,UAAU,CAAC,EAAE,cAAc,CAAC,oBAAoB,CAAC,sCAAsC,kBAAkB,CAAC,gCAAgC,SAAS",
+        "mappings": "AAAA,KAAK,YAAY,CAAC,QAAQ,CAAC,iBAAiB,CAAC,eAAe,qBAAqB,CAAC,YAAY,UAAU,CAAC,EAAE,cAAc,CAAC,oBAAoB,CAAC,sCAAsC,kBAAkB,CAAC,gCAAgC,SAAS",
         "names": [],
         "sources": [
           "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/layouts/default.vue"
@@ -108,63 +108,63 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1716369333689,
-      "end": 1716369333689,
+      "start": 1718568831577,
+      "end": 1718568831577,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369333689,
-      "end": 1716369333689,
+      "start": 1718568831577,
+      "end": 1718568831578,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369333689,
-      "end": 1716369333689,
+      "start": 1718568831577,
+      "end": 1718568831578,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1716369333689,
-      "end": 1716369333689,
+      "start": 1718568831578,
+      "end": 1718568831578,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1716369333689,
-      "end": 1716369333689,
+      "start": 1718568831578,
+      "end": 1718568831578,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1716369333689,
-      "end": 1716369333689,
+      "start": 1718568831578,
+      "end": 1718568831578,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369333689,
-      "end": 1716369333689,
+      "start": 1718568831578,
+      "end": 1718568831578,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1716369333689,
-      "end": 1716369333692,
+      "start": 1718568831578,
+      "end": 1718568831578,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1716369333693,
-      "end": 1716369333693,
+      "start": 1718568831578,
+      "end": 1718568831578,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
       "result": "",
-      "start": 1716369333693,
-      "end": 1716369333693,
+      "start": 1718568831578,
+      "end": 1718568831578,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -172,116 +172,116 @@
     },
     {
       "name": "vite:build-html",
-      "start": 1716369333693,
-      "end": 1716369333693,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1716369333693,
-      "end": 1716369333693,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1716369333693,
-      "end": 1716369333693,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1716369333693,
-      "end": 1716369333694,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1716369333694,
-      "end": 1716369333695,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1716369333695,
-      "end": 1716369333695,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1716369333695,
-      "end": 1716369333695,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1716369333695,
-      "end": 1716369333695,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1716369333695,
-      "end": 1716369333695,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1716369333695,
-      "end": 1716369333695,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1716369333695,
-      "end": 1716369333695,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1716369333695,
-      "end": 1716369333695,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1716369333695,
-      "end": 1716369333695,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1716369333695,
-      "end": 1716369333695,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1716369333695,
-      "end": 1716369333696,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1716369333696,
-      "end": 1716369333696,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1716369333696,
-      "end": 1716369333696,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1716369333696,
-      "end": 1716369333696,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1716369333696,
-      "end": 1716369333696,
+      "start": 1718568831579,
+      "end": 1718568831579,
       "order": "normal"
     }
   ]

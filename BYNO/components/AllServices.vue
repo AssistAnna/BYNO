@@ -1,18 +1,24 @@
+<script setup lang="ts">
+useHead({
+  title: 'Studio Byno',
+})
+</script>
 <template>
   <div class="all-services">
     <!--Version PC et tablettes-->
     <div class="version-pc">
+      <h1 class="hidden-title">Agence de sound desin et communication audiovisuelle.</h1>
       <div class="bloc" data-aos="fade-right">
           <img src="/img/service-img-bloc1.jpg" alt="image vaisseau spatial" class="img-bloc">
           <div class="title-text">
-            <h3>Notre approche</h3>
-            <p>Byno est un studio spécialisé dans la production audiovisuelle et sonore, offrant une approche collaborative pour la réalisation de vidéos. Chaque projet est traité avec une attention particulière, car il porte en lui son message néessitant ainsi une approche personnalisée.</p>
+            <h3>Mon approche</h3>
+            <p>Byno est un studio spécialisé dans la production audiovisuelle et sonore, offrant une approche collaborative pour la réalisation de vidéos. Chaque projet est traité avec une attention particulière, car il porte en lui son message nécessitant ainsi une approche personnalisée.</p>
           </div>
       </div>
       <div class="bloc bloc2" data-aos="fade-left">
           <div class="title-text">
             <h3>Qualité sound design</h3>
-            <p>Byno vous propose une qualité de sound design inégalée, surpassant toute possibilité offerte par les robots ou les algorithmes. Il répond à vos exigences avec une précision minutieuse, prenant en compte les moindes détails de votre demande.</p>
+            <p>Byno vous propose une qualité de sound design inégalée, surpassant toute possibilité offerte par les robots ou les algorithmes. Il répond à vos exigences avec une précision minutieuse, prenant en compte les moindres détails de votre demande.</p>
           </div>
           <img src="/img/service-img-bloc2.jpg" alt="image vaisseau spatial" class="img-bloc img2">
       </div>
@@ -22,15 +28,15 @@
       <div class="bloc-mobile">
           <img src="/img/service-img-bloc1.jpg" alt="image vaisseau spatial" class="img-bloc">
           <div class="title-text">
-            <h3>Notre approche</h3>
-            <p>Byno est un studio spécialisé dans la production audiovisuelle et sonore, offrant une approche collaborative pour la réalisation de vidéos. Chaque projet est traité avec une attention particulière, car il porte en lui son message néessitant ainsi une approche personnalisée.</p>
+            <h3>Mon approche</h3>
+            <p>Byno est un studio spécialisé dans la production audiovisuelle et sonore, offrant une approche collaborative pour la réalisation de vidéos. Chaque projet est traité avec une attention particulière, car il porte en lui son message nécessitant ainsi une approche personnalisée.</p>
           </div>
       </div>
       <div class="bloc-mobile">
           <div class="title-text">
           <img src="/img/service-img-bloc2.jpg" alt="image vaisseau spatial" class="img-bloc img2">
             <h3>Qualité sound design</h3>
-            <p>Byno vous propose une qualité de sound design inégalée, surpassant toute possibilité offerte par les robots ou les algorithmes. Il répond à vos exigences avec une précision minutieuse, prenant en compte les moindes détails de votre demande.</p>
+            <p>Byno vous propose une qualité de sound design inégalée, surpassant toute possibilité offerte par les robots ou les algorithmes. Il répond à vos exigences avec une précision minutieuse, prenant en compte les moindres détails de votre demande.</p>
           </div>
       </div>
      </div>
@@ -96,7 +102,7 @@ p {
 
 
 /* version mobile et tablette */
-@media (min-width: 820px) and (max-width: 1050px) {
+@media (min-width: 601px) and (max-width: 1032px) {
   .bloc {
     height: 30vh;
     width: 85%;
@@ -109,7 +115,7 @@ p {
   }
   
 }
-@media screen and (max-width: 819px) {
+@media screen and (max-width: 600px) {
   .version-pc {
     display: none;
   }
@@ -118,10 +124,14 @@ p {
   }
   .bloc-mobile {
     margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .title-text {
     padding: 0;
     text-align: center;
+    
   }
   h3 {
     margin: 2rem 0;
@@ -134,9 +144,8 @@ p {
     margin: 1.5rem;
   }
   .img-bloc {
-    width: 100vw;
-    
-    
+    width: 90vw;
+    height: 50vh;
   }
 }
 </style>

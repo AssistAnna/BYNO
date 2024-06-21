@@ -3,58 +3,58 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "<template>\r\n  <div class=\"page-index\">\r\n    <GroupeImgAccueil  data-aos=\"fade-up\"/>\r\n    <p class=\"text-presentation\" data-aos=\"fade-up\">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements.</p>\r\n    <h2 class=\"title-h2\" data-aos=\"fade-up\">Productions</h2>\r\n    <AllProjects data-aos=\"fade-up\"/>\r\n    <h2 class=\"title-h2\" data-aos=\"fade-up\">Services</h2>\r\n    <AllServices />\r\n  </div>\r\n</template>\r\n<script>\r\n\r\nexport default {\r\n  \r\n\r\n}\r\n</script>\r\n\r\n<style>\r\n@font-face {\r\n  font-family: 'mplusblack';\r\n  src: url('/fonts/MPLUS1p-Black.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusbold';\r\n  src: url('/fonts/MPLUS1p-Bold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusextra';\r\n  src: url('/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mpluslight';\r\n  src: url('/fonts/MPLUS1p-Light.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusmedium';\r\n  src: url('/fonts/MPLUS1p-Medium.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusregular';\r\n  src: url('/fonts/MPLUS1p-Regular.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusthin';\r\n  src: url('/fonts/MPLUS1p-Thin.ttf') format('opentype'),\r\n}\r\n\r\n.box-shadow {\r\n  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); \r\nbox-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);\r\n}\r\n\r\n.page-index {\r\n  padding-top: 5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center; \r\n}\r\n\r\n.text-presentation {\r\n  margin: 0rem 10rem;\r\n  font-size: 1.8rem;\r\n  font-family: mplusbold;\r\n  text-align: center;\r\n  padding-bottom: 4rem;\r\n  padding-top: 6rem;\r\n}\r\n\r\n.title-h2 {\r\n    font-size: 3rem;\r\n    font-family: mplusmedium;\r\n    text-align: center;\r\n    padding-bottom: 2rem;\r\n    margin-bottom: 5rem;\r\n    text-decoration: underline;\r\n    text-underline-offset: 1.6rem;\r\n    text-decoration-color: #009FE3;\r\n\r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 900px) {\r\n  .text-presentation {\r\n    margin: 0 2rem;\r\n    font-size: 1.1rem;\r\n    padding-bottom: 1rem;\r\n  }\r\n  .title-h2 {\r\n    padding-bottom: 1rem;\r\n    font-size: 2rem;\r\n    width: 40vw;\r\n    margin-bottom: 2rem;\r\n  }\r\n}\r\n\r\n/*\r\n\r\n*/\r\n</style>",
-      "start": 1716369327620,
-      "end": 1716369328373,
+      "result": "<template>\r\n  <div class=\"page-index\">\r\n    <AccueilSection1/>\r\n    <p class=\"text-presentation\" data-aos=\"fade-up\">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements.</p>\r\n    <h2 class=\"title-h2 special\" data-aos=\"fade-up\">Productions</h2>\r\n    <AllProjects data-aos=\"fade-up\"/>\r\n    <h2 class=\"title-h2\" data-aos=\"fade-up\">Services</h2>\r\n    <AllServices />\r\n  </div>\r\n</template>\r\n\r\n<script setup lang=\"ts\">\r\nuseHead({\r\n  title: 'Studio-Byno'\r\n})\r\n</script>\r\n\r\n\r\n<style>\r\n@font-face {\r\n  font-family: 'mplusblack';\r\n  src: url('/fonts/MPLUS1p-Black.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusbold';\r\n  src: url('/fonts/MPLUS1p-Bold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusextra';\r\n  src: url('/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mpluslight';\r\n  src: url('/fonts/MPLUS1p-Light.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusmedium';\r\n  src: url('/fonts/MPLUS1p-Medium.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusregular';\r\n  src: url('/fonts/MPLUS1p-Regular.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusthin';\r\n  src: url('/fonts/MPLUS1p-Thin.ttf') format('opentype'),\r\n}\r\n.hidden-title {\r\n  color: black;\r\n  margin: 0;\r\n}\r\n.box-shadow {\r\n  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); \r\nbox-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);\r\n}\r\n\r\n.blue-shadow {\r\n  -webkit-box-shadow: 1px 1px 42px -14px rgba(0,159,227,0.89); \r\nbox-shadow: 1px 1px 42px -14px rgba(0,159,227,0.89);\r\n}\r\n\r\n.page-index {\r\n  padding-top: 5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center; \r\n}\r\n\r\n.text-presentation {\r\n  margin: 5rem 10rem;\r\n  font-size: 1.8rem;\r\n  font-family: mplusbold;\r\n  text-align: center;\r\n}\r\n\r\n.title-h2 {\r\n    font-size: 3rem;\r\n    font-family: mplusmedium;\r\n    text-align: center;\r\n    padding-bottom: 2rem;\r\n    margin-bottom: 5rem;\r\n    text-decoration: underline;\r\n    text-underline-offset: 1.6rem;\r\n    text-decoration-color: #009FE3;\r\n}\r\n.special {\r\n    margin-top: 0;\r\n  }\r\n.btn-retour {\r\n  color: #009FE3;\r\n  font-family: 'mplusextra';\r\n  text-decoration: underline;\r\n  text-underline-offset: 0.8rem;\r\n  margin-left: 2rem;\r\n  margin-bottom: 2rem;\r\n  cursor: pointer;\r\n  \r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 900px) {\r\n  .text-presentation {\r\n    margin: 4rem 2rem;\r\n    font-size: 1.1rem;\r\n  }\r\n  .title-h2 {\r\n    padding-bottom: 1rem;\r\n    font-size: 2rem;\r\n    margin-bottom: 2rem;\r\n    text-underline-offset: 1.1rem;\r\n    line-height: 3.7rem;\r\n  }\r\n  \r\n}\r\n\r\n/*\r\n\r\n*/\r\n</style>",
+      "start": 1718568827849,
+      "end": 1718568828043,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1716369328373,
-      "end": 1716369328373,
+      "start": 1718568828043,
+      "end": 1718568828043,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1716369328373,
-      "end": 1716369328373,
+      "start": 1718568828043,
+      "end": 1718568828043,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1716369328373,
-      "end": 1716369328373,
+      "start": 1718568828043,
+      "end": 1718568828043,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1716369328373,
-      "end": 1716369328373,
+      "start": 1718568828043,
+      "end": 1718568828043,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1716369328373,
-      "end": 1716369328373,
+      "start": 1718568828043,
+      "end": 1718568828043,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1716369328373,
-      "end": 1716369328373,
+      "start": 1718568828043,
+      "end": 1718568828043,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1716369328373,
-      "end": 1716369328373,
+      "start": 1718568828043,
+      "end": 1718568828043,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "\r\n\r\nconst _sfc_main = {\r\n  \r\n\r\n}\r\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"page-index\" }\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"p\", {\n  class: \"text-presentation\",\n  \"data-aos\": \"fade-up\"\n}, \"Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements.\", -1)\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"h2\", {\n  class: \"title-h2\",\n  \"data-aos\": \"fade-up\"\n}, \"Productions\", -1)\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"h2\", {\n  class: \"title-h2\",\n  \"data-aos\": \"fade-up\"\n}, \"Services\", -1)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_GroupeImgAccueil = _resolveComponent(\"GroupeImgAccueil\")\n  const _component_AllProjects = _resolveComponent(\"AllProjects\")\n  const _component_AllServices = _resolveComponent(\"AllServices\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_GroupeImgAccueil, { \"data-aos\": \"fade-up\" }),\n    _hoisted_2,\n    _hoisted_3,\n    _createVNode(_component_AllProjects, { \"data-aos\": \"fade-up\" }),\n    _hoisted_4,\n    _createVNode(_component_AllServices)\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue?vue&type=style&index=0&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
-      "start": 1716369328373,
-      "end": 1716369328375,
+      "result": "import _sfc_main from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue?vue&type=script&setup=true&lang.ts\";\nimport \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue?vue&type=style&index=0&lang.css\";\nexport default _sfc_main;\n",
+      "start": 1718568828043,
+      "end": 1718568828690,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,153 +62,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1716369328376,
-      "end": 1716369328376,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1716369328377,
-      "end": 1716369328378,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1716369328378,
-      "end": 1716369328378,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1716369328378,
-      "end": 1716369328378,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1716369328378,
-      "end": 1716369328378,
+      "start": 1718568828690,
+      "end": 1718568828690,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1716369328378,
-      "end": 1716369328378,
+      "start": 1718568828691,
+      "end": 1718568828691,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "result": "import { default as __nuxt_component_0 } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/GroupeImgAccueil.vue\";\nimport { default as __nuxt_component_1 } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/AllProjects.vue\";\nimport { default as __nuxt_component_2 } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/AllServices.vue\";\n\r\n\r\nconst _sfc_main = {\r\n  \r\n\r\n}\r\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"page-index\" }\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"p\", {\n  class: \"text-presentation\",\n  \"data-aos\": \"fade-up\"\n}, \"Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements.\", -1)\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"h2\", {\n  class: \"title-h2\",\n  \"data-aos\": \"fade-up\"\n}, \"Productions\", -1)\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"h2\", {\n  class: \"title-h2\",\n  \"data-aos\": \"fade-up\"\n}, \"Services\", -1)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_GroupeImgAccueil = __nuxt_component_0\n  const _component_AllProjects = __nuxt_component_1\n  const _component_AllServices = __nuxt_component_2\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_GroupeImgAccueil, { \"data-aos\": \"fade-up\" }),\n    _hoisted_2,\n    _hoisted_3,\n    _createVNode(_component_AllProjects, { \"data-aos\": \"fade-up\" }),\n    _hoisted_4,\n    _createVNode(_component_AllServices)\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue?vue&type=style&index=0&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
-      "start": 1716369328378,
-      "end": 1716369328379,
+      "start": 1718568828691,
+      "end": 1718568828691,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1716369328379,
-      "end": 1716369328379,
+      "start": 1718568828691,
+      "end": 1718568828691,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1716369328379,
-      "end": 1716369328379,
+      "start": 1718568828691,
+      "end": 1718568828691,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1716369328379,
-      "end": 1716369328379,
+      "start": 1718568828691,
+      "end": 1718568828691,
       "order": "normal"
     }
   ]

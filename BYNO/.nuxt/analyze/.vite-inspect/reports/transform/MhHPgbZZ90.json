@@ -3,58 +3,58 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "<template>\r\n  <div class=\"services\">\r\n    <h2 class=\"title-h2\" data-aos=\"fade-up\">Services</h2>\r\n    <CardServices data-aos=\"fade-up\"/>\r\n    <AllServices/>\r\n  </div>\r\n</template>\r\n\r\n<script>\r\n\r\nexport default {\r\n\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n.services {\r\n    padding-top: 5rem;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n\r\n  }\r\nimg {\r\n    height: 15rem;\r\n    width: 15rem;\r\n  }\r\n\r\n\r\n  \r\n</style>",
-      "start": 1716369327797,
-      "end": 1716369328502,
+      "result": "<template>\r\n  <div class=\"services\">\r\n    <h2 class=\"title-h2\" data-aos=\"fade-up\">Services</h2>\r\n    <CardServices data-aos=\"fade-up\" data-aos-delay=\"300\"/>\r\n    <AllServices/>\r\n  </div>\r\n</template>\r\n\r\n<script>\r\n\r\nexport default {\r\n\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n.services {\r\n    padding-top: 5rem;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n\r\n  }\r\nimg {\r\n    height: 15rem;\r\n    width: 15rem;\r\n  }\r\n\r\n\r\n  \r\n</style>",
+      "start": 1718568827951,
+      "end": 1718568828318,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1716369328502,
-      "end": 1716369328502,
+      "start": 1718568828319,
+      "end": 1718568828319,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1716369328502,
-      "end": 1716369328503,
+      "start": 1718568828319,
+      "end": 1718568828319,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1716369328503,
-      "end": 1716369328503,
+      "start": 1718568828319,
+      "end": 1718568828319,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1716369328503,
-      "end": 1716369328503,
+      "start": 1718568828319,
+      "end": 1718568828319,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1716369328503,
-      "end": 1716369328503,
+      "start": 1718568828319,
+      "end": 1718568828319,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1716369328503,
-      "end": 1716369328503,
+      "start": 1718568828319,
+      "end": 1718568828319,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1716369328503,
-      "end": 1716369328503,
+      "start": 1718568828319,
+      "end": 1718568828319,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "\r\n\r\nconst _sfc_main = {\r\n\r\n}\r\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-865e6bb7\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"services\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", {\n  class: \"title-h2\",\n  \"data-aos\": \"fade-up\"\n}, \"Services\", -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_CardServices = _resolveComponent(\"CardServices\")\n  const _component_AllServices = _resolveComponent(\"AllServices\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _hoisted_2,\n    _createVNode(_component_CardServices, { \"data-aos\": \"fade-up\" }),\n    _createVNode(_component_AllServices)\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Services.vue?vue&type=style&index=0&scoped=865e6bb7&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-865e6bb7\"]])",
-      "start": 1716369328503,
-      "end": 1716369328504,
+      "result": "\r\n\r\nconst _sfc_main = {\r\n\r\n}\r\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-0ac3d55f\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"services\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", {\n  class: \"title-h2\",\n  \"data-aos\": \"fade-up\"\n}, \"Services\", -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_CardServices = _resolveComponent(\"CardServices\")\n  const _component_AllServices = _resolveComponent(\"AllServices\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _hoisted_2,\n    _createVNode(_component_CardServices, {\n      \"data-aos\": \"fade-up\",\n      \"data-aos-delay\": \"300\"\n    }),\n    _createVNode(_component_AllServices)\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Services.vue?vue&type=style&index=0&scoped=0ac3d55f&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-0ac3d55f\"]])",
+      "start": 1718568828319,
+      "end": 1718568828319,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,153 +62,153 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828319,
+      "end": 1718568828319,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828319,
+      "end": 1718568828319,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828319,
+      "end": 1718568828319,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828319,
+      "end": 1718568828319,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1716369328504,
-      "end": 1716369328504,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1716369328504,
-      "end": 1716369328505,
+      "start": 1718568828320,
+      "end": 1718568828320,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1716369328505,
-      "end": 1716369328505,
+      "start": 1718568828320,
+      "end": 1718568828321,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1716369328505,
-      "end": 1716369328505,
+      "start": 1718568828321,
+      "end": 1718568828321,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1716369328505,
-      "end": 1716369328505,
+      "start": 1718568828321,
+      "end": 1718568828321,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1716369328505,
-      "end": 1716369328505,
+      "start": 1718568828321,
+      "end": 1718568828321,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "result": "import { default as __nuxt_component_0 } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/CardServices.vue\";\nimport { default as __nuxt_component_1 } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/AllServices.vue\";\n\r\n\r\nconst _sfc_main = {\r\n\r\n}\r\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-865e6bb7\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"services\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", {\n  class: \"title-h2\",\n  \"data-aos\": \"fade-up\"\n}, \"Services\", -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_CardServices = __nuxt_component_0\n  const _component_AllServices = __nuxt_component_1\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _hoisted_2,\n    _createVNode(_component_CardServices, { \"data-aos\": \"fade-up\" }),\n    _createVNode(_component_AllServices)\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Services.vue?vue&type=style&index=0&scoped=865e6bb7&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-865e6bb7\"]])",
-      "start": 1716369328506,
-      "end": 1716369328506,
+      "result": "import { default as __nuxt_component_0 } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/CardServices.vue\";\nimport { default as __nuxt_component_1 } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/AllServices.vue\";\n\r\n\r\nconst _sfc_main = {\r\n\r\n}\r\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-0ac3d55f\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"services\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", {\n  class: \"title-h2\",\n  \"data-aos\": \"fade-up\"\n}, \"Services\", -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_CardServices = __nuxt_component_0\n  const _component_AllServices = __nuxt_component_1\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _hoisted_2,\n    _createVNode(_component_CardServices, {\n      \"data-aos\": \"fade-up\",\n      \"data-aos-delay\": \"300\"\n    }),\n    _createVNode(_component_AllServices)\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Services.vue?vue&type=style&index=0&scoped=0ac3d55f&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-0ac3d55f\"]])",
+      "start": 1718568828321,
+      "end": 1718568828321,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1716369328506,
-      "end": 1716369328506,
+      "start": 1718568828321,
+      "end": 1718568828321,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1716369328506,
-      "end": 1716369328506,
+      "start": 1718568828321,
+      "end": 1718568828321,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1716369328506,
-      "end": 1716369328506,
+      "start": 1718568828321,
+      "end": 1718568828321,
       "order": "normal"
     }
   ]

@@ -34,11 +34,11 @@
     }
     .btn-retour {
     margin-left: 0;
+    cursor: pointer;
     }
     .bloc-img {
         display: flex;
         justify-content: center;
-
     }
     .bloc-img img {
         margin: 0 2rem 3rem 2rem;

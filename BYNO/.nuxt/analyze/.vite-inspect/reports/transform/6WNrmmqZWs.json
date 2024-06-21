@@ -3,58 +3,58 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "<template>\r\n  <div class=\"all-projects\">\r\n    <div class=\"projet\"  v-for=\"(projet,key) in projets\" :key=\"key\">\r\n        <div @click=\"this.$router.push({path: projet.projetUrl})\">\r\n          <div class=\"projet-img\" :style=\"' background-image: url(' + projet.imgUrl + ')'\"></div>\r\n          <h3>{{projet.name}}</h3>\r\n        </div>\r\n    </div>\r\n      \r\n  </div>\r\n</template>\r\n\r\n<script>\r\n\r\nexport default {\r\n      data() {\r\n    return{\r\n       projets: [\r\n         {\r\n           name: \"Musique\",\r\n           imgUrl: '/img/musique-onde.svg',\r\n           projetUrl: \"Productions/musique\"\r\n         },\r\n         {\r\n           name: \"Design\",\r\n           imgUrl: '/img/design-img3.png',\r\n           projetUrl: \"Productions/design\"\r\n         },\r\n         {\r\n           name: \"Drone\",\r\n           imgUrl: '/img/productions/drone.jpg',\r\n           projetUrl: \"Productions/drone\"\r\n         },\r\n         {\r\n           name: \"Vidéo\",\r\n           imgUrl: '/img/productions/video.jpg',\r\n           projetUrl: \"Productions/video\"\r\n         },\r\n         {\r\n           name: \"Sound design\",\r\n           imgUrl: '/img/productions/sound-design.jpg',\r\n           projetUrl: \"Productions/sound-design\"\r\n         },\r\n        \r\n         \r\n       ]\r\n    }\r\n  },\r\n  methods: {\r\n  \r\n  }\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n\r\n.all-projects {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n}\r\n\r\n.projet{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n}\r\n.projet-img {\r\n  border: 1px solid grey;\r\n  background-repeat: no-repeat;\r\n  height: 10rem;\r\n  width: 20vw;\r\n  background-size: cover;\r\n  border-radius: 8px;\r\n  transition: all 0.4s ease-in-out;\r\n  margin: 0 1rem;\r\n\r\n}\r\n\r\n.projet-img:hover {\r\n  transition: all 0.4s ease-in-out;\r\n  transform: scale(1.04);\r\n  cursor: pointer;\r\n}\r\n\r\nh3 {\r\n  text-align: center;\r\n  font-family: mplusmedium;\r\n  font-size: 1rem;\r\n  margin-bottom: 3.5rem;\r\n}\r\n\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 800px) {\r\n  .all-projects {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n  }\r\n  .projet-img {\r\n    width: 55vw;\r\n    height: 20vh;\r\n  }\r\n  h3 {\r\n    font-size: 1.3rem;\r\n  }\r\n\r\n} \r\n</style>",
-      "start": 1716369328598,
-      "end": 1716369328918,
+      "result": "<style scoped>\r\n\r\n.all-projects {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n}\r\n\r\n.projet{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n}\r\n.ensemble {\r\n  position: relative;\r\n}\r\n.bckg-img {\r\n  height: 36vh;\r\n  width: 22vw;\r\n  border-radius: 6px;\r\n  margin: 0 1.3rem;\r\n  transition: all 0.4s ease-in-out;\r\n  border: 0.8px solid black;\r\n\r\n}\r\n.bckg-img:hover {\r\n  transition: all 0.4s ease-in-out;\r\n  transform: scale(1.04);\r\n  cursor: pointer;\r\n}\r\nh3 {\r\n  text-align: center;\r\n  font-family: mplusmedium;\r\n  font-size: 1rem;\r\n  margin-bottom: 3.5rem;\r\n}\r\n/* version tablette */\r\n@media (min-width: 601px) and (max-width: 1032px) {\r\n  .bckg-img {\r\n  height: 19vh;\r\n  width: 24vw;\r\n  margin: 0 1.3rem;\r\n}\r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 600px) {\r\n  .all-projects {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n  }\r\n  .bckg-img {\r\n    width: 70vw;\r\n    height: 30vh;\r\n  }\r\n  h3 {\r\n    font-size: 1.3rem;\r\n  }\r\n\r\n} \r\n</style>\r\n\r\n<template>\r\n  <div class=\"all-projects\">\r\n    <div class=\"projet\" v-for=\"(projet,key) in projets\" :key=\"key\">\r\n        <div class=\"ensemble\" @click=\"this.$router.push({path: projet.projetUrl})\">\r\n          <NuxtImg class=\"bckg-img blue-shadow\" :src=\"projet.imgUrl\" />\r\n          <h3>{{projet.name}}</h3>\r\n        </div>\r\n    </div>\r\n      \r\n  </div>\r\n</template>\r\n\r\n<script>\r\n\r\nexport default {\r\n      data() {\r\n    return{\r\n       projets: [\r\n         {\r\n           name: \"Musique\",\r\n           imgUrl: '/img/musique-onde.svg',\r\n           projetUrl: \"Productions/musique\"\r\n         },\r\n         {\r\n           name: \"Design\",\r\n           imgUrl: '/img/design-img3.png',\r\n           projetUrl: \"Productions/design\"\r\n         },\r\n         {\r\n           name: \"Drone\",\r\n           imgUrl: '/img/productions/drone.jpg',\r\n           projetUrl: \"Productions/drone\"\r\n         },\r\n         {\r\n           name: \"Vidéo\",\r\n           imgUrl: '/img/productions/video.jpg',\r\n           projetUrl: \"Productions/video\"\r\n         },\r\n         {\r\n           name: \"Sound design\",\r\n           imgUrl: '/img/productions/sound-design.jpg',\r\n           projetUrl: \"Productions/sound-design\"\r\n         },\r\n        \r\n         \r\n       ]\r\n    }\r\n  },\r\n  methods: {\r\n  \r\n  }\r\n}\r\n</script>",
+      "start": 1718568828427,
+      "end": 1718568828634,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1716369328918,
-      "end": 1716369328918,
+      "start": 1718568828634,
+      "end": 1718568828634,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1716369328918,
-      "end": 1716369328918,
+      "start": 1718568828634,
+      "end": 1718568828634,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1716369328918,
-      "end": 1716369328918,
+      "start": 1718568828634,
+      "end": 1718568828634,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1716369328918,
-      "end": 1716369328919,
+      "start": 1718568828634,
+      "end": 1718568828634,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1716369328919,
-      "end": 1716369328919,
+      "start": 1718568828634,
+      "end": 1718568828634,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1716369328919,
-      "end": 1716369328919,
+      "start": 1718568828634,
+      "end": 1718568828634,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1716369328919,
-      "end": 1716369328919,
+      "start": 1718568828634,
+      "end": 1718568828634,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "\r\n\r\nconst _sfc_main = {\r\n      data() {\r\n    return{\r\n       projets: [\r\n         {\r\n           name: \"Musique\",\r\n           imgUrl: '/img/musique-onde.svg',\r\n           projetUrl: \"Productions/musique\"\r\n         },\r\n         {\r\n           name: \"Design\",\r\n           imgUrl: '/img/design-img3.png',\r\n           projetUrl: \"Productions/design\"\r\n         },\r\n         {\r\n           name: \"Drone\",\r\n           imgUrl: '/img/productions/drone.jpg',\r\n           projetUrl: \"Productions/drone\"\r\n         },\r\n         {\r\n           name: \"Vidéo\",\r\n           imgUrl: '/img/productions/video.jpg',\r\n           projetUrl: \"Productions/video\"\r\n         },\r\n         {\r\n           name: \"Sound design\",\r\n           imgUrl: '/img/productions/sound-design.jpg',\r\n           projetUrl: \"Productions/sound-design\"\r\n         },\r\n        \r\n         \r\n       ]\r\n    }\r\n  },\r\n  methods: {\r\n  \r\n  }\r\n}\r\n\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, normalizeStyle as _normalizeStyle, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-74031620\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"all-projects\" }\nconst _hoisted_2 = [\"onClick\"]\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($data.projets, (projet, key) => {\n      return (_openBlock(), _createElementBlock(\"div\", {\n        class: \"projet\",\n        key: key\n      }, [\n        _createElementVNode(\"div\", {\n          onClick: $event => (this.$router.push({path: projet.projetUrl}))\n        }, [\n          _createElementVNode(\"div\", {\n            class: \"projet-img\",\n            style: _normalizeStyle(' background-image: url(' + projet.imgUrl + ')')\n          }, null, 4),\n          _createElementVNode(\"h3\", null, _toDisplayString(projet.name), 1)\n        ], 8, _hoisted_2)\n      ]))\n    }), 128))\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/AllProjects.vue?vue&type=style&index=0&scoped=74031620&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-74031620\"]])",
-      "start": 1716369328919,
-      "end": 1716369328932,
+      "result": "\r\n\r\nconst _sfc_main = {\r\n      data() {\r\n    return{\r\n       projets: [\r\n         {\r\n           name: \"Musique\",\r\n           imgUrl: '/img/musique-onde.svg',\r\n           projetUrl: \"Productions/musique\"\r\n         },\r\n         {\r\n           name: \"Design\",\r\n           imgUrl: '/img/design-img3.png',\r\n           projetUrl: \"Productions/design\"\r\n         },\r\n         {\r\n           name: \"Drone\",\r\n           imgUrl: '/img/productions/drone.jpg',\r\n           projetUrl: \"Productions/drone\"\r\n         },\r\n         {\r\n           name: \"Vidéo\",\r\n           imgUrl: '/img/productions/video.jpg',\r\n           projetUrl: \"Productions/video\"\r\n         },\r\n         {\r\n           name: \"Sound design\",\r\n           imgUrl: '/img/productions/sound-design.jpg',\r\n           projetUrl: \"Productions/sound-design\"\r\n         },\r\n        \r\n         \r\n       ]\r\n    }\r\n  },\r\n  methods: {\r\n  \r\n  }\r\n}\r\n\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-a046a383\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"all-projects\" }\nconst _hoisted_2 = [\"onClick\"]\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($data.projets, (projet, key) => {\n      return (_openBlock(), _createElementBlock(\"div\", {\n        class: \"projet\",\n        key: key\n      }, [\n        _createElementVNode(\"div\", {\n          class: \"ensemble\",\n          onClick: $event => (this.$router.push({path: projet.projetUrl}))\n        }, [\n          _createVNode(_component_NuxtImg, {\n            class: \"bckg-img blue-shadow\",\n            src: projet.imgUrl\n          }, null, 8, [\"src\"]),\n          _createElementVNode(\"h3\", null, _toDisplayString(projet.name), 1)\n        ], 8, _hoisted_2)\n      ]))\n    }), 128))\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/AllProjects.vue?vue&type=style&index=0&scoped=a046a383&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-a046a383\"]])",
+      "start": 1718568828634,
+      "end": 1718568828639,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,152 +62,153 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828639,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1716369328933,
-      "end": 1716369328933,
+      "start": 1718568828639,
+      "end": 1718568828640,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1716369328933,
-      "end": 1716369328935,
+      "start": 1718568828640,
+      "end": 1718568828640,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1716369328935,
-      "end": 1716369328935,
+      "start": 1718568828640,
+      "end": 1718568828641,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1716369328935,
-      "end": 1716369328935,
+      "start": 1718568828641,
+      "end": 1718568828641,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1716369328935,
-      "end": 1716369328935,
+      "start": 1718568828641,
+      "end": 1718568828641,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1716369328935,
-      "end": 1716369328935,
+      "start": 1718568828641,
+      "end": 1718568828641,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1716369328936,
-      "end": 1716369328936,
+      "result": "import { default as __nuxt_component_0 } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/@nuxt/image/dist/runtime/components/nuxt-img\";\n\r\n\r\nconst _sfc_main = {\r\n      data() {\r\n    return{\r\n       projets: [\r\n         {\r\n           name: \"Musique\",\r\n           imgUrl: '/img/musique-onde.svg',\r\n           projetUrl: \"Productions/musique\"\r\n         },\r\n         {\r\n           name: \"Design\",\r\n           imgUrl: '/img/design-img3.png',\r\n           projetUrl: \"Productions/design\"\r\n         },\r\n         {\r\n           name: \"Drone\",\r\n           imgUrl: '/img/productions/drone.jpg',\r\n           projetUrl: \"Productions/drone\"\r\n         },\r\n         {\r\n           name: \"Vidéo\",\r\n           imgUrl: '/img/productions/video.jpg',\r\n           projetUrl: \"Productions/video\"\r\n         },\r\n         {\r\n           name: \"Sound design\",\r\n           imgUrl: '/img/productions/sound-design.jpg',\r\n           projetUrl: \"Productions/sound-design\"\r\n         },\r\n        \r\n         \r\n       ]\r\n    }\r\n  },\r\n  methods: {\r\n  \r\n  }\r\n}\r\n\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-a046a383\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"all-projects\" }\nconst _hoisted_2 = [\"onClick\"]\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtImg = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($data.projets, (projet, key) => {\n      return (_openBlock(), _createElementBlock(\"div\", {\n        class: \"projet\",\n        key: key\n      }, [\n        _createElementVNode(\"div\", {\n          class: \"ensemble\",\n          onClick: $event => (this.$router.push({path: projet.projetUrl}))\n        }, [\n          _createVNode(_component_NuxtImg, {\n            class: \"bckg-img blue-shadow\",\n            src: projet.imgUrl\n          }, null, 8, [\"src\"]),\n          _createElementVNode(\"h3\", null, _toDisplayString(projet.name), 1)\n        ], 8, _hoisted_2)\n      ]))\n    }), 128))\n  ]))\n}\n\nimport \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/components/AllProjects.vue?vue&type=style&index=0&scoped=a046a383&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-a046a383\"]])",
+      "start": 1718568828641,
+      "end": 1718568828641,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1716369328936,
-      "end": 1716369328936,
+      "start": 1718568828641,
+      "end": 1718568828641,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1716369328936,
-      "end": 1716369328936,
+      "start": 1718568828641,
+      "end": 1718568828641,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1716369328936,
-      "end": 1716369328936,
+      "start": 1718568828641,
+      "end": 1718568828641,
       "order": "normal"
     }
   ]

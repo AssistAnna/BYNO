@@ -3,243 +3,243 @@
   "transforms": [
     {
       "name": "virtual",
-      "result": "import { default as Aproposs5pxeVYySEMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Apropos.vue?macro=true\";\nimport { default as Contact8cSajSjXxHMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Contact.vue?macro=true\";\nimport { default as indexpNnI2GWSRNMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue?macro=true\";\nimport { default as designWfzFKjkqWNMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/design.vue?macro=true\";\nimport { default as droneA0tvQZ04v1Meta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/drone.vue?macro=true\";\nimport { default as indexba8I25LBygMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/index.vue?macro=true\";\nimport { default as musiqueNxHdH6RcbJMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/musique.vue?macro=true\";\nimport { default as sound_45designkc4fzlgs7jMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/sound-design.vue?macro=true\";\nimport { default as videoEZ4fTDADToMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/video.vue?macro=true\";\nimport { default as RetouchesouGBituGw5Meta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Retouches.vue?macro=true\";\nimport { default as ServicesMhHPgbZZ90Meta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Services.vue?macro=true\";\nexport default [\n  {\n    name: Aproposs5pxeVYySEMeta?.name ?? \"Apropos\",\n    path: Aproposs5pxeVYySEMeta?.path ?? \"/Apropos\",\n    meta: Aproposs5pxeVYySEMeta || {},\n    alias: Aproposs5pxeVYySEMeta?.alias || [],\n    redirect: Aproposs5pxeVYySEMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Apropos.vue\").then(m => m.default || m)\n  },\n  {\n    name: Contact8cSajSjXxHMeta?.name ?? \"Contact\",\n    path: Contact8cSajSjXxHMeta?.path ?? \"/Contact\",\n    meta: Contact8cSajSjXxHMeta || {},\n    alias: Contact8cSajSjXxHMeta?.alias || [],\n    redirect: Contact8cSajSjXxHMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Contact.vue\").then(m => m.default || m)\n  },\n  {\n    name: indexpNnI2GWSRNMeta?.name ?? \"index\",\n    path: indexpNnI2GWSRNMeta?.path ?? \"/\",\n    meta: indexpNnI2GWSRNMeta || {},\n    alias: indexpNnI2GWSRNMeta?.alias || [],\n    redirect: indexpNnI2GWSRNMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue\").then(m => m.default || m)\n  },\n  {\n    name: designWfzFKjkqWNMeta?.name ?? \"Productions-design\",\n    path: designWfzFKjkqWNMeta?.path ?? \"/Productions/design\",\n    meta: designWfzFKjkqWNMeta || {},\n    alias: designWfzFKjkqWNMeta?.alias || [],\n    redirect: designWfzFKjkqWNMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/design.vue\").then(m => m.default || m)\n  },\n  {\n    name: droneA0tvQZ04v1Meta?.name ?? \"Productions-drone\",\n    path: droneA0tvQZ04v1Meta?.path ?? \"/Productions/drone\",\n    meta: droneA0tvQZ04v1Meta || {},\n    alias: droneA0tvQZ04v1Meta?.alias || [],\n    redirect: droneA0tvQZ04v1Meta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/drone.vue\").then(m => m.default || m)\n  },\n  {\n    name: indexba8I25LBygMeta?.name ?? \"Productions\",\n    path: indexba8I25LBygMeta?.path ?? \"/Productions\",\n    meta: indexba8I25LBygMeta || {},\n    alias: indexba8I25LBygMeta?.alias || [],\n    redirect: indexba8I25LBygMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/index.vue\").then(m => m.default || m)\n  },\n  {\n    name: musiqueNxHdH6RcbJMeta?.name ?? \"Productions-musique\",\n    path: musiqueNxHdH6RcbJMeta?.path ?? \"/Productions/musique\",\n    meta: musiqueNxHdH6RcbJMeta || {},\n    alias: musiqueNxHdH6RcbJMeta?.alias || [],\n    redirect: musiqueNxHdH6RcbJMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/musique.vue\").then(m => m.default || m)\n  },\n  {\n    name: sound_45designkc4fzlgs7jMeta?.name ?? \"Productions-sound-design\",\n    path: sound_45designkc4fzlgs7jMeta?.path ?? \"/Productions/sound-design\",\n    meta: sound_45designkc4fzlgs7jMeta || {},\n    alias: sound_45designkc4fzlgs7jMeta?.alias || [],\n    redirect: sound_45designkc4fzlgs7jMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/sound-design.vue\").then(m => m.default || m)\n  },\n  {\n    name: videoEZ4fTDADToMeta?.name ?? \"Productions-video\",\n    path: videoEZ4fTDADToMeta?.path ?? \"/Productions/video\",\n    meta: videoEZ4fTDADToMeta || {},\n    alias: videoEZ4fTDADToMeta?.alias || [],\n    redirect: videoEZ4fTDADToMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/video.vue\").then(m => m.default || m)\n  },\n  {\n    name: RetouchesouGBituGw5Meta?.name ?? \"Retouches\",\n    path: RetouchesouGBituGw5Meta?.path ?? \"/Retouches\",\n    meta: RetouchesouGBituGw5Meta || {},\n    alias: RetouchesouGBituGw5Meta?.alias || [],\n    redirect: RetouchesouGBituGw5Meta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Retouches.vue\").then(m => m.default || m)\n  },\n  {\n    name: ServicesMhHPgbZZ90Meta?.name ?? \"Services\",\n    path: ServicesMhHPgbZZ90Meta?.path ?? \"/Services\",\n    meta: ServicesMhHPgbZZ90Meta || {},\n    alias: ServicesMhHPgbZZ90Meta?.alias || [],\n    redirect: ServicesMhHPgbZZ90Meta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Services.vue\").then(m => m.default || m)\n  }\n]",
-      "start": 1716369332340,
-      "end": 1716369332340,
+      "result": "import { default as Aproposs5pxeVYySEMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Apropos.vue?macro=true\";\nimport { default as Contact8cSajSjXxHMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Contact.vue?macro=true\";\nimport { default as indexpNnI2GWSRNMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue?macro=true\";\nimport { default as mentions_45legalesZu1PQALvqdMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/mentions-legales.vue?macro=true\";\nimport { default as politique_45confidentialiteMHj3jse9r3Meta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/politique-confidentialite.vue?macro=true\";\nimport { default as designWfzFKjkqWNMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/design.vue?macro=true\";\nimport { default as droneA0tvQZ04v1Meta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/drone.vue?macro=true\";\nimport { default as indexba8I25LBygMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/index.vue?macro=true\";\nimport { default as musiqueNxHdH6RcbJMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/musique.vue?macro=true\";\nimport { default as sound_45designkc4fzlgs7jMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/sound-design.vue?macro=true\";\nimport { default as videoEZ4fTDADToMeta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/video.vue?macro=true\";\nimport { default as RetouchesouGBituGw5Meta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Retouches.vue?macro=true\";\nimport { default as ServicesMhHPgbZZ90Meta } from \"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Services.vue?macro=true\";\nexport default [\n  {\n    name: Aproposs5pxeVYySEMeta?.name ?? \"Apropos\",\n    path: Aproposs5pxeVYySEMeta?.path ?? \"/Apropos\",\n    meta: Aproposs5pxeVYySEMeta || {},\n    alias: Aproposs5pxeVYySEMeta?.alias || [],\n    redirect: Aproposs5pxeVYySEMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Apropos.vue\").then(m => m.default || m)\n  },\n  {\n    name: Contact8cSajSjXxHMeta?.name ?? \"Contact\",\n    path: Contact8cSajSjXxHMeta?.path ?? \"/Contact\",\n    meta: Contact8cSajSjXxHMeta || {},\n    alias: Contact8cSajSjXxHMeta?.alias || [],\n    redirect: Contact8cSajSjXxHMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Contact.vue\").then(m => m.default || m)\n  },\n  {\n    name: indexpNnI2GWSRNMeta?.name ?? \"index\",\n    path: indexpNnI2GWSRNMeta?.path ?? \"/\",\n    meta: indexpNnI2GWSRNMeta || {},\n    alias: indexpNnI2GWSRNMeta?.alias || [],\n    redirect: indexpNnI2GWSRNMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue\").then(m => m.default || m)\n  },\n  {\n    name: mentions_45legalesZu1PQALvqdMeta?.name ?? \"mentions-legales\",\n    path: mentions_45legalesZu1PQALvqdMeta?.path ?? \"/mentions-legales\",\n    meta: mentions_45legalesZu1PQALvqdMeta || {},\n    alias: mentions_45legalesZu1PQALvqdMeta?.alias || [],\n    redirect: mentions_45legalesZu1PQALvqdMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/mentions-legales.vue\").then(m => m.default || m)\n  },\n  {\n    name: politique_45confidentialiteMHj3jse9r3Meta?.name ?? \"politique-confidentialite\",\n    path: politique_45confidentialiteMHj3jse9r3Meta?.path ?? \"/politique-confidentialite\",\n    meta: politique_45confidentialiteMHj3jse9r3Meta || {},\n    alias: politique_45confidentialiteMHj3jse9r3Meta?.alias || [],\n    redirect: politique_45confidentialiteMHj3jse9r3Meta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/politique-confidentialite.vue\").then(m => m.default || m)\n  },\n  {\n    name: designWfzFKjkqWNMeta?.name ?? \"Productions-design\",\n    path: designWfzFKjkqWNMeta?.path ?? \"/Productions/design\",\n    meta: designWfzFKjkqWNMeta || {},\n    alias: designWfzFKjkqWNMeta?.alias || [],\n    redirect: designWfzFKjkqWNMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/design.vue\").then(m => m.default || m)\n  },\n  {\n    name: droneA0tvQZ04v1Meta?.name ?? \"Productions-drone\",\n    path: droneA0tvQZ04v1Meta?.path ?? \"/Productions/drone\",\n    meta: droneA0tvQZ04v1Meta || {},\n    alias: droneA0tvQZ04v1Meta?.alias || [],\n    redirect: droneA0tvQZ04v1Meta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/drone.vue\").then(m => m.default || m)\n  },\n  {\n    name: indexba8I25LBygMeta?.name ?? \"Productions\",\n    path: indexba8I25LBygMeta?.path ?? \"/Productions\",\n    meta: indexba8I25LBygMeta || {},\n    alias: indexba8I25LBygMeta?.alias || [],\n    redirect: indexba8I25LBygMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/index.vue\").then(m => m.default || m)\n  },\n  {\n    name: musiqueNxHdH6RcbJMeta?.name ?? \"Productions-musique\",\n    path: musiqueNxHdH6RcbJMeta?.path ?? \"/Productions/musique\",\n    meta: musiqueNxHdH6RcbJMeta || {},\n    alias: musiqueNxHdH6RcbJMeta?.alias || [],\n    redirect: musiqueNxHdH6RcbJMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/musique.vue\").then(m => m.default || m)\n  },\n  {\n    name: sound_45designkc4fzlgs7jMeta?.name ?? \"Productions-sound-design\",\n    path: sound_45designkc4fzlgs7jMeta?.path ?? \"/Productions/sound-design\",\n    meta: sound_45designkc4fzlgs7jMeta || {},\n    alias: sound_45designkc4fzlgs7jMeta?.alias || [],\n    redirect: sound_45designkc4fzlgs7jMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/sound-design.vue\").then(m => m.default || m)\n  },\n  {\n    name: videoEZ4fTDADToMeta?.name ?? \"Productions-video\",\n    path: videoEZ4fTDADToMeta?.path ?? \"/Productions/video\",\n    meta: videoEZ4fTDADToMeta || {},\n    alias: videoEZ4fTDADToMeta?.alias || [],\n    redirect: videoEZ4fTDADToMeta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Productions/video.vue\").then(m => m.default || m)\n  },\n  {\n    name: RetouchesouGBituGw5Meta?.name ?? \"Retouches\",\n    path: RetouchesouGBituGw5Meta?.path ?? \"/Retouches\",\n    meta: RetouchesouGBituGw5Meta || {},\n    alias: RetouchesouGBituGw5Meta?.alias || [],\n    redirect: RetouchesouGBituGw5Meta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Retouches.vue\").then(m => m.default || m)\n  },\n  {\n    name: ServicesMhHPgbZZ90Meta?.name ?? \"Services\",\n    path: ServicesMhHPgbZZ90Meta?.path ?? \"/Services\",\n    meta: ServicesMhHPgbZZ90Meta || {},\n    alias: ServicesMhHPgbZZ90Meta?.alias || [],\n    redirect: ServicesMhHPgbZZ90Meta?.redirect,\n    component: () => import(\"C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/Services.vue\").then(m => m.default || m)\n  }\n]",
+      "start": 1718568830673,
+      "end": 1718568830673,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1716369332340,
-      "end": 1716369332340,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1716369332340,
-      "end": 1716369332340,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1716369332341,
-      "end": 1716369332341,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1716369332341,
-      "end": 1716369332341,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1716369332341,
-      "end": 1716369332341,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1716369332341,
-      "end": 1716369332341,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1716369332341,
-      "end": 1716369332341,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1716369332341,
-      "end": 1716369332341,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1716369332341,
-      "end": 1716369332341,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1716369332341,
-      "end": 1716369332341,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1716369332341,
-      "end": 1716369332341,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369332342,
-      "end": 1716369332342,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369332342,
-      "end": 1716369332342,
+      "start": 1718568830673,
+      "end": 1718568830673,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1716369332342,
-      "end": 1716369332342,
+      "start": 1718568830674,
+      "end": 1718568830674,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1716369332342,
-      "end": 1716369332342,
+      "start": 1718568830674,
+      "end": 1718568830674,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1716369332342,
-      "end": 1716369332342,
+      "start": 1718568830674,
+      "end": 1718568830674,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369332342,
-      "end": 1716369332342,
+      "start": 1718568830674,
+      "end": 1718568830674,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1716369332342,
-      "end": 1716369332343,
+      "start": 1718568830674,
+      "end": 1718568830674,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1716369332343,
-      "end": 1716369332343,
+      "start": 1718568830675,
+      "end": 1718568830675,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1716369332344,
-      "end": 1716369332344,
+      "start": 1718568830675,
+      "end": 1718568830675,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1716369332344,
-      "end": 1716369332344,
+      "start": 1718568830675,
+      "end": 1718568830675,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1716369332344,
-      "end": 1716369332344,
+      "start": 1718568830675,
+      "end": 1718568830675,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1716369332344,
-      "end": 1716369332344,
+      "start": 1718568830675,
+      "end": 1718568830675,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1716369332344,
-      "end": 1716369332344,
+      "start": 1718568830675,
+      "end": 1718568830675,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1716369332344,
-      "end": 1716369332344,
+      "start": 1718568830675,
+      "end": 1718568830675,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1716369332344,
-      "end": 1716369332344,
+      "start": 1718568830675,
+      "end": 1718568830675,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1716369332344,
-      "end": 1716369332344,
+      "start": 1718568830675,
+      "end": 1718568830675,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1716369332344,
-      "end": 1716369332344,
+      "start": 1718568830675,
+      "end": 1718568830675,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1716369332345,
-      "end": 1716369332347,
+      "start": 1718568830675,
+      "end": 1718568830677,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1716369332345,
-      "end": 1716369332347,
+      "start": 1718568830675,
+      "end": 1718568830677,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1716369332348,
-      "end": 1716369332348,
+      "start": 1718568830677,
+      "end": 1718568830677,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1716369332348,
-      "end": 1716369332348,
+      "start": 1718568830677,
+      "end": 1718568830677,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1716369332348,
-      "end": 1716369332348,
+      "start": 1718568830677,
+      "end": 1718568830677,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1716369332348,
-      "end": 1716369332348,
+      "start": 1718568830677,
+      "end": 1718568830677,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1716369332348,
-      "end": 1716369332348,
+      "start": 1718568830677,
+      "end": 1718568830677,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1716369332348,
-      "end": 1716369332348,
+      "start": 1718568830677,
+      "end": 1718568830677,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1716369332348,
-      "end": 1716369332348,
+      "start": 1718568830677,
+      "end": 1718568830677,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1716369332348,
-      "end": 1716369332349,
+      "start": 1718568830677,
+      "end": 1718568830678,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1716369332349,
-      "end": 1716369332349,
+      "start": 1718568830678,
+      "end": 1718568830678,
       "order": "normal"
     }
   ]

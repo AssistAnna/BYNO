@@ -3,99 +3,99 @@
   "transforms": [
     {
       "name": "vite:vue",
-      "result": "\r\n@font-face {\r\n  font-family: 'mplusblack';\r\n  src: url('/fonts/MPLUS1p-Black.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusbold';\r\n  src: url('/fonts/MPLUS1p-Bold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusextra';\r\n  src: url('/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mpluslight';\r\n  src: url('/fonts/MPLUS1p-Light.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusmedium';\r\n  src: url('/fonts/MPLUS1p-Medium.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusregular';\r\n  src: url('/fonts/MPLUS1p-Regular.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusthin';\r\n  src: url('/fonts/MPLUS1p-Thin.ttf') format('opentype'),\r\n}\r\n\r\n.box-shadow {\r\n  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); \r\nbox-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);\r\n}\r\n\r\n.page-index {\r\n  padding-top: 5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center; \r\n}\r\n\r\n.text-presentation {\r\n  margin: 0rem 10rem;\r\n  font-size: 1.8rem;\r\n  font-family: mplusbold;\r\n  text-align: center;\r\n  padding-bottom: 4rem;\r\n  padding-top: 6rem;\r\n}\r\n\r\n.title-h2 {\r\n    font-size: 3rem;\r\n    font-family: mplusmedium;\r\n    text-align: center;\r\n    padding-bottom: 2rem;\r\n    margin-bottom: 5rem;\r\n    text-decoration: underline;\r\n    text-underline-offset: 1.6rem;\r\n    text-decoration-color: #009FE3;\r\n\r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 900px) {\r\n  .text-presentation {\r\n    margin: 0 2rem;\r\n    font-size: 1.1rem;\r\n    padding-bottom: 1rem;\r\n  }\r\n  .title-h2 {\r\n    padding-bottom: 1rem;\r\n    font-size: 2rem;\r\n    width: 40vw;\r\n    margin-bottom: 2rem;\r\n  }\r\n}\r\n\r\n/*\r\n\r\n*/\r\n",
-      "start": 1716369332684,
-      "end": 1716369332684,
+      "result": "\r\n@font-face {\r\n  font-family: 'mplusblack';\r\n  src: url('/fonts/MPLUS1p-Black.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusbold';\r\n  src: url('/fonts/MPLUS1p-Bold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusextra';\r\n  src: url('/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mpluslight';\r\n  src: url('/fonts/MPLUS1p-Light.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusmedium';\r\n  src: url('/fonts/MPLUS1p-Medium.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusregular';\r\n  src: url('/fonts/MPLUS1p-Regular.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusthin';\r\n  src: url('/fonts/MPLUS1p-Thin.ttf') format('opentype'),\r\n}\r\n.hidden-title {\r\n  color: black;\r\n  margin: 0;\r\n}\r\n.box-shadow {\r\n  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); \r\nbox-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);\r\n}\r\n\r\n.blue-shadow {\r\n  -webkit-box-shadow: 1px 1px 42px -14px rgba(0,159,227,0.89); \r\nbox-shadow: 1px 1px 42px -14px rgba(0,159,227,0.89);\r\n}\r\n\r\n.page-index {\r\n  padding-top: 5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center; \r\n}\r\n\r\n.text-presentation {\r\n  margin: 5rem 10rem;\r\n  font-size: 1.8rem;\r\n  font-family: mplusbold;\r\n  text-align: center;\r\n}\r\n\r\n.title-h2 {\r\n    font-size: 3rem;\r\n    font-family: mplusmedium;\r\n    text-align: center;\r\n    padding-bottom: 2rem;\r\n    margin-bottom: 5rem;\r\n    text-decoration: underline;\r\n    text-underline-offset: 1.6rem;\r\n    text-decoration-color: #009FE3;\r\n}\r\n.special {\r\n    margin-top: 0;\r\n  }\r\n.btn-retour {\r\n  color: #009FE3;\r\n  font-family: 'mplusextra';\r\n  text-decoration: underline;\r\n  text-underline-offset: 0.8rem;\r\n  margin-left: 2rem;\r\n  margin-bottom: 2rem;\r\n  cursor: pointer;\r\n  \r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 900px) {\r\n  .text-presentation {\r\n    margin: 4rem 2rem;\r\n    font-size: 1.1rem;\r\n  }\r\n  .title-h2 {\r\n    padding-bottom: 1rem;\r\n    font-size: 2rem;\r\n    margin-bottom: 2rem;\r\n    text-underline-offset: 1.1rem;\r\n    line-height: 3.7rem;\r\n  }\r\n  \r\n}\r\n\r\n/*\r\n\r\n*/\r\n",
+      "start": 1718568831211,
+      "end": 1718568831211,
       "sourcemaps": {
         "version": 3,
         "sources": [
           "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue"
         ],
         "names": [],
-        "mappings": ";AAmBA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACzB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzD;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACxB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxD;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACzB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7D;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACzB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzD;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC1B,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1D;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC3B,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3D;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACxB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxD;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CA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",
+        "mappings": ";AAmBA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACzB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzD;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACxB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxD;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACzB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7D;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACzB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzD;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC1B,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1D;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC3B,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3D;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACxB,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxD;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AACX;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7G;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,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",
         "file": "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue",
         "sourceRoot": "",
         "sourcesContent": [
-          "<template>\r\n  <div class=\"page-index\">\r\n    <GroupeImgAccueil  data-aos=\"fade-up\"/>\r\n    <p class=\"text-presentation\" data-aos=\"fade-up\">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements.</p>\r\n    <h2 class=\"title-h2\" data-aos=\"fade-up\">Productions</h2>\r\n    <AllProjects data-aos=\"fade-up\"/>\r\n    <h2 class=\"title-h2\" data-aos=\"fade-up\">Services</h2>\r\n    <AllServices />\r\n  </div>\r\n</template>\r\n<script>\r\n\r\nexport default {\r\n  \r\n\r\n}\r\n</script>\r\n\r\n<style>\r\n@font-face {\r\n  font-family: 'mplusblack';\r\n  src: url('/fonts/MPLUS1p-Black.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusbold';\r\n  src: url('/fonts/MPLUS1p-Bold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusextra';\r\n  src: url('/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mpluslight';\r\n  src: url('/fonts/MPLUS1p-Light.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusmedium';\r\n  src: url('/fonts/MPLUS1p-Medium.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusregular';\r\n  src: url('/fonts/MPLUS1p-Regular.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusthin';\r\n  src: url('/fonts/MPLUS1p-Thin.ttf') format('opentype'),\r\n}\r\n\r\n.box-shadow {\r\n  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); \r\nbox-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);\r\n}\r\n\r\n.page-index {\r\n  padding-top: 5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center; \r\n}\r\n\r\n.text-presentation {\r\n  margin: 0rem 10rem;\r\n  font-size: 1.8rem;\r\n  font-family: mplusbold;\r\n  text-align: center;\r\n  padding-bottom: 4rem;\r\n  padding-top: 6rem;\r\n}\r\n\r\n.title-h2 {\r\n    font-size: 3rem;\r\n    font-family: mplusmedium;\r\n    text-align: center;\r\n    padding-bottom: 2rem;\r\n    margin-bottom: 5rem;\r\n    text-decoration: underline;\r\n    text-underline-offset: 1.6rem;\r\n    text-decoration-color: #009FE3;\r\n\r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 900px) {\r\n  .text-presentation {\r\n    margin: 0 2rem;\r\n    font-size: 1.1rem;\r\n    padding-bottom: 1rem;\r\n  }\r\n  .title-h2 {\r\n    padding-bottom: 1rem;\r\n    font-size: 2rem;\r\n    width: 40vw;\r\n    margin-bottom: 2rem;\r\n  }\r\n}\r\n\r\n/*\r\n\r\n*/\r\n</style>"
+          "<template>\r\n  <div class=\"page-index\">\r\n    <AccueilSection1/>\r\n    <p class=\"text-presentation\" data-aos=\"fade-up\">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements.</p>\r\n    <h2 class=\"title-h2 special\" data-aos=\"fade-up\">Productions</h2>\r\n    <AllProjects data-aos=\"fade-up\"/>\r\n    <h2 class=\"title-h2\" data-aos=\"fade-up\">Services</h2>\r\n    <AllServices />\r\n  </div>\r\n</template>\r\n\r\n<script setup lang=\"ts\">\r\nuseHead({\r\n  title: 'Studio-Byno'\r\n})\r\n</script>\r\n\r\n\r\n<style>\r\n@font-face {\r\n  font-family: 'mplusblack';\r\n  src: url('/fonts/MPLUS1p-Black.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusbold';\r\n  src: url('/fonts/MPLUS1p-Bold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusextra';\r\n  src: url('/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mpluslight';\r\n  src: url('/fonts/MPLUS1p-Light.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusmedium';\r\n  src: url('/fonts/MPLUS1p-Medium.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusregular';\r\n  src: url('/fonts/MPLUS1p-Regular.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusthin';\r\n  src: url('/fonts/MPLUS1p-Thin.ttf') format('opentype'),\r\n}\r\n.hidden-title {\r\n  color: black;\r\n  margin: 0;\r\n}\r\n.box-shadow {\r\n  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); \r\nbox-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);\r\n}\r\n\r\n.blue-shadow {\r\n  -webkit-box-shadow: 1px 1px 42px -14px rgba(0,159,227,0.89); \r\nbox-shadow: 1px 1px 42px -14px rgba(0,159,227,0.89);\r\n}\r\n\r\n.page-index {\r\n  padding-top: 5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center; \r\n}\r\n\r\n.text-presentation {\r\n  margin: 5rem 10rem;\r\n  font-size: 1.8rem;\r\n  font-family: mplusbold;\r\n  text-align: center;\r\n}\r\n\r\n.title-h2 {\r\n    font-size: 3rem;\r\n    font-family: mplusmedium;\r\n    text-align: center;\r\n    padding-bottom: 2rem;\r\n    margin-bottom: 5rem;\r\n    text-decoration: underline;\r\n    text-underline-offset: 1.6rem;\r\n    text-decoration-color: #009FE3;\r\n}\r\n.special {\r\n    margin-top: 0;\r\n  }\r\n.btn-retour {\r\n  color: #009FE3;\r\n  font-family: 'mplusextra';\r\n  text-decoration: underline;\r\n  text-underline-offset: 0.8rem;\r\n  margin-left: 2rem;\r\n  margin-bottom: 2rem;\r\n  cursor: pointer;\r\n  \r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 900px) {\r\n  .text-presentation {\r\n    margin: 4rem 2rem;\r\n    font-size: 1.1rem;\r\n  }\r\n  .title-h2 {\r\n    padding-bottom: 1rem;\r\n    font-size: 2rem;\r\n    margin-bottom: 2rem;\r\n    text-underline-offset: 1.1rem;\r\n    line-height: 3.7rem;\r\n  }\r\n  \r\n}\r\n\r\n/*\r\n\r\n*/\r\n</style>"
         ]
       }
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1716369332685,
-      "end": 1716369332685,
+      "start": 1718568831211,
+      "end": 1718568831211,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1716369332685,
-      "end": 1716369332685,
+      "start": 1718568831211,
+      "end": 1718568831211,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1716369332685,
-      "end": 1716369332685,
+      "start": 1718568831211,
+      "end": 1718568831211,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1716369332685,
-      "end": 1716369332685,
+      "start": 1718568831211,
+      "end": 1718568831211,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1716369332685,
-      "end": 1716369332685,
+      "start": 1718568831211,
+      "end": 1718568831211,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "result": "@font-face{font-family:mplusblack;src:url(__VITE_PUBLIC_ASSET__ace1785c__) format(\"opentype\"),}@font-face{font-family:mplusbold;src:url(__VITE_PUBLIC_ASSET__c4356906__) format(\"opentype\"),}@font-face{font-family:mplusextra;src:url(__VITE_PUBLIC_ASSET__35f04ed0__) format(\"opentype\"),}@font-face{font-family:mpluslight;src:url(__VITE_PUBLIC_ASSET__2feb32e6__) format(\"opentype\"),}@font-face{font-family:mplusmedium;src:url(__VITE_PUBLIC_ASSET__c2b359bb__) format(\"opentype\"),}@font-face{font-family:mplusregular;src:url(__VITE_PUBLIC_ASSET__93089e9d__) format(\"opentype\"),}@font-face{font-family:mplusthin;src:url(__VITE_PUBLIC_ASSET__7dbf9a21__) format(\"opentype\"),}.box-shadow{box-shadow:-10px 0 13px -7px #000,10px 0 13px -7px #000,0 0 31px 11px rgba(255,255,254,.09)}.page-index{align-items:center;display:flex;flex-direction:column;padding-top:5rem}.text-presentation{font-family:mplusbold;font-size:1.8rem;margin:0 10rem;padding-bottom:4rem;padding-top:6rem;text-align:center}.title-h2{font-family:mplusmedium;font-size:3rem;margin-bottom:5rem;padding-bottom:2rem;text-align:center;text-decoration:underline;text-decoration-color:#009fe3;text-underline-offset:1.6rem}@media screen and (max-width:900px){.text-presentation{font-size:1.1rem;margin:0 2rem;padding-bottom:1rem}.title-h2{font-size:2rem;margin-bottom:2rem;padding-bottom:1rem;width:40vw}}",
-      "start": 1716369332685,
-      "end": 1716369332699,
+      "result": "@font-face{font-family:mplusblack;src:url(__VITE_PUBLIC_ASSET__ace1785c__) format(\"opentype\"),}@font-face{font-family:mplusbold;src:url(__VITE_PUBLIC_ASSET__c4356906__) format(\"opentype\"),}@font-face{font-family:mplusextra;src:url(__VITE_PUBLIC_ASSET__35f04ed0__) format(\"opentype\"),}@font-face{font-family:mpluslight;src:url(__VITE_PUBLIC_ASSET__2feb32e6__) format(\"opentype\"),}@font-face{font-family:mplusmedium;src:url(__VITE_PUBLIC_ASSET__c2b359bb__) format(\"opentype\"),}@font-face{font-family:mplusregular;src:url(__VITE_PUBLIC_ASSET__93089e9d__) format(\"opentype\"),}@font-face{font-family:mplusthin;src:url(__VITE_PUBLIC_ASSET__7dbf9a21__) format(\"opentype\"),}.hidden-title{color:#000;margin:0}.box-shadow{box-shadow:-10px 0 13px -7px #000,10px 0 13px -7px #000,0 0 31px 11px rgba(255,255,254,.09)}.blue-shadow{box-shadow:1px 1px 42px -14px rgba(0,159,227,.89)}.page-index{align-items:center;display:flex;flex-direction:column;padding-top:5rem}.text-presentation{font-family:mplusbold;font-size:1.8rem;margin:5rem 10rem;text-align:center}.title-h2{font-family:mplusmedium;font-size:3rem;margin-bottom:5rem;padding-bottom:2rem;text-align:center;text-decoration:underline;text-decoration-color:#009fe3;text-underline-offset:1.6rem}.special{margin-top:0}.btn-retour{color:#009fe3;cursor:pointer;font-family:mplusextra;margin-bottom:2rem;margin-left:2rem;text-decoration:underline;text-underline-offset:.8rem}@media screen and (max-width:900px){.text-presentation{font-size:1.1rem;margin:4rem 2rem}.title-h2{font-size:2rem;line-height:3.7rem;margin-bottom:2rem;padding-bottom:1rem;text-underline-offset:1.1rem}}",
+      "start": 1718568831211,
+      "end": 1718568831220,
       "order": "normal",
       "sourcemaps": {
         "file": "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue",
-        "mappings": "AACA,WACE,sBAAyB,CACzB,4DACF,CAEA,WACE,qBAAwB,CACxB,4DACF,CAEA,WACE,sBAAyB,CACzB,4DACF,CAEA,WACE,sBAAyB,CACzB,4DACF,CAEA,WACE,uBAA0B,CAC1B,4DACF,CAEA,WACE,wBAA2B,CAC3B,4DACF,CAEA,WACE,qBAAwB,CACxB,4DACF,CAEA,YAEA,2FACA,CAEA,YAIE,kBAAmB,CAFnB,YAAa,CACb,qBAAsB,CAFtB,gBAIF,CAEA,mBAGE,qBAAsB,CADtB,gBAAiB,CADjB,cAAkB,CAIlB,mBAAoB,CACpB,gBAAiB,CAFjB,iBAGF,CAEA,UAEI,uBAAwB,CADxB,cAAe,CAIf,kBAAmB,CADnB,mBAAoB,CADpB,iBAAkB,CAGlB,yBAA0B,CAE1B,6BAA8B,CAD9B,4BAGJ,CAGA,oCACE,mBAEE,gBAAiB,CADjB,aAAc,CAEd,mBACF,CACA,UAEE,cAAe,CAEf,kBAAmB,CAHnB,mBAAoB,CAEpB,UAEF,CACF",
+        "mappings": "AACA,WACE,sBAAyB,CACzB,4DACF,CAEA,WACE,qBAAwB,CACxB,4DACF,CAEA,WACE,sBAAyB,CACzB,4DACF,CAEA,WACE,sBAAyB,CACzB,4DACF,CAEA,WACE,uBAA0B,CAC1B,4DACF,CAEA,WACE,wBAA2B,CAC3B,4DACF,CAEA,WACE,qBAAwB,CACxB,4DACF,CACA,cACE,UAAY,CACZ,QACF,CACA,YAEA,2FACA,CAEA,aAEA,iDACA,CAEA,YAIE,kBAAmB,CAFnB,YAAa,CACb,qBAAsB,CAFtB,gBAIF,CAEA,mBAGE,qBAAsB,CADtB,gBAAiB,CADjB,iBAAkB,CAGlB,iBACF,CAEA,UAEI,uBAAwB,CADxB,cAAe,CAIf,kBAAmB,CADnB,mBAAoB,CADpB,iBAAkB,CAGlB,yBAA0B,CAE1B,6BAA8B,CAD9B,4BAEJ,CACA,SACI,YACF,CACF,YACE,aAAc,CAMd,cAAe,CALf,sBAAyB,CAIzB,kBAAmB,CADnB,gBAAiB,CAFjB,yBAA0B,CAC1B,2BAKF,CAGA,oCACE,mBAEE,gBAAiB,CADjB,gBAEF,CACA,UAEE,cAAe,CAGf,kBAAmB,CAFnB,kBAAmB,CAFnB,mBAAoB,CAGpB,4BAEF,CAEF",
         "names": [],
         "sources": [
           "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue"
         ],
         "sourcesContent": [
-          "\r\n@font-face {\r\n  font-family: 'mplusblack';\r\n  src: url('/fonts/MPLUS1p-Black.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusbold';\r\n  src: url('/fonts/MPLUS1p-Bold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusextra';\r\n  src: url('/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mpluslight';\r\n  src: url('/fonts/MPLUS1p-Light.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusmedium';\r\n  src: url('/fonts/MPLUS1p-Medium.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusregular';\r\n  src: url('/fonts/MPLUS1p-Regular.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusthin';\r\n  src: url('/fonts/MPLUS1p-Thin.ttf') format('opentype'),\r\n}\r\n\r\n.box-shadow {\r\n  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); \r\nbox-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);\r\n}\r\n\r\n.page-index {\r\n  padding-top: 5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center; \r\n}\r\n\r\n.text-presentation {\r\n  margin: 0rem 10rem;\r\n  font-size: 1.8rem;\r\n  font-family: mplusbold;\r\n  text-align: center;\r\n  padding-bottom: 4rem;\r\n  padding-top: 6rem;\r\n}\r\n\r\n.title-h2 {\r\n    font-size: 3rem;\r\n    font-family: mplusmedium;\r\n    text-align: center;\r\n    padding-bottom: 2rem;\r\n    margin-bottom: 5rem;\r\n    text-decoration: underline;\r\n    text-underline-offset: 1.6rem;\r\n    text-decoration-color: #009FE3;\r\n\r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 900px) {\r\n  .text-presentation {\r\n    margin: 0 2rem;\r\n    font-size: 1.1rem;\r\n    padding-bottom: 1rem;\r\n  }\r\n  .title-h2 {\r\n    padding-bottom: 1rem;\r\n    font-size: 2rem;\r\n    width: 40vw;\r\n    margin-bottom: 2rem;\r\n  }\r\n}\r\n\r\n/*\r\n\r\n*/\r\n"
+          "\r\n@font-face {\r\n  font-family: 'mplusblack';\r\n  src: url('/fonts/MPLUS1p-Black.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusbold';\r\n  src: url('/fonts/MPLUS1p-Bold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusextra';\r\n  src: url('/fonts/MPLUS1p-ExtraBold.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mpluslight';\r\n  src: url('/fonts/MPLUS1p-Light.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusmedium';\r\n  src: url('/fonts/MPLUS1p-Medium.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusregular';\r\n  src: url('/fonts/MPLUS1p-Regular.ttf') format('opentype'),\r\n}\r\n\r\n@font-face {\r\n  font-family: 'mplusthin';\r\n  src: url('/fonts/MPLUS1p-Thin.ttf') format('opentype'),\r\n}\r\n.hidden-title {\r\n  color: black;\r\n  margin: 0;\r\n}\r\n.box-shadow {\r\n  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); \r\nbox-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);\r\n}\r\n\r\n.blue-shadow {\r\n  -webkit-box-shadow: 1px 1px 42px -14px rgba(0,159,227,0.89); \r\nbox-shadow: 1px 1px 42px -14px rgba(0,159,227,0.89);\r\n}\r\n\r\n.page-index {\r\n  padding-top: 5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center; \r\n}\r\n\r\n.text-presentation {\r\n  margin: 5rem 10rem;\r\n  font-size: 1.8rem;\r\n  font-family: mplusbold;\r\n  text-align: center;\r\n}\r\n\r\n.title-h2 {\r\n    font-size: 3rem;\r\n    font-family: mplusmedium;\r\n    text-align: center;\r\n    padding-bottom: 2rem;\r\n    margin-bottom: 5rem;\r\n    text-decoration: underline;\r\n    text-underline-offset: 1.6rem;\r\n    text-decoration-color: #009FE3;\r\n}\r\n.special {\r\n    margin-top: 0;\r\n  }\r\n.btn-retour {\r\n  color: #009FE3;\r\n  font-family: 'mplusextra';\r\n  text-decoration: underline;\r\n  text-underline-offset: 0.8rem;\r\n  margin-left: 2rem;\r\n  margin-bottom: 2rem;\r\n  cursor: pointer;\r\n  \r\n}\r\n\r\n/* version mobile */\r\n@media screen and (max-width: 900px) {\r\n  .text-presentation {\r\n    margin: 4rem 2rem;\r\n    font-size: 1.1rem;\r\n  }\r\n  .title-h2 {\r\n    padding-bottom: 1rem;\r\n    font-size: 2rem;\r\n    margin-bottom: 2rem;\r\n    text-underline-offset: 1.1rem;\r\n    line-height: 3.7rem;\r\n  }\r\n  \r\n}\r\n\r\n/*\r\n\r\n*/\r\n"
         ],
         "version": 3
       }
     },
     {
       "name": "vite:esbuild",
-      "start": 1716369332699,
-      "end": 1716369332699,
+      "start": 1718568831220,
+      "end": 1718568831220,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1716369332699,
-      "end": 1716369332699,
+      "start": 1718568831220,
+      "end": 1718568831220,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1716369332699,
-      "end": 1716369332699,
+      "start": 1718568831220,
+      "end": 1718568831220,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "@font-face{font-family:mplusblack;src:url(__VITE_PUBLIC_ASSET__ace1785c__) format(\"opentype\"),}@font-face{font-family:mplusbold;src:url(__VITE_PUBLIC_ASSET__c4356906__) format(\"opentype\"),}@font-face{font-family:mplusextra;src:url(__VITE_PUBLIC_ASSET__35f04ed0__) format(\"opentype\"),}@font-face{font-family:mpluslight;src:url(__VITE_PUBLIC_ASSET__2feb32e6__) format(\"opentype\"),}@font-face{font-family:mplusmedium;src:url(__VITE_PUBLIC_ASSET__c2b359bb__) format(\"opentype\"),}@font-face{font-family:mplusregular;src:url(__VITE_PUBLIC_ASSET__93089e9d__) format(\"opentype\"),}@font-face{font-family:mplusthin;src:url(__VITE_PUBLIC_ASSET__7dbf9a21__) format(\"opentype\"),}.box-shadow{box-shadow:-10px 0 13px -7px #000,10px 0 13px -7px #000,0 0 31px 11px rgba(255,255,254,.09)}.page-index{align-items:center;display:flex;flex-direction:column;padding-top:5rem}.text-presentation{font-family:mplusbold;font-size:1.8rem;margin:0 10rem;padding-bottom:4rem;padding-top:6rem;text-align:center}.title-h2{font-family:mplusmedium;font-size:3rem;margin-bottom:5rem;padding-bottom:2rem;text-align:center;text-decoration:underline;text-decoration-color:#009fe3;text-underline-offset:1.6rem}@media screen and (max-width:900px){.text-presentation{font-size:1.1rem;margin:0 2rem;padding-bottom:1rem}.title-h2{font-size:2rem;margin-bottom:2rem;padding-bottom:1rem;width:40vw}}",
-      "start": 1716369332699,
-      "end": 1716369332701,
+      "result": "@font-face{font-family:mplusblack;src:url(__VITE_PUBLIC_ASSET__ace1785c__) format(\"opentype\"),}@font-face{font-family:mplusbold;src:url(__VITE_PUBLIC_ASSET__c4356906__) format(\"opentype\"),}@font-face{font-family:mplusextra;src:url(__VITE_PUBLIC_ASSET__35f04ed0__) format(\"opentype\"),}@font-face{font-family:mpluslight;src:url(__VITE_PUBLIC_ASSET__2feb32e6__) format(\"opentype\"),}@font-face{font-family:mplusmedium;src:url(__VITE_PUBLIC_ASSET__c2b359bb__) format(\"opentype\"),}@font-face{font-family:mplusregular;src:url(__VITE_PUBLIC_ASSET__93089e9d__) format(\"opentype\"),}@font-face{font-family:mplusthin;src:url(__VITE_PUBLIC_ASSET__7dbf9a21__) format(\"opentype\"),}.hidden-title{color:#000;margin:0}.box-shadow{box-shadow:-10px 0 13px -7px #000,10px 0 13px -7px #000,0 0 31px 11px rgba(255,255,254,.09)}.blue-shadow{box-shadow:1px 1px 42px -14px rgba(0,159,227,.89)}.page-index{align-items:center;display:flex;flex-direction:column;padding-top:5rem}.text-presentation{font-family:mplusbold;font-size:1.8rem;margin:5rem 10rem;text-align:center}.title-h2{font-family:mplusmedium;font-size:3rem;margin-bottom:5rem;padding-bottom:2rem;text-align:center;text-decoration:underline;text-decoration-color:#009fe3;text-underline-offset:1.6rem}.special{margin-top:0}.btn-retour{color:#009fe3;cursor:pointer;font-family:mplusextra;margin-bottom:2rem;margin-left:2rem;text-decoration:underline;text-underline-offset:.8rem}@media screen and (max-width:900px){.text-presentation{font-size:1.1rem;margin:4rem 2rem}.title-h2{font-size:2rem;line-height:3.7rem;margin-bottom:2rem;padding-bottom:1rem;text-underline-offset:1.1rem}}",
+      "start": 1718568831220,
+      "end": 1718568831221,
       "order": "normal",
       "sourcemaps": {
         "file": "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue",
-        "mappings": "AAAA,WAAW,sBAAsB,CAAC,4DAA4D,CAAC,WAAW,qBAAqB,CAAC,4DAA4D,CAAC,WAAW,sBAAsB,CAAC,4DAA4D,CAAC,WAAW,sBAAsB,CAAC,4DAA4D,CAAC,WAAW,uBAAuB,CAAC,4DAA4D,CAAC,WAAW,wBAAwB,CAAC,4DAA4D,CAAC,WAAW,qBAAqB,CAAC,4DAA4D,CAAC,YAAY,2FAA2F,CAAC,YAAY,kBAAkB,CAAC,YAAY,CAAC,qBAAqB,CAAC,gBAAgB,CAAC,mBAAmB,qBAAqB,CAAC,gBAAgB,CAAC,cAAc,CAAC,mBAAmB,CAAC,gBAAgB,CAAC,iBAAiB,CAAC,UAAU,uBAAuB,CAAC,cAAc,CAAC,kBAAkB,CAAC,mBAAmB,CAAC,iBAAiB,CAAC,yBAAyB,CAAC,6BAA6B,CAAC,4BAA4B,CAAC,oCAAoC,mBAAmB,gBAAgB,CAAC,aAAa,CAAC,mBAAmB,CAAC,UAAU,cAAc,CAAC,kBAAkB,CAAC,mBAAmB,CAAC,UAAU,CAAC",
+        "mappings": "AAAA,WAAW,sBAAsB,CAAC,4DAA4D,CAAC,WAAW,qBAAqB,CAAC,4DAA4D,CAAC,WAAW,sBAAsB,CAAC,4DAA4D,CAAC,WAAW,sBAAsB,CAAC,4DAA4D,CAAC,WAAW,uBAAuB,CAAC,4DAA4D,CAAC,WAAW,wBAAwB,CAAC,4DAA4D,CAAC,WAAW,qBAAqB,CAAC,4DAA4D,CAAC,cAAc,UAAU,CAAC,QAAQ,CAAC,YAAY,2FAA2F,CAAC,aAAa,iDAAiD,CAAC,YAAY,kBAAkB,CAAC,YAAY,CAAC,qBAAqB,CAAC,gBAAgB,CAAC,mBAAmB,qBAAqB,CAAC,gBAAgB,CAAC,iBAAiB,CAAC,iBAAiB,CAAC,UAAU,uBAAuB,CAAC,cAAc,CAAC,kBAAkB,CAAC,mBAAmB,CAAC,iBAAiB,CAAC,yBAAyB,CAAC,6BAA6B,CAAC,4BAA4B,CAAC,SAAS,YAAY,CAAC,YAAY,aAAa,CAAC,cAAc,CAAC,sBAAsB,CAAC,kBAAkB,CAAC,gBAAgB,CAAC,yBAAyB,CAAC,2BAA2B,CAAC,oCAAoC,mBAAmB,gBAAgB,CAAC,gBAAgB,CAAC,UAAU,cAAc,CAAC,kBAAkB,CAAC,kBAAkB,CAAC,mBAAmB,CAAC,4BAA4B,CAAC",
         "names": [],
         "sources": [
           "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/pages/index.vue"
@@ -108,63 +108,63 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "result": "export default \"@font-face{font-family:mplusblack;src:url(__VITE_PUBLIC_ASSET__ace1785c__) format(\\\"opentype\\\"),}@font-face{font-family:mplusbold;src:url(__VITE_PUBLIC_ASSET__c4356906__) format(\\\"opentype\\\"),}@font-face{font-family:mplusextra;src:url(__VITE_PUBLIC_ASSET__35f04ed0__) format(\\\"opentype\\\"),}@font-face{font-family:mpluslight;src:url(__VITE_PUBLIC_ASSET__2feb32e6__) format(\\\"opentype\\\"),}@font-face{font-family:mplusmedium;src:url(__VITE_PUBLIC_ASSET__c2b359bb__) format(\\\"opentype\\\"),}@font-face{font-family:mplusregular;src:url(__VITE_PUBLIC_ASSET__93089e9d__) format(\\\"opentype\\\"),}@font-face{font-family:mplusthin;src:url(__VITE_PUBLIC_ASSET__7dbf9a21__) format(\\\"opentype\\\"),}.box-shadow{box-shadow:-10px 0 13px -7px #000,10px 0 13px -7px #000,0 0 31px 11px rgba(255,255,254,.09)}.page-index{align-items:center;display:flex;flex-direction:column;padding-top:5rem}.text-presentation{font-family:mplusbold;font-size:1.8rem;margin:0 10rem;padding-bottom:4rem;padding-top:6rem;text-align:center}.title-h2{font-family:mplusmedium;font-size:3rem;margin-bottom:5rem;padding-bottom:2rem;text-align:center;text-decoration:underline;text-decoration-color:#009fe3;text-underline-offset:1.6rem}@media screen and (max-width:900px){.text-presentation{font-size:1.1rem;margin:0 2rem;padding-bottom:1rem}.title-h2{font-size:2rem;margin-bottom:2rem;padding-bottom:1rem;width:40vw}}\"",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "result": "export default \"@font-face{font-family:mplusblack;src:url(__VITE_PUBLIC_ASSET__ace1785c__) format(\\\"opentype\\\"),}@font-face{font-family:mplusbold;src:url(__VITE_PUBLIC_ASSET__c4356906__) format(\\\"opentype\\\"),}@font-face{font-family:mplusextra;src:url(__VITE_PUBLIC_ASSET__35f04ed0__) format(\\\"opentype\\\"),}@font-face{font-family:mpluslight;src:url(__VITE_PUBLIC_ASSET__2feb32e6__) format(\\\"opentype\\\"),}@font-face{font-family:mplusmedium;src:url(__VITE_PUBLIC_ASSET__c2b359bb__) format(\\\"opentype\\\"),}@font-face{font-family:mplusregular;src:url(__VITE_PUBLIC_ASSET__93089e9d__) format(\\\"opentype\\\"),}@font-face{font-family:mplusthin;src:url(__VITE_PUBLIC_ASSET__7dbf9a21__) format(\\\"opentype\\\"),}.hidden-title{color:#000;margin:0}.box-shadow{box-shadow:-10px 0 13px -7px #000,10px 0 13px -7px #000,0 0 31px 11px rgba(255,255,254,.09)}.blue-shadow{box-shadow:1px 1px 42px -14px rgba(0,159,227,.89)}.page-index{align-items:center;display:flex;flex-direction:column;padding-top:5rem}.text-presentation{font-family:mplusbold;font-size:1.8rem;margin:5rem 10rem;text-align:center}.title-h2{font-family:mplusmedium;font-size:3rem;margin-bottom:5rem;padding-bottom:2rem;text-align:center;text-decoration:underline;text-decoration-color:#009fe3;text-underline-offset:1.6rem}.special{margin-top:0}.btn-retour{color:#009fe3;cursor:pointer;font-family:mplusextra;margin-bottom:2rem;margin-left:2rem;text-decoration:underline;text-underline-offset:.8rem}@media screen and (max-width:900px){.text-presentation{font-size:1.1rem;margin:4rem 2rem}.title-h2{font-size:2rem;line-height:3.7rem;margin-bottom:2rem;padding-bottom:1rem;text-underline-offset:1.1rem}}\"",
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -172,116 +172,116 @@
     },
     {
       "name": "vite:build-html",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1716369332701,
-      "end": 1716369332701,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1716369332702,
-      "end": 1716369332702,
+      "start": 1718568831221,
+      "end": 1718568831221,
       "order": "normal"
     }
   ]

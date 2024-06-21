@@ -1,7 +1,7 @@
 <template>
   <div class="services">
     <h2 class="title-h2" data-aos="fade-up">Services</h2>
-    <CardServices data-aos="fade-up"/>
+    <CardServices data-aos="fade-up" data-aos-delay="300"/>
     <AllServices/>
   </div>
 </template>

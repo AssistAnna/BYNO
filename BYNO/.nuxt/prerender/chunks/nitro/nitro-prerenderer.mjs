@@ -1,4 +1,4 @@
-globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/h3/dist/index.mjs';
+globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/h3/dist/index.mjs';
 import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/ofetch/dist/node.mjs';
 import destr from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/destr/dist/index.mjs';
 import { createCall, createFetch } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/unenv/runtime/fetch/index.mjs';
@@ -16,11 +16,12 @@ import unstorage_47drivers_47fs_45lite from 'file://C:/Users/Anna/Documents/proj
 import { toRouteMatcher, createRouter } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/radix3/dist/index.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, resolve } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/pathe/dist/index.mjs';
+import { dirname, resolve, isAbsolute } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/pathe/dist/index.mjs';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/ipx/dist/index.mjs';
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "58ab35d1-c800-4eba-b411-822ccfe09c4e"
+    "buildId": "d3ac7df7-0f05-4a3e-9687-866891803aaa"
   }
 };
 
@@ -58,9 +59,22 @@ const _inlineRuntimeConfig = {
     }
   },
   "public": {
+    "gtagId": "G-F2VTF79CTN",
     "aos": {
       "duration": 900,
-      "offset": 50
+      "offset": 60
+    }
+  },
+  "ipx": {
+    "baseURL": "/_ipx",
+    "alias": {},
+    "fs": {
+      "dir": [
+        "C:/Users/Anna/Documents/projets-web/BYNO/BYNO/public"
+      ]
+    },
+    "http": {
+      "domains": []
     }
   }
 };
@@ -717,10 +731,29 @@ const _f4b49z = eventHandler((event) => {
   return readAsset(id);
 });
 
+const _8TXFRD = lazyEventHandler(() => {
+  const opts = useRuntimeConfig().ipx || {};
+  const fsDir = opts?.fs?.dir ? (Array.isArray(opts.fs.dir) ? opts.fs.dir : [opts.fs.dir]).map((dir) => isAbsolute(dir) ? dir : fileURLToPath(new URL(dir, globalThis._importMeta_.url))) : void 0;
+  const fsStorage = opts.fs?.dir ? ipxFSStorage({ ...opts.fs, dir: fsDir }) : void 0;
+  const httpStorage = opts.http?.domains ? ipxHttpStorage({ ...opts.http }) : void 0;
+  if (!fsStorage && !httpStorage) {
+    throw new Error("IPX storage is not configured!");
+  }
+  const ipxOptions = {
+    ...opts,
+    storage: fsStorage || httpStorage,
+    httpStorage
+  };
+  const ipx = createIPX(ipxOptions);
+  const ipxHandler = createIPXH3Handler(ipx);
+  return useBase(opts.baseURL, ipxHandler);
+});
+
 const _lazy_EzEq7V = () => import('../renderer.mjs').then(function (n) { return n.r; });
 
 const handlers = [
   { route: '', handler: _f4b49z, lazy: false, middleware: true, method: undefined },
+  { route: '/_ipx/**', handler: _8TXFRD, lazy: false, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_EzEq7V, lazy: true, middleware: false, method: undefined }
 ];
 

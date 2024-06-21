@@ -1,6 +1,6 @@
 <template>
     <div class="soon-cmp">
-        <h5>Page en cours de construction</h5>
+        <h5>Page en cours de création</h5>
         <div class="btn-retour" @click="$router.push('/productions')">Retour</div>
     </div>
 </template>

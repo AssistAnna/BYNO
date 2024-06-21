@@ -4,93 +4,93 @@
     {
       "name": "vite:load-fallback",
       "result": "import { computed, reactive, toValue } from \"vue\";\r\nimport { hash } from \"ohash\";\r\nimport { useRequestFetch } from \"./ssr.js\";\r\nimport { useAsyncData } from \"./asyncData.js\";\r\nimport { fetchDefaults } from \"#build/nuxt.config.mjs\";\r\nexport function useFetch(request, arg1, arg2) {\r\n  const [opts = {}, autoKey] = typeof arg1 === \"string\" ? [{}, arg1] : [arg1, arg2];\r\n  const _request = computed(() => {\r\n    let r = request;\r\n    if (typeof r === \"function\") {\r\n      r = r();\r\n    }\r\n    return toValue(r);\r\n  });\r\n  const _key = opts.key || hash([autoKey, typeof _request.value === \"string\" ? _request.value : \"\", ...generateOptionSegments(opts)]);\r\n  if (!_key || typeof _key !== \"string\") {\r\n    throw new TypeError(\"[nuxt] [useFetch] key must be a string: \" + _key);\r\n  }\r\n  if (!request) {\r\n    throw new Error(\"[nuxt] [useFetch] request is missing.\");\r\n  }\r\n  const key = _key === autoKey ? \"$f\" + _key : _key;\r\n  if (!opts.baseURL && typeof _request.value === \"string\" && (_request.value[0] === \"/\" && _request.value[1] === \"/\")) {\r\n    throw new Error('[nuxt] [useFetch] the request URL must not start with \"//\".');\r\n  }\r\n  const {\r\n    server,\r\n    lazy,\r\n    default: defaultFn,\r\n    transform,\r\n    pick,\r\n    watch,\r\n    immediate,\r\n    getCachedData,\r\n    deep,\r\n    ...fetchOptions\r\n  } = opts;\r\n  const _fetchOptions = reactive({\r\n    ...fetchDefaults,\r\n    ...fetchOptions,\r\n    cache: typeof opts.cache === \"boolean\" ? void 0 : opts.cache\r\n  });\r\n  const _asyncDataOptions = {\r\n    server,\r\n    lazy,\r\n    default: defaultFn,\r\n    transform,\r\n    pick,\r\n    immediate,\r\n    getCachedData,\r\n    deep,\r\n    watch: watch === false ? [] : [_fetchOptions, _request, ...watch || []]\r\n  };\r\n  if (import.meta.dev && import.meta.client) {\r\n    _asyncDataOptions._functionName = opts._functionName || \"useFetch\";\r\n  }\r\n  let controller;\r\n  const asyncData = useAsyncData(key, () => {\r\n    controller?.abort?.();\r\n    controller = typeof AbortController !== \"undefined\" ? new AbortController() : {};\r\n    const timeoutLength = toValue(opts.timeout);\r\n    if (timeoutLength) {\r\n      setTimeout(() => controller.abort(), timeoutLength);\r\n    }\r\n    let _$fetch = opts.$fetch || globalThis.$fetch;\r\n    if (import.meta.server && !opts.$fetch) {\r\n      const isLocalFetch = typeof _request.value === \"string\" && _request.value[0] === \"/\" && (!toValue(opts.baseURL) || toValue(opts.baseURL)[0] === \"/\");\r\n      if (isLocalFetch) {\r\n        _$fetch = useRequestFetch();\r\n      }\r\n    }\r\n    return _$fetch(_request.value, { signal: controller.signal, ..._fetchOptions });\r\n  }, _asyncDataOptions);\r\n  return asyncData;\r\n}\r\nexport function useLazyFetch(request, arg1, arg2) {\r\n  const [opts = {}, autoKey] = typeof arg1 === \"string\" ? [{}, arg1] : [arg1, arg2];\r\n  if (import.meta.dev && import.meta.client) {\r\n    opts._functionName ||= \"useLazyFetch\";\r\n  }\r\n  return useFetch(\r\n    request,\r\n    {\r\n      ...opts,\r\n      lazy: true\r\n    },\r\n    // @ts-expect-error we pass an extra argument with the resolved auto-key to prevent another from being injected\r\n    autoKey\r\n  );\r\n}\r\nfunction generateOptionSegments(opts) {\r\n  const segments = [\r\n    toValue(opts.method)?.toUpperCase() || \"GET\",\r\n    toValue(opts.baseURL)\r\n  ];\r\n  for (const _obj of [opts.params || opts.query]) {\r\n    const obj = toValue(_obj);\r\n    if (!obj) {\r\n      continue;\r\n    }\r\n    const unwrapped = {};\r\n    for (const [key, value] of Object.entries(obj)) {\r\n      unwrapped[toValue(key)] = toValue(value);\r\n    }\r\n    segments.push(unwrapped);\r\n  }\r\n  return segments;\r\n}\r\n",
-      "start": 1716369328993,
-      "end": 1716369329405,
+      "start": 1718568828644,
+      "end": 1718568828788,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1716369329405,
-      "end": 1716369329405,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1716369329405,
-      "end": 1716369329406,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1716369329406,
-      "end": 1716369329406,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1716369329406,
-      "end": 1716369329406,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1716369329406,
-      "end": 1716369329406,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1716369329406,
-      "end": 1716369329406,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1716369329406,
-      "end": 1716369329406,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1716369329406,
-      "end": 1716369329406,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1716369329406,
-      "end": 1716369329406,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369329406,
-      "end": 1716369329406,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1716369329406,
-      "end": 1716369329406,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1716369329406,
-      "end": 1716369329406,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1716369329406,
-      "end": 1716369329406,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal"
     },
     {
       "name": "replace",
       "result": "import { computed, reactive, toValue } from \"vue\";\r\nimport { hash } from \"ohash\";\r\nimport { useRequestFetch } from \"./ssr.js\";\r\nimport { useAsyncData } from \"./asyncData.js\";\r\nimport { fetchDefaults } from \"#build/nuxt.config.mjs\";\r\nexport function useFetch(request, arg1, arg2) {\r\n  const [opts = {}, autoKey] = typeof arg1 === \"string\" ? [{}, arg1] : [arg1, arg2];\r\n  const _request = computed(() => {\r\n    let r = request;\r\n    if (typeof r === \"function\") {\r\n      r = r();\r\n    }\r\n    return toValue(r);\r\n  });\r\n  const _key = opts.key || hash([autoKey, typeof _request.value === \"string\" ? _request.value : \"\", ...generateOptionSegments(opts)]);\r\n  if (!_key || typeof _key !== \"string\") {\r\n    throw new TypeError(\"[nuxt] [useFetch] key must be a string: \" + _key);\r\n  }\r\n  if (!request) {\r\n    throw new Error(\"[nuxt] [useFetch] request is missing.\");\r\n  }\r\n  const key = _key === autoKey ? \"$f\" + _key : _key;\r\n  if (!opts.baseURL && typeof _request.value === \"string\" && (_request.value[0] === \"/\" && _request.value[1] === \"/\")) {\r\n    throw new Error('[nuxt] [useFetch] the request URL must not start with \"//\".');\r\n  }\r\n  const {\r\n    server,\r\n    lazy,\r\n    default: defaultFn,\r\n    transform,\r\n    pick,\r\n    watch,\r\n    immediate,\r\n    getCachedData,\r\n    deep,\r\n    ...fetchOptions\r\n  } = opts;\r\n  const _fetchOptions = reactive({\r\n    ...fetchDefaults,\r\n    ...fetchOptions,\r\n    cache: typeof opts.cache === \"boolean\" ? void 0 : opts.cache\r\n  });\r\n  const _asyncDataOptions = {\r\n    server,\r\n    lazy,\r\n    default: defaultFn,\r\n    transform,\r\n    pick,\r\n    immediate,\r\n    getCachedData,\r\n    deep,\r\n    watch: watch === false ? [] : [_fetchOptions, _request, ...watch || []]\r\n  };\r\n  if (false && true) {\r\n    _asyncDataOptions._functionName = opts._functionName || \"useFetch\";\r\n  }\r\n  let controller;\r\n  const asyncData = useAsyncData(key, () => {\r\n    controller?.abort?.();\r\n    controller = typeof AbortController !== \"undefined\" ? new AbortController() : {};\r\n    const timeoutLength = toValue(opts.timeout);\r\n    if (timeoutLength) {\r\n      setTimeout(() => controller.abort(), timeoutLength);\r\n    }\r\n    let _$fetch = opts.$fetch || globalThis.$fetch;\r\n    if (false && !opts.$fetch) {\r\n      const isLocalFetch = typeof _request.value === \"string\" && _request.value[0] === \"/\" && (!toValue(opts.baseURL) || toValue(opts.baseURL)[0] === \"/\");\r\n      if (isLocalFetch) {\r\n        _$fetch = useRequestFetch();\r\n      }\r\n    }\r\n    return _$fetch(_request.value, { signal: controller.signal, ..._fetchOptions });\r\n  }, _asyncDataOptions);\r\n  return asyncData;\r\n}\r\nexport function useLazyFetch(request, arg1, arg2) {\r\n  const [opts = {}, autoKey] = typeof arg1 === \"string\" ? [{}, arg1] : [arg1, arg2];\r\n  if (false && true) {\r\n    opts._functionName ||= \"useLazyFetch\";\r\n  }\r\n  return useFetch(\r\n    request,\r\n    {\r\n      ...opts,\r\n      lazy: true\r\n    },\r\n    // @ts-expect-error we pass an extra argument with the resolved auto-key to prevent another from being injected\r\n    autoKey\r\n  );\r\n}\r\nfunction generateOptionSegments(opts) {\r\n  const segments = [\r\n    toValue(opts.method)?.toUpperCase() || \"GET\",\r\n    toValue(opts.baseURL)\r\n  ];\r\n  for (const _obj of [opts.params || opts.query]) {\r\n    const obj = toValue(_obj);\r\n    if (!obj) {\r\n      continue;\r\n    }\r\n    const unwrapped = {};\r\n    for (const [key, value] of Object.entries(obj)) {\r\n      unwrapped[toValue(key)] = toValue(value);\r\n    }\r\n    segments.push(unwrapped);\r\n  }\r\n  return segments;\r\n}\r\n",
-      "start": 1716369329406,
-      "end": 1716369329407,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -103,116 +103,116 @@
     },
     {
       "name": "ssr-styles",
-      "start": 1716369329407,
-      "end": 1716369329407,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1716369329407,
-      "end": 1716369329407,
+      "start": 1718568828788,
+      "end": 1718568828788,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1716369329407,
-      "end": 1716369329407,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1716369329407,
-      "end": 1716369329407,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1716369329407,
-      "end": 1716369329407,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1716369329407,
-      "end": 1716369329408,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1716369329408,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1716369329409,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1716369329409,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1716369329409,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1716369329409,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1716369329409,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1716369329409,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1716369329409,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1716369329409,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1716369329409,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1716369329409,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1716369329409,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1716369329409,
-      "end": 1716369329409,
+      "start": 1718568828789,
+      "end": 1718568828789,
       "order": "normal"
     }
   ]

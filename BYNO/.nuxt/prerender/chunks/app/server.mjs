@@ -24,6 +24,7 @@ import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/radix3
 import 'node:fs';
 import 'node:url';
 import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/pathe/dist/index.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/ipx/dist/index.mjs';
 
 const appConfig = useRuntimeConfig$1().app;
 const baseURL = () => appConfig.baseURL;
@@ -546,7 +547,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/Apropos-BCvaLUW1.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/Apropos-BJWFKDtz.mjs').then((m) => m.default || m)
   },
   {
     name: "Contact",
@@ -554,7 +555,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/Contact-BokVBi8l.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/Contact-BNeJDzXs.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -562,7 +563,23 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/index-BEmQrxls.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-DjTzpK_a.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "mentions-legales",
+    path: "/mentions-legales",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./_nuxt/mentions-legales-Dai5k0X9.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "politique-confidentialite",
+    path: "/politique-confidentialite",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./_nuxt/politique-confidentialite-BTE5SqoA.mjs').then((m) => m.default || m)
   },
   {
     name: "Productions-design",
@@ -570,7 +587,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/design-D047ChFx.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/design-DMfCKkii.mjs').then((m) => m.default || m)
   },
   {
     name: "Productions-drone",
@@ -578,7 +595,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/drone-Cmdq5y_6.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/drone-CgK_WpvB.mjs').then((m) => m.default || m)
   },
   {
     name: "Productions",
@@ -586,7 +603,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/index-DiqHCUsZ.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-D7c_N698.mjs').then((m) => m.default || m)
   },
   {
     name: "Productions-musique",
@@ -594,7 +611,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/musique-Cg9oyvgs.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/musique-COQMJDmj.mjs').then((m) => m.default || m)
   },
   {
     name: "Productions-sound-design",
@@ -602,7 +619,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/sound-design-C66eLvns.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/sound-design-CPaY5xvj.mjs').then((m) => m.default || m)
   },
   {
     name: "Productions-video",
@@ -610,7 +627,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/video-BRyrpUhw.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/video-C4gWNjCA.mjs').then((m) => m.default || m)
   },
   {
     name: "Retouches",
@@ -618,7 +635,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/Retouches-j4vxVjO_.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/Retouches-CxwCHARQ.mjs').then((m) => m.default || m)
   },
   {
     name: "Services",
@@ -626,7 +643,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/Services-G-6EEDua.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/Services-BpVL34Nf.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -938,7 +955,7 @@ const plugins = [
   components_plugin_KR1HBZs4kY
 ];
 const layouts = {
-  default: () => import('./_nuxt/default-BWWz7k5m.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default-BY58oFI-.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -1313,5 +1330,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { _export_sfc as _, useRuntimeConfig as a, navigateTo as b, createError as c, __nuxt_component_1 as d, entry$1 as default, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useRouter as u };
+export { _export_sfc as _, useRuntimeConfig as a, navigateTo as b, createError as c, useNuxtApp as d, entry$1 as default, __nuxt_component_1 as e, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useRouter as u };
 //# sourceMappingURL=server.mjs.map

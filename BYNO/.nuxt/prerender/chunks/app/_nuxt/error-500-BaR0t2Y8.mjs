@@ -26,6 +26,7 @@ import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/radix3
 import 'node:fs';
 import 'node:url';
 import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/pathe/dist/index.mjs';
+import 'file://C:/Users/Anna/Documents/projets-web/BYNO/BYNO/node_modules/ipx/dist/index.mjs';
 
 const _sfc_main = {
   __name: "error-500",

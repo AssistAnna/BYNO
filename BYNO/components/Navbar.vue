@@ -1,71 +1,9 @@
-<template>
-  <nav class="navBar">
-   <nuxt-link class="logo" to="/"><div class="logo-img"></div></nuxt-link>
-   <div class="liste-onglets" :class="{ 'active2': showMobileMenu }">
-       <img src="/img/logo-byno-avececrit.png" alt="logo design byno">
-       <nuxt-link v-for="(item,key) in menu" :key="key" :to="{name: item.url}"><h2>{{item.name}}</h2></nuxt-link>
-    </div>
-   <div class="liste-socials">
-       
-       <nuxt-link to="/"><img src="/icon/icon-instagram.png" alt="logo instagram"></nuxt-link>
-       <nuxt-link to="/"><img src="/icon/icon-linkedin.png" alt="logo linkedin"></nuxt-link>
-       <nuxt-link to="/"><img src="/icon/icon-youtube.png" alt="logo youtube"></nuxt-link>
-   </div>
-   <img v-show="!showMobileMenu" @click="toggleMenu" class="menu-burger" src="/icon/menu-burger.png" alt="open menu">
-   <img v-show="showMobileMenu" @click="toggleMenu" class="cross menu-burger" src="/icon/cross-menu-burger.png" alt="close menu">
-  </nav>
-</template>
- 
-<script>
-export default {
-watch: {
-   '$route' () {
-       this.showMobileMenu = false;
-   }
-},
-data() {
-   return {
-       showMobileMenu: false,
-       menu: [
-       {
-         url: "Services",
-         name: "Services"
-       },
-       {
-         url: "Productions",
-         name: "Productions"
-       },
-       {
-         url: "Retouches",
-         name: "Retouches"
-       },
-       {
-         url: "Apropos",
-         name: "A propos"
-       },
-       {
-         url: "Contact",
-         name: "Contact"
-       }
-     ]
-   }
-   },
-   methods: {
-       toggleMenu() {
-           this.showMobileMenu = !this.showMobileMenu;
-       }
-       
-   }
-}
-</script>
-
 <style scoped>
 * {
    margin: 0;
    padding: 0;
    text-decoration: none;
    list-style: none;
-   
 }
 
 .navBar {
@@ -86,11 +24,8 @@ data() {
 }
 
 .logo-img {
-   background-image: url('/img/logo-byno.png');
    height: 5rem;
    width: 5rem;
-   background-size: contain;
-   background-repeat: no-repeat;
    margin-left: 1.5rem;
 }
 
@@ -129,6 +64,11 @@ data() {
 .liste-socials img {
  margin-right: 0.5rem;
  height: 2rem;
+ transition: all 0.2s ease-in-out;
+}
+
+.liste-socials img:hover {
+  transform: scale(1.05);
 }
 
 .menu-burger {
@@ -204,5 +144,69 @@ data() {
 }
 
 </style>
+<template>
+  <nav class="navBar">
+   <nuxt-link class="logo" to="/"><NuxtImg class="logo-img" src="/img/logo-byno.png" /></nuxt-link>
+   <div class="liste-onglets" :class="{ 'active2': showMobileMenu }">
+       <NuxtImg preload src="/img/logo-byno-avececrit.png" alt="logo design byno"/>
+       <nuxt-link v-for="(item,key) in menu" :key="key" :to="{name: item.url}"><h2>{{item.name}}</h2></nuxt-link>
+    </div>
+   <div class="liste-socials">
+        <nuxt-link to="https://www.instagram.com/studio_byno?igsh=eHQ2c3VvcXdlaW00&utm_source=qr"><img src="/icon/icon-instagram.png" alt="logo instagram"></nuxt-link>
+        <nuxt-link to="https://www.linkedin.com/in/no%C3%A9-chardon-0b2032237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="/icon/icon-linkedin.png" alt="logo linkedin"></nuxt-link>
+         <!--
+          en attente de création page yotube
+          <nuxt-link to="/"><img src="/icon/icon-youtube.png" alt="logo youtube"></nuxt-link>
+         -->
+   </div>
+   <img v-show="!showMobileMenu" @click="toggleGsmMenu" class="menu-burger" src="/icon/menu-burger.png" alt="open menu">
+   <img v-show="showMobileMenu" @click="toggleGsmMenu" class="cross menu-burger" src="/icon/cross-menu-burger.png" alt="close menu">
+  </nav>
+</template>
+ 
+<script>
+export default {
+watch: {
+   '$route' () {
+       this.showMobileMenu = false;
+   }
+},
+data() {
+   return {
+       showMobileMenu: false,
+       menu: [
+       {
+         url: "Services",
+         name: "Services"
+       },
+       {
+         url: "Apropos",
+        name: "A propos"
+       },
+       {
+         url: "Productions",
+         name: "Productions"
+       },
+       {
+         url: "Retouches",
+         name: "Retouches"
+       },
+       {
+         url: "Contact",
+         name: "Contact"
+       }
+     ]
+   }
+   },
+   methods: {
+    toggleGsmMenu() {
+           this.showMobileMenu = !this.showMobileMenu;
+       }
+       
+   }
+}
+</script>
+
+
  
  

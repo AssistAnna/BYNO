@@ -1,17 +1,16 @@
 <template>
   <div class="retouches">
     <h2 class="title-h2"  data-aos="fade-up">Retouches</h2>
+    <NuxtImg src="/img/retouches-img1.JPG" alt="image retouches" class="img1 blue-shadow" data-aos="fade-up"  data-aos-delay="300"/>
     <h3  data-aos="fade-up">Donner un autre sens à la photographie</h3>
-    <div class="img1 box-shadow" data-aos="fade-up"></div>
     <div class="bloc-img-text">
       <div class="img2 box-shadow" data-aos="fade-right"></div>
       <h4 data-aos="fade-left">Une simple image ou un simple regard peut communiquer une multitude de significations.</h4>
     </div>
-    <div class="bloc3">
-      <div class="img3 box-shadow"></div>
-      <div class="liste-photos"></div>
-    </div>
+    <!--
     <Carousel/>
+    
+    -->
 
   </div>
 </template>
@@ -23,8 +22,12 @@ export default {
 </script>
 
 <style scoped>
+* {
+  overflow-x: hidden;
+}
 .retouches {
     padding-top: 5rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,11 +43,7 @@ h3 {
 
 .img1 {
     border-radius: 4px;
-    height: 85vh;
-    width: 75%;
-    background-repeat: no-repeat;
-    background-image: url('/img/retouches-img1.JPG');
-    background-size: 100% 100%;
+    height: 75vh;
     margin-bottom: 3rem;
   }
 
@@ -78,7 +77,7 @@ h3 {
 
   @media (min-width: 821px) and (max-width: 1050px) {
     .img1 {
-      height: 50vh
+      height: 40vh
     }
     .img2 {
       height: 55vh;
@@ -94,13 +93,13 @@ h3 {
       margin: 4rem;
     }
     .img1 {
-      width: 100%;
       height: 40vh;
     }
     .bloc-img-text {
-      flex-direction: column-reverse;
+      flex-direction: column;
       width: 100%;
       margin-bottom: 0;
+      overflow-y: hidden;
     }
     h4 {
       font-size: 1.5rem;

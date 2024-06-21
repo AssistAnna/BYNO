@@ -39,6 +39,18 @@ function defineRenderHandler(handler) {
   });
 }
 
+function buildAssetsDir() {
+  return useRuntimeConfig().app.buildAssetsDir;
+}
+function buildAssetsURL(...path) {
+  return joinURL(publicAssetsURL(), buildAssetsDir(), ...path);
+}
+function publicAssetsURL(...path) {
+  const app = useRuntimeConfig().app;
+  const publicBase = app.cdnURL || app.baseURL;
+  return path.length ? joinURL(publicBase, ...path) : publicBase;
+}
+
 const Vue3 = version.startsWith("3");
 
 function resolveUnref(r) {
@@ -95,23 +107,11 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = [];
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"Agence de sound desin et communication audiovisuelle."},{"name":"description","content":"Vidéo d'enteprise, sound design, communication digitale"},{"name":"image","content":"https://www.studio-byno.fr/img/logo-fond-noir.png"}],"link":[],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"fr"},"title":"Studio Byno"};
 
 const appRootId = "__nuxt";
 
 const appRootTag = "div";
-
-function buildAssetsDir() {
-  return useRuntimeConfig().app.buildAssetsDir;
-}
-function buildAssetsURL(...path) {
-  return joinURL(publicAssetsURL(), buildAssetsDir(), ...path);
-}
-function publicAssetsURL(...path) {
-  const app = useRuntimeConfig().app;
-  const publicBase = app.cdnURL || app.baseURL;
-  return path.length ? joinURL(publicBase, ...path) : publicBase;
-}
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;

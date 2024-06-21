@@ -4,93 +4,93 @@
     {
       "name": "vite:load-fallback",
       "result": "import { Suspense, Transition, defineComponent, h, inject, nextTick, ref, watch } from \"vue\";\r\nimport { RouterView } from \"#vue-router\";\r\nimport { defu } from \"defu\";\r\nimport { toArray } from \"./utils.js\";\r\nimport { generateRouteKey, wrapInKeepAlive } from \"./utils.js\";\r\nimport { RouteProvider } from \"#app/components/route-provider\";\r\nimport { useNuxtApp } from \"#app/nuxt\";\r\nimport { useRouter } from \"#app/composables/router\";\r\nimport { _wrapIf } from \"#app/components/utils\";\r\nimport { LayoutMetaSymbol, PageRouteSymbol } from \"#app/components/injections\";\r\nimport { appKeepalive as defaultKeepaliveConfig, appPageTransition as defaultPageTransition } from \"#build/nuxt.config.mjs\";\r\nexport default defineComponent({\r\n  name: \"NuxtPage\",\r\n  inheritAttrs: false,\r\n  props: {\r\n    name: {\r\n      type: String\r\n    },\r\n    transition: {\r\n      type: [Boolean, Object],\r\n      default: void 0\r\n    },\r\n    keepalive: {\r\n      type: [Boolean, Object],\r\n      default: void 0\r\n    },\r\n    route: {\r\n      type: Object\r\n    },\r\n    pageKey: {\r\n      type: [Function, String],\r\n      default: null\r\n    }\r\n  },\r\n  setup(props, { attrs, expose }) {\r\n    const nuxtApp = useNuxtApp();\r\n    const pageRef = ref();\r\n    const forkRoute = inject(PageRouteSymbol, null);\r\n    let previousPageKey;\r\n    expose({ pageRef });\r\n    const _layoutMeta = inject(LayoutMetaSymbol, null);\r\n    let vnode;\r\n    const done = nuxtApp.deferHydration();\r\n    if (import.meta.client && nuxtApp.isHydrating) {\r\n      const removeErrorHook = nuxtApp.hooks.hookOnce(\"app:error\", done);\r\n      useRouter().beforeEach(removeErrorHook);\r\n    }\r\n    if (props.pageKey) {\r\n      watch(() => props.pageKey, (next, prev) => {\r\n        if (next !== prev) {\r\n          nuxtApp.callHook(\"page:loading:start\");\r\n        }\r\n      });\r\n    }\r\n    if (import.meta.dev) {\r\n      nuxtApp._isNuxtPageUsed = true;\r\n    }\r\n    return () => {\r\n      return h(RouterView, { name: props.name, route: props.route, ...attrs }, {\r\n        default: (routeProps) => {\r\n          const isRenderingNewRouteInOldFork = import.meta.client && haveParentRoutesRendered(forkRoute, routeProps.route, routeProps.Component);\r\n          const hasSameChildren = import.meta.client && forkRoute && forkRoute.matched.length === routeProps.route.matched.length;\r\n          if (!routeProps.Component) {\r\n            if (import.meta.client && vnode && !hasSameChildren) {\r\n              return vnode;\r\n            }\r\n            done();\r\n            return;\r\n          }\r\n          if (import.meta.client && vnode && _layoutMeta && !_layoutMeta.isCurrent(routeProps.route)) {\r\n            return vnode;\r\n          }\r\n          if (import.meta.client && isRenderingNewRouteInOldFork && forkRoute && (!_layoutMeta || _layoutMeta?.isCurrent(forkRoute))) {\r\n            if (hasSameChildren) {\r\n              return vnode;\r\n            }\r\n            return null;\r\n          }\r\n          const key = generateRouteKey(routeProps, props.pageKey);\r\n          if (!nuxtApp.isHydrating && !hasChildrenRoutes(forkRoute, routeProps.route, routeProps.Component) && previousPageKey === key) {\r\n            nuxtApp.callHook(\"page:loading:end\");\r\n          }\r\n          previousPageKey = key;\r\n          const hasTransition = !!(props.transition ?? routeProps.route.meta.pageTransition ?? defaultPageTransition);\r\n          const transitionProps = hasTransition && _mergeTransitionProps([\r\n            props.transition,\r\n            routeProps.route.meta.pageTransition,\r\n            defaultPageTransition,\r\n            { onAfterLeave: () => {\r\n              nuxtApp.callHook(\"page:transition:finish\", routeProps.Component);\r\n            } }\r\n          ].filter(Boolean));\r\n          const keepaliveConfig = props.keepalive ?? routeProps.route.meta.keepalive ?? defaultKeepaliveConfig;\r\n          vnode = _wrapIf(\r\n            Transition,\r\n            hasTransition && transitionProps,\r\n            wrapInKeepAlive(\r\n              keepaliveConfig,\r\n              h(Suspense, {\r\n                suspensible: true,\r\n                onPending: () => nuxtApp.callHook(\"page:start\", routeProps.Component),\r\n                onResolve: () => {\r\n                  nextTick(() => nuxtApp.callHook(\"page:finish\", routeProps.Component).then(() => nuxtApp.callHook(\"page:loading:end\")).finally(done));\r\n                }\r\n              }, {\r\n                default: () => {\r\n                  const providerVNode = h(RouteProvider, {\r\n                    key: key || void 0,\r\n                    vnode: routeProps.Component,\r\n                    route: routeProps.route,\r\n                    renderKey: key || void 0,\r\n                    trackRootNodes: hasTransition,\r\n                    vnodeRef: pageRef\r\n                  });\r\n                  if (import.meta.client && keepaliveConfig) {\r\n                    providerVNode.type.name = routeProps.Component.type.name || routeProps.Component.type.__name || \"RouteProvider\";\r\n                  }\r\n                  return providerVNode;\r\n                }\r\n              })\r\n            )\r\n          ).default();\r\n          return vnode;\r\n        }\r\n      });\r\n    };\r\n  }\r\n});\r\nfunction _mergeTransitionProps(routeProps) {\r\n  const _props = routeProps.map((prop) => ({\r\n    ...prop,\r\n    onAfterLeave: prop.onAfterLeave ? toArray(prop.onAfterLeave) : void 0\r\n  }));\r\n  return defu(..._props);\r\n}\r\nfunction haveParentRoutesRendered(fork, newRoute, Component) {\r\n  if (!fork) {\r\n    return false;\r\n  }\r\n  const index = newRoute.matched.findIndex((m) => m.components?.default === Component?.type);\r\n  if (!index || index === -1) {\r\n    return false;\r\n  }\r\n  return newRoute.matched.slice(0, index).some(\r\n    (c, i) => c.components?.default !== fork.matched[i]?.components?.default\r\n  ) || Component && generateRouteKey({ route: newRoute, Component }) !== generateRouteKey({ route: fork, Component });\r\n}\r\nfunction hasChildrenRoutes(fork, newRoute, Component) {\r\n  if (!fork) {\r\n    return false;\r\n  }\r\n  const index = newRoute.matched.findIndex((m) => m.components?.default === Component?.type);\r\n  return index < newRoute.matched.length - 1;\r\n}\r\n",
-      "start": 1716369328512,
-      "end": 1716369328872,
+      "start": 1718568828548,
+      "end": 1718568828692,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1716369328872,
-      "end": 1716369328872,
+      "start": 1718568828692,
+      "end": 1718568828692,
       "order": "normal"
     },
     {
       "name": "replace",
       "result": "import { Suspense, Transition, defineComponent, h, inject, nextTick, ref, watch } from \"vue\";\r\nimport { RouterView } from \"#vue-router\";\r\nimport { defu } from \"defu\";\r\nimport { toArray } from \"./utils.js\";\r\nimport { generateRouteKey, wrapInKeepAlive } from \"./utils.js\";\r\nimport { RouteProvider } from \"#app/components/route-provider\";\r\nimport { useNuxtApp } from \"#app/nuxt\";\r\nimport { useRouter } from \"#app/composables/router\";\r\nimport { _wrapIf } from \"#app/components/utils\";\r\nimport { LayoutMetaSymbol, PageRouteSymbol } from \"#app/components/injections\";\r\nimport { appKeepalive as defaultKeepaliveConfig, appPageTransition as defaultPageTransition } from \"#build/nuxt.config.mjs\";\r\nexport default defineComponent({\r\n  name: \"NuxtPage\",\r\n  inheritAttrs: false,\r\n  props: {\r\n    name: {\r\n      type: String\r\n    },\r\n    transition: {\r\n      type: [Boolean, Object],\r\n      default: void 0\r\n    },\r\n    keepalive: {\r\n      type: [Boolean, Object],\r\n      default: void 0\r\n    },\r\n    route: {\r\n      type: Object\r\n    },\r\n    pageKey: {\r\n      type: [Function, String],\r\n      default: null\r\n    }\r\n  },\r\n  setup(props, { attrs, expose }) {\r\n    const nuxtApp = useNuxtApp();\r\n    const pageRef = ref();\r\n    const forkRoute = inject(PageRouteSymbol, null);\r\n    let previousPageKey;\r\n    expose({ pageRef });\r\n    const _layoutMeta = inject(LayoutMetaSymbol, null);\r\n    let vnode;\r\n    const done = nuxtApp.deferHydration();\r\n    if (true && nuxtApp.isHydrating) {\r\n      const removeErrorHook = nuxtApp.hooks.hookOnce(\"app:error\", done);\r\n      useRouter().beforeEach(removeErrorHook);\r\n    }\r\n    if (props.pageKey) {\r\n      watch(() => props.pageKey, (next, prev) => {\r\n        if (next !== prev) {\r\n          nuxtApp.callHook(\"page:loading:start\");\r\n        }\r\n      });\r\n    }\r\n    if (false) {\r\n      nuxtApp._isNuxtPageUsed = true;\r\n    }\r\n    return () => {\r\n      return h(RouterView, { name: props.name, route: props.route, ...attrs }, {\r\n        default: (routeProps) => {\r\n          const isRenderingNewRouteInOldFork = true && haveParentRoutesRendered(forkRoute, routeProps.route, routeProps.Component);\r\n          const hasSameChildren = true && forkRoute && forkRoute.matched.length === routeProps.route.matched.length;\r\n          if (!routeProps.Component) {\r\n            if (true && vnode && !hasSameChildren) {\r\n              return vnode;\r\n            }\r\n            done();\r\n            return;\r\n          }\r\n          if (true && vnode && _layoutMeta && !_layoutMeta.isCurrent(routeProps.route)) {\r\n            return vnode;\r\n          }\r\n          if (true && isRenderingNewRouteInOldFork && forkRoute && (!_layoutMeta || _layoutMeta?.isCurrent(forkRoute))) {\r\n            if (hasSameChildren) {\r\n              return vnode;\r\n            }\r\n            return null;\r\n          }\r\n          const key = generateRouteKey(routeProps, props.pageKey);\r\n          if (!nuxtApp.isHydrating && !hasChildrenRoutes(forkRoute, routeProps.route, routeProps.Component) && previousPageKey === key) {\r\n            nuxtApp.callHook(\"page:loading:end\");\r\n          }\r\n          previousPageKey = key;\r\n          const hasTransition = !!(props.transition ?? routeProps.route.meta.pageTransition ?? defaultPageTransition);\r\n          const transitionProps = hasTransition && _mergeTransitionProps([\r\n            props.transition,\r\n            routeProps.route.meta.pageTransition,\r\n            defaultPageTransition,\r\n            { onAfterLeave: () => {\r\n              nuxtApp.callHook(\"page:transition:finish\", routeProps.Component);\r\n            } }\r\n          ].filter(Boolean));\r\n          const keepaliveConfig = props.keepalive ?? routeProps.route.meta.keepalive ?? defaultKeepaliveConfig;\r\n          vnode = _wrapIf(\r\n            Transition,\r\n            hasTransition && transitionProps,\r\n            wrapInKeepAlive(\r\n              keepaliveConfig,\r\n              h(Suspense, {\r\n                suspensible: true,\r\n                onPending: () => nuxtApp.callHook(\"page:start\", routeProps.Component),\r\n                onResolve: () => {\r\n                  nextTick(() => nuxtApp.callHook(\"page:finish\", routeProps.Component).then(() => nuxtApp.callHook(\"page:loading:end\")).finally(done));\r\n                }\r\n              }, {\r\n                default: () => {\r\n                  const providerVNode = h(RouteProvider, {\r\n                    key: key || void 0,\r\n                    vnode: routeProps.Component,\r\n                    route: routeProps.route,\r\n                    renderKey: key || void 0,\r\n                    trackRootNodes: hasTransition,\r\n                    vnodeRef: pageRef\r\n                  });\r\n                  if (true && keepaliveConfig) {\r\n                    providerVNode.type.name = routeProps.Component.type.name || routeProps.Component.type.__name || \"RouteProvider\";\r\n                  }\r\n                  return providerVNode;\r\n                }\r\n              })\r\n            )\r\n          ).default();\r\n          return vnode;\r\n        }\r\n      });\r\n    };\r\n  }\r\n});\r\nfunction _mergeTransitionProps(routeProps) {\r\n  const _props = routeProps.map((prop) => ({\r\n    ...prop,\r\n    onAfterLeave: prop.onAfterLeave ? toArray(prop.onAfterLeave) : void 0\r\n  }));\r\n  return defu(..._props);\r\n}\r\nfunction haveParentRoutesRendered(fork, newRoute, Component) {\r\n  if (!fork) {\r\n    return false;\r\n  }\r\n  const index = newRoute.matched.findIndex((m) => m.components?.default === Component?.type);\r\n  if (!index || index === -1) {\r\n    return false;\r\n  }\r\n  return newRoute.matched.slice(0, index).some(\r\n    (c, i) => c.components?.default !== fork.matched[i]?.components?.default\r\n  ) || Component && generateRouteKey({ route: newRoute, Component }) !== generateRouteKey({ route: fork, Component });\r\n}\r\nfunction hasChildrenRoutes(fork, newRoute, Component) {\r\n  if (!fork) {\r\n    return false;\r\n  }\r\n  const index = newRoute.matched.findIndex((m) => m.components?.default === Component?.type);\r\n  return index < newRoute.matched.length - 1;\r\n}\r\n",
-      "start": 1716369328872,
-      "end": 1716369328873,
+      "start": 1718568828692,
+      "end": 1718568828693,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -103,116 +103,116 @@
     },
     {
       "name": "ssr-styles",
-      "start": 1716369328873,
-      "end": 1716369328873,
+      "start": 1718568828693,
+      "end": 1718568828693,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1716369328873,
-      "end": 1716369328873,
+      "start": 1718568828693,
+      "end": 1718568828693,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1716369328873,
-      "end": 1716369328873,
+      "start": 1718568828693,
+      "end": 1718568828693,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1716369328873,
-      "end": 1716369328873,
+      "start": 1718568828693,
+      "end": 1718568828693,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1716369328873,
-      "end": 1716369328873,
+      "start": 1718568828693,
+      "end": 1718568828693,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1716369328873,
-      "end": 1716369328873,
+      "start": 1718568828693,
+      "end": 1718568828693,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1716369328873,
-      "end": 1716369328874,
+      "start": 1718568828693,
+      "end": 1718568828694,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1716369328874,
-      "end": 1716369328874,
+      "start": 1718568828694,
+      "end": 1718568828694,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1716369328874,
-      "end": 1716369328874,
+      "start": 1718568828694,
+      "end": 1718568828694,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1716369328874,
-      "end": 1716369328874,
+      "start": 1718568828694,
+      "end": 1718568828694,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1716369328874,
-      "end": 1716369328874,
+      "start": 1718568828694,
+      "end": 1718568828694,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1716369328874,
-      "end": 1716369328874,
+      "start": 1718568828694,
+      "end": 1718568828694,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1716369328875,
-      "end": 1716369328875,
+      "start": 1718568828694,
+      "end": 1718568828694,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1716369328875,
-      "end": 1716369328875,
+      "start": 1718568828694,
+      "end": 1718568828694,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1716369328875,
-      "end": 1716369328875,
+      "start": 1718568828694,
+      "end": 1718568828694,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1716369328875,
-      "end": 1716369328875,
+      "start": 1718568828694,
+      "end": 1718568828694,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1716369328875,
-      "end": 1716369328875,
+      "start": 1718568828694,
+      "end": 1718568828694,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1716369328875,
-      "end": 1716369328875,
+      "start": 1718568828694,
+      "end": 1718568828694,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1716369328875,
-      "end": 1716369328875,
+      "start": 1718568828694,
+      "end": 1718568828694,
       "order": "normal"
     }
   ]

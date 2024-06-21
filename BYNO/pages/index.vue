@@ -1,23 +1,20 @@
 <template>
   <div class="page-index">
-    <!--
-      <GroupeImgAccueil  data-aos="fade-up"/>
-    -->
-    
+    <AccueilSection1/>
     <p class="text-presentation" data-aos="fade-up">Je suis passionné par mon métier et je m'engage à vous offrir des services de qualité aussi bien dans le sound design que la vidéo pour représenter au mieux votre entreprise ou vos événements.</p>
-    <h2 class="title-h2" data-aos="fade-up">Productions</h2>
+    <h2 class="title-h2 special" data-aos="fade-up">Productions</h2>
     <AllProjects data-aos="fade-up"/>
     <h2 class="title-h2" data-aos="fade-up">Services</h2>
     <AllServices />
   </div>
 </template>
-<script>
 
-export default {
-  
-
-}
+<script setup lang="ts">
+useHead({
+  title: 'Studio-Byno'
+})
 </script>
+
 
 <style>
 @font-face {
@@ -54,10 +51,18 @@ export default {
   font-family: 'mplusthin';
   src: url('/fonts/MPLUS1p-Thin.ttf') format('opentype'),
 }
-
+.hidden-title {
+  color: black;
+  margin: 0;
+}
 .box-shadow {
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09); 
 box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31px 11px rgba(255,255,254,0.09);
+}
+
+.blue-shadow {
+  -webkit-box-shadow: 1px 1px 42px -14px rgba(0,159,227,0.89); 
+box-shadow: 1px 1px 42px -14px rgba(0,159,227,0.89);
 }
 
 .page-index {
@@ -68,12 +73,10 @@ box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31p
 }
 
 .text-presentation {
-  margin: 0rem 10rem;
+  margin: 5rem 10rem;
   font-size: 1.8rem;
   font-family: mplusbold;
   text-align: center;
-  padding-bottom: 4rem;
-  padding-top: 6rem;
 }
 
 .title-h2 {
@@ -86,6 +89,9 @@ box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31p
     text-underline-offset: 1.6rem;
     text-decoration-color: #009FE3;
 }
+.special {
+    margin-top: 0;
+  }
 .btn-retour {
   color: #009FE3;
   font-family: 'mplusextra';
@@ -93,21 +99,24 @@ box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 31p
   text-underline-offset: 0.8rem;
   margin-left: 2rem;
   margin-bottom: 2rem;
+  cursor: pointer;
   
 }
 
 /* version mobile */
 @media screen and (max-width: 900px) {
   .text-presentation {
-    margin: 0 2rem;
+    margin: 4rem 2rem;
     font-size: 1.1rem;
-    padding-bottom: 1rem;
   }
   .title-h2 {
     padding-bottom: 1rem;
     font-size: 2rem;
     margin-bottom: 2rem;
+    text-underline-offset: 1.1rem;
+    line-height: 3.7rem;
   }
+  
 }
 
 /*

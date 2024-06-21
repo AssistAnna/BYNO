@@ -3,11 +3,20 @@
       <Navbar/>
       <NuxtPage/>
       <Footer/>
-     
+     <!--
+        useSeoMeta({
+    title: 'studio-byno',
+    ogTitle: 'studio Byno',
+    description: 'Agence de sound design et communication audiovisuelle',
+    ogDescription: 'Agence de sound design et communication audiovisuelle',
+    ogImage: 'https://www.studio-byno.fr/img/logo-fond-noir.png',
+    twitterCard: 'summary_large_image',
+  })
+     -->
   </div>
 </template>
 <script setup>
-  useHead({link: [{ rel: 'icon', type: 'image/png', href: 'favicon.ico' }]})
+
 </script>
 
 <style>
@@ -16,6 +25,7 @@ body {
   margin: 0px;
   height: 30rem;
   background-color: black;
+  overflow-x: hidden;
 
 
 }

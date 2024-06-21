@@ -1,8 +1,8 @@
 <template>
   <div class="apropos">
     <h2 class="title-h2" data-aos="fade-up">A propos</h2>
-    <div class="bloc-img1" data-aos="zoom-in">
-      <div class="img1"></div>
+    <div class="bloc-img1" data-aos="fade-up" data-aos-delay="300">
+        <NuxtImg class="img1 blue-shadow " src="/img/apropos-img1.jpg" />
     </div>
     <div class="bloc-text" data-aos="fade-up">
       <h3>Noé Chardon</h3>
@@ -14,7 +14,7 @@
     <p>Ils me font confiance : </p>
     <div class="bloc-logos">
       <div class="logo"  v-for="(logo,key) in logos" :key="key">
-          <div class="logo-img" :style="' background-image: url(' + logo.imgUrl + ')'"></div>
+          <div class="logo-img" :style="' background-image: url(' + logo.imgUrl + ')'" alt="logo partenaire"></div>
         </div>
     </div>
 
@@ -63,20 +63,15 @@ export default {
   }
 
 .bloc-img1 {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .img1 {
-    min-height: 80vh;
-    width: 55%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('/img/apropos-img1.jpg');
+    height: 80vh;
+    border: 0.8px solid black;
+    border-radius: 6px;
   }
-  
-
   .bloc-text {
     font-family: mplusmedium;
     display: flex;

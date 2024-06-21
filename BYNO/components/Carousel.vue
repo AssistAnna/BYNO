@@ -40,8 +40,7 @@
 .carousel {
     width: 100%;
     position: relative;
-    margin-bottom: 10rem;
-    
+    margin: 5rem 0;
 }
 p {
     font-family: mpluslight;
@@ -93,7 +92,7 @@ p {
         margin-bottom: 0;
     }
     .grande-photo {
-        height: 40vh;
+        height: 35vh;
     }
   }
 
